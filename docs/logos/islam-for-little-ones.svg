@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+<defs><radialGradient id="g" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#2bb3a3"/><stop offset="1" stop-color="#0f6e66"/></radialGradient></defs>
+<rect width="800" height="800" fill="url(#g)"/>
+<rect x="166.65476220843934" y="166.65476220843934" width="466.6904755831213" height="466.6904755831213" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="6"/><rect x="166.65476220843934" y="166.65476220843934" width="466.6904755831213" height="466.6904755831213" transform="rotate(45 400 400)" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="6"/>
+<g transform="translate(400 400) scale(1.12) translate(-400 -400)">
+<defs><mask id="m"><rect width="800" height="800" fill="white"/><circle cx="462" cy="352" r="158" fill="black"/></mask></defs>
+<circle cx="380" cy="410" r="200" fill="#ffd166" mask="url(#m)"/>
+
+<path d="M520 268 l20 42 46 6 -34 32 9 46 -41 -23 -41 23 9 -46 -34 -32 46 -6 z" fill="#fff3dc" stroke="#fff3dc" stroke-width="14" stroke-linejoin="round"/>
+<circle cx="590" cy="470" r="11" fill="#fff3dc"/>
+<circle cx="250" cy="250" r="9" fill="#fff3dc" opacity="0.85"/>
+<circle cx="560" cy="560" r="7" fill="#fff3dc" opacity="0.7"/>
+</g>
+</svg>
