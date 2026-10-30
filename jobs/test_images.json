@@ -1,0 +1,5 @@
+{"images": [
+ {"name": "t1_dome_dusk", "prompt": "cinematic wide shot of a peaceful old Arabian town at golden hour, a mosque with a green dome and white minarets in the distance, warm soft light, dust particles in the air, volumetric light rays, highly detailed, 3D animated film style, Pixar-like lighting, no people", "steps": 8},
+ {"name": "t2_market", "prompt": "3D animated film style scene of an old Arabian market street at sunrise, clay houses, hanging lanterns, baskets of dates, soft warm lighting, depth of field, highly detailed, no people, no text", "steps": 8},
+ {"name": "t3_kid", "prompt": "3D animated film style, a cute Muslim boy wearing a white kufi cap, seen from behind, looking at a glowing lantern in a cosy room at night, warm rim light, soft shadows, highly detailed, face not visible", "steps": 8}
+]}
