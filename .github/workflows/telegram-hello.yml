@@ -1,0 +1,27 @@
+name: telegram-hello
+# One-off check that the bot works. Replies in Telegram to whoever sent /start,
+# and tells them their chat ID so it can be saved as TELEGRAM_CHAT_ID.
+# Nothing personal is printed to the (public) log.
+on:
+  workflow_dispatch:
+  push:
+    paths: [".github/workflows/telegram-hello.yml"]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet everyone who has messaged the bot
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          set -e
+          ids=$(curl -s "https://api.telegram.org/bot${TOKEN}/getUpdates" | jq -r '[.result[].message.chat.id // empty] | unique | .[]')
+          n=0
+          for id in $ids; do
+            n=$((n+1))
+            curl -s -o /dev/null "https://api.telegram.org/bot${TOKEN}/sendMessage" \
+              --data-urlencode "chat_id=${id}" \
+              --data-urlencode "text=Assalamu alaikum! ✅ Sadqah Media bot is connected. Your chat ID is ${id}. Daily approvals will arrive here."
+          done
+          echo "Sent greeting to ${n} chat(s)."
+          [ "$n" -gt 0 ] || { echo "No one has sent /start to the bot yet."; exit 1; }
