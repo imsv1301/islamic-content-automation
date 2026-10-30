@@ -1,0 +1,61 @@
+name: voice
+# Renders narration lines in Sahil's cloned voice, one parallel job per line.
+# The voice reference is stored encrypted (voice/*.enc) and decrypted only inside the job.
+on:
+  workflow_dispatch:
+    inputs:
+      lines:
+        description: "Path to the lines JSON, e.g. jobs/day1_lines.json"
+        required: true
+      langs:
+        description: "Comma-separated languages to render (ur,en)"
+        default: "ur,en"
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          d = json.load(open("${{ inputs.lines }}"))
+          langs = "${{ inputs.langs }}".split(",")
+          inc = [{"lang": l, "idx": i} for l in langs for i in range(len(d[l]))]
+          print("matrix=" + json.dumps({"include": inc}))
+          PY
+  line:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip, cache-dependency-path: scripts/voice_line.py }
+      - uses: actions/cache@v4
+        with: { path: ~/.cache/huggingface, key: hf-omnivoice-v1 }
+      - name: Install
+        run: |
+          pip install -q torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q omnivoice soundfile
+      - name: Decrypt voice reference
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
+        run: |
+          printf '%s' "$MASTER_KEY" > /tmp/k
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/ref_${{ matrix.lang }}.wav.enc -out /tmp/ref_${{ matrix.lang }}.wav -pass file:/tmp/k
+          rm /tmp/k
+      - name: Generate
+        run: python scripts/voice_line.py "${{ inputs.lines }}" ${{ matrix.lang }} ${{ matrix.idx }} line_${{ matrix.lang }}_${{ matrix.idx }}.wav 2>&1 | grep -v -i warn | tail -3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: line_${{ matrix.lang }}_${{ matrix.idx }}
+          path: line_${{ matrix.lang }}_${{ matrix.idx }}.wav
+          retention-days: 3
+      - name: Remove decrypted reference
+        if: always()
+        run: rm -f /tmp/ref_*.wav

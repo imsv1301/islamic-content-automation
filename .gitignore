@@ -1,0 +1,3 @@
+*.wav
+!voice/*.enc
+__pycache__/
