@@ -1,0 +1,17 @@
+name: footage
+# Downloads free Pixabay videos for the given query list (jobs/*.json with {"queries": [...]})
+on:
+  workflow_dispatch:
+    inputs:
+      queries: { description: "Path to queries JSON", required: true }
+      per_query: { description: "Clips per query", default: "4" }
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch
+        env: { PIXABAY_API_KEY: "${{ secrets.PIXABAY_API_KEY }}" }
+        run: python3 scripts/pixabay_fetch.py "${{ inputs.queries }}" "${{ inputs.per_query }}"
+      - uses: actions/upload-artifact@v4
+        with: { name: clips, path: clips/, retention-days: 3 }
