@@ -221,5 +221,11 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
 - **telegram.yml** sends a preview or a text message.
 - Kids channel narration is now **Sahil's cloned English voice** (31 Oct decision), not Kokoro.
 
+## 10. Decisions 31 Oct (afternoon)
+- The new warm 3D-toon story style (the MysteryShort sample) is now the **house style for ALL videos on all channels**.
+- Telegram gets a light 720p faststart copy, sized correctly so it's no longer stretched. YouTube and Instagram always get the full-quality master (CRF 15, 320k audio).
+- Comments are managed around the clock: scheduled task **"Sadqah Media comments"** runs hourly, plus the daily run. Instagram DMs and comments get added once the accounts exist.
+- The YouTube audit form was submitted on 31 Oct. Wait for Google's email.
+
 ## Daily log
 - 2026-10-31: setup day. Approval flow tested with the Riddle #3 sample (renders/2026-10-31-test). The YouTube audit form was submitted by Sahil.

@@ -51,7 +51,16 @@ git fetch origin renders
 - Urdu: slow it down with `ffmpeg -af rubberband=tempo=0.88:pitchq=quality:formant=preserved`.
 - Then `python3 pipeline/build_short.py <lines.json> <lang> <vo_dir> <name> [--roman] --gap 0.4`. This produces `video/src/day1/<name>-timing.json` and `video/public/day1/<name>-mix.m4a`.
 
-## 4. Visuals: "best animation, every time" (the locked-hadith quality bar)
+## 4. Visuals: "best animation, every time"
+**House style for every channel (approved by Sahil, 31 Oct):**
+- Warm amber/orange cinematic 3D-toon stills from Cloudflare Workers AI, with slow camera pushes and pans and cut flashes.
+- A HUD (DAY · time · place · tag) and big uppercase captions with one gold keyword.
+- Claim or info cards, a vote or CTA ending, rain/particle overlays and grain.
+- Base every video on `video/src/day1/MysteryShort.tsx`. Adapt the HUD per channel:
+  - kids: "DAY n · Lesson", gentle and bright, no scary scenes
+  - Sadqah: hadith card with Arabic + Roman Urdu
+  - riddle: as in the sample
+- Faceless characters only.
 - Templates in `video/src/day1/`:
   - `MysteryShort.tsx` (riddle, warm 3D-toon story style)
   - `SolutionShort.tsx` (riddle solution + next riddle)
@@ -62,6 +71,8 @@ git fetch origin renders
   - FLUX-1-schnell is free (about 80 a day). Keep faces out of it: back views and silhouettes.
   - `@cf/leonardo/lucid-origin` (1088x1920) is best for frontal faceless "egg head" shots, but costs about 5,400 neurons each, and the free tier is 10,000 a day. Use at most 1 a day.
   - Never pay: Cloudflare stays on the free plan.
+- **Master render quality (YouTube/Instagram):** `npx remotion render <Comp> out.mp4 --concurrency=2 --codec=h264 --crf=15 --x264-preset=medium --audio-bitrate=320k --pixel-format=yuv420p`. Never upload the Telegram preview copy.
+- Images: generate at the highest size the model allows. Prefer Lucid (1088x1920, about 1 a day free) for the hero shot. FLUX shots are 1024² and get cropped and upscaled; keep the camera zoom at 1.2 or less on them so they stay sharp.
 - Always render stills first (`npx remotion still <Comp> x.png --frame=N`), make a contact sheet, look at it, fix it, then do the full render.
 
 ## 5. Package and send by 05:45 UK
@@ -73,3 +84,11 @@ git fetch origin renders
 ## 6. Wrap up
 - Append a short entry under "Daily log" in `HANDOFF.md`: what was made, which hadith, the riddle number and answer, and any issues. Push to main.
 - Do not commit third-party audio (naat/qawwali) or anything private to this public repo.
+
+## Hourly comment check (scheduled task "Sadqah Media comments")
+1. Dispatch `youtube.yml` `action=comments` for `riddle` and `sadqah`, then read the artifacts.
+2. A thread is **new** if it has no reply from our own channel and its id is not in `state/comments_handled.jsonl`.
+3. Reply following the Section 1 rules. Riddle guesses: never reveal the answer before the solution video.
+4. Flag abusive, fatwa-type or sensitive comments to Telegram (`telegram.yml` `mode=text`) once, without quoting abuse.
+5. Append `{"id": thread_id, "action": "replied" | "flagged" | "skipped", "at": ...}` for every thread to `state/comments_handled.jsonl` (ids only, never comment text), then push.
+6. If nothing is new, stop quickly. Don't touch videos, and never upload.

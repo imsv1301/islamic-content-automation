@@ -30,4 +30,6 @@
 - Everything free. Renders on GitHub Actions (public repo). PC only for monthly naat audio batch.
 
 - Daily run: see DAILY_RUNBOOK.md. Telegram preview by ~05:30–06:00 UK; uploads only after Sahil taps ✅ (approvals.yml). Free-text Telegram messages are never stored (public repo).
-- Solve by Sunrise STYLE (APPROVED by Sahil 31 Oct 2026 — use it for riddle videos from now on): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Faceless only: back views, silhouettes, blank egg-shaped heads. Template: video/src/day1/MysteryShort.tsx.
+- HOUSE STYLE FOR ALL VIDEOS, ALL CHANNELS (approved by Sahil 31 Oct 2026; replaces the older per-channel looks): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Faceless only: back views, silhouettes, blank egg-shaped heads. Template: video/src/day1/MysteryShort.tsx.
+- Quality: YouTube and Instagram always get the full-quality master (1080x1920, 30fps, H.264 CRF 15, 320k AAC). Only Telegram previews are a small 720p copy.
+- Comments, DMs and messages are managed around the clock: an hourly comment check (scheduled task "Sadqah Media comments") plus the daily run. Instagram DMs and comments get added once the Instagram accounts and Meta API exist.
