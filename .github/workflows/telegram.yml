@@ -1,0 +1,24 @@
+name: telegram
+# Sends the daily preview (videos from the renders branch with ✅/❌ buttons) or a plain message to Sahil.
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { description: "preview | text", required: true, default: preview }
+      date: { description: "preview: folder on the renders branch, e.g. 2026-11-01", default: "" }
+      text: { description: "text: message to send", default: "" }
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - if: inputs.mode == 'preview'
+        uses: actions/checkout@v4
+        with: { ref: renders, path: renders }
+      - env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MODE: ${{ inputs.mode }}
+          D: ${{ inputs.date }}
+          T: ${{ inputs.text }}
+        run: |
+          if [ "$MODE" = preview ]; then python3 scripts/tg.py preview renders "$D"; else python3 scripts/tg.py text "$T"; fi

@@ -1,0 +1,32 @@
+name: approvals
+# Every 10 minutes: reads Sahil's ✅ / ❌ taps in Telegram and uploads approved videos to YouTube.
+on:
+  schedule: [{ cron: "*/10 * * * *" }]
+  workflow_dispatch:
+concurrency: { group: approvals, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: { ref: renders, path: renders }
+      - name: Decrypt YouTube state
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
+        run: |
+          printf '%s' "$MASTER_KEY" > /tmp/k
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/youtube.json.enc -out /tmp/yt_state.json -pass file:/tmp/k
+          rm /tmp/k
+      - name: Poll Telegram
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          YT_STATE: /tmp/yt_state.json
+        run: python3 scripts/tg.py poll renders; rm -f /tmp/yt_state.json
+      - name: Save upload log
+        run: |
+          git config user.name "sadqah-bot"; git config user.email "sadqahmedia.channels@gmail.com"
+          git add state/uploads.jsonl state/feedback.jsonl
+          git diff --cached --quiet || (git commit -m "approvals: upload log" && git pull --rebase -q && git push -q)
