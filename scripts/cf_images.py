@@ -12,15 +12,23 @@ try:
 except urllib.error.HTTPError as e:
     print("verify HTTP", e.code, e.read()[:200].decode("utf8", "ignore"))
 job = json.load(open(sys.argv[1])); os.makedirs("images", exist_ok=True)
-url = f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/@cf/black-forest-labs/flux-1-schnell"
+BASE = f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/"
 for im in job["images"]:
-    body = json.dumps({"prompt": im["prompt"], "steps": im.get("steps", 8)}).encode()
-    req = urllib.request.Request(url, data=body, headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+    model = im.get("model", job.get("model", "@cf/black-forest-labs/flux-1-schnell"))
+    payload = {"prompt": im["prompt"], "steps": im.get("steps", job.get("steps", 8))}
+    for k in ("width", "height", "guidance", "seed", "negative_prompt"):
+        if k in im or k in job: payload[k] = im.get(k, job.get(k))
+    body = json.dumps(payload).encode()
+    req = urllib.request.Request(BASE + model, data=body, headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
     try:
-        r = json.load(urllib.request.urlopen(req, timeout=120))
+        raw = urllib.request.urlopen(req, timeout=180).read()
     except urllib.error.HTTPError as e:
         print(im["name"], "HTTP", e.code, e.read()[:300].decode("utf8", "ignore")); continue
-    img = (r.get("result") or {}).get("image")
+    if not raw.lstrip().startswith(b"{"):
+        open(f"images/{im['name']}.png", "wb").write(raw); print(im["name"], "ok (binary)"); continue
+    r = json.loads(raw)
+    res = r.get("result") or {}
+    img = res.get("image") if isinstance(res, dict) else None
     if img:
         open(f"images/{im['name']}.jpg", "wb").write(base64.b64decode(img)); print(im["name"], "ok")
     else:
