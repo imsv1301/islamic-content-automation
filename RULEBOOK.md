@@ -30,4 +30,4 @@
 - Everything free. Renders on GitHub Actions (public repo). PC only for monthly naat audio batch.
 
 - Daily run: see DAILY_RUNBOOK.md. Telegram preview by ~05:30–06:00 UK; uploads only after Sahil taps ✅ (approvals.yml). Free-text Telegram messages are never stored (public repo).
-- Style option for Solve by Sunrise (sample 31 Oct): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Faceless only: back views, silhouettes, blank egg-shaped heads. Template: video/src/day1/MysteryShort.tsx.
+- Solve by Sunrise STYLE (APPROVED by Sahil 31 Oct 2026 — use it for riddle videos from now on): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Faceless only: back views, silhouettes, blank egg-shaped heads. Template: video/src/day1/MysteryShort.tsx.

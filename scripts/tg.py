@@ -22,10 +22,22 @@ def call(method, **params):
         return {}
 
 
+def tg_copy(path):
+    """Small phone-friendly copy for Telegram: 720x1280, H.264, moov at the front (streams instantly).
+    The full-quality file is still what gets uploaded to YouTube."""
+    out = "/tmp/tg_" + os.path.basename(path)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-vf", "scale=720:1280:flags=lanczos,setsar=1", "-c:v", "libx264", "-preset", "veryfast", "-crf", "27",
+                    "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", out], check=True)
+    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", out], capture_output=True, text=True).stdout.strip() or 0)
+    return out, int(round(dur))
+
+
 def send_video(path, caption, markup):
+    small, dur = tg_copy(path)
     b = uuid.uuid4().hex
     parts = []
-    for k, v in (("chat_id", CHAT), ("caption", caption), ("reply_markup", json.dumps(markup)), ("supports_streaming", "true")):
+    path = small
+    for k, v in (("chat_id", CHAT), ("caption", caption), ("reply_markup", json.dumps(markup)), ("supports_streaming", "true"), ("width", "720"), ("height", "1280"), ("duration", str(dur))):
         parts.append(f"--{b}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode())
     body = b"".join(parts) + f"--{b}\r\nContent-Disposition: form-data; name=\"video\"; filename=\"{os.path.basename(path)}\"\r\nContent-Type: video/mp4\r\n\r\n".encode() + open(path, "rb").read() + f"\r\n--{b}--\r\n".encode()
     req = urllib.request.Request(API + "sendVideo", data=body, headers={"Content-Type": f"multipart/form-data; boundary={b}"})
