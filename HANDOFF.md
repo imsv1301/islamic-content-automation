@@ -227,5 +227,13 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
 - Comments are managed around the clock: scheduled task **"Sadqah Media comments"** runs hourly, plus the daily run. Instagram DMs and comments get added once the accounts exist.
 - The YouTube audit form was submitted on 31 Oct. Wait for Google's email.
 
+## 11. When Sahil says the Instagram accounts exist (to-do for whichever chat he tells)
+1. Set up the official Instagram API (Instagram Login / Graph API) through a Meta developer app on the Sadqah Media account. Sahil accepts Meta's terms and does the logins; tokens go into GitHub secrets only.
+2. Add `ig.yml` (publish a Reel from the renders branch, read comments, reply, read DMs via the Messaging API) and extend `scripts/tg.py` so ✅ also posts to Instagram (manifest items get an `ig` target).
+3. Update **both scheduled tasks**:
+   - "Sadqah Media daily run": also produce the Instagram versions and captions (Raah-e-Sunnat, Mehfil-e-Sama naat/qawwali using the audio library on Sahil's PC, Islam for Little Ones, Solve by Sunrise).
+   - "Sadqah Media comments": also handle Instagram comments and DMs on the same rules.
+4. Never auto-follow, auto-like or DM strangers. Only reply to people who wrote to us.
+
 ## Daily log
 - 2026-10-31: setup day. Approval flow tested with the Riddle #3 sample (renders/2026-10-31-test). The YouTube audit form was submitted by Sahil.
