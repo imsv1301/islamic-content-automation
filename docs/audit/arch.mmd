@@ -1,0 +1,10 @@
+flowchart LR
+  A["Owner (Mohammad Sahil Vahora)<br/>makes and approves each video"] --> B["GitHub Actions workflow<br/>youtube.yml (GitHub Actions encrypted secrets)"]
+  K[("Encrypted OAuth refresh token<br/>state/youtube.json.enc, AES-256")] --> B
+  B -->|"OAuth 2.0 access token"| C["YouTube Data API v3"]
+  C --> D1["Own channel: One More Sadqah"]
+  C --> D2["Own channel: Islam for Little Ones<br/>(made for kids, comments off)"]
+  C --> D3["Own channel: Solve by Sunrise"]
+  B -->|"videos.insert · thumbnails.set"| C
+  B -->|"commentThreads.list · comments.insert"| C
+  B -->|"channels.list · playlistItems.list · videos.list"| C

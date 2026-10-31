@@ -1,0 +1,11 @@
+flowchart TD
+  S["Owner signs in once with Google OAuth<br/>(consent: youtube.upload, youtube.force-ssl)"] --> T["Refresh token encrypted and stored"]
+  T --> V["Owner renders a video and approves it"]
+  V --> U["Upload: videos.insert with title, description,<br/>privacy status and made-for-kids flag"]
+  U --> L["Video live on the owner's channel"]
+  L --> C["Read comments on own videos<br/>commentThreads.list"]
+  C --> R{"Owner approves reply?"}
+  R -->|yes| P["comments.insert reply"]
+  R -->|no / abusive| F["Flag to owner; comment is never hidden or deleted"]
+  L --> M["Read own statistics<br/>videos.list"]
+  X["Owner can revoke at myaccount.google.com/permissions"] -.-> T
