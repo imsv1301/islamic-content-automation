@@ -1,6 +1,16 @@
 """Generate images with Cloudflare Workers AI (FLUX-1 schnell). jobs/*.json: {"images":[{"name":..,"prompt":..,"steps":8}]}"""
 import json, os, sys, base64, urllib.request, urllib.error
-acct, tok = os.environ["CF_ACCOUNT_ID"].strip(), os.environ["CF_API_TOKEN"].strip()
+import re
+acct, raw = os.environ["CF_ACCOUNT_ID"].strip(), os.environ["CF_API_TOKEN"]
+# tolerate a pasted curl line / "Bearer x" / quotes: keep the longest token-like run
+cands = re.findall(r"[A-Za-z0-9_\-]{30,}", raw)
+tok = max(cands, key=len) if cands else raw.strip()
+print("token chars:", len(raw), "-> using", len(tok), "chars")
+try:
+    v = json.load(urllib.request.urlopen(urllib.request.Request("https://api.cloudflare.com/client/v4/user/tokens/verify", headers={"Authorization": "Bearer " + tok})))
+    print("verify:", v.get("success"), (v.get("result") or {}).get("status"))
+except urllib.error.HTTPError as e:
+    print("verify HTTP", e.code, e.read()[:200].decode("utf8", "ignore"))
 job = json.load(open(sys.argv[1])); os.makedirs("images", exist_ok=True)
 url = f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/@cf/black-forest-labs/flux-1-schnell"
 for im in job["images"]:
