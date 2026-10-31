@@ -4,7 +4,7 @@
 - YouTube (3): Islam for Little Ones @islamforlittleonestv (English, Made for Kids), One More Sadqah @one_more_sadqah (Urdu adult), Solve by Sunrise @solvebysunrise (English riddles).
 - Instagram (4): @islamforlittleones (parent-facing), @raahesunnat.daily (hadith, English), @mehfil.e.sama (naat + qawwali), @solvebysunrise (question). DIY dropped for now.
 - Approval: Telegram message ~05:30–06:00 UK; post only after ✅. Never post without approval.
-- Narration: Sahil's cloned voice (OmniVoice zero-shot, approved 30 Oct 2026). Urdu for One More Sadqah. Voice reference kept encrypted, never in the repo in plain form.
+- Narration: Sahil's cloned voice (OmniVoice zero-shot, approved 30 Oct 2026) on ALL channels, including Islam for Little Ones (from 31 Oct 2026: no Kokoro/AI voice any more). Urdu for One More Sadqah, English for kids + riddles. Always the tightened version: silence trimmed per line by pipeline/build_short.py, short gaps. Voice reference kept encrypted, never in the repo in plain form.
 
 ## Religious rules
 - Ahle Sunnat wal Jamaat, Hanafi. Sources: Ala Hazrat school (Dawat-e-Islami library) + Dr Tahir-ul-Qadri (Minhaj Books). If they differ → drop the topic.
@@ -28,3 +28,6 @@
 - Skills before every script: trend-spotter, ig-viral, hook-mining, virality, going-viral, contagious, explainer-video, ig-human, ig-caption, cover-thumbnail-brief, best-time-scheduler.
 - Comments: reply mostly English, match commenter language; never hide comments; flag abusive/fatwa questions to Sahil.
 - Everything free. Renders on GitHub Actions (public repo). PC only for monthly naat audio batch.
+
+- Daily run: see DAILY_RUNBOOK.md. Telegram preview by ~05:30–06:00 UK; uploads only after Sahil taps ✅ (approvals.yml). Free-text Telegram messages are never stored (public repo).
+- Style option for Solve by Sunrise (sample 31 Oct): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Faceless only: back views, silhouettes, blank egg-shaped heads. Template: video/src/day1/MysteryShort.tsx.

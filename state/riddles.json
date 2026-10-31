@@ -1,0 +1,7 @@
+{
+ "published": [
+  {"n": 1, "title": "Bridge and torch (4 people, 17 min)", "answer": "17: A+Z cross (2), A back (1), Omar+Grandad cross (10), Z back (2), A+Z cross (2)", "solved_in": "2026-10-31"},
+  {"n": 2, "title": "Two doors, one lion; Person 1 always tells the truth, Person 2 always lies; one question to one guard", "answer": "Ask either guard: 'If I asked the other guard which door leads outside, which door would he point to?' Then take the OTHER door. (Truth-teller reports the liar's lie; liar lies about the truth-teller's answer: both point to the lion door.)", "posted": "2026-10-31", "solved_in": null}
+ ],
+ "next": {"n": 3, "title": "The broken vase (story style)", "script": "jobs/riddle3_lines.json", "answer": "Person 1. It had rained heavily all morning, so nobody could have been reading in the garden the whole time (and the book is perfectly dry).", "sample_render": "renders/2026-10-31-test/riddle3_sample.mp4", "note": "Next riddle video = Riddle #2 solution first, then Riddle #3. Re-record the solution lines in Sahil's voice."}
+}

@@ -12,6 +12,7 @@ import { StrengthShort, STRENGTH_DUR } from "./day1/StrengthShort";
 import { SolutionShort, SOLUTION_DUR } from "./day1/SolutionShort";
 import { KidsShort, KIDSSHORT_DUR } from "./day1/KidsShort";
 import { ChhapTilak, CHHAP_DUR } from "./qawwali/ChhapTilak";
+import { MysteryShort, MYSTERY_DUR } from "./day1/MysteryShort";
 import { NaatReal, NAAT_REAL_DUR } from "./naat/NaatReal";
 
 export const MyComposition = () => {
@@ -22,6 +23,7 @@ export const MyComposition = () => {
     <Composition id="SolutionShort" component={SolutionShort} durationInFrames={Math.round(SOLUTION_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="KidsShort" component={KidsShort} durationInFrames={Math.round((KIDSSHORT_DUR + 1.0) * 30)} fps={30} width={1080} height={1920} />
     <Composition id="ChhapTilak" component={ChhapTilak} durationInFrames={Math.round(CHHAP_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="MysteryShort" component={MysteryShort} durationInFrames={Math.round(MYSTERY_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="StrengthShort" component={StrengthShort} durationInFrames={Math.round(STRENGTH_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="KidsThumb" component={KidsThumb} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="RiddleShort" component={RiddleShort} durationInFrames={Math.round(RIDDLE_DUR * 30)} fps={30} width={1080} height={1920} />

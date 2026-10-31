@@ -213,3 +213,13 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
    - Monthly PC batch: Sahil opens the desktop app once a month (about 30 minutes) to download naat and qawwali audio for upcoming Islamic dates. **The PC does not need to be on daily.**
 4. **Instagram:** Sahil creates the 4 accounts, then set up the Meta app / Graph API (official only).
 5. **Cloudflare 3D sample** after the token is fixed.
+
+## 9. Automation (built 31 Oct 2026)
+- **Scheduled task "Sadqah Media daily run"** runs every day at 03:10 UK in a fresh cloud session and follows **DAILY_RUNBOOK.md**: comments, then scripts, then voice, then visuals, then render, then Telegram preview by about 05:45.
+- **approvals.yml** runs every 10 minutes and handles the Telegram buttons: ✅ uploads straight to YouTube (and edits the Telegram caption with the link), ❌ holds. Upload log: `state/uploads.jsonl`.
+- Telegram free-text messages are **not stored** (the repo is public). Sahil gives change requests in the Claude chat; they reach the daily run through memory.
+- **telegram.yml** sends a preview or a text message.
+- Kids channel narration is now **Sahil's cloned English voice** (31 Oct decision), not Kokoro.
+
+## Daily log
+- 2026-10-31: setup day. Approval flow tested with the Riddle #3 sample (renders/2026-10-31-test). The YouTube audit form was submitted by Sahil.
