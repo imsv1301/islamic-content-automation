@@ -179,7 +179,7 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
 - Never commit this audio to the public repo.
 
 ## 7c. Done 31 Oct after the handoff
-- Qawwali sample **finished with real audio**: `renders/2026-10-31/MehfilESama_ChhapTilak_sample.mp4` (75s).
+- Qawwali sample **finished with real audio** (75s; sent to Sahil in chat, NOT in the repo because the audio is third-party).
   - Source: OSA official upload f3dnF-GmscM, 94.0–168.5s.
   - 5 complete verses: Khusrau dariya prem ka / Jo utra so doob gaya / Apni chhab banaike / Chhab dekhi jab piya ki / Chhap tilak…
   - Scene code is in `video/src/qawwali/ChhapTilak.tsx`. Extra scenes for the other verses (Prem bhatti, Gori bayyan, Rang, Suhaagan) are exported there.
