@@ -71,7 +71,7 @@ const paintPetals = (front: boolean) => (g: CanvasRenderingContext2D, t: number)
 const BK = prng(4);
 const BOKEH = Array.from({ length: 40 }, () => ({ x: BK() * 1080, y: BK() * 1920, r: 20 + BK() * 70, p: BK() * 6.28, w: 0.2 + BK() * 0.5 }));
 const paintBg = (g: CanvasRenderingContext2D, t: number) => {
-  const dawn = interpolate(t, [S(LINES.length - 1) - 0.6, S(LINES.length - 1) + 3], [0, 1], clamp);
+  const dawn = interpolate(t, [S(1) + 3, S(1) + 6, S(2), S(2) + 1], [0, 0.6, 0.6, 0], clamp) + interpolate(t, [S(3) + 1, S(3) + 4], [0, 0.7], clamp);
   const mix = (a: number[], b: number[]) => `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * dawn)).join(",")})`;
   const gr = g.createLinearGradient(0, 0, 0, 1920);
   gr.addColorStop(0, mix([22, 4, 16], [58, 20, 40])); gr.addColorStop(0.55, mix([52, 10, 30], [182, 76, 64])); gr.addColorStop(1, mix([30, 6, 18], [245, 170, 110]));
@@ -103,10 +103,10 @@ const EyeLight: React.FC<{ x: number; y: number; o: number; flip?: boolean; open
     <path d={`M -120 0 L -150 -10`} stroke={GOLD} strokeWidth={4} strokeLinecap="round" />
   </g>
 );
-const Scene0: React.FC<{ t: number }> = ({ t }) => {
-  const o = vis(t, 0);
+const Scene0: React.FC<{ t: number; idx: number }> = ({ t, idx }) => {
+  const o = vis(t, idx);
   if (o <= 0) return null;
-  const k = local(t, 0);
+  const k = local(t, idx);
   const meet = tw(k, 0.35, 0.62, INO);
   const shatter = tw(k, 0.6, 0.85);
   const open = 0.25 + 0.75 * tw(k, 0.05, 0.3);
@@ -138,7 +138,7 @@ const Scene0: React.FC<{ t: number }> = ({ t }) => {
 };
 
 /* ---------- scene 1: "prem bhatee ka madhva pilaike, matvaari kar leeni" — love's kiln pours liquid light into a clay cup; the world sways ---------- */
-const Scene1: React.FC<{ t: number }> = ({ t }) => {
+export const SceneBhatti: React.FC<{ t: number }> = ({ t }) => {
   const o = vis(t, 1);
   if (o <= 0) return null;
   const k = local(t, 1);
@@ -236,7 +236,7 @@ const Arm: React.FC<{ t: number; reach: number; grip: number }> = ({ t, reach, g
     </g>
   );
 };
-const Scene2: React.FC<{ t: number; idx: number; gripIdx?: boolean }> = ({ t, idx, gripIdx }) => {
+export const SceneBangles: React.FC<{ t: number; idx: number; gripIdx?: boolean }> = ({ t, idx, gripIdx }) => {
   const o = vis(t, idx);
   if (o <= 0) return null;
   const k = local(t, idx);
@@ -258,7 +258,7 @@ const Scene2: React.FC<{ t: number; idx: number; gripIdx?: boolean }> = ({ t, id
 const DR = prng(17);
 const DYE = Array.from({ length: 14 }, (_, j) => ({ x: 160 + DR() * 760, y: 620 + DR() * 520, r: 220 + DR() * 260, d: j === 0 ? 0 : DR() * 0.45 }));
 /* ---------- scene 4: "bal bal jaaun main tore rang rajwa, apni si rang leeni" — white cloth dyed in the dyer's colour ---------- */
-const Scene4: React.FC<{ t: number }> = ({ t }) => {
+export const SceneRang: React.FC<{ t: number }> = ({ t }) => {
   const i = 4;
   const o = vis(t, i);
   if (o <= 0) return null;
@@ -293,7 +293,7 @@ const Scene4: React.FC<{ t: number }> = ({ t }) => {
 };
 
 /* ---------- scene 5: "khusrau nijam ke bal bal jaiye, mohe suhaagan keeni" — dawn over a distant dome; a bridal veil drifts down ---------- */
-const Scene5: React.FC<{ t: number }> = ({ t }) => {
+export const SceneSuhaagan: React.FC<{ t: number }> = ({ t }) => {
   const i = 5;
   const o = vis(t, i);
   if (o <= 0) return null;
@@ -328,6 +328,130 @@ const Scene5: React.FC<{ t: number }> = ({ t }) => {
       <path d={d} fill="url(#veil)" />
       <path d={`M ${bot.join(" L ")}`} fill="none" stroke={GOLD} strokeWidth={12} strokeDasharray="2 16" strokeLinecap="round" />
       <path d={`M ${bot.join(" L ")}`} fill="none" stroke={GOLD} strokeWidth={4} transform="translate(0,-18)" />
+    </svg>
+  );
+};
+
+
+/* ---------- "khusrau dariya prem ka, ulti wa ki dhaar" — a river of light whose current runs upward ---------- */
+const RV = prng(31);
+const RIP = Array.from({ length: 90 }, () => ({ x: RV(), y: RV(), l: 40 + RV() * 120, v: 0.06 + RV() * 0.1, w: 2 + RV() * 4 }));
+const SceneRiver: React.FC<{ t: number; idx: number }> = ({ t, idx }) => {
+  const o = vis(t, idx);
+  if (o <= 0) return null;
+  const k = local(t, idx);
+  const arrows = tw(k, 0.25, 0.45);
+  // river is a perspective band from bottom (near, wide) to the top (far, narrow)
+  const edge = (y: number) => 140 + 300 * (1 - y / 1920) ** 1.4;
+  return (
+    <svg width={1080} height={1920} style={{ ...full, opacity: o }}>
+      <defs>
+        <linearGradient id="riv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffd9a0" stopOpacity={0.55} /><stop offset="0.5" stopColor="#c2183c" stopOpacity={0.45} /><stop offset="1" stopColor="#3a0a22" stopOpacity={0.9} /></linearGradient>
+      </defs>
+      <path d={`M ${edge(0)} 0 L ${1080 - edge(0)} 0 L ${1080 - edge(1920) + 120} 1920 L ${edge(1920) - 120} 1920 Z`} fill="url(#riv)" />
+      {RIP.map((r, i) => {
+        const yy = (((r.y - t * r.v) % 1) + 1) % 1; // flows UP: the reverse current
+        const y = yy * 1500 + 300;
+        const e = edge(y); const x = e + r.x * (1080 - 2 * e);
+        const sc = 0.4 + 0.6 * (y / 1920);
+        return <line key={i} x1={x} y1={y} x2={x} y2={y - r.l * sc} stroke="#ffe9c0" strokeOpacity={0.25 + 0.4 * sc} strokeWidth={r.w * sc} strokeLinecap="round" />;
+      })}
+      {/* "ulti dhaar" — upstream chevrons */}
+      <g opacity={arrows * (0.6 + 0.4 * Math.sin(t * 3))}>
+        {[0, 1, 2].map((j) => { const y = 1180 - ((t * 140 + j * 220) % 660); return <path key={j} d={`M 470 ${y + 40} L 540 ${y} L 610 ${y + 40}`} fill="none" stroke={GOLD} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />; })}
+      </g>
+    </svg>
+  );
+};
+
+/* ---------- "jo utra so doob gaya, jo dooba so paar" — a lamp sinks into the river, and rises glowing on the far shore ---------- */
+const SceneCross: React.FC<{ t: number; idx: number }> = ({ t, idx }) => {
+  const o = vis(t, idx);
+  if (o <= 0) return null;
+  const k = local(t, idx);
+  const sink = tw(k, 0.08, 0.42, INO);
+  const rise = tw(k, 0.5, 0.85, INO);
+  const lampY = 1060 + 240 * sink - 640 * rise;
+  const lampX = 540 + 30 * Math.sin(t * 1.2);
+  const surf = 1080;
+  return (
+    <svg width={1080} height={1920} style={{ ...full, opacity: o }}>
+      <defs>
+        <linearGradient id="deep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#7a1838" stopOpacity={0.55} /><stop offset="1" stopColor="#12030b" stopOpacity={0.95} /></linearGradient>
+        <radialGradient id="flame"><stop offset="0" stopColor="#fff3c4" /><stop offset="0.5" stopColor={GOLD} stopOpacity={0.6} /><stop offset="1" stopColor={GOLD} stopOpacity={0} /></radialGradient>
+      </defs>
+      {/* far shore at the top, bathed in light */}
+      <path d="M 0 520 Q 300 470 540 500 Q 800 530 1080 480 L 1080 0 L 0 0 Z" fill="#ffcf8a" opacity={0.16 + 0.3 * rise} />
+      <path d="M 0 540 Q 300 490 540 520 Q 800 550 1080 500" fill="none" stroke={GOLD} strokeWidth={3} opacity={0.5 + 0.5 * rise} />
+      <rect y={surf} width={1080} height={840} fill="url(#deep)" />
+      <path d={`M 0 ${surf} ${Array.from({ length: 13 }, (_, j) => `Q ${j * 90 + 45} ${surf + 10 * Math.sin(t * 2 + j)} ${(j + 1) * 90} ${surf}`).join(" ")}`} fill="none" stroke="#ffd9a0" strokeOpacity={0.5} strokeWidth={3} />
+      {/* the diya */}
+      <g transform={`translate(${lampX},${lampY})`} opacity={1 - 0.6 * sink * (1 - rise)}>
+        <circle r={110 + 90 * rise} fill="url(#flame)" opacity={0.7 + 0.3 * rise} />
+        <path d="M -60 10 Q 0 60 60 10 Q 40 -4 0 -2 Q -40 -4 -60 10 Z" fill="#b0603a" stroke="#5a2414" strokeWidth={3} />
+        <path d={`M 0 -6 C 12 -26 10 -48 0 ${-70 - 6 * Math.sin(t * 12)} C -10 -48 -12 -26 0 -6 Z`} fill="#ffe08a" opacity={1 - 0.8 * sink * (1 - rise)} />
+      </g>
+      {sink > 0.3 && rise < 0.2 ? Array.from({ length: 8 }, (_, j) => { const b = ((t * 0.7 + j * 0.13) % 1); return <circle key={j} cx={lampX - 40 + j * 11} cy={lampY - b * 200} r={4 + j % 3} fill="none" stroke="#ffe9c0" strokeOpacity={0.6 * (1 - b)} strokeWidth={2} />; }) : null}
+    </svg>
+  );
+};
+
+/* ---------- "apni chhab banaike jo main pi ke paas gayi" — adornment (bangles, mehndi), then footsteps toward a glowing doorway ---------- */
+const SceneAdorn: React.FC<{ t: number; idx: number }> = ({ t, idx }) => {
+  const o = vis(t, idx);
+  if (o <= 0) return null;
+  const k = local(t, idx);
+  const armO = 1 - tw(k, 0.5, 0.6);
+  const walk = tw(k, 0.55, 1.0, (x) => x);
+  const door = tw(k, 0.5, 0.75);
+  const steps = Array.from({ length: 9 }, (_, j) => j);
+  return (
+    <svg width={1080} height={1920} style={{ ...full, opacity: o }}>
+      {armO > 0 ? <g opacity={armO}><Arm t={t} reach={tw(k, 0, 0.18, INO)} grip={0} /></g> : null}
+      {door > 0 ? (
+        <g opacity={door}>
+          <path d="M 400 1000 L 400 640 A 140 140 0 0 1 680 640 L 680 1000 Z" fill="#ffe9b0" opacity={0.85} />
+          <path d="M 400 1000 L 400 640 A 140 140 0 0 1 680 640 L 680 1000 Z" fill="none" stroke={GOLD} strokeWidth={6} />
+          <path d="M 400 1000 L 180 1400 L 900 1400 L 680 1000 Z" fill="#ffe9b0" opacity={0.12} />
+          {steps.map((j) => {
+            const appear = walk * 9 - j;
+            if (appear <= 0) return null;
+            const p = 1 - j / 9;
+            const y = 1000 + 380 * p, x = 540 + (j % 2 ? 1 : -1) * (18 + 40 * p);
+            return <ellipse key={j} cx={x} cy={y} rx={10 + 18 * p} ry={5 + 9 * p} fill={ROSE} opacity={Math.min(1, appear) * 0.85} />;
+          })}
+        </g>
+      ) : null}
+    </svg>
+  );
+};
+
+/* ---------- "chhab dekhi jab piya ki, main apni bhool gayi" — a mirror's reflection fades away in the Beloved's light ---------- */
+const SceneMirror: React.FC<{ t: number; idx: number }> = ({ t, idx }) => {
+  const o = vis(t, idx);
+  if (o <= 0) return null;
+  const k = local(t, idx);
+  const light = tw(k, 0.3, 0.75, INO);
+  return (
+    <svg width={1080} height={1920} style={{ ...full, opacity: o }}>
+      <defs>
+        <radialGradient id="beloved"><stop offset="0" stopColor="#fffaf0" /><stop offset="0.35" stopColor="#ffe3a0" stopOpacity={0.8} /><stop offset="1" stopColor={GOLD} stopOpacity={0} /></radialGradient>
+        <clipPath id="mirrorClip"><ellipse cx={540} cy={880} rx={230} ry={300} /></clipPath>
+      </defs>
+      <ellipse cx={540} cy={880} rx={256} ry={326} fill="none" stroke={GOLD} strokeWidth={14} />
+      <ellipse cx={540} cy={880} rx={238} ry={308} fill="none" stroke="#8a6418" strokeWidth={4} />
+      <g clipPath="url(#mirrorClip)">
+        <rect x={300} y={560} width={480} height={640} fill="#2a1220" />
+        {/* a faceless veiled silhouette: one's own image */}
+        <g opacity={1 - light} transform="translate(540,1180)">
+          <path d="M -150 20 Q -140 -200 -80 -260 Q 0 -330 80 -260 Q 140 -200 150 20 Z" fill="#c2183c" opacity={0.85} />
+          <circle cx={0} cy={-300} r={70} fill="#e8b597" opacity={0.6} />
+          <path d="M -100 -280 Q 0 -420 100 -280 Q 110 -200 150 20 L -150 20 Q -110 -200 -100 -280 Z" fill="#d4143e" opacity={0.6} />
+        </g>
+        <circle cx={540} cy={880} r={80 + 420 * light} fill="url(#beloved)" opacity={0.2 + 0.8 * light} />
+        <rect x={300} y={560} width={60} height={640} fill="#fff" opacity={0.07} transform={`translate(${(t * 60) % 560},0) skewX(-18)`} />
+      </g>
+      {light > 0.2 ? Array.from({ length: 16 }, (_, j) => { const a = (j / 16) * 6.28 + t * 0.2; return <line key={j} x1={540 + Math.cos(a) * 280} y1={880 + Math.sin(a) * 350} x2={540 + Math.cos(a) * (300 + 260 * light)} y2={880 + Math.sin(a) * (370 + 260 * light)} stroke={GOLD} strokeOpacity={0.35 * light} strokeWidth={4} strokeLinecap="round" />; }) : null}
     </svg>
   );
 };
@@ -393,12 +517,11 @@ export const ChhapTilak: React.FC = () => {
       <Canvas paint={paintBg} />
       <Canvas paint={paintPetals(false)} style={{ opacity: 0.7 }} />
       <div style={{ ...full, transform: `scale(${drift}) translateY(${-10 * Math.sin(t * 0.2)}px)` }}>
-        <Scene0 t={t} />
-        <Scene1 t={t} />
-        <Scene2 t={t} idx={2} />
-        <Scene2 t={t} idx={3} gripIdx />
-        <Scene4 t={t} />
-        <Scene5 t={t} />
+        <SceneRiver t={t} idx={0} />
+        <SceneCross t={t} idx={1} />
+        <SceneAdorn t={t} idx={2} />
+        <SceneMirror t={t} idx={3} />
+        <Scene0 t={t} idx={4} />
       </div>
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 62%, rgba(20,3,12,0.78) 80%, rgba(20,3,12,0.9) 100%)" }} />
       <Intro t={t} />

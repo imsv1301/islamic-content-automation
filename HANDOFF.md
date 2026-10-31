@@ -1,6 +1,6 @@
 # HANDOFF: read this first in any new chat
 
-Last updated: **Sat 31 Oct 2026, 09:30 UK**. Owner: Sahil (GitHub `imsv1301`).
+Last updated: **Sat 31 Oct 2026, 10:10 UK**. Owner: Sahil (GitHub `imsv1301`).
 This file plus `RULEBOOK.md` hold everything needed to carry on. The old chat's workspace is gone; everything that matters is in this repo.
 
 **New chat, start here:** `git clone https://github.com/imsv1301/islamic-content-automation`, read `HANDOFF.md` and `RULEBOOK.md`, then go to "8. What's next".
@@ -162,13 +162,32 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
    - `gh workflow run` fails, so use the REST dispatch.
 
 ## 7. Open issues
-- **Cloudflare token gives 401.** Sahil needs to roll it, paste it into the `CF_API_TOKEN` secret, and then the AI-image / 2.5D "3D" sample can be made.
+- ~~Cloudflare 401~~ **FIXED 31 Oct 10:00**: the token was rolled and re-pasted (53 chars), verify = active, and FLUX images work (`images.yml`). The earlier secret was a truncated paste (35 chars).
 - **YouTube compliance audit form** not submitted yet, so uploads still start private.
 - **Pronunciation of صدقہ:** whisper hears it as "ستقے". Four respellings didn't change it. Sahil's ear decides; still unresolved.
 - **English clone voice** has too many pauses and breaths. Sahil wants it blended with or closer to the original AI hadith voice. Deferred to a later session.
 - **Naat smoothness:** next time keep the source fps and use subpixel pans; build clip-log tracking.
 - **Sensitive files on Sahil's PC** (`C:\Users\Sahil\ClaudeAutomation\MASTER_KEY.txt`, `yt_client.txt`, `yt_web_client.txt`): Sahil should delete them himself. MASTER_KEY is safe in GitHub secrets.
 - **Old Sadqah Short 1:** replace or delete it only if Sahil asks.
+
+## 7b. Audio library (on Sahil's PC)
+- **66 naat and qawwali tracks** (~920 MB) are in `C:\Users\Sahil\ClaudeAutomation\audio\<youtubeId>.m4a`, each with `.info.json`. The index is `audio\CATALOG.csv` (id, type, occasion, minutes, channel, title, url).
+- They're reachable from a cloud session through the device bridge: `device_bash` runs a Linux VM with the folder at `mnt/ClaudeAutomation`, and yt-dlp is at `~/.local/bin/yt-dlp`.
+  - **Background processes die between calls**, so download in ~40s chunks: re-run `yt-dlp -a <list> --download-archive audio-archive.txt` until the list is done.
+  - `device_stage_files` copies a file into the cloud container.
+- The 5 `*.temp.m4a` files are junk from interrupted fixups. Delete them when allowed.
+- Never commit this audio to the public repo.
+
+## 7c. Done 31 Oct after the handoff
+- Qawwali sample **finished with real audio**: `renders/2026-10-31/MehfilESama_ChhapTilak_sample.mp4` (75s).
+  - Source: OSA official upload f3dnF-GmscM, 94.0–168.5s.
+  - 5 complete verses: Khusrau dariya prem ka / Jo utra so doob gaya / Apni chhab banaike / Chhab dekhi jab piya ki / Chhap tilak…
+  - Scene code is in `video/src/qawwali/ChhapTilak.tsx`. Extra scenes for the other verses (Prem bhatti, Gori bayyan, Rang, Suhaagan) are exported there.
+- **YouTube audit form** (https://support.google.com/youtube/contact/yt_api_form): opened while signed in as Sadqah Media, not submitted. It needs Sahil's full legal name and postal address, and Sahil must tick the attestations himself.
+- **Sahil's style request:** reel `Instagram_De9tmVFOBar.mp4` (a Pokémon fan series, "yourtrainerarc"). The look: 3D toon characters, a warm orange/amber palette, cinematic shots, bold uppercase captions with one gold word, a HUD (DAY 1 · 6:48 AM · location · "PART 7"), and a choose-your-path ending ("comment 1/2/3").
+  - Plan: Cloudflare FLUX stills in that palette plus 2.5D camera moves.
+  - Characters must stay **faceless** per the rules, and no Pokémon or other IP.
+  - It needs a test Short first.
 
 ## 8. What's next (in order)
 1. **Qawwali sample: "Chhap Tilak"** (kalam of Hazrat Amir Khusrau Rahmatullahi Alaih; NFAK performance).
