@@ -7,7 +7,7 @@
 Env: TOKEN (bot token), CHAT (Sahil's chat id), YT_STATE (decrypted YouTube state, for uploads in `poll`).
 manifest.json: {"date": "...", "items": [{"label": "riddle", "video": "x.mp4", "meta": "x.json", "title": "..."}]}
 """
-import json, os, sys, subprocess, urllib.parse, urllib.request, uuid, pathlib, datetime
+import json, os, sys, subprocess, urllib.error, urllib.parse, urllib.request, uuid, pathlib, datetime
 
 TOKEN, CHAT = os.environ["TOKEN"], os.environ["CHAT"]
 API = f"https://api.telegram.org/bot{TOKEN}/"
@@ -15,7 +15,11 @@ API = f"https://api.telegram.org/bot{TOKEN}/"
 
 def call(method, **params):
     data = urllib.parse.urlencode({k: (json.dumps(v) if isinstance(v, (dict, list)) else v) for k, v in params.items()}).encode()
-    return json.load(urllib.request.urlopen(API + method, data, timeout=60))
+    try:
+        return json.load(urllib.request.urlopen(API + method, data, timeout=60))
+    except urllib.error.HTTPError as e:  # e.g. "query is too old" on a late button press: keep going
+        print(method, "HTTP", e.code, e.read()[:200].decode("utf8", "ignore"))
+        return {}
 
 
 def send_video(path, caption, markup):
