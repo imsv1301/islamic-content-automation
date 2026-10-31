@@ -1,0 +1,196 @@
+# HANDOFF: read this first in any new chat
+
+Last updated: **Sat 31 Oct 2026, 09:30 UK**. Owner: Sahil (GitHub `imsv1301`).
+This file plus `RULEBOOK.md` hold everything needed to carry on. The old chat's workspace is gone; everything that matters is in this repo.
+
+**New chat, start here:** `git clone https://github.com/imsv1301/islamic-content-automation`, read `HANDOFF.md` and `RULEBOOK.md`, then go to "8. What's next".
+
+---
+
+## 1. The goal
+A fully free, automated set of Islamic content channels. Claude writes the scripts, makes the voice, renders the videos, writes titles, descriptions and thumbnails, uploads, and manages comments. Sahil approves each day's videos on Telegram (✅) before anything is posted. Sahil does not want to command videos or comment handling manually every day.
+
+## 2. Channels
+| Platform | Name | Handle | ID / status |
+|---|---|---|---|
+| YouTube | Islam for Little Ones (English, **Made for Kids**, **Shorts only for now**) | @islamforlittleonestv | UCbprx0JxeA47wgBhlC8olXQ · label `kids` |
+| YouTube | One More Sadqah (Urdu, adult) | @one_more_sadqah | UC1DtyCj9u-sgvhI41MyN2fg · label `sadqah` |
+| YouTube | Solve by Sunrise (English riddles) | @solvebysunrise | UCG0dOcXGh_273Yvw4BF-YgQ · label `riddle` |
+| Instagram | Islam for Little Ones | @islamforlittleones | **not created yet** |
+| Instagram | Raah-e-Sunnat, Daily Hadith (English) | @raahesunnat.daily | not created yet |
+| Instagram | Mehfil-e-Sama, Naat & Qawwali | @mehfil.e.sama | not created yet |
+| Instagram | Solve by Sunrise | @solvebysunrise | not created yet |
+
+- All channels are owned by the Gmail **sadqahmedia.channels@gmail.com** (account name "Sadqah Media").
+- Sahil creates the Instagram accounts himself in the phone app, spaced over a few days.
+- The DIY channel is dropped for now.
+- Logos are in `docs/logos/` (also on Sahil's PC at `C:\Users\Sahil\ClaudeAutomation\logos`). They're already set on all three YouTube channels.
+
+## 3. Everything uploaded so far
+All are public now (Sahil switches them; see the audit note in section 7).
+
+| Date | Channel | Title | Link |
+|---|---|---|---|
+| 30 Oct | kids | Why Did Everyone Call Him Al-Ameen? (Kids Ep1, 4:52, long-form) | https://youtu.be/OO9t5Hr1EzY |
+| 30 Oct | sadqah | 5 Sadqahs Without Money (Short 1) | https://youtu.be/xQJ7O-jYRjw |
+| 30 Oct | riddle | Riddle #1: bridge and torch, 4 people in 17 min | https://youtu.be/mkJVbHqLYR4 |
+| 31 Oct | kids | 3 Tiny Sunnahs for Every Meal (Bukhari 5376 / Muslim 2022) | https://youtu.be/d4NU-r0XhXI |
+| 31 Oct | riddle | Answer Is 17 + Riddle #2: Two Doors, One Lion | https://youtu.be/R0vhIfs278k |
+| 31 Oct | sadqah | Taqatwar Kaun Hai? (Bukhari 6114 / Muslim 2609), Short 2 | https://youtu.be/3cHNjv69Ifs |
+
+- The rendered MP4s are on branch **`renders`** (folders `2026-10-30/` and `2026-10-31/`). The qawwali visual preview is there too.
+- Metadata used for uploads is in `meta/`.
+
+**Riddle #2 answer (goes in the next riddle video):** ask either guard *"If I asked the other guard which door leads outside, what would he say?"*, then take the **other** door. Both guards point to the lion door:
+- If you ask the truth-teller, he truthfully reports the liar's lie.
+- If you ask the liar, he lies about the truth-teller's answer.
+
+Follow the format: solution first, then Riddle #3, with "Person 1 / Person 2" naming, no names and no salam.
+
+**Comments:**
+- Riddle #1 has one comment thread (@Channel-Foo-Chuan-Xuan). It has two replies from us: a hint, then a link to the solution (31 Oct).
+- Riddle #1's stats show 2 comments; the second may be held for review in Studio.
+- The kids channel has comments off (Made for Kids), so the API returns 403 there. That's expected.
+
+## 4. Standing rules (non-negotiable; full list in RULEBOOK.md)
+- **No payments, ever.** Ask Sahil before anything that costs money. Everything must be free.
+- Sahil accepts all terms and conditions himself, and does logins and 2FA. Claude never types passwords or creates accounts.
+- Tokens and keys go **only** in GitHub secrets, never in chat or the repo. Never store a GitHub PAT in memory. Use official APIs only. Decline optional cookies.
+- Never DM strangers, auto-follow or auto-like.
+- Ahle Sunnat wal Jamaat (Hanafi) belief.
+  - Hadith only from Bukhari, Muslim or Tirmidhi, verified, with the reference shown and a sunnah.com link in the description.
+  - If Ala Hazrat and Dr Tahir-ul-Qadri differ on a topic, drop that topic.
+- When the Prophet is mentioned, write **"Sallallahu Alaihi Wa Alihi Wasallam"** in full.
+- Honorifics: Radi Allahu Anhu/Anha (Companions), Alaihis Salam (prophets, Panjatan Pak), Rahmatullahi Alaih (Awliya).
+- **Never depict** the Prophet, other prophets, Sahaba, Mothers of the Believers, Ahl-e-Bait, Panjatan Pak or Awliya. Ordinary people are faceless (a plain circle head).
+- **Narration:** Sahil's cloned voice.
+  - Urdu for One More Sadqah, at a **calm, slow pace**.
+  - Subtitles are **always Roman Urdu** (Urdu in English letters, e.g. "sadqah hai"), even when the voice is Urdu.
+- **Animation quality must match the locked hadith video** (the "sea-foam", Bukhari 6405 test). Match its quality level, not necessarily its look. "Never forget to create best animation."
+- **Solve by Sunrise:**
+  - English, Mind Hex style (@mind_hex_real).
+  - **No salam.**
+  - Characters are "Person 1", "Person 2".
+  - Each video = the previous riddle's solution, then the new riddle (answer next day).
+- **Kids:** made for kids, Shorts only for now, a modern generic faceless kid, never the Sahabi.
+- **Naat:**
+  - Real footage only (Pixabay/Wikimedia), never animation.
+  - Two-line lyrics (Nastaliq + Roman).
+  - Never repeat a clip inside a video; a clip may be reused only after ~10 videos (track in `state/clip_log.json`, not built yet).
+  - Smooth motion: keep the source fps, subpixel pans, no integer-crop jitter.
+  - Never cut a verse midway.
+- **Qawwali:**
+  - Visuals show the **literal meaning of each line** (the rose-petal reference style; reference reels on Instagram DfC-gVOTvmS and De4AFuWv_ge).
+  - Lyrics on screen only for pre-1929 poetry; otherwise credits only.
+- **Comments:**
+  - Reply mostly in English, matching the commenter's language.
+  - Never hide comments.
+  - Flag abusive or fatwa-type comments to Sahil.
+- Sahil's style: direct and honest, no sugarcoating, push back when he's wrong. Search before answering questions. Always use clickable markdown links. Ask rather than guess.
+
+## 5. Infrastructure
+
+### GitHub Actions secrets (set by Sahil; names only)
+- `MASTER_KEY`
+- `YT_CLIENT_ID`, `YT_CLIENT_SECRET`
+- `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
+- `PIXABAY_API_KEY`
+- `CF_API_TOKEN` (**currently returns 401**; Sahil must roll it and re-paste it)
+
+The Cloudflare account ID `1c79efc3ad22109588d34576fe6d1035` is hardcoded in `scripts/cf_images.py`.
+
+### Encrypted files
+These use AES-256-CBC, pbkdf2, 200000 iterations, password = MASTER_KEY. They're decrypted only inside Actions:
+- `state/youtube.json.enc`: `{client_id, client_secret, channels:{sadqah|kids|riddle:{channel_id, refresh_token}}}`
+- `voice/ref_ur.wav.enc`, `voice/ref_en.wav.enc`: voice-clone references. `voice/ref_texts.json` holds their transcripts.
+
+### Workflows
+Dispatch them with the REST API; `gh workflow run` needs GraphQL, which the proxy blocks.
+- **voice.yml:** inputs `lines` (a JSON path) and `langs`.
+  - Runs one parallel job per line, OmniVoice zero-shot clone on CPU, about 5 to 8 minutes.
+  - Artifacts are named `line_<lang>_<idx>`.
+  - The lines JSON looks like `{"ur":[...], "en":[...], "roman":[...], "speed":{"ur":0.75}}`.
+- **youtube.yml:** `action` = upload | comments | reply | stats, and `label`.
+  - Upload reads the mp4 from `video_path` on branch `video_ref` (default `renders`) and the metadata from `meta_path` on main.
+  - Output goes to the artifact `yt-<action>-<label>`.
+  - Tested OK on 31 Oct (stats).
+- **footage.yml:** Pixabay video fetch (`scripts/pixabay_fetch.py`; needs a browser User-Agent). Gives the artifact `clips`.
+- **images.yml:** Cloudflare Workers AI FLUX-1-schnell. Blocked by the 401.
+- **telegram-hello.yml:** test message to Sahil; works.
+
+### REST examples
+```
+gh api -X POST repos/imsv1301/islamic-content-automation/actions/workflows/voice.yml/dispatches -f ref=main -f "inputs[lines]=jobs/X.json" -f "inputs[langs]=ur"
+gh api "repos/imsv1301/islamic-content-automation/actions/workflows/voice.yml/runs?per_page=3" --jq '.workflow_runs[]|[.id,.status,.conclusion]|@tsv'
+gh api repos/imsv1301/islamic-content-automation/actions/runs/<id>/artifacts   # then .../actions/artifacts/<aid>/zip
+gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f "inputs[action]=upload" -f "inputs[label]=riddle" -f "inputs[video_path]=2026-11-01/x.mp4" -f "inputs[meta_path]=meta/x.json"
+```
+
+**The proxy blocks** GitHub GraphQL, the secrets listing and creating releases. That's why renders live on the `renders` branch.
+
+### Other notes
+- **YouTube API project:**
+  - Google Cloud project `sadqah-media-automation`, OAuth app "Sadqah Media Uploader" (in production).
+  - Web client redirect: https://imsv1301.github.io/islamic-content-automation/oauth.html
+  - Scopes: youtube.upload and youtube.force-ssl.
+  - The project is **unaudited**, so API uploads go up **private**. Sahil flips them to public. The YouTube API compliance audit form is still to be submitted.
+- **Telegram bot:** connected and working.
+- **GitHub Pages:** home, privacy, terms and oauth pages at imsv1301.github.io/islamic-content-automation.
+
+## 6. How a video is made (code in `video/` and `pipeline/`)
+1. **Script:** write a lines JSON in `jobs/`.
+   - Urdu adds a `roman` array for subtitles.
+   - Run the virality and hook skills first and check trends.
+   - Verify every hadith on sunnah.com.
+2. **Voice:** dispatch `voice.yml` and download the artifacts.
+   - Kids voice: Kokoro `am_michael` (not the clone), from `pipeline/kids_short_vo.py`. It needs the kokoro package. "ﷺ" maps to the full salutation.
+   - Check every line with faster-whisper (`small`, decode to 16 kHz float via ffmpeg, because PyAV has an API mismatch) and re-roll bad lines. Past misses: "guard"→"God", "do"→"did".
+   - **The OmniVoice `speed` setting barely works.** For a calm Urdu pace, post-process with `ffmpeg -af rubberband=tempo=0.88:pitchq=quality:formant=preserved`.
+3. **Timing and mix:** `python3 pipeline/build_short.py <lines.json> <lang> <vo_dir> <name> [--roman] [--gap 0.45]`.
+   - It trims silence per line and spreads word timings by character length.
+   - It writes `video/src/day1/<name>-timing.json` and `video/public/day1/<name>-mix.m4a`: voice plus a faint brown-noise bed, -14 LUFS.
+   - Edit `OUT` at the top of the script to point at `video/`.
+4. **Render:** in `video/` (Remotion 4.0.539), run `npm ci` once, then `npx remotion render <CompId> out.mp4 --concurrency=2`. The container had only 2 CPUs.
+   - Compositions: `SolutionShort` (riddle solution + next riddle), `RiddleShort`, `StrengthShort` / `SadqahShort` (One More Sadqah), `KidsShort`, `KidsEp1`, `KidsThumb`, `NaatReal` / `NaatOverlay` / `NaatSabSeAula`, `ChhapTilak` (qawwali), `HadithSeaFoam` (the locked reference).
+   - Heavy footage videos: build the background with ffmpeg and render only a transparent overlay (`--codec=prores --prores-profile=4444 --pixel-format=yuva444p10le --image-format=png`), then composite with ffmpeg overlay. Rendering a big OffthreadVideo directly crashes the compositor.
+   - Check stills before the full render (`npx remotion still <Comp> f.png --frame=N`), contact-sheet them, then render.
+   - The audio mixes (`*.m4a`) and naat footage are **not** in git. Rebuild them from the voice artifacts, or re-fetch with footage.yml.
+5. **Approve and upload:** send the video to Sahil. Once he says OK, upload with `youtube.yml` (commit the mp4 to the `renders` branch first) and the metadata in `meta/`. Kids uploads use `selfDeclaredMadeForKids: true`.
+6. **Gotchas:**
+   - Never `pkill -f` a pattern that matches your own shell command; that killed the shell twice.
+   - `pgrep -f "render X"` also matches the waiting loop itself.
+   - `gh workflow run` fails, so use the REST dispatch.
+
+## 7. Open issues
+- **Cloudflare token gives 401.** Sahil needs to roll it, paste it into the `CF_API_TOKEN` secret, and then the AI-image / 2.5D "3D" sample can be made.
+- **YouTube compliance audit form** not submitted yet, so uploads still start private.
+- **Pronunciation of صدقہ:** whisper hears it as "ستقے". Four respellings didn't change it. Sahil's ear decides; still unresolved.
+- **English clone voice** has too many pauses and breaths. Sahil wants it blended with or closer to the original AI hadith voice. Deferred to a later session.
+- **Naat smoothness:** next time keep the source fps and use subpixel pans; build clip-log tracking.
+- **Sensitive files on Sahil's PC** (`C:\Users\Sahil\ClaudeAutomation\MASTER_KEY.txt`, `yt_client.txt`, `yt_web_client.txt`): Sahil should delete them himself. MASTER_KEY is safe in GitHub secrets.
+- **Old Sadqah Short 1:** replace or delete it only if Sahil asks.
+
+## 8. What's next (in order)
+1. **Qawwali sample: "Chhap Tilak"** (kalam of Hazrat Amir Khusrau Rahmatullahi Alaih; NFAK performance).
+   - The visuals-only preview has been sent: `renders/2026-10-31/MehfilESama_ChhapTilak_VISUALS_preview.mp4`. Code: `video/src/qawwali/ChhapTilak.tsx`.
+   - Scenes, one per line:
+     - eye-lights meet and the tilak breaks into petals
+     - a kiln pours love's drink into a clay cup, and the world sways
+     - an arm with green bangles, held at the wrist by a hand of light
+     - white cloth dyed in the dyer's colour
+     - dawn over a dargah silhouette, with a bridal veil
+   - Rose-petal gusts carry the transitions. Lyrics show as Nastaliq + Roman + English meaning.
+   - **Blocked on audio.** YouTube downloads only work on Sahil's PC (yt-dlp in the desktop app; the PC was offline on 31 Oct). Sahil can also attach the audio.
+   - Once the audio is in: pick a ~60–75s section of complete verses, align the line times (whisper plus manual) into `video/src/qawwali/chhap-timing.json` (`placeholder:false`), and put the audio at `video/public/qawwali/chhap-tilak.m4a`.
+   - Also fix: the veil in scene 5 needs to be visible earlier, and the dye blooms should be smoother.
+   - Do not commit third-party qawwali or naat audio to this public repo.
+2. **Tomorrow's videos (1 Nov):**
+   - Riddle #2 solution + Riddle #3
+   - One More Sadqah Short 3
+   - Kids Short
+   - Best animation every time.
+3. **Only when Sahil says "build automation":**
+   - A scheduled cloud session around 03:30 UK: trend check and scripts → voice → render → Telegram preview about 05:30–06:00 → upload on ✅ → comment manager (reply or flag) → stats.
+   - Monthly PC batch: Sahil opens the desktop app once a month (about 30 minutes) to download naat and qawwali audio for upcoming Islamic dates. **The PC does not need to be on daily.**
+4. **Instagram:** Sahil creates the 4 accounts, then set up the Meta app / Graph API (official only).
+5. **Cloudflare 3D sample** after the token is fixed.
