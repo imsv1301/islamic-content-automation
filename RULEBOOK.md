@@ -20,7 +20,9 @@
 - Kids episode: Ep1 "Al-Ameen" 2D style, 7–8 min, quiz + salawat outro; rotation: Seerah, values, practice (wudu/salah/ghusl, boys/girls separate where Hanafi differs), belief, Jumu'ah, Quran stories, quiz.
 - Naat: REAL footage only (Pixabay/Wikimedia, credited; Pexels keys paused); two-line lyric (Nastaliq + Roman); credits; date-relevant choice.
 - Qawwali: visuals show the literal meaning of each line (rose-petal reference style).
-- Question (Solve by Sunrise): English, Mind Hex structure (mystery hook, labelled numbers, question card, answer in next reel). NO salam / Assalamu alaikum in question videos.
+- Footage: never repeat the same clip inside one video; a clip may be reused only after ~10 videos (track in state/clip_log.json). Vary shot styles and transitions. Motion must be smooth: keep source fps, subpixel Ken Burns, no integer-crop jitter.
+- Narrated videos: subtitles always Roman Urdu (Urdu words in English letters), even when the voice is Urdu. Urdu voice at a calm pace. Animation must match the locked hadith video's quality level (not necessarily its look).
+- Question (Solve by Sunrise): English, Mind Hex structure (mystery hook, labelled numbers, question card, answer in next reel). NO salam / Assalamu alaikum in question videos. Characters have no names: "Person 1", "Person 2", ...
 
 ## Ops
 - Skills before every script: trend-spotter, ig-viral, hook-mining, virality, going-viral, contagious, explainer-video, ig-human, ig-caption, cover-thumbnail-brief, best-time-scheduler.
