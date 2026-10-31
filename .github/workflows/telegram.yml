@@ -14,6 +14,8 @@ jobs:
       - if: inputs.mode == 'preview'
         uses: actions/checkout@v4
         with: { ref: renders, path: renders }
+      - if: inputs.mode == 'preview'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
       - env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
