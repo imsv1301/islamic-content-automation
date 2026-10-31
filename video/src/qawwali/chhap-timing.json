@@ -1,0 +1,54 @@
+{
+ "placeholder": true,
+ "total": 68.0,
+ "lines": [
+  {
+   "id": "q0",
+   "start": 4.0,
+   "end": 13.0,
+   "ur": "چھاپ تلک سب چھین لی رے، موسے نیناں ملائکے",
+   "roman": "Chhap tilak sab chheen li re, mose naina milaike",
+   "en": "One glance into your eyes, and every mark of who I was was gone"
+  },
+  {
+   "id": "q1",
+   "start": 14.0,
+   "end": 23.0,
+   "ur": "پریم بھٹی کا مدھوا پلائکے، متوالی کر لینی رے",
+   "roman": "Prem bhatee ka madhva pilaike, matvaari kar leeni re",
+   "en": "You gave me the drink of love's furnace and left me lost in you"
+  },
+  {
+   "id": "q2",
+   "start": 24.0,
+   "end": 33.0,
+   "ur": "گوری گوری بیّاں، ہری ہری چوڑیاں",
+   "roman": "Gori gori bayyan, hari hari chudiyan",
+   "en": "Fair arms, green bangles"
+  },
+  {
+   "id": "q3",
+   "start": 34.0,
+   "end": 43.0,
+   "ur": "بیّاں پکڑ ہر لینی رے، موسے نیناں ملائکے",
+   "roman": "Bayyan pakad har leeni re, mose naina milaike",
+   "en": "You held my wrist, and you won me"
+  },
+  {
+   "id": "q4",
+   "start": 44.0,
+   "end": 53.0,
+   "ur": "بل بل جاؤں میں تورے رنگ رجوا، اپنی سی رنگ لینی رے",
+   "roman": "Bal bal jaaun main tore rang rajwa, apni si rang leeni re",
+   "en": "I give my all to you, O dyer: you dyed me in your own colour"
+  },
+  {
+   "id": "q5",
+   "start": 54.0,
+   "end": 63.0,
+   "ur": "خسرو نجام کے بل بل جیئے، موہے سہاگن کینی رے",
+   "roman": "Khusrau Nijam ke bal bal jaiye, mohe suhaagan keeni re",
+   "en": "Khusrau gives his all to Nizam, who made him his own"
+  }
+ ]
+}

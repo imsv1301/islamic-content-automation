@@ -1,3 +1,7 @@
 *.wav
 !voice/*.enc
 __pycache__/
+node_modules/
+video/out/
+*.wav
+!voice/*.enc

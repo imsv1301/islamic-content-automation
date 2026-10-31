@@ -1,0 +1,47 @@
+name: youtube
+# Uploads / comments / replies / stats for the three channels. Tokens live only in state/youtube.json.enc
+# (AES-256-CBC, pbkdf2) and are decrypted inside the job with secrets.MASTER_KEY.
+# Videos to upload are read from the repo at `video_path` on branch `video_ref` (default: renders).
+on:
+  workflow_dispatch:
+    inputs:
+      action: { description: "upload | comments | reply | stats", required: true, default: stats }
+      label: { description: "sadqah | kids | riddle", required: true, default: riddle }
+      video_path: { description: "upload: path of the mp4 on video_ref", default: "" }
+      video_ref: { description: "upload: branch holding the mp4", default: renders }
+      meta_path: { description: "upload: metadata JSON path on main (snippet+status)", default: "" }
+      parent_id: { description: "reply: comment thread id", default: "" }
+      text: { description: "reply: reply text", default: "" }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - if: inputs.action == 'upload'
+        uses: actions/checkout@v4
+        with: { ref: "${{ inputs.video_ref }}", path: renders, lfs: false }
+      - name: Decrypt state
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
+        run: |
+          printf '%s' "$MASTER_KEY" > /tmp/k
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/youtube.json.enc -out /tmp/yt_state.json -pass file:/tmp/k
+          rm /tmp/k
+      - name: Run
+        env:
+          YT_STATE: /tmp/yt_state.json
+          A: "${{ inputs.action }}"
+          L: "${{ inputs.label }}"
+          V: "${{ inputs.video_path }}"
+          M: "${{ inputs.meta_path }}"
+          P: "${{ inputs.parent_id }}"
+          T: "${{ inputs.text }}"
+        run: |
+          case "$A" in
+            upload) python3 yt/yt.py upload "$L" "renders/$V" "$M" | tee out.txt ;;
+            reply) python3 yt/yt.py reply "$L" "$P" "$T" | tee out.txt ;;
+            comments|stats) python3 yt/yt.py "$A" "$L" | tee out.txt ;;
+            *) echo "unknown action $A"; exit 1 ;;
+          esac
+          rm -f /tmp/yt_state.json
+      - uses: actions/upload-artifact@v4
+        with: { name: "yt-${{ inputs.action }}-${{ inputs.label }}", path: out.txt }

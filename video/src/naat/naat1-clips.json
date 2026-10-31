@@ -1,0 +1,80 @@
+[
+ {
+  "file": "naat1/medina-mosque_1.mp4",
+  "a": 0,
+  "b": 9.12,
+  "from": 0,
+  "pan": 1,
+  "zoom": [
+   1.0,
+   1.08
+  ],
+  "credit": "Pixabay",
+  "fx": 0.78
+ },
+ {
+  "file": "naat1/masjid-nabawi_3.mp4",
+  "a": 9.12,
+  "b": 19.5,
+  "from": 0,
+  "pan": -1,
+  "zoom": [
+   1.04,
+   1.12
+  ],
+  "credit": "Pixabay",
+  "fx": 0.5
+ },
+ {
+  "file": "naat1/masjid-nabawi_1.mp4",
+  "a": 19.5,
+  "b": 28.5,
+  "from": 0,
+  "pan": 1,
+  "zoom": [
+   1.0,
+   1.06
+  ],
+  "credit": "Pixabay",
+  "fx": 0.5
+ },
+ {
+  "file": "naat1/mosque-lanterns_2.mp4",
+  "a": 28.5,
+  "b": 38.5,
+  "from": 0,
+  "pan": 0.6,
+  "zoom": [
+   1.0,
+   1.1
+  ],
+  "credit": "Pixabay",
+  "fx": 0.5
+ },
+ {
+  "file": "naat1/masjid-nabawi_3.mp4",
+  "a": 38.5,
+  "b": 52.82,
+  "from": 10,
+  "pan": 1,
+  "zoom": [
+   1.1,
+   1.0
+  ],
+  "credit": "Pixabay",
+  "fx": 0.5
+ },
+ {
+  "file": "naat1/medina-mosque_1.mp4",
+  "a": 52.82,
+  "b": 62.6,
+  "from": 3,
+  "pan": -0.6,
+  "zoom": [
+   1.12,
+   1.0
+  ],
+  "credit": "Pixabay",
+  "fx": 0.78
+ }
+]
