@@ -1,0 +1,125 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, ugly, deformed, blurry",
+ "images": [
+  {
+   "name": "r_doors",
+   "prompt": "two tall old wooden doors side by side in a torch-lit stone hall, deep claw scratches on one door, dust in the air, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 100
+  },
+  {
+   "name": "r_guards",
+   "prompt": "two armoured guards with helmets standing in front of two tall wooden doors in a stone hall, seen from behind, back view, dark silhouettes, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 101
+  },
+  {
+   "name": "r_traveller",
+   "prompt": "a lone traveller in a hooded cloak facing two tall doors and two guards in a torch-lit stone hall, seen from behind, back view, silhouette, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 102
+  },
+  {
+   "name": "r_guard_truth",
+   "prompt": "an armoured guard silhouette beside a wooden door glowing with soft blue light, stone hall, seen from behind, back view, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 103
+  },
+  {
+   "name": "r_guard_lie",
+   "prompt": "an armoured guard silhouette beside a wooden door glowing with ominous red light, stone hall, seen from behind, back view, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 104
+  },
+  {
+   "name": "r_lion",
+   "prompt": "glowing amber eyes of a lion peering through the crack of a dark wooden door, shadowy stone hall, suspense, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 105
+  },
+  {
+   "name": "r_exit",
+   "prompt": "a big wooden door swinging open onto a bright golden sunrise over green hills, a small hooded traveller silhouette walking out, seen from behind, back view, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 106
+  },
+  {
+   "name": "q_coin",
+   "prompt": "close-up of a hand dropping a gold coin into an old wooden charity box, coins glinting, shallow depth of field, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 107
+  },
+  {
+   "name": "q_sums",
+   "prompt": "an old notebook with handwritten numbers, a pencil, a small stack of coins and an oil lamp on a wooden desk at night, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 108
+  },
+  {
+   "name": "q_dome",
+   "prompt": "a mosque with a green dome and white minarets at dawn under a golden sky, soft mist, wide distant view, no people, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 109
+  },
+  {
+   "name": "q_jar",
+   "prompt": "a clay jar on a wooden table overflowing with glowing gold coins, light rays from a window, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 110
+  },
+  {
+   "name": "q_forgive",
+   "prompt": "two men in long kurtas hugging as friends in an old courtyard street, seen from behind, back view, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 111
+  },
+  {
+   "name": "q_sujood",
+   "prompt": "a man in white clothes prostrating on a red prayer mat in a quiet mosque, morning light through arches, seen from behind, back view, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 112
+  },
+  {
+   "name": "q_scale",
+   "prompt": "an antique brass balance scale on a wooden table with gold coins, glowing, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 113
+  },
+  {
+   "name": "q_give",
+   "prompt": "close-up of a small child's hand giving a coin into an old man's open palm, hands only, street at sunset, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 114
+  },
+  {
+   "name": "q_lanterns",
+   "prompt": "a row of glowing lanterns lighting up one after another along an old street at dusk, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 115
+  },
+  {
+   "name": "k_wave",
+   "prompt": "two little kids with school backpacks waving to each other in a sunny schoolyard, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 116
+  },
+  {
+   "name": "k_dome",
+   "prompt": "a mosque with a green dome and white minarets under a soft sunrise sky with fluffy clouds, no people, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 117
+  },
+  {
+   "name": "k_park",
+   "prompt": "many small children in kufi caps and hijabs waving hello in a sunny park, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 118
+  },
+  {
+   "name": "k_dove",
+   "prompt": "a white dove flying over a peaceful little town with soft clouds and sunbeams, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 119
+  },
+  {
+   "name": "k_girl",
+   "prompt": "a little girl in a pink hijab waving at the door of a small friendly mosque, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 120
+  },
+  {
+   "name": "k_places",
+   "prompt": "a cosy little town street with a house, a school and a small mosque side by side, flowers, morning sun, no people, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 121
+  },
+  {
+   "name": "k_sunrise",
+   "prompt": "a little boy in a white kufi cap and a backpack standing on a hill looking at his town at sunrise, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 122
+  },
+  {
+   "name": "k_hero",
+   "prompt": "a little boy in a white kufi cap and blue hoodie with a school backpack walking through a school gate waving hello, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 123
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+name: sdxl
+# Free fallback when the Cloudflare free tier is used up: DreamShaper XL v2 Turbo on CPU runners, one job per image.
+on:
+  workflow_dispatch:
+    inputs:
+      job: { description: "Path to prompts JSON", required: true }
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs: { matrix: "${{ steps.m.outputs.matrix }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: python3 -c "import json;d=json.load(open('${{ inputs.job }}'));print('matrix='+json.dumps({'include':[{'idx':i,'name':x['name']} for i,x in enumerate(d['images'])]}))" >> "$GITHUB_OUTPUT"
+  img:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy: { fail-fast: false, max-parallel: 20, matrix: "${{ fromJson(needs.plan.outputs.matrix) }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Install
+        run: |
+          pip install -q torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q diffusers transformers accelerate safetensors
+      - name: Generate
+        run: python scripts/sdxl_image.py "${{ inputs.job }}" ${{ matrix.idx }} 2>&1 | grep -v -i warn | tail -5
+      - uses: actions/upload-artifact@v4
+        with: { name: "img_${{ matrix.name }}", path: images/, retention-days: 3 }
