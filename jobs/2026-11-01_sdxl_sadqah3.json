@@ -1,0 +1,15 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, ugly, deformed, blurry",
+ "images": [
+  {
+   "name": "q_rise",
+   "seed": 921,
+   "prompt": "a small green sapling growing out of humble dry soil, rising tall toward a bright beam of golden light from above, low camera angle, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed"
+  },
+  {
+   "name": "q_rise_b",
+   "seed": 922,
+   "prompt": "a single small lantern rising up into a golden sky above quiet old rooftops at dawn, glowing, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed"
+  }
+ ]
+}
