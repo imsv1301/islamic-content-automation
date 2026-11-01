@@ -3,12 +3,14 @@ name: approvals
 on:
   schedule: [{ cron: "*/10 * * * *" }]
   workflow_dispatch:
+    inputs:
+      watch_minutes: { description: "keep polling every 20s for this many minutes (daily run sets ~300)", default: "0" }
 concurrency: { group: approvals, cancel-in-progress: false }
 permissions: { contents: write }
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -24,7 +26,18 @@ jobs:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
           YT_STATE: /tmp/yt_state.json
-        run: python3 scripts/tg.py poll renders; rm -f /tmp/yt_state.json
+          WATCH: ${{ inputs.watch_minutes || '0' }}
+        run: |
+          # GitHub runs the */10 schedule only every few hours, so the daily run starts a long watch right after the preview.
+          end=$(( $(date +%s) + WATCH * 60 ))
+          while :; do
+            python3 scripts/tg.py poll renders
+            git add state/uploads.jsonl state/feedback.jsonl
+            git -c user.name=sadqah-bot -c user.email=sadqahmedia.channels@gmail.com commit -qm "approvals: upload log" 2>/dev/null && (git pull --rebase -q && git push -q || true)
+            [ "$(date +%s)" -ge "$end" ] && break
+            sleep 20
+          done
+          rm -f /tmp/yt_state.json
       - name: Save upload log
         run: |
           git config user.name "sadqah-bot"; git config user.email "sadqahmedia.channels@gmail.com"
