@@ -1,0 +1,127 @@
+{
+ "images": [
+  {
+   "name": "r_doors",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two tall old wooden doors side by side in a torch-lit stone hall, one door has deep claw scratches, dust in the air, no people",
+   "steps": 8
+  },
+  {
+   "name": "r_guards",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two armoured guards standing in front of two tall wooden doors in a stone hall, seen from behind, dark silhouettes, helmets, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "r_traveller",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a lone traveller in a hooded cloak standing in a torch-lit stone hall facing two tall doors and two guards, seen from behind, silhouette, face not visible",
+   "steps": 8
+  },
+  {
+   "name": "r_guard_truth",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a guard silhouette standing beside a wooden door with a soft blue glow behind him, seen from behind, face not visible, torch-lit stone hall",
+   "steps": 8
+  },
+  {
+   "name": "r_guard_lie",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a guard silhouette standing beside a wooden door with an ominous red glow behind him, seen from behind, face not visible, torch-lit stone hall",
+   "steps": 8
+  },
+  {
+   "name": "r_lion",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, glowing amber eyes of a lion peering through the crack of a dark wooden door, shadowy stone hall, suspense, no people",
+   "steps": 8
+  },
+  {
+   "name": "r_exit",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a heavy wooden door swinging open onto a bright golden sunrise over green hills, a hooded traveller silhouette walking out, seen from behind, face not visible",
+   "steps": 8
+  },
+  {
+   "name": "q_coin",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a hand dropping a single gold coin into an old wooden charity box, coins glinting, shallow depth of field, no face",
+   "steps": 8
+  },
+  {
+   "name": "q_sums",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old notebook with handwritten sums, a pencil, a small stack of coins and an oil lamp on a wooden desk at night, no people",
+   "steps": 8
+  },
+  {
+   "name": "q_dome",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a mosque with a green dome and white minarets at dawn under a golden sky, soft mist, distant view, no people",
+   "steps": 8
+  },
+  {
+   "name": "q_jar",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a clay jar on a wooden table overflowing with glowing gold coins, warm light rays from a window, magical abundance, no people",
+   "steps": 8
+  },
+  {
+   "name": "q_forgive",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two men in long kurtas embracing as friends in an old courtyard street, seen from behind, faces not visible, reconciliation",
+   "steps": 8
+  },
+  {
+   "name": "q_sujood",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a man in a white kurta in sujood on a red prayer mat in a quiet mosque, morning light rays through arches, seen from behind, face not visible",
+   "steps": 8
+  },
+  {
+   "name": "q_scale",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an antique brass balance scale on a wooden table, a single coin on one side outweighing a big pile of coins on the other side, glowing, no people",
+   "steps": 8
+  },
+  {
+   "name": "q_give",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a small child's hand giving a coin into an elderly man's open wrinkled palm, street at sunset, hands only, no faces",
+   "steps": 8
+  },
+  {
+   "name": "q_lanterns",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, one glowing lantern lighting a row of other lanterns one after another along a dark old street at dusk, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_wave",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, two little kids with school backpacks waving to each other across a sunny schoolyard, every person seen from behind, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_dome",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a mosque with a green dome and white minarets under a soft sunrise sky with fluffy clouds, distant view, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_park",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, many small children in a park greeting each other and waving, colourful clothes, kufi caps and hijabs, every person seen from behind, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_dove",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a white dove flying over a peaceful town with soft clouds and sunbeams, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_girl",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a little girl in a pink hijab waving hello at the door of a small friendly mosque, every person seen from behind, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_places",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a cosy little town street with a home, a school and a small mosque side by side, flowers, morning sun, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_sunrise",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a little boy in a white kufi cap and backpack standing on a hill looking at his town at sunrise, every person seen from behind, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_hero_lucid",
+   "model": "@cf/leonardo/lucid-origin",
+   "width": 1088,
+   "height": 1920,
+   "steps": 24,
+   "prompt": "bright cheerful 3D animated kids cartoon character, a little boy with a smooth blank round head with no eyes, no nose, no mouth, like a wooden toy mannequin head, wearing a white kufi cap and a blue hoodie with a school backpack, waving hello at a school gate, soft warm golden morning light, pastel and amber colours, toy-like stylised 3D render"
+  }
+ ]
+}
