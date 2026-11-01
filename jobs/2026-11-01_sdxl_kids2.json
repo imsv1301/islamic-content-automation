@@ -1,0 +1,20 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, ugly, deformed, blurry, church, steeple, cross, spire, bell tower, cathedral",
+ "images": [
+  {
+   "name": "k_dove2",
+   "seed": 901,
+   "prompt": "a white dove flying in a bright blue sky with fluffy clouds and sunbeams, close up, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed"
+  },
+  {
+   "name": "k_places2",
+   "seed": 902,
+   "prompt": "a cosy Middle Eastern style little town street with flat-roof houses, a small mosque with a green dome and minaret at the end, flowers, morning sun, no people, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed"
+  },
+  {
+   "name": "k_sunrise2",
+   "seed": 903,
+   "prompt": "a little boy in a white kufi cap and backpack standing on a grassy hill looking at a valley with a mosque with a green dome at sunrise, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed"
+  }
+ ]
+}
