@@ -1,0 +1,10 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, ugly, deformed, blurry",
+ "images": [
+  {
+   "name": "q_jar",
+   "prompt": "a clay jar on a wooden table overflowing with glowing gold coins, light rays from a window, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 777
+  }
+ ]
+}
