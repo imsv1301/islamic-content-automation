@@ -1,0 +1,15 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, ugly, deformed, blurry",
+ "images": [
+  {
+   "name": "q_dua",
+   "seed": 911,
+   "prompt": "a man in white clothes sitting on his knees on a red prayer mat with both hands raised in dua in a quiet mosque, morning light rays through arches, seen from behind, back view, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed"
+  },
+  {
+   "name": "q_jar2",
+   "seed": 912,
+   "prompt": "a clay jar on a wooden table overflowing with glowing gold coins, light rays from a window, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed"
+  }
+ ]
+}
