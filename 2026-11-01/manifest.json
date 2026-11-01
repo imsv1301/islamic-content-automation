@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-01",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle2Solution_Riddle3.mp4",
+   "meta": "riddle.json",
+   "title": "Both Guards Point to the Lion 🦁 Riddle #2 Answer + Riddle #3: Who Broke the Vase? #shorts"
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short3_SadqahKamiNahin.mp4",
+   "meta": "sadqah.json",
+   "title": "Kya Sadqah Se Paisa Kam Hota Hai? | Muslim 2588 | Allah Ka Hisaab #shorts"
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_SpreadSalam.mp4",
+   "meta": "kids.json",
+   "title": "Two Little Words That Make Friends 💛 Spread Salam! | Islam for Kids #shorts"
+  }
+ ],
+ "notes": [
+  "Today: 21 Jumada al-Ula 1448, no major occasion in the next 7 days, so general topics. Hadith checked on sunnah.com today: Muslim 2588 (Sadqah) and Muslim 54 (kids).",
+  "Cloudflare's free image allowance was already used up for today (429), so the stills were made free with an open SDXL model (DreamShaper XL Turbo) on GitHub Actions. Nothing was paid.",
+  "The riddle video is 64s (YouTube Shorts allow up to 3 min). Whisper still hears 'sadqah' as 'sab ka' in the last Sadqah line (the known صدقہ pronunciation issue)."
+ ]
+}
