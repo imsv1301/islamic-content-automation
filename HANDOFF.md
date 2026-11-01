@@ -237,3 +237,9 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
 
 ## Daily log
 - 2026-10-31: setup day. Approval flow tested with the Riddle #3 sample (renders/2026-10-31-test). The YouTube audit form was submitted by Sahil.
+- 2026-11-01 (scheduled daily run, unattended): 21 Jumada al-Ula 1448, no occasion within 7 days. Comments: no new threads (riddle, sadqah). Made 3 Shorts in the house style with a new reusable engine `video/src/day1/HouseShort.tsx` (configs `D1101Riddle/Sadqah/Kids.tsx`), renders on `renders/2026-11-01/`, Telegram preview sent.
+  - riddle: Riddle #2 solution (ask either guard what the other would say, take the other door) + Riddle #3 "broken vase" (answer: Person 1, it rained all morning). 64s.
+  - sadqah Short 3: "Sadqah maal mein kami nahin karta", Sahih Muslim 2588 (+ Tirmidhi 2029), verified on sunnah.com today. 32s.
+  - kids: "Spread salam", Sahih Muslim 54, Made for Kids. 32s.
+  - Issue: Cloudflare free tier was already exhausted at 03:25 UTC (429, 10k neurons used). Added a free fallback: `sdxl.yml` + `scripts/sdxl_image.py` (DreamShaper XL v2 Turbo on CPU runners, 768x1344, ~7-10 min per image, one job per image; runners sometimes hang or get killed, so dispatch retries early). Prompts must say "no church/steeple" (SDXL adds European church spires to towns).
+  - Voice re-rolls: "riddle" is heard as "reader" in Sahil's clone, so the line became "Now, a brand new mystery."; "liar's lie" was garbled, so "the lie of the liar".

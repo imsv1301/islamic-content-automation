@@ -5,3 +5,4 @@ node_modules/
 video/out/
 *.wav
 !voice/*.enc
+video/public/day1/*-mix.m4a
