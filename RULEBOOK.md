@@ -11,6 +11,7 @@
 - Hadith: Bukhari, Muslim, Tirmidhi only (Tirmidhi: graded Sahih/Hasan, no Da'if grader). Always show reference; sunnah.com link in description.
 - Salutation always in full: "Sallallahu Alaihi Wa Alihi Wasallam".
 - Honorifics: Sahaba Radi Allahu Anhu/Anha; prophets & Panjatan Pak Alaihis Salam; Awliya Rahmatullahi Alaih.
+- When a video mentions the Prophet (Sallallahu Alaihi Wa Alihi Wasallam): NEVER an AI-generated image of Masjid-e-Nabawi / the Green Dome. Use REAL Green Dome footage or photos only (Pixabay/Wikimedia via footage.yml, credited in the description). (Sahil, 1 Nov 2026)
 - Never depict: the Prophet ﷺ, any prophet, Sahaba, Mothers of the Believers, Ahl-e-Bait/Panjatan Pak, Awliya, angels. Use light, calligraphy, places, objects.
 - Common people: faceless, plain circle heads. No music in hadith/kids content. Nothing haram.
 - Lyrics on screen only for pre-1929 poetry (Ala Hazrat etc.). Naat clips never cut a verse.
