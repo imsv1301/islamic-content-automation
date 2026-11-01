@@ -23,4 +23,4 @@ jobs:
           D: ${{ inputs.date }}
           T: ${{ inputs.text }}
         run: |
-          if [ "$MODE" = preview ]; then python3 scripts/tg.py preview renders "$D"; else python3 scripts/tg.py text "$T"; fi
+          if [ "$MODE" = preview ]; then python3 scripts/tg.py preview renders "$D"; elif [ "$MODE" = diag ]; then python3 scripts/tg.py diag; else python3 scripts/tg.py text "$T"; fi

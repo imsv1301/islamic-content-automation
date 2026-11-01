@@ -111,3 +111,8 @@ if __name__ == "__main__":
         preview(sys.argv[2], sys.argv[3])
     elif cmd == "poll":
         poll(sys.argv[2])
+    elif cmd == "diag":  # no message content printed (public logs)
+        w = call("getWebhookInfo").get("result", {})
+        print("webhook set:", bool(w.get("url")), "pending:", w.get("pending_update_count"), "last_error:", w.get("last_error_message"))
+        r = call("getUpdates", timeout=0)
+        print("getUpdates ok:", r.get("ok"), "count:", len(r.get("result", [])), "kinds:", [k for u in r.get("result", []) for k in u if k != "update_id"])
