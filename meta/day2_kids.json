@@ -17,7 +17,7 @@
   "defaultAudioLanguage": "en"
  },
  "status": {
-  "privacyStatus": "private",
+  "privacyStatus": "public",
   "selfDeclaredMadeForKids": true,
   "embeddable": true,
   "containsSyntheticMedia": false

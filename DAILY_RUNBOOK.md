@@ -76,7 +76,7 @@ git fetch origin renders
 - Always render stills first (`npx remotion still <Comp> x.png --frame=N`), make a contact sheet, look at it, fix it, then do the full render.
 
 ## 5. Package and send by 05:45 UK
-- On the `renders` branch, make `renders/<date>/` with the 3 MP4s, a metadata JSON per video (`snippet` + `status`; kids: `selfDeclaredMadeForKids: true`), and `manifest.json`:
+- On the `renders` branch, make `renders/<date>/` with the 3 MP4s, a metadata JSON per video (`snippet` + `status` with `privacyStatus: "public"`; kids: `selfDeclaredMadeForKids: true`). YouTube does NOT force API uploads to private (confirmed by the YouTube API team on 2 Nov 2026), and the approvals workflow also forces public on ✅, and `manifest.json`:
   `{"date": "<date>", "items": [{"label": "riddle", "video": "...mp4", "meta": "...json", "title": "<YouTube title>"}, ...], "notes": ["optional message to Sahil"]}`
 - Commit and push the renders branch, then dispatch `telegram.yml` with `mode=preview` and `date=<date>`.
 - Right after, dispatch `approvals.yml` with `watch_minutes=300` so Sahil's ✅ taps upload within ~20s (GitHub's */10 schedule really runs only every few hours).

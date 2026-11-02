@@ -7,6 +7,7 @@ Path from $YT_STATE (default /home/claude/.yt/youtube_state.json). Labels: sadqa
   yt.py comments <label>                 # all comment threads on the channel (JSON lines)
   yt.py reply    <label> <parentId> <text>
   yt.py stats    <label>                 # every upload with privacy + views/likes/comments
+  yt.py publish  <label> <videoId> [public|unlisted|private]
 """
 import json, os, sys, urllib.error, urllib.parse, urllib.request
 
@@ -26,6 +27,8 @@ def get(tok, path, **q):
 
 def upload(label, video, meta_f, thumb=None):
     tok = token(label); meta = json.load(open(meta_f)); size = os.path.getsize(video)
+    if os.environ.get("YT_PRIVACY"):  # approvals.yml sets public: a ✅ tap means "publish now"
+        meta.setdefault("status", {})["privacyStatus"] = os.environ["YT_PRIVACY"]
     req = urllib.request.Request("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", data=json.dumps(meta).encode(), method="POST",
         headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json; charset=UTF-8", "X-Upload-Content-Type": "video/mp4", "X-Upload-Content-Length": str(size)})
     loc = urllib.request.urlopen(req).headers["Location"]
@@ -60,6 +63,15 @@ def reply(label, parent, text):
     print("replied", r["id"])
 
 
+def publish(label, video_id, privacy="public"):
+    tok = token(label)
+    v = get(tok, "videos", part="status", id=video_id)["items"][0]
+    st = v["status"]; st["privacyStatus"] = privacy
+    body = json.dumps({"id": video_id, "status": {k: st[k] for k in ("privacyStatus", "embeddable", "license", "publicStatsViewable", "selfDeclaredMadeForKids") if k in st}}).encode()
+    r = json.load(urllib.request.urlopen(urllib.request.Request(API + "videos?part=status", data=body, method="PUT", headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})))
+    print("status", video_id, r["status"]["privacyStatus"])
+
+
 def stats(label):
     tok = token(label); ch = ST["channels"][label]["channel_id"]
     up = get(tok, "channels", part="contentDetails", id=ch)["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
@@ -72,4 +84,4 @@ def stats(label):
 
 if __name__ == "__main__":
     cmd, *a = sys.argv[1:]
-    {"upload": upload, "comments": comments, "reply": reply, "stats": stats}[cmd](*a)
+    {"upload": upload, "comments": comments, "reply": reply, "stats": stats, "publish": publish}[cmd](*a)

@@ -235,6 +235,12 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
    - "Sadqah Media comments": also handle Instagram comments and DMs on the same rules.
 4. Never auto-follow, auto-like or DM strangers. Only reply to people who wrote to us.
 
+## 12. YouTube audit result (2 Nov 2026)
+- Google closed the compliance review: **API uploads are not automatically private.** Our videos were private only because our own metadata said `privacyStatus: private`. That was my mistake, based on an outdated assumption.
+- Fixed: the metadata templates now say public, `approvals.yml` forces public on ✅ (env `YT_PRIVACY=public`), and `yt.py publish <label> <id>` changes privacy on an existing video.
+- The 2 Nov videos were made public by hand (gvEob1UMmAo, 4nVeQ19zigQ, XFsuGXfsUkc).
+- No quota increase is needed. The default 10k units a day is enough.
+
 ## Daily log
 - 2026-10-31: setup day. Approval flow tested with the Riddle #3 sample (renders/2026-10-31-test). The YouTube audit form was submitted by Sahil.
 - 2026-11-01 (scheduled daily run, unattended): 21 Jumada al-Ula 1448, no occasion within 7 days. Comments: no new threads (riddle, sadqah). Made 3 Shorts in the house style with a new reusable engine `video/src/day1/HouseShort.tsx` (configs `D1101Riddle/Sadqah/Kids.tsx`), renders on `renders/2026-11-01/`, Telegram preview sent.
