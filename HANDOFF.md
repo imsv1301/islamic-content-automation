@@ -133,7 +133,7 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
   - Google Cloud project `sadqah-media-automation`, OAuth app "Sadqah Media Uploader" (in production).
   - Web client redirect: https://imsv1301.github.io/islamic-content-automation/oauth.html
   - Scopes: youtube.upload and youtube.force-ssl.
-  - The project is **unaudited**, so API uploads go up **private**. Sahil flips them to public. The YouTube API compliance audit form is still to be submitted.
+  - Uploads go up **public** when Sahil taps ✅. YouTube confirmed on 2 Nov that the API does not force them to private (see section 12).
 - **Telegram bot:** connected and working.
 - **GitHub Pages:** home, privacy, terms and oauth pages at imsv1301.github.io/islamic-content-automation.
 
