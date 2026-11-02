@@ -1,0 +1,157 @@
+{
+ "images": [
+  {
+   "name": "r4_rain_garden",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an empty wooden garden chair in heavy pouring rain, puddles, wet leaves, rain streaks, grey sky with amber glow from a house window, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_liar",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single person silhouette standing under a harsh spotlight in a dark old hallway, seen from behind, back view, face not visible, dramatic, rain on the windows",
+   "steps": 8
+  },
+  {
+   "name": "r4_vase",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, shards of a broken blue ceramic vase on a wooden floor, rain on the window behind, warm lamp light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_boxes",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three closed wooden crates side by side on an old workshop table, each crate with a blank paper label, warm lamp light, dust in the air, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_apples",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of an open wooden crate full of shiny red apples, warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_oranges",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of an open wooden crate full of bright oranges, warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_mixed",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of an open wooden crate filled with a mix of red apples and oranges, warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_labelling",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a hand writing on a paper label stuck on a wooden crate with a pencil, hands only, warm lamp light, no face",
+   "steps": 8
+  },
+  {
+   "name": "r4_wrong",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three wooden crates with paper labels, each label crossed out with a big red X, dramatic warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_reach",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a hand reaching into a dark wooden crate through a small hole in the lid, suspense, hands only, warm rim light, no face",
+   "steps": 8
+  },
+  {
+   "name": "r4_onefruit",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a hand holding up a single piece of fruit in a beam of golden light, dark background, hands only, no face",
+   "steps": 8
+  },
+  {
+   "name": "r4_three",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three wooden crates on a table lit by three spotlights in a dark room, mystery, dramatic, no people",
+   "steps": 8
+  },
+  {
+   "name": "r4_sunrise",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, golden sunrise over rooftops of a quiet old town, warm mist, birds, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_empty",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of two open empty hands held out palms up, an empty cloth pouch beside them, warm window light, hands only, no face",
+   "steps": 8
+  },
+  {
+   "name": "s_halfdate",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of half a date fruit resting on an open palm, glowing softly in golden light, shallow depth of field, hand only, no face",
+   "steps": 8
+  },
+  {
+   "name": "s_fire_shield",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small glowing half date fruit creating a dome of golden protective light that holds back a wall of distant red flames and embers, dramatic, magical, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_dates_plate",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a brass plate of dates of all sizes on a wooden table, one tiny date glowing brighter than the rest, warm light rays, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_seed",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a tiny seed in dark soil sprouting into a small glowing green plant, golden light rays, close-up, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_feed",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a hand giving a date and a piece of bread into the open hands of a poor elderly man sitting on a street at sunset, hands only, no faces",
+   "steps": 8
+  },
+  {
+   "name": "s_lamps",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a city at night where small warm lamps light up one after another in many windows, spreading light, cinematic wide shot, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_scale",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an antique brass balance scale with a single half date fruit on one side outweighing a heavy pile of gold coins on the other, glowing, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_bless",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a little girl in a lilac hijab raising both hands in dua in a sunny garden, seen from behind, back view, face not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_friends",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, two little kids sitting together on a park bench, one handing the other a tissue, kind and friendly, seen from behind, back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_reply",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, two little friends in kufi cap and hijab giving each other a happy high five in a sunny schoolyard, seen from behind, back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_path",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a winding garden path lit by warm sunbeams leading towards a small friendly mosque, flowers, butterflies, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_three",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, three glowing golden stars floating over a cosy colourful playground at sunrise, magical sparkles, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_class",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a cheerful classroom with little kids raising their hands, colourful posters, seen from behind, back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_home",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a little boy in a white kufi cap sitting on a cosy rug teaching his baby sister at home, warm lamp, seen from behind, back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k_tissue",
+   "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, a box of tissues and one tissue flying in a sunny cosy bedroom, sparkles, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_hero_lucid",
+   "model": "@cf/leonardo/lucid-origin",
+   "width": 1088,
+   "height": 1920,
+   "steps": 24,
+   "prompt": "bright cheerful 3D animated kids cartoon character, a little boy with a smooth blank round head with no eyes, no nose, no mouth, like a wooden toy mannequin head, wearing a white kufi cap and a yellow hoodie, holding a tissue up in a big funny sneeze pose, sneeze sparkles flying, cosy sunny living room, soft warm golden morning light, pastel and amber colours, toy-like stylised 3D render"
+  }
+ ]
+}
