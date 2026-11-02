@@ -94,7 +94,7 @@ const CFG: HouseCfg = {
     { img: "s_scale.jpg", from: 4, to: 5, z0: 1.0, z1: 1.12, fx0: 0.45, fy0: 0.5, fx1: 0.55, fy1: 0.5 },
     { img: "s_fire_shield.jpg", from: 5, to: 6, z0: 1.02, z1: 1.18, fx0: 0.5, fy0: 0.55, fx1: 0.5, fy1: 0.5 },
     { img: "s_seed.jpg", from: 6, to: 7, z0: 1.16, z1: 1.02, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
-    { img: "s_feed.jpg", from: 7, to: 8, z0: 1.0, z1: 1.12, fx0: 0.55, fy0: 0.5, fx1: 0.45, fy1: 0.5 },
+    { img: "s_feed.jpg", from: 7, to: 8, z0: 1.0, z1: 1.1, fx0: 0.5, fy0: 0.55, fx1: 0.5, fy1: 0.5, vertical: true },
     { img: "s_lamps.jpg", from: 8, to: 999, z0: 1.0, z1: 1.14, fx0: 0.4, fy0: 0.5, fx1: 0.6, fy1: 0.5 },
   ],
   hud: Hud,

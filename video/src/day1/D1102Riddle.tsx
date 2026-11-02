@@ -133,7 +133,7 @@ const CFG: HouseCfg = {
   captionTop: (c) => (c.idx >= 12 ? 1290 : 1180),
   shakeAt: [4, 5, 8],
   shots: [
-    { img: "r4_vase.jpg", from: 0, to: 1, z0: 1.15, z1: 1.03, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
+    { img: "r4_vase.jpg", from: 0, to: 1, z0: 1.12, z1: 1.02, fx0: 0.5, fy0: 0.55, fx1: 0.5, fy1: 0.5, vertical: true },
     { img: "c_lucid_person.jpg", from: 1, to: 2, z0: 1.02, z1: 1.14, fx0: 0.5, fy0: 0.4, fx1: 0.5, fy1: 0.48, vertical: true },
     { img: "r4_rain_garden.jpg", from: 2, to: 3, z0: 1.0, z1: 1.14, fx0: 0.4, fy0: 0.5, fx1: 0.55, fy1: 0.5 },
     { img: "s1_window_a.jpg", from: 3, to: 4, z0: 1.12, z1: 1.0, fx0: 0.5, fy0: 0.5, fx1: 0.45, fy1: 0.5 },
@@ -146,7 +146,7 @@ const CFG: HouseCfg = {
     { img: "r4_onefruit.jpg", from: 10, to: 11, z0: 1.16, z1: 1.02, fx0: 0.5, fy0: 0.45, fx1: 0.5, fy1: 0.5 },
     { img: "r4_oranges.jpg", from: 11, to: 12, z0: 1.0, z1: 1.14, fx0: 0.45, fy0: 0.5, fx1: 0.55, fy1: 0.5 },
     { img: "r4_apples.jpg", from: 12, to: 13, z0: 1.12, z1: 1.0, fx0: 0.55, fy0: 0.5, fx1: 0.45, fy1: 0.5 },
-    { img: "r4_sunrise.jpg", from: 13, to: 999, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.45 },
+    { img: "r4_boxes.jpg", from: 13, to: 999, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.45 },
   ],
   hud: Hud,
   cards: Cards,

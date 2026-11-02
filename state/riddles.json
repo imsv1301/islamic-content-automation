@@ -11,19 +11,26 @@
    "title": "Two doors, one lion; Person 1 always tells the truth, Person 2 always lies; one question to one guard",
    "answer": "Ask either guard: 'If I asked the other guard which door leads outside, which door would he point to?' Then take the OTHER door. (Truth-teller reports the liar's lie; liar lies about the truth-teller's answer: both point to the lion door.)",
    "posted": "2026-10-31",
-   "solved_in": "2026-11-01 (pending Sahil's approval)"
+   "solved_in": "2026-11-01 (uploaded https://youtu.be/6lL-5FkSUho)"
   },
   {
    "n": 3,
    "title": "The broken vase: heavy rain all morning; Person 1 reading in the garden, Person 2 baking in the kitchen, Person 3 asleep upstairs",
    "answer": "Person 1. It had been raining heavily since sunrise, so nobody could have been reading in the garden the whole time (and the book is perfectly dry).",
-   "posted": "2026-11-01 (pending Sahil's approval)",
+   "posted": "2026-11-01 (uploaded https://youtu.be/6lL-5FkSUho)",
+   "solved_in": "2026-11-02 (pending Sahil's approval)"
+  },
+  {
+   "n": 4,
+   "title": "Three boxes (apples, oranges, mixed); Person 1 got every label wrong; take one fruit from one box without looking, then fix all three labels",
+   "answer": "Box 3, the one labelled MIXED. Its label is wrong, so it holds only one kind. If you pull an apple, it is the apples box; the box labelled ORANGES can't be oranges (wrong label) and can't be apples, so it's mixed; the box labelled APPLES is oranges. (Same logic the other way round if you pull an orange.)",
+   "posted": "2026-11-02 (pending Sahil's approval)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 4,
+  "n": 5,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #3 solution first (answer: Person 1, the rain), then Riddle #4. If Sahil holds (❌) today's video, re-send Riddle #2 solution + #3 instead."
+  "note": "Next riddle video = Riddle #4 solution first (answer: box 3, labelled MIXED), then Riddle #5. If Sahil holds (❌) today's video, re-send Riddle #3 solution + #4 instead."
  }
 }
