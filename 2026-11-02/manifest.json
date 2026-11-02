@@ -1,0 +1,29 @@
+{
+ "date": "2026-11-02",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle3Solution_Riddle4.mp4",
+   "meta": "riddle.json",
+   "title": "It Rained All Morning ☔ Riddle #3 Answer + Riddle #4: Every Label Is Wrong #shorts"
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short4_AadhiKhajoor.mp4",
+   "meta": "sadqah.json",
+   "title": "Aadhi Khajoor Bhi Kaafi Hai? | Bukhari 1417 | Chhota Sadqah, Bari Dhaal #shorts"
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_SneezeDuas.mp4",
+   "meta": "kids.json",
+   "title": "Achoo! What Do We Say When We Sneeze? 🤧 3 Little Duas | Islam for Kids #shorts"
+  }
+ ],
+ "notes": [
+  "Today: about 22 Jumada al-Ula 1448 (21 on yesterday's run), no major occasion in the next 7 days, so general topics. Hadith checked on sunnah.com today: Bukhari 1417 (Sadqah, half a date) and Bukhari 6224 (kids, sneezing duas).",
+  "Masjid-e-Nabawi shots in the Sadqah and kids videos are REAL Pixabay footage frames (credited in the descriptions), not AI, per your new rule.",
+  "Cloudflare's free images ran out mid-run (my mistake: one Lucid hero shot used 5,400 of the 10,000 daily neurons, and it came back with a face anyway, so it was dropped). Five replacement stills were made free with SDXL on GitHub Actions. Nothing was paid.",
+  "Comments: no new threads on riddle or sadqah. Whisper can't confirm 'Wa Alihi' in the salutation (it normalises it), so lines were re-voiced with clearer spelling; please give the salutation a quick listen."
+ ]
+}
