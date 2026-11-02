@@ -1,0 +1,30 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, church, steeple, ugly, deformed, blurry",
+ "images": [
+  {
+   "name": "k_hero",
+   "prompt": "a little boy in a white kufi cap and yellow hoodie holding a white tissue, sneezing, seen from behind, back view, back of head, cosy sunny living room, sparkles in the air, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 201
+  },
+  {
+   "name": "k_reply",
+   "prompt": "two little kids, a boy in a kufi cap and a girl in a pink hijab, giving a high five in a sunny schoolyard, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 202
+  },
+  {
+   "name": "k_friends",
+   "prompt": "two little kids sitting on a park bench, one handing the other a white tissue, seen from behind, back view, cute 3D animated kids movie still, Pixar style, bright soft golden morning light, pastel colours, highly detailed",
+   "seed": 203
+  },
+  {
+   "name": "s_feed",
+   "prompt": "extreme close-up of a hand placing a date fruit and a piece of bread into open cupped hands, only hands, plain blurred warm background, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 204
+  },
+  {
+   "name": "r4_vase",
+   "prompt": "broken blue ceramic vase shards on a wooden floor, rainy window behind, close-up, no people, 3D animated movie still, Pixar style, warm orange and amber cinematic lighting, volumetric light, highly detailed",
+   "seed": 205
+  }
+ ]
+}
