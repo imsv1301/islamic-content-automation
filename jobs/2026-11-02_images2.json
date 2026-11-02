@@ -3,50 +3,42 @@
   {
    "name": "k_hero_a",
    "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, rear view of a little boy in a white kufi cap and yellow hoodie holding a tissue to his nose, sneezing, tiny sparkles bursting in the air, cosy sunny living room, the boy is seen only from behind, back of his head, no face visible",
-   "steps": 8,
-   "seed": 1
+   "steps": 8
   },
   {
    "name": "k_hero_b",
    "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, view from directly behind a little boy in a white kufi cap and yellow hoodie, his shoulders jumping in a big sneeze, a tissue flying up, cosy sunny living room, back of head only, no face",
-   "steps": 8,
-   "seed": 2
+   "steps": 8
   },
   {
    "name": "k_reply_a",
    "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, view from directly behind two little kids, a boy in a kufi cap and a girl in a hijab, giving each other a high five in a sunny schoolyard, backs of heads only, no faces visible",
-   "steps": 8,
-   "seed": 3
+   "steps": 8
   },
   {
    "name": "k_reply_b",
    "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, two small kids walking away hand in hand along a sunny school path, seen from far behind, backs only, kufi cap and pink hijab, no faces",
-   "steps": 8,
-   "seed": 4
+   "steps": 8
   },
   {
    "name": "k_friends_a",
    "prompt": "bright cheerful 3D animated kids film still, soft warm golden morning light, pastel and amber colours, cute toy-like stylised render, gentle, high detail, no text, view from directly behind two little kids sitting on a park bench, one hands the other a tissue, backs of heads only, no faces visible, sunny park",
-   "steps": 8,
-   "seed": 5
+   "steps": 8
   },
   {
    "name": "r4_vase_a",
    "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, shards of a broken blue ceramic vase scattered on a wooden floor, rain streaks on the window behind, warm lamp light, close-up, no people",
-   "steps": 8,
-   "seed": 6
+   "steps": 8
   },
   {
    "name": "s_feed_a",
    "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, extreme close-up of one hand placing a date fruit and a piece of bread into another pair of open cupped hands, warm sunset light, blurred plain background, only hands visible, no people, no faces",
-   "steps": 8,
-   "seed": 7
+   "steps": 8
   },
   {
    "name": "r4_sunrise_a",
    "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, golden sunrise over rolling hills and a quiet farm with a wooden fruit barn, warm mist, birds, no towers, no church, no people",
-   "steps": 8,
-   "seed": 8
+   "steps": 8
   }
  ]
 }

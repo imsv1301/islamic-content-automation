@@ -23,7 +23,7 @@ const Hud = (c: Ctx) => {
 const Label: React.FC<{ n: string; txt: string; col: string; k: number; wrong?: number }> = ({ n, txt, col, k, wrong = 0 }) => (
   <div style={{ position: "relative", width: 290, background: "#f3e2c0", borderRadius: 16, border: `5px solid ${INK}`, padding: "10px 8px 14px", textAlign: "center", transform: `scale(${k}) rotate(${(Number(n) - 2) * 3}deg)`, boxShadow: "0 10px 0 rgba(0,0,0,0.3)" }}>
     <div style={{ fontFamily: MONT, fontWeight: 800, fontSize: 24, color: "#6b4b2a", letterSpacing: "0.1em" }}>BOX {n}</div>
-    <div style={{ fontFamily: MONT, fontWeight: 800, fontSize: 48, color: col, WebkitTextStroke: `2px ${INK}` }}>{txt}</div>
+    <div style={{ fontFamily: MONT, fontWeight: 800, fontSize: 42, color: col, WebkitTextStroke: `2px ${INK}` }}>{txt}</div>
     {wrong > 0 && <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: MONT, fontWeight: 800, fontSize: 150, color: RED, opacity: wrong, transform: `scale(${1.6 - 0.6 * wrong})`, WebkitTextStroke: `6px ${INK}` }}>✕</div>}
   </div>
 );
