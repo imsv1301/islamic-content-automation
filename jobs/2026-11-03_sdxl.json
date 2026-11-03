@@ -1,0 +1,55 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, church, steeple, cross, ugly, deformed, blurry, scary",
+ "images": [
+  {
+   "name": "r5_switches",
+   "prompt": "close-up of three old brass light switches in a row on a warm plaster wall, all three switches pointing down, dramatic side light, empty wall, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 11
+  },
+  {
+   "name": "r5_lamp",
+   "prompt": "an old table lamp with a fabric shade switched off on a side table in a dark empty room, blue moonlight through a window, mysterious, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 12
+  },
+  {
+   "name": "r5_hand",
+   "prompt": "close-up of a hand in a sweater sleeve pressing a brass light switch on a plaster wall, dramatic warm light, no face, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 13
+  },
+  {
+   "name": "s5_burden",
+   "prompt": "an old man seen from behind carrying a heavy sack on his back along a dusty village lane at sunrise, a young man beside him helping lift the sack, both back view, backs of heads, warm haze, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 14
+  },
+  {
+   "name": "s5_family",
+   "prompt": "a family sitting on the floor around a dastarkhwan dinner cloth with steaming bowls of food and bread, seen from behind, only backs and hands visible, warm lamp light, cosy home, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 15
+  },
+  {
+   "name": "k5_window",
+   "prompt": "a little boy in blue pyjamas seen from behind, back view, back of head, looking out of a bedroom window at a big crescent moon and stars, cute 3D animated kids movie still, Pixar style, soft warm golden and lavender light, pastel colours, cosy, highly detailed",
+   "seed": 21
+  },
+  {
+   "name": "k5_bed",
+   "prompt": "a cosy child's bed with a fluffy pillow and a teddy bear, a small star-shaped night lamp glowing, soft blanket, no people, cute 3D animated kids movie still, Pixar style, soft warm golden and lavender light, pastel colours, cosy, highly detailed",
+   "seed": 22
+  },
+  {
+   "name": "k5_moon",
+   "prompt": "a big golden crescent moon over sleepy rooftops and twinkling stars, purple night sky, soft clouds, no people, cute 3D animated kids movie still, Pixar style, soft warm golden and lavender light, pastel colours, cosy, highly detailed",
+   "seed": 23
+  },
+  {
+   "name": "k5_morning",
+   "prompt": "sunlight pouring through open curtains into a child's bedroom in the morning, birds on the window sill, unmade cosy bed, no people, cute 3D animated kids movie still, Pixar style, soft warm golden and lavender light, pastel colours, cosy, highly detailed",
+   "seed": 24
+  },
+  {
+   "name": "k5_siblings",
+   "prompt": "a little boy and a little girl in a pink hijab wearing pyjamas, sitting on a bed seen from behind, back view, backs of heads, looking at a starry night window, cute 3D animated kids movie still, Pixar style, soft warm golden and lavender light, pastel colours, cosy, highly detailed",
+   "seed": 25
+  }
+ ]
+}
