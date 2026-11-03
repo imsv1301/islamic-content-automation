@@ -42,7 +42,7 @@ jobs:
       - name: Install
         run: |
           pip install -q torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu
-          pip install -q omnivoice soundfile
+          pip install -q omnivoice soundfile numpy
       - name: Decrypt voice reference
         env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
         run: |
@@ -50,6 +50,7 @@ jobs:
           openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/ref_${{ matrix.lang }}.wav.enc -out /tmp/ref_${{ matrix.lang }}.wav -pass file:/tmp/k
           rm /tmp/k
       - name: Generate
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
         run: python scripts/voice_line.py "${{ inputs.lines }}" ${{ matrix.lang }} ${{ matrix.idx }} line_${{ matrix.lang }}_${{ matrix.idx }}.wav 2>&1 | grep -v -i warn | tail -3
       - uses: actions/upload-artifact@v4
         with:

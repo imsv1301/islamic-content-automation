@@ -45,6 +45,10 @@ git fetch origin renders
 - Characters are always faceless (plain circle or egg head, back views, silhouettes).
 
 ## 3. Voice (about 10 min, in parallel)
+- **Salutation: always write it as `<SAW>`** in every voice line, in the `en`, `ur` and `roman` arrays alike, e.g. `"Our beloved Prophet, <SAW>, said:"` and `"رسول اللہ <SAW> نے فرمایا:"`. Never type the salutation itself into a voice line.
+  - `voice_line.py` splices Sahil's own recorded salutation (`voice/salawat.wav.enc`) at that spot, so it's always pronounced correctly.
+  - `build_short.py` writes the full "Sallallahu Alaihi Wa Alihi Wasallam" into the captions.
+  - Don't re-roll the salutation part; it's a fixed recording.
 - **Sahil's cloned voice for all three channels**, including kids. Never Kokoro or another AI voice.
 - Write `jobs/<date>_<label>.json` (`{"en": [...]}`, or `{"ur": [...], "roman": [...], "speed": {"ur": 0.75}}`), commit, then dispatch `voice.yml` (`lines`, `langs`).
 - Download the artifacts `line_<lang>_<i>`. Check each line with faster-whisper (decode to 16 kHz float32 via ffmpeg) and re-roll bad lines with a new job.
