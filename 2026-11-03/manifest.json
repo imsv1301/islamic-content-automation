@@ -1,0 +1,30 @@
+{
+ "date": "2026-11-03",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle4Solution_Riddle5.mp4",
+   "meta": "riddle.json",
+   "title": "Box 3 Was the Key 📦 Riddle #4 Answer + Riddle #5: Three Switches, One Door #shorts"
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short5_Muskurahat.mp4",
+   "meta": "sadqah.json",
+   "title": "Muskurahat Bhi Neki Hai? | Sahih Muslim 2626 | Khaali Jeb, Phir Bhi Neki #shorts"
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_BedtimeDua.mp4",
+   "meta": "kids.json",
+   "title": "What Do We Say Before We Sleep? 🌙 Bedtime Dua for Kids | Islam for Kids #shorts"
+  }
+ ],
+ "notes": [
+  "Today: 23 Jumada al-Ula 1448 (Umm al-Qura), no major occasion in the next 7 days, so general topics. Hadith checked on sunnah.com today: Sahih Muslim 2626 (Sadqah, don't belittle any good deed, even meeting your brother with a cheerful face) and Sahih al-Bukhari 6324 (kids, bedtime and waking duas).",
+  "Riddle #5 = three switches, one lamp behind a door you can open once (answer for tomorrow: switch 1 on for a few minutes, off, then switch 2 on and go in; lit = 2, off but warm = 1, off and cold = 3).",
+  "Cloudflare's free image quota was already used up when the run started (429 on every request), so 10 new stills were made free with SDXL on GitHub Actions and the rest reused from the earlier library. One SDXL family shot showed faces, so it was dropped. Nothing was paid.",
+  "Masjid-e-Nabawi shots are the real Pixabay frames (credited), not AI. Kids video is Made for Kids. Comments: no new threads on riddle or sadqah.",
+  "Please give the salutation and the kids dua pronunciation ('Bismika Allahumma amootu wa ahya') a quick listen; whisper can't fully confirm Arabic in the English clone."
+ ]
+}
