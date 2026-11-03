@@ -1,0 +1,134 @@
+{
+ "images": [
+  {
+   "name": "r5_switches",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of three old brass light switches in a row on a warm plaster wall, all switched down, dramatic side light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r5_door",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a closed wooden door at the end of a dim hallway, thin line of darkness under the door, mysterious mood, dust in the air, no people",
+   "steps": 8
+  },
+  {
+   "name": "r5_lamp",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old table lamp with a fabric shade on a side table in a dark empty room, lamp switched off, moonlight through a window, no people",
+   "steps": 8
+  },
+  {
+   "name": "r5_lamp_on",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old table lamp glowing brightly on a side table in a cosy room at night, warm light pool, no people",
+   "steps": 8
+  },
+  {
+   "name": "r5_hand",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a hand with a sleeve flipping a brass light switch on a plaster wall, close-up, dramatic light, no face",
+   "steps": 8
+  },
+  {
+   "name": "r5_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a person standing in a hallway seen from behind, back view, back of head only, arms crossed, looking at a closed door, face not visible",
+   "steps": 8
+  },
+  {
+   "name": "r5_handle",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a hand reaching for a brass door handle of a closed wooden door, tense mood, warm rim light, no face",
+   "steps": 8
+  },
+  {
+   "name": "r5_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three brass light switches on a wall glowing with a big question mark shadow cast on the wall, mysterious, no people",
+   "steps": 8
+  },
+  {
+   "name": "s5_sunrise",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a quiet old South Asian city street at sunrise, golden light, empty, soft haze, no people",
+   "steps": 8
+  },
+  {
+   "name": "s5_pocket",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an empty open leather wallet on a wooden table, a few crumbs, warm window light, no people",
+   "steps": 8
+  },
+  {
+   "name": "s5_greet",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two men in kurta and prayer caps embracing in greeting on a sunny street, seen from behind, back view, faces not visible, warm golden light",
+   "steps": 8
+  },
+  {
+   "name": "s5_family",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a family dinner on a floor mat, dastarkhwan, steaming bowls of food, view from behind the people, only backs and hands visible, warm lamp light",
+   "steps": 8
+  },
+  {
+   "name": "s5_burden",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old man seen from behind carrying a heavy sack on his back along a dusty lane at dawn, a younger man helping lift it, both back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "s5_flower",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single flower blooming in a crack of an old stone wall, sunbeam, dew, no people",
+   "steps": 8
+  },
+  {
+   "name": "s5_door",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an open wooden door of a home with warm light spilling out onto the street at dusk, welcoming, no people",
+   "steps": 8
+  },
+  {
+   "name": "s5_passerby",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, busy bazaar lane at morning, people seen from behind as silhouettes walking, one man raising his hand in greeting, back views only, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "s5_lanterns",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, many warm paper lanterns glowing over a narrow lane at night, gentle bokeh, no people",
+   "steps": 8
+  },
+  {
+   "name": "k5_window",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a little boy in blue pyjamas seen from behind, back view, back of head, looking out of a bedroom window at a big crescent moon and stars",
+   "steps": 8
+  },
+  {
+   "name": "k5_bed",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a cosy child's bed with a teddy bear on the pillow, a small night lamp glowing, stars on the wallpaper, no people",
+   "steps": 8
+  },
+  {
+   "name": "k5_moon",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a big smiling-free crescent moon over sleepy rooftops and twinkling stars, purple and gold night sky, no people, no faces",
+   "steps": 8
+  },
+  {
+   "name": "k5_book",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a small open dua book on a soft blanket beside a glowing star night lamp, bedtime, no people",
+   "steps": 8
+  },
+  {
+   "name": "k5_morning",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, sunlight pouring through opening curtains into a child's bedroom in the morning, birds outside the window, no people",
+   "steps": 8
+  },
+  {
+   "name": "k5_stretch",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a little girl in a pink hijab and pyjamas seen from behind, back view, stretching her arms up at a sunny bedroom window in the morning",
+   "steps": 8
+  },
+  {
+   "name": "k5_slippers",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, two tiny slippers beside a child's bed on a soft rug, morning sun beams, no people",
+   "steps": 8
+  },
+  {
+   "name": "k5_siblings",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a boy and a girl in pyjamas sitting on a bed seen from behind, back view, backs of heads, looking at a starry night window",
+   "steps": 8
+  },
+  {
+   "name": "k5_stars",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a bedroom ceiling glowing with soft star projections, dreamy, cosy, no people",
+   "steps": 8
+  }
+ ]
+}
