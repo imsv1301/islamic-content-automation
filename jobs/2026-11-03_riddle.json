@@ -1,15 +1,17 @@
-{"en": [
- "Yesterday: three boxes, and every single label was wrong.",
- "The answer is box 3, the one labelled Mixed.",
- "Its label is wrong, so it can't be mixed. It holds only one kind of fruit.",
- "Pull out an apple? Then that box is the apples.",
- "The box labelled Oranges can't be oranges, so it must be the mixed one. And the last box is oranges.",
- "Now, a brand new mystery.",
- "Three light switches on a wall. Only one of them turns on the lamp.",
- "The lamp is in another room, behind a closed door. From here, you can't see it.",
- "Person 1 says: flip the switches as many times as you like.",
- "But you may open that door only once.",
- "No helpers. No cameras. One visit.",
- "So how do you find the right switch?",
- "Comment your answer. The answer drops tomorrow, at sunrise."
-]}
+{
+ "en": [
+  "Yesterday: three boxes, and every single label was wrong.",
+  "The answer is box 3, the box with the Mixed label.",
+  "Its label is wrong, so it cannot be mixed. It holds only one kind of fruit.",
+  "Pull out an apple? Then that box is the apples.",
+  "The box labelled Oranges cannot be oranges, so it must be the mixed one. And the last box is oranges.",
+  "Now, a brand new mystery.",
+  "Three light switches on a wall. Only one of them turns on the lamp.",
+  "The lamp is in another room, behind a closed door. From here, you cannot see it.",
+  "Person 1 says: flip the switches as many times as you like.",
+  "But you may open that door only once.",
+  "No helpers. No cameras. One visit.",
+  "So how do you find the right switch?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ]
+}
