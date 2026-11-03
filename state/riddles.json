@@ -18,19 +18,26 @@
    "title": "The broken vase: heavy rain all morning; Person 1 reading in the garden, Person 2 baking in the kitchen, Person 3 asleep upstairs",
    "answer": "Person 1. It had been raining heavily since sunrise, so nobody could have been reading in the garden the whole time (and the book is perfectly dry).",
    "posted": "2026-11-01 (uploaded https://youtu.be/6lL-5FkSUho)",
-   "solved_in": "2026-11-02 (pending Sahil's approval)"
+   "solved_in": "2026-11-02 (uploaded https://youtu.be/gvEob1UMmAo)"
   },
   {
    "n": 4,
    "title": "Three boxes (apples, oranges, mixed); Person 1 got every label wrong; take one fruit from one box without looking, then fix all three labels",
    "answer": "Box 3, the one labelled MIXED. Its label is wrong, so it holds only one kind. If you pull an apple, it is the apples box; the box labelled ORANGES can't be oranges (wrong label) and can't be apples, so it's mixed; the box labelled APPLES is oranges. (Same logic the other way round if you pull an orange.)",
-   "posted": "2026-11-02 (pending Sahil's approval)",
+   "posted": "2026-11-02 (uploaded https://youtu.be/gvEob1UMmAo)",
+   "solved_in": "2026-11-03 (pending Sahil's approval)"
+  },
+  {
+   "n": 5,
+   "title": "Three light switches, one lamp in another room behind a closed door; flip switches freely, but open the door only once (Person 1 sets the rule)",
+   "answer": "Turn switch 1 on for a few minutes, then turn it off. Turn switch 2 on and open the door. Lamp lit = switch 2; lamp off but warm = switch 1; lamp off and cold = switch 3.",
+   "posted": "2026-11-03 (pending Sahil's approval)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 5,
+  "n": 6,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #4 solution first (answer: box 3, labelled MIXED), then Riddle #5. If Sahil holds (❌) today's video, re-send Riddle #3 solution + #4 instead."
+  "note": "Next riddle video = Riddle #5 solution first (switch 1 on a few minutes then off, switch 2 on; lit = 2, warm = 1, cold = 3), then Riddle #6. If Sahil holds (❌) today's video, re-send Riddle #4 solution + #5 instead."
  }
 }
