@@ -1,0 +1,29 @@
+{
+ "images": [
+  {
+   "name": "s6_word2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, silhouettes of two men in kurta seen from directly behind walking side by side down a quiet lane at sunrise, one arm around the other's shoulder, backs only, heads covered with prayer caps, faces completely hidden, sun ahead of them",
+   "steps": 8
+  },
+  {
+   "name": "s6_word3",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a warm speech bubble shaped glowing lantern light between two cups of tea on a wooden table at sunrise, kindness, no people",
+   "steps": 8
+  },
+  {
+   "name": "k6_hot2",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a hot sunny desert path with sand dunes, palm trees far away and a big bright glowing sun, heat shimmer, empty, no people, no characters",
+   "steps": 8
+  },
+  {
+   "name": "k6_man2",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a grown man in a long robe and turban walking alone on a sunny desert path, seen from directly behind, back view, small in the frame, footprints in sand",
+   "steps": 8
+  },
+  {
+   "name": "r6_kitchen2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a pot of boiling water on a stove with steam rising, a single white egg on the counter next to it, kitchen background blurred, no clocks, no people",
+   "steps": 8
+  }
+ ]
+}
