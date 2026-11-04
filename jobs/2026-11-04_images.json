@@ -1,0 +1,104 @@
+{
+ "images": [
+  {
+   "name": "r6_kitchen",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a steaming pot of boiling water on an old stove in a rustic kitchen, one white egg on the counter beside it, no people",
+   "steps": 8
+  },
+  {
+   "name": "r6_timers",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two antique brass sand timers hourglasses side by side on a wooden kitchen table, one small and one tall, sand falling, dramatic side light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r6_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a person in an apron standing at a kitchen stove seen from behind, back view, back of head only, looking at two hourglasses on a shelf, face not visible",
+   "steps": 8
+  },
+  {
+   "name": "r6_egg",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a single white egg on a wooden spoon above a pot of bubbling water, steam, no people",
+   "steps": 8
+  },
+  {
+   "name": "r6_noclock",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a pale empty patch on a kitchen wall where a clock used to hang, a nail and a faint circle outline, a phone switched off face down on the counter, no people",
+   "steps": 8
+  },
+  {
+   "name": "r6_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two hourglasses on a table casting long shadows on the wall that form a big question mark, mysterious mood, no people",
+   "steps": 8
+  },
+  {
+   "name": "s6_justice",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, old wooden balance scale on a judge's wooden table in a sunlit room, two men in kurtas sitting on either side seen from behind, back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "s6_word",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two men in kurta talking kindly on a quiet street at sunrise, one hand on the other's shoulder, seen from behind, back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "s6_steps",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, men in white kurta and prayer caps walking along a lane toward a small neighbourhood mosque with white minaret at dawn, seen from behind, back view, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "s6_stone",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a hand picking up a sharp rock from the middle of a dusty village path at sunrise, no face",
+   "steps": 8
+  },
+  {
+   "name": "s6_path",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a clean empty village lane at golden hour, swept and clear, warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "k6_hot",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a hot sunny desert road with sand dunes and a big bright sun, heat haze, no people",
+   "steps": 8
+  },
+  {
+   "name": "k6_man",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a man in a simple robe and turban walking on a sunny desert path seen from behind, back view, back of head only, face not visible",
+   "steps": 8
+  },
+  {
+   "name": "k6_well",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, an old round stone water well with a rope in a sunny desert oasis, palm tree, no people",
+   "steps": 8
+  },
+  {
+   "name": "k6_dog",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a cute thin thirsty puppy dog with its tongue out, panting beside an old stone well in the sun, sad gentle eyes, cartoon",
+   "steps": 8
+  },
+  {
+   "name": "k6_shoe",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a leather shoe full of clear water held in a hand, water droplets sparkling, close-up, no face",
+   "steps": 8
+  },
+  {
+   "name": "k6_drink",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a cute happy dog drinking water from a leather shoe on the sand beside a stone well, sunny, cartoon",
+   "steps": 8
+  },
+  {
+   "name": "k6_light",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, soft golden light rays falling from fluffy clouds over a desert oasis, peaceful, sparkles, no people",
+   "steps": 8
+  },
+  {
+   "name": "k6_cat",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a little child in a yellow t-shirt seen from behind, back view, back of head, placing a small bowl of water for a fluffy kitten in a garden",
+   "steps": 8
+  },
+  {
+   "name": "k6_birds",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, small colourful birds drinking from a shallow bowl of water on a garden wall, sunny morning, no people",
+   "steps": 8
+  }
+ ]
+}

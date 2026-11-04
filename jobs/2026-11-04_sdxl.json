@@ -1,0 +1,105 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, church, steeple, cross, ugly, deformed, blurry, scary",
+ "images": [
+  {
+   "name": "r6_kitchen",
+   "prompt": "a steaming pot of boiling water on an old stove in a rustic kitchen, one white egg on the counter beside it, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 40
+  },
+  {
+   "name": "r6_timers",
+   "prompt": "two antique brass sand timers hourglasses side by side on a wooden kitchen table, one small and one tall, sand falling, dramatic side light, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 41
+  },
+  {
+   "name": "r6_person",
+   "prompt": "a person in an apron standing at a kitchen stove seen from behind, back view, back of head only, looking at two hourglasses on a shelf, face not visible, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 42
+  },
+  {
+   "name": "r6_egg",
+   "prompt": "close-up of a single white egg on a wooden spoon above a pot of bubbling water, steam, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 43
+  },
+  {
+   "name": "r6_noclock",
+   "prompt": "a pale empty patch on a kitchen wall where a clock used to hang, a nail and a faint circle outline, a phone switched off face down on the counter, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 44
+  },
+  {
+   "name": "r6_question",
+   "prompt": "two hourglasses on a table casting long shadows on the wall that form a big question mark, mysterious mood, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 45
+  },
+  {
+   "name": "s6_justice",
+   "prompt": "old wooden balance scale on a judge's wooden table in a sunlit room, two men in kurtas sitting on either side seen from behind, back view, faces not visible, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 46
+  },
+  {
+   "name": "s6_word",
+   "prompt": "two men in kurta talking kindly on a quiet street at sunrise, one hand on the other's shoulder, seen from behind, back view, faces not visible, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 47
+  },
+  {
+   "name": "s6_steps",
+   "prompt": "men in white kurta and prayer caps walking along a lane toward a small neighbourhood mosque with white minaret at dawn, seen from behind, back view, faces not visible, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 48
+  },
+  {
+   "name": "s6_stone",
+   "prompt": "close-up of a hand picking up a sharp rock from the middle of a dusty village path at sunrise, no face, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 49
+  },
+  {
+   "name": "s6_path",
+   "prompt": "a clean empty village lane at golden hour, swept and clear, warm light, no people, 3D animated film still, warm orange and amber cinematic light, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 50
+  },
+  {
+   "name": "k6_hot",
+   "prompt": "a hot sunny desert road with sand dunes and a big bright sun, heat haze, no people, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 51
+  },
+  {
+   "name": "k6_man",
+   "prompt": "a man in a simple robe and turban walking on a sunny desert path seen from behind, back view, back of head only, face not visible, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 52
+  },
+  {
+   "name": "k6_well",
+   "prompt": "an old round stone water well with a rope in a sunny desert oasis, palm tree, no people, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 53
+  },
+  {
+   "name": "k6_dog",
+   "prompt": "a cute thin thirsty puppy dog with its tongue out, panting beside an old stone well in the sun, sad gentle eyes, cartoon, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 54
+  },
+  {
+   "name": "k6_shoe",
+   "prompt": "a leather shoe full of clear water held in a hand, water droplets sparkling, close-up, no face, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 55
+  },
+  {
+   "name": "k6_drink",
+   "prompt": "a cute happy dog drinking water from a leather shoe on the sand beside a stone well, sunny, cartoon, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 56
+  },
+  {
+   "name": "k6_light",
+   "prompt": "soft golden light rays falling from fluffy clouds over a desert oasis, peaceful, sparkles, no people, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 57
+  },
+  {
+   "name": "k6_cat",
+   "prompt": "a little child in a yellow t-shirt seen from behind, back view, back of head, placing a small bowl of water for a fluffy kitten in a garden, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 58
+  },
+  {
+   "name": "k6_birds",
+   "prompt": "small colourful birds drinking from a shallow bowl of water on a garden wall, sunny morning, no people, cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, stylised 3D render, highly detailed",
+   "seed": 59
+  }
+ ]
+}
