@@ -1,0 +1,19 @@
+{
+ "images": [
+  {
+   "name": "k7_toy",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, two small children playing together with colourful wooden toy blocks on a soft rug, seen from behind, back views, backs of heads only, faces not visible, sunny playroom",
+   "steps": 8
+  },
+  {
+   "name": "k7_toy2",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a little boy seen from behind sharing his red toy car with a friend in a sunny garden, back views, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "r7_person2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a person in a long coat standing beside a tiny rowing boat on a wild grassy riverbank seen from behind, back view, back of head only, face not visible, open countryside, no buildings, no church, no town",
+   "steps": 8
+  }
+ ]
+}
