@@ -25,6 +25,9 @@ import { D1103Kids, D1103_KIDS_DUR } from "./day1/D1103Kids";
 import { D1104Riddle, D1104_RIDDLE_DUR } from "./day1/D1104Riddle";
 import { D1104Sadqah, D1104_SADQAH_DUR } from "./day1/D1104Sadqah";
 import { D1104Kids, D1104_KIDS_DUR } from "./day1/D1104Kids";
+import { D1105Riddle, D1105_RIDDLE_DUR } from "./day1/D1105Riddle";
+import { D1105Sadqah, D1105_SADQAH_DUR } from "./day1/D1105Sadqah";
+import { D1105Kids, D1105_KIDS_DUR } from "./day1/D1105Kids";
 import { NaatReal, NAAT_REAL_DUR } from "./naat/NaatReal";
 
 export const MyComposition = () => {
@@ -47,6 +50,9 @@ export const MyComposition = () => {
     <Composition id="D1104Riddle" component={D1104Riddle} durationInFrames={Math.round(D1104_RIDDLE_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="D1104Sadqah" component={D1104Sadqah} durationInFrames={Math.round(D1104_SADQAH_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="D1104Kids" component={D1104Kids} durationInFrames={Math.round(D1104_KIDS_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="D1105Riddle" component={D1105Riddle} durationInFrames={Math.round(D1105_RIDDLE_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="D1105Sadqah" component={D1105Sadqah} durationInFrames={Math.round(D1105_SADQAH_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="D1105Kids" component={D1105Kids} durationInFrames={Math.round(D1105_KIDS_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="MysteryShort" component={MysteryShort} durationInFrames={Math.round(MYSTERY_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="StrengthShort" component={StrengthShort} durationInFrames={Math.round(STRENGTH_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="KidsThumb" component={KidsThumb} durationInFrames={1} fps={30} width={1280} height={720} />

@@ -39,12 +39,19 @@
    "title": "Boil an egg for exactly 9 minutes; no clock, no phone; only a 4-minute and a 7-minute sand timer (Person 1)",
    "answer": "Start both timers when the egg goes in. At 4 min the 4-timer runs out: flip it. At 7 min the 7-timer runs out: flip it (the 4-timer has 1 min left). At 8 min the 4-timer runs out: flip the 7-timer again; it has only 1 min of sand on top, so it runs out at exactly 9 min.",
    "posted": "2026-11-04 (pending Sahil's approval)",
+   "solved_in": "2026-11-05 (pending Sahil's approval)"
+  },
+  {
+   "n": 7,
+   "title": "Wolf, goat and cabbage: Person 1 must take all three across a river; the boat holds Person 1 + only one thing; left alone, the wolf eats the goat and the goat eats the cabbage",
+   "answer": "Take the goat over. Come back alone. Take the wolf over, and bring the goat back. Take the cabbage over (it stays with the wolf). Come back alone. Take the goat over. (Taking the cabbage first and bringing the goat back works too.)",
+   "posted": "2026-11-05 (pending Sahil's approval)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 7,
+  "n": 8,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #6 solution first (start both; flip the 4 at 4; flip the 7 at 7; flip the 7 again at 8; it ends at 9), then Riddle #7. Riddle #5 (2026-11-03) was still unapproved at the 2026-11-04 run; if Sahil holds (❌) a day's riddle, re-send that day's solution + riddle instead."
+  "note": "Next riddle video = Riddle #7 solution first (goat over; back; wolf over, goat back; cabbage over; back; goat over), then Riddle #8. Riddles #5 (2026-11-03) and #6 (2026-11-04) were still unapproved at the 2026-11-05 run; if Sahil holds (❌) a day's riddle, re-send that day's solution + riddle instead."
  }
 }
