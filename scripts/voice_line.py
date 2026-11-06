@@ -14,7 +14,15 @@ lines_file, lang, idx, out = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.arg
 J = json.load(open(lines_file))
 text = J[lang][idx]
 speed = (J.get("speed") or {}).get(lang)
-ref_text = json.load(open("voice/ref_texts.json"))[lang]
+# per-line emotion: J["style"][lang][idx] in {"calm","warm","excited","serious"} picks Sahil's matching tone
+# reference (voice/ref_<lang>_<style>.wav.enc, decrypted by the workflow) when it exists; J["line_speed"][lang][idx] overrides speed.
+style = ((J.get("style") or {}).get(lang) or {}).get(str(idx)) if isinstance((J.get("style") or {}).get(lang), dict) else None
+speed = ((J.get("line_speed") or {}).get(lang) or {}).get(str(idx), speed) if isinstance((J.get("line_speed") or {}).get(lang), dict) else speed
+REFS = json.load(open("voice/ref_texts.json"))
+ref_key = f"{lang}_{style}" if style and os.path.exists(f"/tmp/ref_{lang}_{style}.wav") and f"{lang}_{style}" in REFS else lang
+ref_text = REFS[ref_key]
+REF_AUDIO = f"/tmp/ref_{ref_key}.wav"
+print("voice reference:", ref_key)
 URDU_PREFIX = "ہمارے نبی محمدِ مصطفیٰ"
 FALLBACK = {"ur": "صَلَّی اللہُ عَلَیْہِ وَآلِہٖ وَسَلَّم", "en": "Sallal-laahu alaihi, wa aalihi, wa sallam"}
 
@@ -24,7 +32,7 @@ SR = getattr(m, "sampling_rate", 24000)
 
 
 def tts(t):
-    a = m.generate(text=t, language={"ur": "Urdu", "en": "English"}[lang], ref_audio=f"/tmp/ref_{lang}.wav", ref_text=ref_text, speed=speed)
+    a = m.generate(text=t, language={"ur": "Urdu", "en": "English"}[lang], ref_audio=REF_AUDIO, ref_text=ref_text, speed=speed)
     return np.asarray(a[0], dtype=np.float32)
 
 

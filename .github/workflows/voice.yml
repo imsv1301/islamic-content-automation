@@ -48,6 +48,7 @@ jobs:
         run: |
           printf '%s' "$MASTER_KEY" > /tmp/k
           openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in voice/ref_${{ matrix.lang }}.wav.enc -out /tmp/ref_${{ matrix.lang }}.wav -pass file:/tmp/k
+          for f in voice/ref_${{ matrix.lang }}_*.wav.enc; do [ -e "$f" ] || continue; b=$(basename "$f" .enc); openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in "$f" -out "/tmp/$b" -pass file:/tmp/k; done
           rm /tmp/k
       - name: Generate
         env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }

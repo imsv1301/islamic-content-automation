@@ -45,6 +45,16 @@ git fetch origin renders
 - Characters are always faceless (plain circle or egg head, back views, silhouettes).
 
 ## 3. Voice (about 10 min, in parallel)
+- **Emotion (Sahil, 6 Nov):** give the voice feeling where the line needs it.
+  - Per line, set `"style": {"<lang>": {"<idx>": "calm|warm|excited|serious"}}`. It uses Sahil's matching tone recording when one exists.
+    - excited: hooks, kids' fun moments, riddle reveals
+    - serious: a hadith's warning or weight
+    - warm: duas, kindness, the closing line
+    - calm: everything else
+  - `"line_speed": {"<lang>": {"<idx>": 0.85}}` slows key lines.
+  - Write with emotional punctuation (… ! ?).
+  - OmniVoice non-verbal tags like `[sigh]` or `[laughter]` are allowed **rarely**, in kids and riddle videos only, never inside a hadith or around the Prophet's mention.
+  - The second check confirms the emotion fits and isn't overdone.
 - **Mentioning the Prophet: always write `<SAW>`** in every voice line, in the `en`, `ur` and `roman` arrays alike.
   - `<SAW>` becomes the **whole phrase**, so **don't** write "Prophet", "Nabi" or "Rasool Allah" before it:
     - English: Sahil's recording, "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"
