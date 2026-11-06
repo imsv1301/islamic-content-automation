@@ -241,6 +241,11 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
 - The 2 Nov videos were made public by hand (gvEob1UMmAo, 4nVeQ19zigQ, XFsuGXfsUkc).
 - No quota increase is needed. The default 10k units a day is enough.
 
+## 13. Auto-publish (6 Nov 2026)
+- Sahil: "upload everything on YouTube directly and just send a message on Telegram". The daily run now dispatches `publish.yml`, which uploads public straight away and sends Sahil a Telegram text with the links. No ✅ buttons; `approvals.yml` is manual-only now.
+- `yt.py upload` skips a video whose title is already on the channel (duplicate guard).
+- 6 Nov catch-up: 3 Nov and 4 Nov had in fact already been uploaded earlier, but weren't in the log, so my catch-up created 6 duplicates. They were set to **private** (ids qlkKhJZk018, LbZGSE2tYMw, 9f75dr3gpOQ, khJrjSSwUy4, h1fS-1KVaGQ, gFvV6Rc9_iY). **Sahil needs to delete them in Studio**; Claude doesn't delete. 5 Nov was uploaded fresh (S8J3LDXnz4Y, QxYXWeIVezQ, cfVQ4rWoW5w).
+
 ## Daily log
 - 2026-10-31: setup day. Approval flow tested with the Riddle #3 sample (renders/2026-10-31-test). The YouTube audit form was submitted by Sahil.
 - 2026-11-01 (scheduled daily run, unattended): 21 Jumada al-Ula 1448, no occasion within 7 days. Comments: no new threads (riddle, sadqah). Made 3 Shorts in the house style with a new reusable engine `video/src/day1/HouseShort.tsx` (configs `D1101Riddle/Sadqah/Kids.tsx`), renders on `renders/2026-11-01/`, Telegram preview sent.

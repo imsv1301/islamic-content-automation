@@ -1,0 +1,35 @@
+name: publish
+# Uploads a day's videos (renders/<date>/manifest.json) straight to YouTube as public, then texts Sahil the links on Telegram.
+on:
+  workflow_dispatch:
+    inputs:
+      date: { description: "folder on the renders branch, e.g. 2026-11-07", required: true }
+concurrency: { group: publish, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: { ref: renders, path: renders }
+      - name: Decrypt YouTube state
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
+        run: |
+          printf '%s' "$MASTER_KEY" > /tmp/k
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/youtube.json.enc -out /tmp/yt_state.json -pass file:/tmp/k
+          rm /tmp/k
+      - name: Upload and notify
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          YT_STATE: /tmp/yt_state.json
+          YT_PRIVACY: public
+          D: ${{ inputs.date }}
+        run: python3 scripts/tg.py publish renders "$D"; rm -f /tmp/yt_state.json
+      - name: Save upload log
+        run: |
+          git config user.name "sadqah-bot"; git config user.email "sadqahmedia.channels@gmail.com"
+          git add state/uploads.jsonl
+          git diff --cached --quiet || (git commit -m "publish: upload log" && for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done)

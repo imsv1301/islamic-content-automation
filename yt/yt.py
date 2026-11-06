@@ -31,6 +31,13 @@ def upload(label, video, meta_f, thumb=None):
         meta.setdefault("status", {})["privacyStatus"] = os.environ["YT_PRIVACY"]
     req = urllib.request.Request("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", data=json.dumps(meta).encode(), method="POST",
         headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json; charset=UTF-8", "X-Upload-Content-Type": "video/mp4", "X-Upload-Content-Length": str(size)})
+    # duplicate guard: never upload the same title twice to a channel
+    ch = ST["channels"][label]["channel_id"]
+    up = get(tok, "channels", part="contentDetails", id=ch)["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    for it in get(tok, "playlistItems", part="snippet", playlistId=up, maxResults=50).get("items", []):
+        if it["snippet"]["title"].strip() == meta["snippet"]["title"].strip():
+            vid = it["snippet"]["resourceId"]["videoId"]
+            print("skipped: already on the channel", vid, "https://youtu.be/" + vid); return
     loc = urllib.request.urlopen(req).headers["Location"]
     with open(video, "rb") as f:
         v = json.load(urllib.request.urlopen(urllib.request.Request(loc, data=f.read(), method="PUT", headers={"Authorization": "Bearer " + tok, "Content-Type": "video/mp4"})))

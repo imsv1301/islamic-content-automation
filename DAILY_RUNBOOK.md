@@ -79,12 +79,13 @@ git fetch origin renders
 - Images: generate at the highest size the model allows. Prefer Lucid (1088x1920, about 1 a day free) for the hero shot. FLUX shots are 1024² and get cropped and upscaled; keep the camera zoom at 1.2 or less on them so they stay sharp.
 - Always render stills first (`npx remotion still <Comp> x.png --frame=N`), make a contact sheet, look at it, fix it, then do the full render.
 
-## 5. Package and send by 05:45 UK
-- On the `renders` branch, make `renders/<date>/` with the 3 MP4s, a metadata JSON per video (`snippet` + `status` with `privacyStatus: "public"`; kids: `selfDeclaredMadeForKids: true`). YouTube does NOT force API uploads to private (confirmed by the YouTube API team on 2 Nov 2026), and the approvals workflow also forces public on ✅, and `manifest.json`:
-  `{"date": "<date>", "items": [{"label": "riddle", "video": "...mp4", "meta": "...json", "title": "<YouTube title>"}, ...], "notes": ["optional message to Sahil"]}`
-- Commit and push the renders branch, then dispatch `telegram.yml` with `mode=preview` and `date=<date>`.
-- Right after, dispatch `approvals.yml` with `watch_minutes=300` so Sahil's ✅ taps upload within ~20s (GitHub's */10 schedule really runs only every few hours).
-- If something failed, still send what's ready, plus a `notes` line explaining what's missing. Never upload anything yourself: uploads happen only through Sahil's ✅.
+## 5. Package and publish (auto, since 6 Nov 2026), done by about 05:45 UK
+- On the `renders` branch, make `renders/<date>/` with the 3 full-quality MP4s, a metadata JSON per video (`snippet` + `status` with `privacyStatus: "public"`; kids: `selfDeclaredMadeForKids: true`; titles of 100 characters or less), and `manifest.json`:
+  `{"date": "<date>", "items": [{"label": "riddle", "video": "...mp4", "meta": "...json", "title": "<YouTube title>"}, ...], "notes": ["optional info line for Sahil"]}`
+- **Check each video before publishing:** 1080x1920, it has audio, the duration is right, you've watched the contact sheet, the hadith reference is correct, the kids flag is set, and there are no faces.
+- Push the renders branch, then dispatch **`publish.yml`** with `date=<date>`. It uploads all 3 straight to YouTube as **public** (with a duplicate-title guard), logs them in `state/uploads.jsonl`, and texts Sahil the links on Telegram. **There is no approval step any more** (Sahil's decision, 6 Nov).
+- Before rendering, check YouTube (`yt.py stats` via `youtube.yml`) and `state/uploads.jsonl` for any earlier day that never went up, and publish those first, oldest first.
+- If something failed, publish what's ready and put a `notes` line in the manifest saying what's missing.
 
 ## 6. Wrap up
 - Append a short entry under "Daily log" in `HANDOFF.md`: what was made, which hadith, the riddle number and answer, and any issues. Push to main.

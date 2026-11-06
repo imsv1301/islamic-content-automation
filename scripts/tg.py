@@ -103,12 +103,38 @@ def poll(rdir):
             call("sendMessage", chat_id=CHAT, text="Got it. To change a video, tell me in the Claude app chat (this bot only handles ✅ / ❌ so your messages never end up in the public repo).", reply_to_message_id=u["message"]["message_id"])
 
 
+def publish_day(rdir, date):
+    """Upload every video of the day straight to YouTube (public), log it, then send Sahil a text summary with links."""
+    m = json.load(open(f"{rdir}/{date}/manifest.json"))
+    done = pathlib.Path("state/uploads.jsonl")
+    logged = {json.loads(l)["key"] for l in done.read_text().splitlines() if l.strip()} if done.exists() else set()
+    lines = [f"✅ Uploaded today ({date}):"]
+    for i, it in enumerate(m["items"]):
+        key = f"{date}|{i}"
+        if key in logged:
+            lines.append(f"• {CH.get(it['label'], it['label'])}: already uploaded"); continue
+        out = subprocess.run([sys.executable, "yt/yt.py", "upload", it["label"], f"{rdir}/{date}/{it['video']}", f"{rdir}/{date}/{it['meta']}"] + ([f"{rdir}/{date}/{it['thumb']}"] if it.get("thumb") else []), capture_output=True, text=True)
+        print(out.stdout, out.stderr[-500:])
+        link = next((w for w in out.stdout.split() if w.startswith("https://youtu.be/")), None)
+        if link:
+            log_state("uploads.jsonl", {"key": key, "label": it["label"], "url": link, "at": datetime.datetime.utcnow().isoformat(), "by": "auto"})
+            lines.append(f"• {CH.get(it['label'], it['label'])}: {it.get('title', '')}\n  {link}")
+        else:
+            lines.append(f"• ⚠️ {CH.get(it['label'], it['label'])}: upload failed, Claude will retry next run")
+    lines += [f"ℹ️ {n}" for n in m.get("notes", [])]
+    msg = "\n".join(lines)
+    for k in range(0, len(msg), 3900):
+        call("sendMessage", chat_id=CHAT, text=msg[k:k + 3900], disable_web_page_preview="true")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "text":
         print(call("sendMessage", chat_id=CHAT, text=sys.argv[2]).get("ok"))
     elif cmd == "preview":
         preview(sys.argv[2], sys.argv[3])
+    elif cmd == "publish":
+        publish_day(sys.argv[2], sys.argv[3])
     elif cmd == "poll":
         poll(sys.argv[2])
     elif cmd == "diag":  # no message content printed (public logs)

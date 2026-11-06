@@ -1,7 +1,6 @@
 name: approvals
-# Every 10 minutes: reads Sahil's ✅ / ❌ taps in Telegram and uploads approved videos to YouTube.
+# Manual only since 6 Nov 2026 (videos now auto-publish via publish.yml). Reads Sahil's ✅ / ❌ taps in Telegram and uploads approved videos to YouTube.
 on:
-  schedule: [{ cron: "*/10 * * * *" }]
   workflow_dispatch:
     inputs:
       watch_minutes: { description: "keep polling every 20s for this many minutes (daily run sets ~300)", default: "0" }
