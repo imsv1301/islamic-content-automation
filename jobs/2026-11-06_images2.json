@@ -1,0 +1,19 @@
+{
+ "images": [
+  {
+   "name": "r8_pier",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, exactly three people fishing on a wooden pier at a misty lake at sunrise, seen from behind: on the left an old grey-haired grandfather with a walking stick, in the middle a grown man, on the right a small boy, only three people, three fishing rods, back view, backs of heads only, faces not visible, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "r8_pier_b",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three silhouettes on a wooden pier at sunrise from behind: an old man, a tall man and a little boy, each holding a fishing rod, golden lake, only three people, back view, faces not visible, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "k8_dua",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, one little boy wearing a white kurta and white cap sitting on a small prayer mat with both hands raised in dua, seen from behind, back view, back of head only, face not visible, warm sunlight through a window",
+   "steps": 8
+  }
+ ]
+}
