@@ -113,6 +113,13 @@ def publish_day(rdir, date):
         key = f"{date}|{i}"
         if key in logged:
             lines.append(f"• {CH.get(it['label'], it['label'])}: already uploaded"); continue
+        qa = it.get("qa") or {}
+        gate = {"automatic checks": (qa.get("auto") or {}).get("passed") is True, "authenticity": qa.get("authentic") is True, "second check": qa.get("second_check") is True}
+        if not all(gate.values()):
+            why = ", ".join(k for k, v in gate.items() if not v)
+            extra = "; ".join((qa.get("auto") or {}).get("issues", []))[:300]
+            lines.append(f"• ⛔ {CH.get(it['label'], it['label'])}: NOT uploaded, failed {why}" + (f" ({extra})" if extra else "") + ". Claude will fix it and retry.")
+            continue
         out = subprocess.run([sys.executable, "yt/yt.py", "upload", it["label"], f"{rdir}/{date}/{it['video']}", f"{rdir}/{date}/{it['meta']}"] + ([f"{rdir}/{date}/{it['thumb']}"] if it.get("thumb") else []), capture_output=True, text=True)
         print(out.stdout, out.stderr[-500:])
         link = next((w for w in out.stdout.split() if w.startswith("https://youtu.be/")), None)

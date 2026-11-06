@@ -79,6 +79,38 @@ git fetch origin renders
 - Images: generate at the highest size the model allows. Prefer Lucid (1088x1920, about 1 a day free) for the hero shot. FLUX shots are 1024² and get cropped and upscaled; keep the camera zoom at 1.2 or less on them so they stay sharp.
 - Always render stills first (`npx remotion still <Comp> x.png --frame=N`), make a contact sheet, look at it, fix it, then do the full render.
 
+## 4b. QUALITY GATE: check twice before anything is uploaded (Sahil, 6 Nov 2026)
+Nothing is published unless **both** checks pass for that video. `publish.yml` refuses items without a full `qa` block and tells Sahil on Telegram.
+
+**Check 1 (you, automatic + manual):**
+- After voice.yml, write the run id into the job file: `"voice_run_id": <id>` in `jobs/<date>_<label>.json`. That proves the narration is Sahil's clone.
+- Run `python3 scripts/qa_check.py renders <date> jobs`. It checks:
+  - format: 1080x1920, audio present, 8–180s, a master-size file
+  - title ≤100 characters, public, the kids flag
+  - the salutation is in full form (no PBUH/SAW), and `<SAW>` is used in voice lines
+  - hadith: sunnah.com link present, and the source is only Bukhari, Muslim or Tirmidhi
+  - riddles: no salam, no names
+  - **pronunciation and voice:** a whisper transcript of the final video compared with the script (writes `qa.heard` and `qa.script_match`)
+- Fix everything it flags, re-render, re-run it until PASS.
+
+**Check 2 (a fresh subagent that hasn't seen the work):** give it RULEBOOK.md, memory `/areas/islamic-yt-insta-channels.md`, the manifest, the metadata, the job files, `qa.heard` and a contact sheet of about 12 frames per video. It must confirm independently:
+1. **Authentic:** open each sunnah.com URL, and check that the hadith number, narrator, wording and grade (Sahih/Hasan) match what the video and description say. Nothing fabricated or weak. Ahl-e-Sunnat wal Jama'at (Hanafi). Topics where Ala Hazrat and Dr Tahir-ul-Qadri differ are skipped. Honorifics are correct. Then set `qa.authentic: true` and record `qa.hadith_urls`.
+2. **Pronunciation:** read `qa.heard` against the script. Arabic, Urdu and Islamic terms are said correctly, the salutation is the recorded clip, and there are no garbled words. Riddle logic is correct and the answer is right.
+3. **Voice:** Sahil's clone on every channel (kids included), the calm pace (Urdu slowed), no AI voice, no music clash.
+4. **Every other rule:**
+   - no faces, and never the Prophet, prophets, Sahaba, Ahl-e-Bait, the Mothers of the Believers or Awliya
+   - house style
+   - Roman Urdu subtitles (Sadqah)
+   - Person 1/2/3 and no salam (riddle)
+   - Made for Kids (kids)
+   - real footage only for Masjid/Madinah shots
+   - nothing haram, and no copyrighted music
+   - correct Islamic date or occasion if mentioned
+
+   Then set `qa.second_check: true` and `qa.second_check_notes`.
+
+If either check fails, fix and re-check. If it can't be fixed in time, publish only the videos that passed, and put the reason in `notes`.
+
 ## 5. Package and publish (auto, since 6 Nov 2026), done by about 05:45 UK
 - On the `renders` branch, make `renders/<date>/` with the 3 full-quality MP4s, a metadata JSON per video (`snippet` + `status` with `privacyStatus: "public"`; kids: `selfDeclaredMadeForKids: true`; titles of 100 characters or less), and `manifest.json`:
   `{"date": "<date>", "items": [{"label": "riddle", "video": "...mp4", "meta": "...json", "title": "<YouTube title>"}, ...], "notes": ["optional info line for Sahil"]}`

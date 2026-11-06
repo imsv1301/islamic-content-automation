@@ -246,6 +246,11 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
 - `yt.py upload` skips a video whose title is already on the channel (duplicate guard).
 - 6 Nov catch-up: 3 Nov and 4 Nov had in fact already been uploaded earlier, but weren't in the log, so my catch-up created 6 duplicates. They were set to **private** (ids qlkKhJZk018, LbZGSE2tYMw, 9f75dr3gpOQ, khJrjSSwUy4, h1fS-1KVaGQ, gFvV6Rc9_iY). **Sahil needs to delete them in Studio**; Claude doesn't delete. 5 Nov was uploaded fresh (S8J3LDXnz4Y, QxYXWeIVezQ, cfVQ4rWoW5w).
 
+## 14. Quality gate (6 Nov 2026)
+- Sahil: "before uploading, always check twice: authentic, pronunciation, voice, every other rule".
+- `scripts/qa_check.py` does the automatic check, plus a whisper comparison of the final audio against the script. An independent subagent does the second check.
+- `publish.yml` (via tg.py) **refuses** any video without `qa.auto.passed`, `qa.authentic` and `qa.second_check`, and lists those videos on Telegram as not uploaded. See DAILY_RUNBOOK §4b.
+
 ## Daily log
 - 2026-10-31: setup day. Approval flow tested with the Riddle #3 sample (renders/2026-10-31-test). The YouTube audit form was submitted by Sahil.
 - 2026-11-01 (scheduled daily run, unattended): 21 Jumada al-Ula 1448, no occasion within 7 days. Comments: no new threads (riddle, sadqah). Made 3 Shorts in the house style with a new reusable engine `video/src/day1/HouseShort.tsx` (configs `D1101Riddle/Sadqah/Kids.tsx`), renders on `renders/2026-11-01/`, Telegram preview sent.
