@@ -15,6 +15,7 @@ J = json.load(open(lines_file))
 text = J[lang][idx]
 speed = (J.get("speed") or {}).get(lang)
 ref_text = json.load(open("voice/ref_texts.json"))[lang]
+URDU_PREFIX = "ہمارے نبی محمدِ مصطفیٰ"
 FALLBACK = {"ur": "صَلَّی اللہُ عَلَیْہِ وَآلِہٖ وَسَلَّم", "en": "Sallal-laahu alaihi, wa aalihi, wa sallam"}
 
 torch.set_num_threads(4)
@@ -27,23 +28,29 @@ def tts(t):
     return np.asarray(a[0], dtype=np.float32)
 
 
+def _decrypt(enc):
+    open("/tmp/k", "w").write(os.environ["MASTER_KEY"])
+    subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-iter", "200000", "-in", enc, "-out", "/tmp/clip.wav", "-pass", "file:/tmp/k"], check=True)
+    os.remove("/tmp/k")
+    a, sr0 = sf.read("/tmp/clip.wav", dtype="float32"); os.remove("/tmp/clip.wav")
+    if a.ndim > 1: a = a.mean(1)
+    if sr0 != SR:  # no ffmpeg on the runner: resample with torchaudio
+        import torchaudio.functional as AF
+        a = AF.resample(torch.from_numpy(a), sr0, SR).numpy()
+    return a / (np.abs(a).max() + 1e-9) * 0.9
+
+
 def salawat():
-    enc = "voice/salawat.wav.enc"
-    if os.path.exists(enc) and os.environ.get("MASTER_KEY"):
-        open("/tmp/k", "w").write(os.environ["MASTER_KEY"])
-        subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-iter", "200000", "-in", enc, "-out", "/tmp/salawat.wav", "-pass", "file:/tmp/k"], check=True)
-        os.remove("/tmp/k")
-        a, sr0 = sf.read("/tmp/salawat.wav", dtype="float32")
-        os.remove("/tmp/salawat.wav")
-        if a.ndim > 1: a = a.mean(1)
-        if sr0 != SR:  # no ffmpeg on the runner: resample with torchaudio
-            import torchaudio.functional as AF
-            a = AF.resample(torch.from_numpy(a), sr0, SR).numpy()
-        # match the loudness of the generated speech roughly
-        a = a / (np.abs(a).max() + 1e-9) * 0.9
-        print("using recorded salutation")
-        return a
-    print("no recorded salutation yet; synthesising fallback spelling")
+    """English: Sahil's recording of the whole phrase "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam".
+    Urdu: "ہمارے نبی محمدِ مصطفیٰ" in his cloned voice + his recorded "Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"."""
+    if os.environ.get("MASTER_KEY") and os.path.exists("voice/salawat.wav.enc"):
+        if lang == "ur" and os.path.exists("voice/salawat_core.wav.enc"):
+            print("using Urdu prefix + recorded salutation")
+            pre = tts(URDU_PREFIX)
+            return np.concatenate([pre, np.zeros(int(SR * 0.06), dtype=np.float32), _decrypt("voice/salawat_core.wav.enc")])
+        print("using recorded full phrase")
+        return _decrypt("voice/salawat.wav.enc")
+    print("no recorded salutation available; synthesising fallback spelling")
     return tts(FALLBACK[lang])
 
 

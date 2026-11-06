@@ -46,7 +46,9 @@ git fetch origin renders
 
 ## 3. Voice (about 10 min, in parallel)
 - **Mentioning the Prophet: always write `<SAW>`** in every voice line, in the `en`, `ur` and `roman` arrays alike.
-  - `<SAW>` is Sahil's own recording of the **whole phrase** "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam". So **don't** write "Prophet" or "Rasool Allah" before it.
+  - `<SAW>` becomes the **whole phrase**, so **don't** write "Prophet", "Nabi" or "Rasool Allah" before it:
+    - English: Sahil's recording, "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"
+    - Urdu: "ہمارے نبی محمدِ مصطفیٰ" in his cloned voice, then his recorded "Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam" 
   - Write e.g. `"<SAW> said: …"`, `"Do you know what <SAW> taught us?"`, `"<SAW> نے فرمایا:"`.
   - Never type the salutation itself into a voice line.
   - `voice_line.py` splices Sahil's own recorded salutation (`voice/salawat.wav.enc`) at that spot, so it's always pronounced correctly.

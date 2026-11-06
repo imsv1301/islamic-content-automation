@@ -5,7 +5,12 @@ args = sys.argv[1:]; lines_f, lang, vo, name = args[:4]
 roman = "--roman" in args
 gap = float(args[args.index("--gap") + 1]) if "--gap" in args else 0.4
 L = json.load(open(lines_f)); texts = L["roman"] if roman else L[lang]
-SAW_TXT = "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"  # exactly what Sahil's clip says
+if lang == "ur" and not roman:
+    SAW_TXT = "ہمارے نبی محمدِ مصطفیٰ صلی اللہ تعالیٰ علیہ وآلہ وسلم"
+elif lang == "ur":
+    SAW_TXT = "Hamare Nabi Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"
+else:
+    SAW_TXT = "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"  # exactly what Sahil's clip says
 def _saw(t):
     t = re.sub(r"^\s*<SAW>", SAW_TXT[0].upper() + SAW_TXT[1:], t)
     return t.replace("<SAW>", SAW_TXT)
