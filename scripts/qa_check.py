@@ -90,6 +90,9 @@ for i, it in enumerate(M["items"]):
         if label == "riddle" and re.search(r"\b(Adam|Zara|Omar|Ali|Ahmed|John|Sara)\b", script): issues.append("riddle uses names; use Person 1/2/3")
         if re.search(r"(Sallallahu|صلی اللہ|صلى الله|ﷺ)", script) : issues.append("salutation typed into a voice line; use <SAW> so the recorded clip is spliced")
         heard = transcribe(f, lang)
+        if "<SAW>" in script or re.search(r"(prophet|rasool|رسول|nabi)", script, re.I):
+            if re.search(r"(alaihi|alayhi|علیہ|علی)\W*(wa)?\s*(sallam|salam|سلم)", heard, re.I) and not re.search(r"(aalihi|alihi|aali|aale|ālihi|آلہ|والہ|والے|آلِہ|alih)", heard, re.I):
+                issues.append("salutation in the audio sounds incomplete (no 'Wa Aalihi' heard); it must be 'Sallallahu Alaihi Wa Alihi Wasallam'")
         ratio = difflib.SequenceMatcher(None, norm(script).split(), norm(heard).split()).ratio()
         it.setdefault("qa", {})["heard"] = heard[:2000]
         if ratio < (0.55 if lang == "ur" else 0.7):
