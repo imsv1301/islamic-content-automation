@@ -23,8 +23,7 @@ ref_key = f"{lang}_{style}" if style and os.path.exists(f"/tmp/ref_{lang}_{style
 ref_text = REFS[ref_key]
 REF_AUDIO = f"/tmp/ref_{ref_key}.wav"
 print("voice reference:", ref_key)
-URDU_PREFIX = "ہمارے نبی محمدِ مصطفیٰ"
-FALLBACK = {"ur": "صَلَّی اللہُ عَلَیْہِ وَآلِہٖ وَسَلَّم", "en": "Sallal-laahu alaihi, wa aalihi, wa sallam"}
+FALLBACK = {"ur": "ہمارے نبی محمدِ مصطفیٰ، صَلَّی اللہُ تَعَالٰی عَلَیْہِ وَآلِہٖ وَسَلَّم", "en": "our Prophet Muhammad Mustafa, Sallal-laahu Ta-aala alaihi, wa aalihi, wa sallam"}
 
 torch.set_num_threads(4)
 m = OmniVoice.from_pretrained("k2-fsa/OmniVoice", device_map="cpu", dtype=torch.float32)
@@ -49,16 +48,14 @@ def _decrypt(enc):
 
 
 def salawat():
-    """English: Sahil's recording of the whole phrase "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam".
-    Urdu: "ہمارے نبی محمدِ مصطفیٰ" in his cloned voice + his recorded "Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"."""
-    if os.environ.get("MASTER_KEY") and os.path.exists("voice/salawat.wav.enc"):
-        if lang == "ur" and os.path.exists("voice/salawat_core.wav.enc"):
-            print("using Urdu prefix + recorded salutation")
-            pre = tts(URDU_PREFIX)
-            return np.concatenate([pre, np.zeros(int(SR * 0.06), dtype=np.float32), _decrypt("voice/salawat_core.wav.enc")])
-        print("using recorded full phrase")
-        return _decrypt("voice/salawat.wav.enc")
-    print("no recorded salutation available; synthesising fallback spelling")
+    """The Prophet's mention, always Sahil's real recording of the whole phrase:
+    en: "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam" (voice/salawat.wav.enc)
+    ur: "ہمارے نبی محمدِ مصطفیٰ صلی اللہ تعالیٰ علیہ وآلہ وسلم" (voice/salawat_ur.wav.enc)"""
+    enc = {"ur": "voice/salawat_ur.wav.enc", "en": "voice/salawat.wav.enc"}[lang]
+    if os.environ.get("MASTER_KEY") and os.path.exists(enc):
+        print("using recorded phrase", enc)
+        return _decrypt(enc)
+    print("no recorded phrase available; synthesising fallback spelling")
     return tts(FALLBACK[lang])
 
 
