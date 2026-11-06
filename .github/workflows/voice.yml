@@ -53,7 +53,7 @@ jobs:
       - name: Generate
         env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
         shell: bash
-        run: set -o pipefail; python scripts/voice_line.py "${{ inputs.lines }}" ${{ matrix.lang }} ${{ matrix.idx }} line_${{ matrix.lang }}_${{ matrix.idx }}.wav 2>&1 | grep -v -i warn | tail -3
+        run: set -o pipefail; python scripts/voice_line.py "${{ inputs.lines }}" ${{ matrix.lang }} ${{ matrix.idx }} line_${{ matrix.lang }}_${{ matrix.idx }}.wav 2>&1 | grep -v -i warn | tail -8
       - uses: actions/upload-artifact@v4
         with:
           name: line_${{ matrix.lang }}_${{ matrix.idx }}
