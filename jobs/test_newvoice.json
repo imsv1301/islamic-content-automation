@@ -1,0 +1,11 @@
+{"ur": [
+  "<SAW> نے فرمایا: تم میں سب سے بہتر وہ ہے جو اپنے گھر والوں کے لیے بہتر ہو۔",
+  "کیا آپ جانتے ہیں؟ ایک چھوٹی سی مسکراہٹ بھی صدقہ ہے!",
+  "یاد رکھیں، غصہ آئے تو خاموش ہو جانا ہی اصل طاقت ہے۔",
+  "اللہ تعالیٰ ہمیں اپنے گھر والوں کے ساتھ نرمی کرنے کی توفیق عطا فرمائے۔"],
+ "en": [
+  "Did you know? <SAW> taught us to say Bismillah before every meal!",
+  "Look closely. Person 2 just gave themselves away.",
+  "Every kind word you say is a little gift to someone's heart."],
+ "style": {"ur": {"0": "calm", "1": "excited", "2": "serious", "3": "warm"}, "en": {"0": "excited", "1": "serious", "2": "warm"}},
+ "speed": {"ur": 0.85}}
