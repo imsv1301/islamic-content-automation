@@ -45,7 +45,10 @@ git fetch origin renders
 - Characters are always faceless (plain circle or egg head, back views, silhouettes).
 
 ## 3. Voice (about 10 min, in parallel)
-- **Salutation: always write it as `<SAW>`** in every voice line, in the `en`, `ur` and `roman` arrays alike, e.g. `"Our beloved Prophet, <SAW>, said:"` and `"رسول اللہ <SAW> نے فرمایا:"`. Never type the salutation itself into a voice line.
+- **Mentioning the Prophet: always write `<SAW>`** in every voice line, in the `en`, `ur` and `roman` arrays alike.
+  - `<SAW>` is Sahil's own recording of the **whole phrase** "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam". So **don't** write "Prophet" or "Rasool Allah" before it.
+  - Write e.g. `"<SAW> said: …"`, `"Do you know what <SAW> taught us?"`, `"<SAW> نے فرمایا:"`.
+  - Never type the salutation itself into a voice line.
   - `voice_line.py` splices Sahil's own recorded salutation (`voice/salawat.wav.enc`) at that spot, so it's always pronounced correctly.
   - `build_short.py` writes the full "Sallallahu Alaihi Wa Alihi Wasallam" into the captions.
   - Don't re-roll the salutation part; it's a fixed recording.

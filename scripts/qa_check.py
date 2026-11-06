@@ -88,6 +88,7 @@ for i, it in enumerate(M["items"]):
         script = " ".join(J[lang])
         if label == "riddle" and re.search(r"(assalam|salam alaikum|السلام)", script, re.I): issues.append("riddle script contains salam")
         if label == "riddle" and re.search(r"\b(Adam|Zara|Omar|Ali|Ahmed|John|Sara)\b", script): issues.append("riddle uses names; use Person 1/2/3")
+        if re.search(r"(prophet|nabi|rasool|rasul|رسول|نبی|حضور)\W*(\w+\W*)?<SAW>", script, re.I): issues.append("'Prophet/Rasool' written right before <SAW>; the clip already says 'our Prophet Muhammad-e-Mustafa', so it would be said twice")
         if re.search(r"(Sallallahu|صلی اللہ|صلى الله|ﷺ)", script) : issues.append("salutation typed into a voice line; use <SAW> so the recorded clip is spliced")
         heard = transcribe(f, lang)
         if "<SAW>" in script or re.search(r"(prophet|rasool|رسول|nabi)", script, re.I):

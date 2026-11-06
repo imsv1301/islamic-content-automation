@@ -37,4 +37,4 @@
 
 - QUALITY GATE (Sahil, 6 Nov 2026): every video is checked twice before upload (automatic qa_check.py + an independent second review) for 1) authenticity, 2) pronunciation, 3) voice, and 4) every other rule here. publish.yml refuses anything that hasn't passed both.
 
-- SALUTATION (6 Nov 2026): Sahil's own recording is in voice/salawat.wav.enc (encrypted). It says "Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam" (صلی اللہ تعالیٰ علیہ وآلہ وسلم) and is spliced wherever a voice line has <SAW>. Captions, titles and descriptions use exactly that wording so they match the audio.
+- SALUTATION (6 Nov 2026, Sahil): whenever the Prophet is mentioned in narration, use Sahil's own recording of the whole phrase "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam". It's in voice/salawat.wav.enc (encrypted) and spliced wherever a voice line has <SAW>. Never TTS it. Captions, titles and descriptions use exactly that wording.

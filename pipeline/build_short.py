@@ -1,12 +1,15 @@
 """build_short.py <lines.json> <lang> <vo_dir> <name> [--roman] [--gap 0.45]
 Tightens each line, lays them out, writes src/day1/<name>-timing.json and public/day1/<name>-mix.m4a (-14 LUFS)."""
-import json, sys, subprocess, numpy as np, soundfile as sf, os
+import json, sys, subprocess, numpy as np, soundfile as sf, os, re
 args = sys.argv[1:]; lines_f, lang, vo, name = args[:4]
 roman = "--roman" in args
 gap = float(args[args.index("--gap") + 1]) if "--gap" in args else 0.4
 L = json.load(open(lines_f)); texts = L["roman"] if roman else L[lang]
-SAW_TXT = "صلی اللہ تعالیٰ علیہ وآلہ وسلم" if (lang == "ur" and not roman) else "Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"  # matches Sahil's recorded clip
-texts = [t.replace("<SAW>", SAW_TXT) for t in texts]
+SAW_TXT = "our Prophet Muhammad-e-Mustafa, Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam"  # exactly what Sahil's clip says
+def _saw(t):
+    t = re.sub(r"^\s*<SAW>", SAW_TXT[0].upper() + SAW_TXT[1:], t)
+    return t.replace("<SAW>", SAW_TXT)
+texts = [_saw(t) for t in texts]
 OUT = os.environ.get("VIDEO_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "video")) + "/"
 t = 0.35; lines = []; chunks = [np.zeros(int(48000 * 0.35))]
 for i, text in enumerate(texts):
