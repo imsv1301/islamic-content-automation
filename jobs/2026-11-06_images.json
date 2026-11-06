@@ -1,0 +1,79 @@
+{
+ "images": [
+  {
+   "name": "r7_far",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a grey cartoon wolf, a white goat and a big green cabbage standing safely together on the far bank of a river at sunrise, a small empty rowing boat at the shore, happy calm mood, no people, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "r8_pier",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three figures fishing side by side on a wooden pier at a calm lake at sunrise, an old man with a walking stick, a middle-aged man and a young boy, all seen from behind, back view, backs of heads only, faces not visible, fishing rods, mist on the water, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "r8_fish",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, exactly three shiny fish lying in a woven basket on a wooden pier, golden morning light, lake behind, no people",
+   "steps": 8
+  },
+  {
+   "name": "r8_rods",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three fishing rods leaning on a wooden railing above a misty lake at dawn, bobbers floating on the water, no people, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "r8_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single fishing float in still golden water at dawn with soft ripples, mysterious mood, long shadows, no people",
+   "steps": 8
+  },
+  {
+   "name": "s8_clock",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an ornate old brass clock on a carved wooden windowsill, afternoon golden light pouring in, a mosque minaret silhouette visible far outside the window, no people",
+   "steps": 8
+  },
+  {
+   "name": "s8_dua",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a man in a white kurta and cap sitting on a prayer mat with both hands raised in dua, back view, backs of heads only, faces not visible, warm afternoon light through a window",
+   "steps": 8
+  },
+  {
+   "name": "s8_rows",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, rows of men in white clothes standing in prayer in a large carpeted mosque hall seen from behind, back view, backs of heads only, faces not visible, golden light from high windows",
+   "steps": 8
+  },
+  {
+   "name": "s8_asr",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, golden late afternoon sky over a quiet old city with domes and minarets in silhouette, birds flying, calm, no people",
+   "steps": 8
+  },
+  {
+   "name": "s8_parents",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an elderly couple sitting together on a garden bench at sunset, back view, backs of heads only, faces not visible, the woman in a headscarf, warm golden light, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "k8_sunrise",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a bright friendly sunrise over a small cartoon town with a little green-domed masjid with one minaret, birds, happy morning, no people",
+   "steps": 8
+  },
+  {
+   "name": "k8_bath",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a clean cosy bathroom with a fluffy folded towel, a bar of soap and a yellow rubber duck on a wooden stool, morning sunlight, no people",
+   "steps": 8
+  },
+  {
+   "name": "k8_clothes",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a neat clean white kurta and a small white cap laid out on a bed beside a tiny perfume bottle, sunny bedroom, no people",
+   "steps": 8
+  },
+  {
+   "name": "k8_walk",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a little boy holding his father's hand walking along a sunny path towards a small masjid, back view, backs of heads only, faces not visible, both in white kurtas and caps",
+   "steps": 8
+  },
+  {
+   "name": "k8_dua",
+   "prompt": "cute 3D animated kids movie still, warm amber and soft golden light, pastel colours, cosy, gentle, toy-like stylised 3D render, high detail, no text, a little child in a cap sitting on a small prayer mat with both hands raised in dua, back view, backs of heads only, faces not visible, warm sunlight through a window",
+   "steps": 8
+  }
+ ]
+}
