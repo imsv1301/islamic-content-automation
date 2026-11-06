@@ -33,9 +33,14 @@ def salawat():
         open("/tmp/k", "w").write(os.environ["MASTER_KEY"])
         subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-iter", "200000", "-in", enc, "-out", "/tmp/salawat.wav", "-pass", "file:/tmp/k"], check=True)
         os.remove("/tmp/k")
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "/tmp/salawat.wav", "-ar", str(SR), "-ac", "1", "/tmp/salawat_sr.wav"], check=True)
-        a, _ = sf.read("/tmp/salawat_sr.wav", dtype="float32")
-        os.remove("/tmp/salawat.wav"); os.remove("/tmp/salawat_sr.wav")
+        a, sr0 = sf.read("/tmp/salawat.wav", dtype="float32")
+        os.remove("/tmp/salawat.wav")
+        if a.ndim > 1: a = a.mean(1)
+        if sr0 != SR:  # no ffmpeg on the runner: resample with torchaudio
+            import torchaudio.functional as AF
+            a = AF.resample(torch.from_numpy(a), sr0, SR).numpy()
+        # match the loudness of the generated speech roughly
+        a = a / (np.abs(a).max() + 1e-9) * 0.9
         print("using recorded salutation")
         return a
     print("no recorded salutation yet; synthesising fallback spelling")
