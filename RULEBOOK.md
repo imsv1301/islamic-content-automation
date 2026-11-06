@@ -36,3 +36,5 @@
 - Comments, DMs and messages are managed around the clock: an hourly comment check (scheduled task "Sadqah Media comments") plus the daily run. Instagram DMs and comments get added once the Instagram accounts and Meta API exist.
 
 - QUALITY GATE (Sahil, 6 Nov 2026): every video is checked twice before upload (automatic qa_check.py + an independent second review) for 1) authenticity, 2) pronunciation, 3) voice, and 4) every other rule here. publish.yml refuses anything that hasn't passed both.
+
+- SALUTATION (6 Nov 2026): Sahil's own recording is in voice/salawat.wav.enc (encrypted). It says "Sallallahu Ta'ala Alaihi Wa Aalihi Wasallam" (صلی اللہ تعالیٰ علیہ وآلہ وسلم) and is spliced wherever a voice line has <SAW>. Captions, titles and descriptions use exactly that wording so they match the audio.

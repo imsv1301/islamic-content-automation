@@ -16,7 +16,7 @@ R, D, JOBS = sys.argv[1], sys.argv[2], sys.argv[3]
 man_f = f"{R}/{D}/manifest.json"
 M = json.load(open(man_f))
 
-ARABIC_SALAWAT = ("صلی اللہ علیہ وآلہ وسلم", "صلى الله عليه وآله وسلم")
+ARABIC_SALAWAT = ("صلی اللہ علیہ وآلہ وسلم", "صلى الله عليه وآله وسلم", "صلی اللہ تعالیٰ علیہ وآلہ وسلم")
 BANNED = [r"\bpbuh\b", r"peace be upon him", r"\(s\.?a\.?w\.?\)", r"\bsaw\b", r"\bs\.a\.w\.s\b"]
 
 
@@ -72,7 +72,7 @@ for i, it in enumerate(M["items"]):
     blob = (title + "\n" + desc)
     for b in BANNED:
         if re.search(b, blob, re.I): issues.append(f"banned salutation form in title/description ({b}); write 'Sallallahu Alaihi Wa Alihi Wasallam' in full")
-    if re.search(r"\b(prophet|rasool|rasul|nabi|muhammad)\b", blob, re.I) and "Sallallahu Alaihi Wa Alihi Wasallam" not in blob and not any(x in blob for x in ARABIC_SALAWAT):
+    if re.search(r"\b(prophet|rasool|rasul|nabi|muhammad)\b", blob, re.I) and not re.search(r"Sallallahu (Ta.ala )?Alaihi Wa A{1,2}lihi Wa ?sallam", blob, re.I) and not any(x in blob for x in ARABIC_SALAWAT):
         issues.append("Prophet mentioned in title/description without the full salutation")
     if label in ("sadqah", "kids") and re.search(r"(bukhari|muslim|tirmidhi|hadith|hadees)", blob, re.I):
         if "sunnah.com/" not in desc: issues.append("hadith referenced but no sunnah.com link in the description")
