@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-07",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle8Solution_Riddle9.mp4",
+   "meta": "riddle.json",
+   "title": "Only 3 People 🎣 Riddle #8 Answer + Riddle #9: The Clock Tower Trap 🕰️ #shorts",
+   "qa": {
+    "heard": " Yesterday, two fathers and two sons caught three fish and each took home one whole fish.  The answer? There were only three people.  A grandfather, his son and his grandson.  The man in the middle is a father and a son at the same time.  Two fathers, two sons, three people, three fish.  Now, a brand new mystery.  An old clock tower strikes six times in exactly five seconds.  Person one stands below and counts every strike.  Each strike is instant and the gaps between them are always equal.  So how long does it take to strike twelve times?  Careful, it is not ten seconds.  Comment your answer.  The answer drops tomorrow at sunrise.",
+    "script_match": 1.0,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: riddle #8 answer matches state; #9 well-posed (11 s), answer not shown; no salam, Person 1 only; back views only; no crosses."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short9_TeenCheezein.mp4",
+   "meta": "sadqah.json",
+   "title": "Teen Cheezein Jo Maut Ke Baad Bhi Kaam Aati Hain | Sahih Muslim 1631 #shorts",
+   "qa": {
+    "heard": " جب انسان دمیا سے چلا جاتا ہے تو اس کے ساتھ کیا جاتا ہے؟  ہمارے نبی محمد مصطفہ سل اللہ تعالی علیہ وعالیہ وسلم نے فرمایا  جب انسان فوت ہو جاتا ہے تو اس کے عمل ختم ہو جاتے ہیں  طواعے تین چیزوں کے تدقے جاریہ  ایسا علم جس سے فائدہ اٹھایا جائے  اور نیک عولات جو اس کے لیے دعا کرے  ایک کنوہ ایک مزجد ایک قرآن پاک یا کسی کو سکھائے ہوئی ایک دعا  آج کوئی ایک ایسا نیک کام شروع کریں جو آپ کے بعد بھی چلتا رہے  یہ ویڈیو آگے بھیجے یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.865,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/muslim:1631"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: Muslim 1631 number, narrator, Arabic and Urdu wording correct; Roman Urdu captions; real Pixabay dome frames credited; back views only. Whisper Urdu noise only."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_ThornyBranch.mp4",
+   "meta": "kids.json",
+   "title": "The Man Who Moved a Prickly Branch 🌿 True Story for Kids | Islam for Kids #shorts",
+   "qa": {
+    "heard": " What tiny thing made Allah very very happy our prophet Muhammad and Mustafa  sallallahu alaihi wa alaihi wa sallam told us a beautiful story a man was  walking along a path he saw a prickly branch lying right in the way ouch  someone could get hurt so he picked it up and moved it out of the way and Allah  was happy with what he did and he forgave him so if you see a stone on  the path or a toy on the stairs move it away what will you move out of the  way today",
+    "script_match": 0.94,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:652"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: Bukhari 652 confirmed on sunnah.com; Made for Kids; back views only; real dome frame. Fixed after review: 'once upon a time' bubble -> 'long, long ago', card says 'Allah was pleased'."
+   }
+  }
+ ],
+ "notes": [
+  "Saturday, about 27 Jumada al-Ula 1448, no major occasion in the next 7 days. Catch-up: every day up to 6 Nov is already on YouTube, so nothing was re-uploaded. Comments: no new threads on riddle or sadqah (Riddle #1 shows 3 comments but only one thread is visible to the API; the others may be held for review in Studio).",
+  "Sadqah Short 9: Sahih Muslim 1631 (sadqa-e-jariya, useful knowledge, a righteous child's dua). Kids: Sahih al-Bukhari 652 (the man who moved a thorny branch from the path). Bukhari 652 was opened on sunnah.com; Muslim 1631 was confirmed through sunnah.com's own search listing (Book of Wills), as the page itself wouldn't open in this unattended run.",
+  "Riddle #9: a clock tower strikes 6 times in 5 seconds; how long for 12 strikes? Answer for tomorrow: 11 seconds (11 equal gaps of 1 s).",
+  "All 3 passed both checks (qa_check.py + an independent review). Voice: your clone on all three, with your recorded salutation clip. One kids line was re-voiced ('Allah was pleased' was misheard). FLUX drew crosses on the clock tower twice; they were painted out. qa_check.py was adjusted so it no longer fails your own recorded salutation clip (whisper hears 'Wa Aalihi' as 'wa alaihi'). Please give Sadqah lines 3-4 a quick listen. Nothing was paid."
+ ]
+}
