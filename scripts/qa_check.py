@@ -91,7 +91,11 @@ for i, it in enumerate(M["items"]):
         if re.search(r"(prophet|nabi|rasool|rasul|رسول|نبی|حضور)\W*(\w+\W*)?<SAW>", script, re.I): issues.append("'Prophet/Rasool' written right before <SAW>; the clip already says 'our Prophet Muhammad-e-Mustafa', so it would be said twice")
         if re.search(r"(Sallallahu|صلی اللہ|صلى الله|ﷺ)", script) : issues.append("salutation typed into a voice line; use <SAW> so the recorded clip is spliced")
         heard = transcribe(f, lang)
-        if "<SAW>" in script or re.search(r"(prophet|rasool|رسول|nabi)", script, re.I):
+        # With <SAW>, voice_line.py splices Sahil's own fixed recording of the full phrase (voice/salawat*.wav.enc);
+        # whisper hears his "Wa Aalihi" as "wa alaihi", so the heuristic below only applies to TTS'd mentions.
+        if "<SAW>" in script:
+            it.setdefault("qa", {})["salutation"] = "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')"
+        elif re.search(r"(prophet|rasool|رسول|nabi)", script, re.I):
             if re.search(r"(alaihi|alayhi|علیہ|علی)\W*(wa)?\s*(sallam|salam|سلم)", heard, re.I) and not re.search(r"(aalihi|alihi|aali|aale|ālihi|آلہ|والہ|والے|آلِہ|alih)", heard, re.I):
                 issues.append("salutation in the audio sounds incomplete (no 'Wa Aalihi' heard); it must be 'Sallallahu Alaihi Wa Alihi Wasallam'")
         ratio = difflib.SequenceMatcher(None, norm(script).split(), norm(heard).split()).ratio()

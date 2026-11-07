@@ -23,7 +23,7 @@ const Cards = (c: Ctx) => {
     <div style={bubble("#fff", INK, SKY, 66)}>A TINY GOOD DEED? 🤔</div>
   </div>);
   if (idx === 2) out.push(<div key="st" style={{ position: "absolute", top: 580, left: 0, right: 0, textAlign: "center", transform: `scale(${pop(t, S(2) + 0.2, 0.45)})` }}>
-    <div style={bubble("rgba(255,252,240,0.96)", INK, GOLD, 52)}>📖 ONCE UPON A TIME...</div>
+    <div style={bubble("rgba(255,252,240,0.96)", INK, GOLD, 52)}>📖 LONG, LONG AGO...</div>
   </div>);
   if (idx === 3) out.push(<div key="br" style={{ position: "absolute", top: 580, left: 0, right: 0, textAlign: "center", transform: `scale(${pop(t, S(3) + 0.6, 0.45)}) rotate(-2deg)` }}>
     <div style={bubble(LEAF, INK, INK, 58)}>🌿 A PRICKLY BRANCH!</div>
@@ -40,7 +40,7 @@ const Cards = (c: Ctx) => {
     out.push(<div key="ref" style={{ position: "absolute", top: 500, left: 60, right: 60, textAlign: "center", transform: `scale(${p})` }}>
       <div style={{ background: "rgba(255,252,240,0.96)", borderRadius: 30, padding: "22px 30px", border: `6px solid ${GOLD}`, boxShadow: "0 14px 0 rgba(0,0,0,0.15)" }}>
         <div style={{ fontFamily: "Amiri, serif", fontWeight: 700, fontSize: 52, color: "#b5651d", direction: "rtl", lineHeight: 1.5 }}>وَجَدَ غُصْنَ شَوْكٍ عَلَى الطَّرِيقِ فَأَخَّرَهُ فَشَكَرَ اللَّهُ لَهُ فَغَفَرَ لَهُ</div>
-        <div style={{ fontFamily: MONT, fontWeight: 800, fontSize: 42, color: INK, lineHeight: 1.2 }}>💛 ALLAH WAS <span style={{ color: "#b5651d" }}>HAPPY</span> &amp; FORGAVE HIM</div>
+        <div style={{ fontFamily: MONT, fontWeight: 800, fontSize: 42, color: INK, lineHeight: 1.2 }}>💛 ALLAH WAS <span style={{ color: "#b5651d" }}>PLEASED</span> &amp; FORGAVE HIM</div>
         <div style={{ marginTop: 8, fontSize: 24, letterSpacing: "0.1em", color: "#b5651d", fontFamily: MONT, fontWeight: 800 }}>📖 SAHIH AL-BUKHARI 652</div>
       </div>
     </div>);
