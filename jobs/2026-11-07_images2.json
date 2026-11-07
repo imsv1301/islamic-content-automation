@@ -1,0 +1,29 @@
+{
+ "images": [
+  {
+   "name": "r9_tower",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a tall square sandstone clock tower with a flat crenellated top and a big round clock face, like an old railway station clock tower, no spire, no cross, no church, in a quiet market square at dusk, glowing lanterns, pigeons, no people",
+   "steps": 8
+  },
+  {
+   "name": "r9_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, silhouette of a tall square sandstone clock tower with a flat crenellated top and a big round clock face, like an old railway station clock tower, no spire, no cross, no church against a huge orange sunrise sky, birds, mysterious mood, no people",
+   "steps": 8
+  },
+  {
+   "name": "r9_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, one single man in a long coat standing alone in an empty cobbled square looking up at a tall square sandstone clock tower with a flat crenellated top and a big round clock face, like an old railway station clock tower, no spire, no cross, no church, seen from behind, back view, only the back of his head visible, dusk",
+   "steps": 8
+  },
+  {
+   "name": "s9_teach",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a father and his small son sitting side by side on a carpet facing a window, both with hands raised in dua, seen completely from behind, back view, only the backs of their heads visible, warm lamp light",
+   "steps": 8
+  },
+  {
+   "name": "k9_man",
+   "prompt": "3D animated kids film still, bright warm sunny light, soft amber and peach colour palette, cheerful, toy-like stylised 3D render, high detail, no text, full frame scene, a friendly man in a white kurta and cap walking away along a sunny garden path, seen completely from behind, back view, only the back of his head visible, flowers and trees on both sides",
+   "steps": 8
+  }
+ ]
+}
