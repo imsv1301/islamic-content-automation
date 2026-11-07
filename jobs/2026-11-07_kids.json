@@ -6,7 +6,7 @@
   "He saw a prickly branch, lying right in the way.",
   "Ouch! Someone could get hurt!",
   "So he picked it up, and moved it out of the way.",
-  "And Allah was pleased with him, and forgave him!",
+  "And Allah was happy with what he did, and He forgave him!",
   "So if you see a stone on the path, or a toy on the stairs, move it away!",
   "What will you move out of the way today?"
  ],
@@ -22,5 +22,8 @@
    "7": "excited",
    "8": "warm"
   }
- }
+ },
+ "voice_run_id": 42333318146,
+ "voice_fix_run_id": 42334196519,
+ "voice_fix_note": "line 6 re-voiced from jobs/2026-11-07_kids_fix.json"
 }
