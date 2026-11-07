@@ -1,0 +1,94 @@
+{
+ "images": [
+  {
+   "name": "r8_home",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, three figures walking home along a lakeside path at sunrise, an old man with a walking stick, a middle-aged man and a young boy, each carrying one fish, seen from behind, back view, backs of heads only, faces not visible, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "r9_tower",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a tall old stone clock tower with a big round clock face in a quiet town square at dusk, glowing windows, pigeons, no church, no steeple, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r9_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single man in a long coat standing in a cobbled square looking up at a tall stone clock tower, seen from behind, back view, backs of heads only, faces not visible, dusk, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r9_bell",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a huge bronze bell swinging inside a wooden belfry, motion, golden dust in the air, no people",
+   "steps": 8
+  },
+  {
+   "name": "r9_face",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of an ornate brass clock face with roman numerals and black hands, warm glow behind it, gears visible, no people",
+   "steps": 8
+  },
+  {
+   "name": "r9_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, silhouette of a clock tower against a huge orange sunrise sky, mysterious mood, long shadows, birds, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "s9_path",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a lonely dirt path leading toward a glowing sunset horizon through open fields, a single set of footprints, peaceful and thoughtful mood, no people",
+   "steps": 8
+  },
+  {
+   "name": "s9_well",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old stone village well with a wooden pulley and a bucket full of clear water, villagers' clay pots beside it, golden hour, no people",
+   "steps": 8
+  },
+  {
+   "name": "s9_quran",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a closed Quran with an ornate green and gold cover resting on a carved wooden rehal stand, soft window light, prayer beads beside it, no people",
+   "steps": 8
+  },
+  {
+   "name": "s9_teach",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a father and a small child sitting together on a carpet, the child's hands raised in dua as the father teaches him, seen from behind, back view, backs of heads only, faces not visible, warm lamp light",
+   "steps": 8
+  },
+  {
+   "name": "s9_mosque",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small village mosque under construction with a white dome and one minaret, bricks and wooden scaffolding, golden afternoon light, no people",
+   "steps": 8
+  },
+  {
+   "name": "s9_son",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a young man sitting alone on a prayer mat with both hands raised in dua, seen from behind, back view, backs of heads only, faces not visible, soft dawn light through a window",
+   "steps": 8
+  },
+  {
+   "name": "k9_path",
+   "prompt": "3D animated kids film still, bright warm sunny light, soft amber and peach colour palette, cheerful, toy-like stylised 3D render, high detail, no text, a winding garden path through green grass and colourful flowers on a sunny morning, butterflies, no people",
+   "steps": 8
+  },
+  {
+   "name": "k9_branch",
+   "prompt": "3D animated kids film still, bright warm sunny light, soft amber and peach colour palette, cheerful, toy-like stylised 3D render, high detail, no text, close-up of a prickly thorny branch with sharp thorns lying across a sunny stone garden path, flowers on both sides, no people",
+   "steps": 8
+  },
+  {
+   "name": "k9_man",
+   "prompt": "3D animated kids film still, bright warm sunny light, soft amber and peach colour palette, cheerful, toy-like stylised 3D render, high detail, no text, a friendly man in a white kurta and cap walking along a sunny garden path, seen from behind, back view, backs of heads only, faces not visible",
+   "steps": 8
+  },
+  {
+   "name": "k9_clear",
+   "prompt": "3D animated kids film still, bright warm sunny light, soft amber and peach colour palette, cheerful, toy-like stylised 3D render, high detail, no text, a sunny garden path, clear and clean, with a thorny branch moved to the side into the bushes, golden sparkles in the air, no people",
+   "steps": 8
+  },
+  {
+   "name": "k9_stairs",
+   "prompt": "3D animated kids film still, bright warm sunny light, soft amber and peach colour palette, cheerful, toy-like stylised 3D render, high detail, no text, a red toy car left on a wooden staircase at home, sunny window light, cosy house, no people",
+   "steps": 8
+  },
+  {
+   "name": "k9_kid",
+   "prompt": "3D animated kids film still, bright warm sunny light, soft amber and peach colour palette, cheerful, toy-like stylised 3D render, high detail, no text, a small child in a yellow t-shirt bending down to move a stone off a park path, seen from behind, back view, backs of heads only, faces not visible, sunny day",
+   "steps": 8
+  }
+ ]
+}
