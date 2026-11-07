@@ -1,0 +1,34 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "جب انسان دنیا سے چلا جاتا ہے، تو اس کے ساتھ کیا جاتا ہے؟",
+  "<SAW> نے فرمایا:",
+  "جب انسان فوت ہو جاتا ہے، تو اس کے عمل ختم ہو جاتے ہیں، سوائے تین چیزوں کے۔",
+  "صدقۂ جاریہ۔ ایسا علم جس سے فائدہ اٹھایا جائے۔ اور نیک اولاد، جو اس کے لیے دعا کرے۔",
+  "ایک کنواں، ایک مسجد، ایک قرآن پاک، یا کسی کو سکھائی ہوئی ایک دعا۔",
+  "آج کوئی ایک ایسا نیک کام شروع کریں، جو آپ کے بعد بھی چلتا رہے۔",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Jab insaan duniya se chala jata hai, to us ke saath kya jata hai?",
+  "<SAW> ne farmaya:",
+  "Jab insaan faut ho jata hai, to us ke amal khatam ho jate hain, siwaye teen cheezon ke.",
+  "Sadqa-e-jariya. Aisa ilm jis se faida uthaya jaye. Aur nek aulad, jo us ke liye dua kare.",
+  "Ek kunwan, ek masjid, ek Quran Pak, ya kisi ko sikhai hui ek dua.",
+  "Aaj koi ek aisa nek kaam shuru karein, jo aap ke baad bhi chalta rahe.",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "serious",
+   "1": "calm",
+   "2": "serious",
+   "3": "warm",
+   "4": "calm",
+   "5": "warm",
+   "6": "warm"
+  }
+ }
+}
