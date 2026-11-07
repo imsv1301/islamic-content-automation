@@ -53,12 +53,19 @@
    "title": "Two fathers and two sons go fishing and catch exactly three fish; each takes home one whole fish, nobody shares",
    "answer": "There are only three people: a grandfather, his son and his grandson. The grandfather and the father are the two fathers; the father and the grandson are the two sons. Three people, three fish.",
    "posted": "2026-11-06 (pending Sahil's approval)",
+   "solved_in": "2026-11-07 (uploaded https://youtu.be/jytkx_bg9CY)"
+  },
+  {
+   "n": 9,
+   "title": "Clock tower: strikes 6 times in exactly 5 seconds (instant strikes, equal gaps; Person 1 counts); how long to strike 12 times?",
+   "answer": "11 seconds. 6 strikes have 5 gaps, so each gap is 1 second. 12 strikes have 11 gaps = 11 seconds (not 10).",
+   "posted": "2026-11-07 (uploaded https://youtu.be/jytkx_bg9CY)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 9,
+  "n": 10,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #8 solution first (only three people: grandfather, father, son; the father is both), then Riddle #9. A 3-person pier still for the solution is ready: video/public/d1106/r8_pier3.jpg (old man, man, boy, back views). Riddles #4-#7 (3-5 Nov) had no upload logged at the 6 Nov run; if Sahil holds (❌) a day's riddle, re-send that day's solution + riddle instead."
+  "note": "Next riddle video = Riddle #9 solution first (11 seconds: 6 strikes = 5 gaps of 1 s; 12 strikes = 11 gaps), then Riddle #10. Clock tower stills in video/public/d1107/ (r9_tower, r9_bell, r9_face; crosses were painted out of r9_tower/r9_question). If reusing r8_pier3, note the middle figure looks young."
  }
 }
