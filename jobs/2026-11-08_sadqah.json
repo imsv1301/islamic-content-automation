@@ -1,0 +1,39 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "کیا آپ جانتے ہیں؟ دو ایسے کلمے، جو زبان پر ہلکے ہیں، مگر ترازو میں بہت بھاری۔",
+  "<SAW> نے فرمایا:",
+  "دو کلمے ہیں، جو زبان پر ہلکے ہیں، ترازو میں بھاری ہیں، اور رحمٰن کو بہت پیارے ہیں۔",
+  "سُبحان اللہِ وَبِحَمدِہ، سُبحان اللہِ العظیم۔",
+  "چلتے پھرتے، کام کرتے، راستے میں، کچن میں۔ دس سیکنڈ بھی نہیں لگتے۔",
+  "آج سو بار پڑھنے کی نیت کریں، اور کمنٹ میں لکھیں: سبحان اللہ۔",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Kya aap jaante hain? Do aise kalime, jo zabaan par halke hain, magar tarazu mein bohat bhaari.",
+  "<SAW> ne farmaya:",
+  "Do kalime hain, jo zabaan par halke hain, tarazu mein bhaari hain, aur Rahmaan ko bohat pyaare hain.",
+  "SubhanAllahi wa bihamdihi, SubhanAllahil Azeem.",
+  "Chalte phirte, kaam karte, raaste mein, kitchen mein. Das second bhi nahin lagte.",
+  "Aaj sau baar parhne ki niyyat karein, aur comment mein likhein: SubhanAllah.",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "serious",
+   "1": "calm",
+   "2": "serious",
+   "3": "warm",
+   "4": "calm",
+   "5": "warm",
+   "6": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "3": 0.85
+  }
+ }
+}

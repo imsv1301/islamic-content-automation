@@ -1,0 +1,89 @@
+{
+ "images": [
+  {
+   "name": "r10_well",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old stone well in a sunny village courtyard with a wooden bucket and rope, two empty clay water jugs on the edge of the well, one small and one large, no people, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r10_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single man in a simple tunic standing beside an old stone well, holding a small jug in one hand and a large jug in the other, seen from behind, back view, backs of heads only, faces not visible, village courtyard at golden hour, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r10_jugs",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of two plain empty clay water jugs side by side on a wooden table, one small jug and one larger jug, no markings, warm light, shallow depth of field, no people",
+   "steps": 8
+  },
+  {
+   "name": "r10_pour",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of water being poured from one clay jug into another clay jug, splashing droplets glowing in warm sunlight, no people visible, only the jugs and water",
+   "steps": 8
+  },
+  {
+   "name": "r10_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big glowing question mark made of water droplets floating above an old stone well at dusk, magical sparkles, no people, no church",
+   "steps": 8
+  },
+  {
+   "name": "s_tongue",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a glowing golden balance scale on a dark wooden table, one pan heavily weighed down with light, soft gold particles, mosque lantern glow in the background, no people, no text",
+   "steps": 8
+  },
+  {
+   "name": "s_scale",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a huge ornate golden balance scale in a vast dark night sky full of stars, one side sinking down glowing with light, cinematic, no people, no text",
+   "steps": 8
+  },
+  {
+   "name": "s_walk",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a man walking on a quiet city street at sunrise holding prayer beads in his hand, seen from behind, back view, backs of heads only, faces not visible, soft golden morning light, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "s_kitchen",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a woman in a modest headscarf cooking in a cosy home kitchen, steam rising from a pot, prayer beads on the counter, seen from behind, back view, backs of heads only, faces not visible, warm lamp light",
+   "steps": 8
+  },
+  {
+   "name": "s_beads",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of wooden prayer beads tasbih in an open palm, warm golden light, bokeh of lanterns, no face",
+   "steps": 8
+  },
+  {
+   "name": "s_share",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a smartphone on a wooden table glowing softly, surrounded by warm floating light particles, prayer beads beside it, no people, no text on screen",
+   "steps": 8
+  },
+  {
+   "name": "k_world",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small child in a yellow raincoat standing on a green hill looking at a colourful toy-like world with houses and trees under a bright sky, seen from behind, back view, backs of heads only, faces not visible, cheerful, bright colours, no church",
+   "steps": 8
+  },
+  {
+   "name": "k_hug",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small child hugging their mother from behind, the mother in a modest headscarf, cosy living room, seen from behind, back view, backs of heads only, faces not visible, both facing away from the camera, cheerful bright warm light",
+   "steps": 8
+  },
+  {
+   "name": "k_help",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small child carrying a plate to help their mother in a bright kitchen, seen from behind, back view, backs of heads only, faces not visible, both facing away from the camera, cheerful, bright colours",
+   "steps": 8
+  },
+  {
+   "name": "k_baby",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a mother in a modest headscarf gently holding a baby wrapped in a soft blanket, sitting by a sunny window, seen from behind, back view, backs of heads only, faces not visible, the baby wrapped so no face shows, tender warm light",
+   "steps": 8
+  },
+  {
+   "name": "k_father",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small child walking hand in hand with their father on a sunny park path, seen from behind, back view, backs of heads only, faces not visible, cheerful bright colours, trees",
+   "steps": 8
+  },
+  {
+   "name": "k_heart",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big glowing red heart balloon floating in a bright blue sky over a cheerful toy-like town, sparkles, no people, no church",
+   "steps": 8
+  }
+ ]
+}
