@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-08",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle9Solution_Riddle10.mp4",
+   "meta": "riddle.json",
+   "title": "Exactly 11 Seconds 🕰️ Riddle #9 Answer + Riddle #10: 2 Jugs, Exactly 4 Litres 💧 #shorts",
+   "qa": {
+    "heard": " Yesterday, a clock tower strikes 6 times. In 5 seconds, how long for 12 strikes?  The answer is 11 seconds, not 10.  6 strikes have only 5 gaps between them.  5 gaps in 5 seconds, so each gap is 1 second.  12 strikes have 11 gaps, so 11 seconds.  Now, a brand new mystery.  Person 1 stands at a well, with 2 empty jugs.  The small jug holds exactly 3 litres, the big jug holds exactly 5 litres.  There are no markings on the jugs and there is plenty of water.  Person 1 needs exactly 4 litres of water, no guessing and no half measures.  So how can Person 1 do it?  Comment your answer. The answer drops tomorrow at sunrise.",
+    "script_match": 0.835,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check_notes": "Fresh-subagent review: #9 answer 11 s matches state; #10 (3 L + 5 L jugs -> 4 L) well posed, answer not shown; no salam, Person 1 only. Fixed after review: shot with a cross on a background tower (r9_person) replaced by the bell still; '5 s ÷ 5 GAPS' card order. Re-rendered and re-checked frames.",
+    "second_check": true
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short10_DoKalime.mp4",
+   "meta": "sadqah.json",
+   "title": "Do Kalime: Zabaan Par Halke, Tarazu Mein Bhaari | Sahih Bukhari 7563 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " کیا آپ جانتے ہیں دو ایسے کلمے جو زبان پر حلکے ہیں  مگر ترازوں میں بہت باری  ہمارے نبی محمد مصطفہ صل اللہ تعالی علیہ وعالی ہی وصولہ  نے فرمایا  دو کلمے ہے جو زبان پر حلکے ہیں  ترازوں میں باری ہیں اور ریمان کو بہت پیارے ہیں  سبحان اللہ ہوا بھی حمدہی سبحان اللہ اللہ عزیب  چلتے پھرتے کام کرتے راستے میں کچن میں  دس سیکن بھی نہیں لگتے  آج سو بار پڑھنے کی نیت کریں اور کمنٹ میں لکھیں  بھان اللہ یہ ویڈیو آگے بھیجے یہ بھی ایک اور ست کا ہے",
+    "script_match": 0.692,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:7563",
+     "https://sunnah.com/bukhari:6406"
+    ],
+    "second_check_notes": "Fresh-subagent review: bukhari:7563 and 6406 opened on sunnah.com (Abu Huraira; phrase order on card matches 7563). Roman Urdu captions, real dome frames credited, back views only. Fixed after review: 'Azeem' line no longer time-stretched (rubberband smeared the final m); whisper (en) hears 'SubhanAllah al-Azeem' on that line.",
+    "second_check": true
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_YourMother.mp4",
+   "meta": "kids.json",
+   "title": "Who Should You Be Kindest To? 💛 Your Mother! | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " In the whole wide world, who should you be the kindest to?  A man once asked,  Our Prophet,  Muḥammad-e-Mustafa,  ﷺ  Who should I be kindest to, most of all?  And the answer was your mother.  And then who? Your mother?  Then who? Your mother?  And then who? Your father?  Your mum looked after you when you were tiny.  So today give her a big hug and help her with a smile.  How will you help your mum today?",
+    "script_match": 0.943,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:5971",
+     "https://sunnah.com/riyadussalihin:316"
+    ],
+    "second_check_notes": "Fresh-subagent review: Bukhari 5971 confirmed via sunnah.com riyadussalihin:316 (opened; Muttafaq alayh) + hadithunlocked bukhari:5971; the Companion and the Prophet are never shown; back views only; Made for Kids.",
+    "second_check": true
+   }
+  }
+ ],
+ "notes": [
+  "Sunday, about 28 Jumada al-Ula 1448; Jumada al-Akhirah starts in 2-3 days, no major occasion within 7 days. Catch-up: every earlier day is already on YouTube, nothing re-uploaded. Comments: no new threads on riddle or sadqah.",
+  "Sadqah Short 10: Sahih al-Bukhari 7563 (also 6406), 'SubhanAllahi wa bihamdihi, SubhanAllahil Azeem' - the last hadith of Bukhari. Kids: Sahih al-Bukhari 5971 (your mother x3, then your father). Riddle #10: 3-litre and 5-litre jugs, measure exactly 4 litres (answer tomorrow).",
+  "All 3 passed both checks. Fixed before upload: a cross on a background tower in the riddle (shot swapped), and the 'Azeem' line in Sadqah (re-voiced, not time-stretched). Voice re-rolls: riddle 2 lines, kids 4 lines, Sadqah 1 line. Please give Sadqah's SubhanAllahil Azeem line (~22 s) a quick listen. Nothing was paid."
+ ]
+}
