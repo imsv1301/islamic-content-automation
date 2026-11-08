@@ -1,0 +1,18 @@
+{
+ "en": [
+  "The small jug holds exactly three litres. The big jug holds exactly five litres.",
+  "No guessing, and no half measures. So how can Person one do it?"
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "serious"
+  }
+ },
+ "maps_to": {
+  "en": [
+   7,
+   10
+  ]
+ }
+}

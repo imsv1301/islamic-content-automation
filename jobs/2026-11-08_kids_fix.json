@@ -1,0 +1,24 @@
+{
+ "en": [
+  "In the whole wide world, who should you be the kindest to?",
+  "A man once asked <SAW>:",
+  "And then who? Your mother!",
+  "And then who? Your father!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "excited",
+   "3": "warm"
+  }
+ },
+ "maps_to": {
+  "en": [
+   0,
+   1,
+   4,
+   6
+  ]
+ }
+}

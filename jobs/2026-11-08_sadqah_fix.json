@@ -1,0 +1,31 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "سُبحانَ اللہِ وَ بِحَمدِہی، سُبحانَ اللہِ الْعَظیم۔",
+  "سبحان اللہ و بحمدہی ۔ سبحان اللہ العظیم ۔"
+ ],
+ "roman": [
+  "SubhanAllahi wa bihamdihi, SubhanAllahil Azeem.",
+  "SubhanAllahi wa bihamdihi, SubhanAllahil Azeem."
+ ],
+ "style": {
+  "ur": {
+   "0": "warm",
+   "1": "calm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "0": 0.8,
+   "1": 0.8
+  }
+ },
+ "maps_to": {
+  "ur": [
+   3,
+   3
+  ]
+ }
+}
