@@ -1,0 +1,49 @@
+{
+ "images": [
+  {
+   "name": "k_heart",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big shiny red heart-shaped balloon floating high in a bright blue sky with fluffy white clouds and sparkles, nothing else, no buildings, no ground",
+   "steps": 8
+  },
+  {
+   "name": "k_heart2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big shiny red heart-shaped balloon tied to a small wooden toy chair in a sunny room, sparkles, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_hug",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a little boy hugging his mother who wears a modest headscarf, standing in a cosy sunny living room, seen from directly behind, back view, only the backs of their heads visible, faces completely hidden, both facing the window, cheerful bright warm light",
+   "steps": 8
+  },
+  {
+   "name": "k_hug2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a mother in a long modest dress and headscarf and a little child holding hands, standing at a big sunny window looking out at a garden, seen from directly behind, back view, only the backs of their heads visible, faces completely hidden, bright cheerful light",
+   "steps": 8
+  },
+  {
+   "name": "k_world",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small child in a yellow raincoat standing on a grassy green hill looking at a bright sky with a rainbow and fluffy clouds, seen from directly behind, back view, only the backs of their heads visible, faces completely hidden, cheerful, bright colours, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "k_help",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a mother in a modest headscarf and a small child standing side by side at a kitchen counter, the child carrying a plate, seen from directly behind, back view, only the backs of their heads visible, faces completely hidden, bright cheerful kitchen",
+   "steps": 8
+  },
+  {
+   "name": "k_baby",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a cosy wooden baby cradle with a soft knitted blanket and a small teddy bear beside a sunny window, warm tender light, empty cradle, no people",
+   "steps": 8
+  },
+  {
+   "name": "r10_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, one single man in a simple tunic standing beside an old round stone well, holding one small clay jug and one large clay jug, seen from directly behind, back view, only the backs of their heads visible, faces completely hidden, sunny courtyard with plain clay walls, no other people, no buildings with roofs",
+   "steps": 8
+  },
+  {
+   "name": "r10_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big glowing question mark made of water droplets floating above an old round stone well, warm sunset sky, open desert landscape, no buildings, no people",
+   "steps": 8
+  }
+ ]
+}
