@@ -1,12 +1,12 @@
 {
  "en": [
-  "Who should you be the kindest to, in the whole wide world?",
-  "A man came to <SAW> and asked:",
+  "In the whole wide world, who should you be the kindest to?",
+  "A man once asked <SAW>:",
   "Who should I be kindest to, most of all?",
   "And the answer was: Your mother!",
+  "And then who? Your mother!",
   "Then who? Your mother!",
-  "Then who? Your mother!",
-  "Then who? Your father!",
+  "And then who? Your father!",
   "Your mum looked after you, when you were tiny.",
   "So today, give her a big hug, and help her with a smile!",
   "How will you help your mum today?"
@@ -24,5 +24,8 @@
    "8": "excited",
    "9": "warm"
   }
- }
+ },
+ "voice_run_id": 42441929194,
+ "voice_fix_run_id": 42442795105,
+ "voice_fix_note": "lines 0,1,4,6 re-voiced from jobs/2026-11-08_kids_fix.json"
 }

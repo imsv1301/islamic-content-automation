@@ -7,10 +7,10 @@
   "Twelve strikes have eleven gaps. So, eleven seconds.",
   "Now, a brand new mystery.",
   "Person one stands at a well, with two empty jugs.",
-  "One jug holds exactly three litres. The other holds exactly five litres.",
+  "The small jug holds exactly three litres. The big jug holds exactly five litres.",
   "There are no markings on the jugs, and there is plenty of water.",
   "Person one needs exactly four litres of water.",
-  "No guessing. No filling halfway. So how does Person one do it?",
+  "No guessing, and no half measures. So how can Person one do it?",
   "Comment your answer. The answer drops tomorrow, at sunrise."
  ],
  "style": {
@@ -28,5 +28,8 @@
    "10": "serious",
    "11": "warm"
   }
- }
+ },
+ "voice_run_id": 42441926255,
+ "voice_fix_run_id": 42442793432,
+ "voice_fix_note": "lines 7 and 10 re-voiced from jobs/2026-11-08_riddle_fix.json"
 }
