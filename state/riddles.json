@@ -67,12 +67,19 @@
    "title": "Water jugs: Person 1 at a well has an empty 3-litre jug and an empty 5-litre jug (no markings, plenty of water); measure exactly 4 litres, no guessing or filling halfway",
    "answer": "Fill the 5-litre jug. Pour it into the 3-litre jug until full (2 litres left in the 5). Empty the 3. Pour the 2 litres into the 3. Fill the 5 again. Pour from the 5 into the 3 until full (only 1 litre fits). Exactly 4 litres are left in the 5-litre jug. (Also works: fill the 3 into the 5 twice, leaving 1 in the 3; empty the 5, pour the 1 in, add 3 more = 4.)",
    "posted": "2026-11-08 (uploaded https://youtu.be/t0cV4iE2lGc)",
+   "solved_in": "2026-11-09 (uploaded https://youtu.be/nZm0e_ThWoA)"
+  },
+  {
+   "n": 11,
+   "title": "8 balls that look identical, one is slightly heavier; Person 1 has a balance scale and can use it only 2 times; find the heavy ball for sure",
+   "answer": "Put 3 balls on each side. If the scale is level, the heavy ball is one of the 2 left over: weigh them against each other, the lower side is heavy. If one side goes down, take those 3: weigh 1 against 1. If one goes down, that's it; if level, it's the third ball.",
+   "posted": "2026-11-09 (uploaded https://youtu.be/nZm0e_ThWoA)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 11,
+  "n": 12,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #10 solution first (fill 5, pour into 3 leaving 2; empty 3; pour the 2 in; fill 5; top up the 3 with 1; 4 left in the 5), then Riddle #11. Jug stills in video/public/d1108/ (r10_well, r10_jugs, r10_pour, r10_person: crop off the shelf of extra pots at the top)."
+  "note": "Next riddle video = Riddle #11 solution first (3 vs 3; level -> weigh the last 2; not level -> from the heavy 3 weigh 1 vs 1; level -> the third), then Riddle #12. Stills in video/public/d1109/ (r11_balls, r11_scale, r11_person, r11_question). Avoid r11_tilt/flux finials: crosses."
  }
 }
