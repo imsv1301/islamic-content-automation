@@ -1,0 +1,33 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "آج روزہ رکھ سکیں تو رکھیں، اور کثرت سے دُرُود شریف پڑھیں۔",
+  "آج روزہ رکھ سکیں تو رکھیں، اور کثرت سے دُ رُود شریف پڑھیں۔",
+  "کمنٹ میں دُرُود شریف لکھیں۔",
+  "کمنٹ میں، دُ رُود شریف لکھیں۔"
+ ],
+ "roman": [
+  "Aaj roza rakh sakein to rakhein, aur kasrat se durood shareef parhein.",
+  "Aaj roza rakh sakein to rakhein, aur kasrat se durood shareef parhein.",
+  "Comment mein durood shareef likhein.",
+  "Comment mein durood shareef likhein."
+ ],
+ "style": {
+  "ur": {
+   "0": "warm",
+   "1": "calm",
+   "2": "warm",
+   "3": "calm"
+  }
+ },
+ "maps_to": {
+  "ur": [
+   4,
+   4,
+   5,
+   5
+  ]
+ }
+}

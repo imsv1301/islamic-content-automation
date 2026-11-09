@@ -1,0 +1,24 @@
+{
+ "en": [
+  "<SAW> once said:",
+  "<SAW> once said:",
+  "So always want for others, what you want for yourself.",
+  "So, always want for others, what you want for yourself."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "warm",
+   "2": "warm",
+   "3": "calm"
+  }
+ },
+ "maps_to": {
+  "en": [
+   1,
+   1,
+   6,
+   6
+  ]
+ }
+}
