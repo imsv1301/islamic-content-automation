@@ -1,0 +1,34 @@
+{
+ "images": [
+  {
+   "name": "k_gift",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two children's hands passing a plate of cookies from one to the other across a bright kitchen table, only small hands visible, no faces, cheerful sunny morning, simple plain wall, no decorations, no christmas tree, no people faces",
+   "steps": 8
+  },
+  {
+   "name": "s_dawn",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a peaceful golden sunrise over desert palm trees and low flat-roofed mud-brick houses, soft mist, warm sky, no people, no towers, no domes, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r11_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big glowing golden question mark floating above an old brass balance scale on a wooden table, dark warm background, magical sparkles, no people, no letters, no words, no signs",
+   "steps": 8
+  },
+  {
+   "name": "r11_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single man in a simple tunic standing at a wooden table looking down at an old brass balance scale, seen from behind, back view, back of head only, face not visible, plain warm room with a simple square window, no balls, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r11_tilt",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close-up of a simple brass balance scale with a plain round top, two shallow pans, the left pan lower than the right pan, one wooden ball in each pan, dramatic warm light, plain background, no people, no cross, no ornaments",
+   "steps": 8
+  },
+  {
+   "name": "s_suhoor",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a simple suhoor table before dawn with a plate of dates and a plain clear tumbler of water and a small brass lantern glowing, window with early morning blue light, no people, no wine glass",
+   "steps": 8
+  }
+ ]
+}
