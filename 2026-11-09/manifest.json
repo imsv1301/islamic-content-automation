@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-09",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle10Solution_Riddle11.mp4",
+   "meta": "riddle.json",
+   "title": "Exactly 4 Litres 💧 Riddle #10 Answer + Riddle #11: 8 Balls, 1 Heavy, 2 Weighings ⚖️ #shorts",
+   "qa": {
+    "heard": " Yesterday, 2 jugs, 3 liters and 5 liters. How do you get exactly 4?  Fill the big jug, then pour it into the small jug. 2 liters stay in the big jug.  Now empty the small jug and pour those 2 liters into it.  Fill the big jug again and top up the small jug. Only 1 more liter fits.  Exactly 4 liters are left in the big jug. Now, a brand new mystery.  Person 1 has 8 balls. They all look exactly the same.  But 1 ball is a little bit heavier than all the others.  Person 1 has a balanced scale and can use it only 2 times.  How can person 1 find the heavy ball for sure?  Comment your answer. The answer drops tomorrow at sunrise.",
+    "script_match": 0.834,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: #10 jug steps correct and animated levels match; #11 (8 balls, 1 heavier, 2 weighings) well posed, answer not shown; no salam, Person 1 only; back views only, no religious symbols."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short11_PeerKaDin.mp4",
+   "meta": "sadqah.json",
+   "title": "Peer Ka Din Itna Khaas Kyun? | Sahih Muslim 1162 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " آج پیر کا دن ہے کہ آپ جانتے ہیں یہ دن اتنا خاص کیوں ہے؟  ہمارے نبی محمد مصطفہ صل اللہ تعالی علیہ وعایلی ہی وسلم  پیر کے روزے کے بارے میں پوچھا گیا تو فرمایا  یہ وہ دن ہے جس دن میرے والادت ہوئی اور جس دن مجھ پر وہی اتری  یعنی اپنی والادت کے دن کو آپ نے روزے اور شکر سے یاد کیا  آج روزہ رکھ سکیں تو رکھیں اور کسرت سے دورود شریف پڑھی  کمٹ میں دورود شریف لکھیں یہ ویڈیو آگا بھیجیں یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.789,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/muslim:1162b",
+     "https://sunnah.com/muslim:1162e"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: muslim:1162b/1162e opened on sunnah.com (Abu Qatada al-Ansari; Monday = day of birth and of revelation); 'Yaani...' line is explanation, standard Ahl-e-Sunnat inference; durood heard clearly after re-voice; Roman Urdu subs; real dome frames (Pixabay 112361) credited."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_ShareWithFriend.mp4",
+   "meta": "kids.json",
+   "title": "Share With Your Friend! 🍪 Want for Others What You Want | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " Imagine you get a big yummy cookie. What would you want for your best friend?  Our Prophet Muhammad Mustafa,  sallallahu ta'ala alaihi wa a'ala alihi wa sallam  Once said, none of you truly believes until he loves for his brother what he loves for himself.  So, if you love a yummy cookie, share some with your friend too.  If you love being picked to play, pick your friend too.  And if you love kind words, say kind words to your friend.  So always want for others what you want for yourself.  What will you share with a friend today?",
+    "script_match": 0.926,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:13"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: bukhari:13 opened on sunnah.com (Anas); Arabic and English match; Made for Kids; all children back views; real dome frames credited."
+   }
+  }
+ ],
+ "notes": [
+  "Monday, 29 Jumada al-Ula 1448 (Umm al-Qura); Jumada al-Akhirah starts in 1-2 days, no major occasion within 7 days (3 Jumada al-Akhirah, wisal of Sayyida Fatima Radi Allahu Anha, falls around 13-14 Nov). Catch-up: every earlier day is already on YouTube, nothing re-uploaded. Comments: no new threads on riddle or sadqah.",
+  "Sadqah Short 11: 'Peer ka din itna khaas kyun?', Sahih Muslim 1162 (Monday = day of wiladat and of wahi). Kids: Sahih al-Bukhari 13 (love for your brother what you love for yourself), sharing. Riddle #11: 8 balls, 1 heavier, balance scale, only 2 weighings (answer tomorrow).",
+  "All 3 passed both checks. Voice re-rolls: Sadqah 'durood shareef' lines (whisper heard 'duruj'), kids 'once said' and 'So always want for others' (whisper heard 'One for others'). New real Madinah footage (Pixabay 112361, DesignwithRiyas) replaces the old dome frames. Nothing was paid."
+ ]
+}
