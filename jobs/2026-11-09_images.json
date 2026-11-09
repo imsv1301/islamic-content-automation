@@ -1,0 +1,79 @@
+{
+ "images": [
+  {
+   "name": "r11_balls",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, eight identical shiny wooden balls arranged in a neat row on an old wooden table, all exactly the same size and colour, warm lamp light, shallow depth of field, no people",
+   "steps": 8
+  },
+  {
+   "name": "r11_scale",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old brass balance scale with two hanging pans on a wooden table, three identical wooden balls in each pan, the scale perfectly level, warm lamp light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r11_tilt",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old brass balance scale with two pans, the left pan lower than the right pan, identical wooden balls in both pans, dramatic warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r11_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single man in a simple tunic standing at a wooden table with an old brass balance scale and a row of wooden balls, seen from behind, back view, backs of heads only, faces not visible, cosy workshop at golden hour, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r11_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big glowing golden question mark floating above an old brass balance scale in a dark cosy workshop, magical sparkles, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_dawn",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a peaceful sunrise over a quiet old town with domes and minarets, warm golden sky, soft mist, no people, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "s_suhoor",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a simple suhoor table before dawn with a plate of dates and a glass of water and a small lantern glowing, window with early morning blue light, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_durood",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a glowing lantern beside wooden prayer beads on a soft prayer mat, gold particles floating in the air, peaceful night, no people, no text",
+   "steps": 8
+  },
+  {
+   "name": "s_hands",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two cupped hands raised in dua seen from behind the person, soft golden light from a window, seen from behind, back view, backs of heads only, faces not visible, peaceful",
+   "steps": 8
+  },
+  {
+   "name": "s_phone",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a smartphone lying on a wooden table glowing with warm light, little golden hearts floating up from the screen, blank screen, no text, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_cookie",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big round chocolate chip cookie on a colourful plate on a kitchen table, bright cheerful morning light, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_share",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two small children sitting side by side on a park bench sharing cookies from one plate, seen from behind, back view, backs of heads only, faces not visible, both facing away from the camera, cheerful bright colours, trees",
+   "steps": 8
+  },
+  {
+   "name": "k_play",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a group of small children in a sunny playground choosing teams to play ball, seen from behind, back view, backs of heads only, faces not visible, all facing away from the camera, cheerful bright colours",
+   "steps": 8
+  },
+  {
+   "name": "k_kind",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two small children walking together on a sunny path, one child with an arm around the other's shoulder, seen from behind, back view, backs of heads only, faces not visible, cheerful bright colours, flowers",
+   "steps": 8
+  },
+  {
+   "name": "k_gift",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small wrapped present with a yellow ribbon and two cookies on a bright table, sparkles, no people",
+   "steps": 8
+  }
+ ]
+}
