@@ -1,0 +1,24 @@
+{
+ "en": [
+  "Imagine you get a big, yummy cookie! What would you want for your best friend?",
+  "<SAW> said:",
+  "None of you truly believes, until he loves for his brother what he loves for himself.",
+  "So if you love a yummy cookie, share some with your friend too!",
+  "If you love being picked to play, pick your friend too!",
+  "And if you love kind words, say kind words to your friend!",
+  "Want for others, what you want for yourself.",
+  "What will you share with a friend today?"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "excited",
+   "4": "excited",
+   "5": "warm",
+   "6": "warm",
+   "7": "warm"
+  }
+ }
+}

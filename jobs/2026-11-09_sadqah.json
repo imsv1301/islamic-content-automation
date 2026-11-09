@@ -1,0 +1,39 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "آج پیر کا دن ہے۔ کیا آپ جانتے ہیں، یہ دن اتنا خاص کیوں ہے؟",
+  "<SAW> سے پیر کے روزے کے بارے میں پوچھا گیا، تو فرمایا:",
+  "یہ وہ دن ہے، جس دن میری ولادت ہوئی، اور جس دن مجھ پر وحی اتری۔",
+  "یعنی اپنی ولادت کے دن کو، آپ نے روزے اور شکر سے یاد کیا۔",
+  "آج روزہ رکھ سکیں تو رکھیں، اور کثرت سے درود شریف پڑھیں۔",
+  "کمنٹ میں درود شریف لکھیں۔",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Aaj Peer ka din hai. Kya aap jaante hain, yeh din itna khaas kyun hai?",
+  "<SAW> se Peer ke roze ke baare mein poocha gaya, to farmaya:",
+  "Yeh woh din hai, jis din meri wiladat hui, aur jis din mujh par wahi utri.",
+  "Yaani apni wiladat ke din ko, aap ne roze aur shukr se yaad kiya.",
+  "Aaj roza rakh sakein to rakhein, aur kasrat se durood shareef parhein.",
+  "Comment mein durood shareef likhein.",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "warm",
+   "4": "warm",
+   "5": "warm",
+   "6": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85
+  }
+ }
+}
