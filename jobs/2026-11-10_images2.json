@@ -1,0 +1,34 @@
+{
+ "images": [
+  {
+   "name": "k_cup",
+   "prompt": "bright cheerful 3D animated film still, warm golden summer sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, close up of a broken white tea cup in pieces on a wooden kitchen floor, simple modern summer kitchen with plain cream walls and plants, no christmas tree, no wreath, no decorations, no holiday, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_oops",
+   "prompt": "bright cheerful 3D animated film still, warm golden summer sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small child in a yellow t-shirt standing in a kitchen looking down at a broken cup on the floor, seen from behind, back view, back of head only, face not visible, simple modern summer kitchen with plain cream walls and plants, no christmas tree, no wreath, no decorations, no holiday",
+   "steps": 8
+  },
+  {
+   "name": "k_mama",
+   "prompt": "bright cheerful 3D animated film still, warm golden summer sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small child walking towards a mother in a long modest dress and headscarf standing at a kitchen counter, both seen from behind, back view, backs of heads only, faces not visible, simple modern summer kitchen with plain cream walls and plants, no christmas tree, no wreath, no decorations, no holiday",
+   "steps": 8
+  },
+  {
+   "name": "r12_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single man in a simple tunic leaning over an old round stone well in an open desert field with palm trees, seen from behind, back view, back of head only, face not visible, golden hour, no buildings, no houses, no roofs",
+   "steps": 8
+  },
+  {
+   "name": "r12_top",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a cute small snail with a spiral shell reaching the stone rim at the top of an old well at sunrise, golden sky, green grass, open fields, no buildings, no houses, no people",
+   "steps": 8
+  },
+  {
+   "name": "r12_well",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, looking straight down into a deep round old stone well, smooth round stone walls, a small cute snail with a spiral shell at the very bottom on wet pebbles, light from above, no wooden beams, no people",
+   "steps": 8
+  }
+ ]
+}
