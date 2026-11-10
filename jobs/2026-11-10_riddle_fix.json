@@ -1,0 +1,12 @@
+{
+ "en": [
+  "If the scale stays level, the heavy ball is one of those two. Put them on the scale, one against one.",
+  "If the scale stays level, the heavy ball is one of those two. Put them on the scale, one against one.",
+  "If one side goes down, take those three balls, and put one ball on each side.",
+  "If one side goes down, take those three balls, and put one ball on each side.",
+  "Level again? Then it is the third ball. Found it, in just two tries!",
+  "Level again? Then it is the third ball! Found it, in just two tries!"
+ ],
+ "style": {"en": {"0": "calm", "1": "calm", "2": "calm", "3": "calm", "4": "excited", "5": "excited"}},
+ "maps_to": {"en": [2, 2, 3, 3, 4, 4]}
+}
