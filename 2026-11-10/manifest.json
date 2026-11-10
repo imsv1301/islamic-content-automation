@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-10",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle11Solution_Riddle12.mp4",
+   "meta": "riddle.json",
+   "title": "Found in 2 Tries ⚖️ Riddle #11 Answer + Riddle #12: The Snail in the Well 🐌 #shorts",
+   "qa": {
+    "heard": " Yesterday, 8 balls, one a bit heavier and only 2 tries on the scale.  First, put 3 balls on each side and keep the last 2 balls off the scale.  If the scale stays level, the heavy ball is one of those 2.  Put them on the scale, one against one.  If one side goes down, take those 3 balls and put one ball on each side.  Level again, then it is the third ball, found it, in just 2 tries.  Now, a brand new mystery.  Person 1 finds a snail at the bottom of a well 10 meters deep.  Every day, the snail climbs up 3 meters.  But every night, while it sleeps, it slides back down 2 meters.  On which day does the snail finally get out of the well?  Comment your answer, the answer drops tomorrow at sunrise.",
+    "script_match": 0.901,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: #11 solution correct (3 v 3, 2 off; level -> 1 v 1 of the 2; else 1 v 1 of the heavy 3, level -> third); #12 snail well posed, answer (day 8) not shown; no salam, Person 1 only; back view only."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short12_ThodaMagarRoz.mp4",
+   "meta": "sadqah.json",
+   "title": "Thoda Magar Roz! Allah Ko Sab Se Pyara Amal | Sahih Muslim 783 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " روز ایک گھنٹا یا روز صرف دو منٹ اللہ کو کیا زیادہ پسند ہے  عزرت آئیشا رزی اللہ آنها بیان کرتی ہیں  یہ ہمارے نبی محمد مصطفہ صل اللہ تعالی علیہ وعایلی ہی وصول دو  نے فرمایا اللہ کو سب سے پیارے عمل وہ ہیں جو ہمیشہ کیے جائیں چاہی تھوڑے ہوں  یعنی ایک دن بہت زیادہ پھر چھوڑ دینہ نہیں  بلکہ تھوڑا مگر روز  روز دو رکت نفل روز ایک صفہ قرآن روز ایک چھوٹا صدقہ  کمٹ میں لکھیں آپ روز کونسا ایک عمل کریں گے  یہ ویڈیو آگے بھیجے یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.783,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/muslim:783b"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: muslim:783b opened on sunnah.com ('A'isha; Arabic matn matches card and description); Roman Urdu subs; real dome aerial (Pixabay 198164) credited. Flagged a thinking-face emoji at 4.6s: replaced with a question mark and re-rendered, re-checked."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_TellTheTruth.mp4",
+   "meta": "kids.json",
+   "title": "Oops, I Broke a Cup! ☕ Always Tell the Truth | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " Oops, you broke a cup. Nobody was looking. What do you do?  Our Prophet Muhammad Mustafa sallallahu ta'ala alaihi wa a'ala alihi wa sallam  One said, telling the truth leads to good deeds and good deeds lead to paradise.  So you go to mama and say, I broke the cup. I am sorry.  Telling the truth can feel hard, but Allah loves people who tell the truth.  And when you keep telling the truth, people trust you more and more.  So always tell the truth even when it is hard.  Will you always tell the truth?  Say, yes I will.",
+    "script_match": 0.916,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:6094"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: bukhari:6094 opened on sunnah.com ('Abdullah ibn Mas'ud; Arabic matches card); 'good deeds' a fair kid rendering of al-birr; Made for Kids; children back views; real dome frame (Pixabay 112360) credited. Flagged face emojis at 3.5s/19.7s: replaced (question mark, thought balloon) and re-rendered, re-checked."
+   }
+  }
+ ],
+ "notes": [
+  "Tuesday, 28-29 Jumada al-Ula 1448 (UK/India; Jumada al-Akhirah starts in 1-2 days). No major occasion within 7 days; 3 Jumada al-Akhirah (wisal of Sayyida Fatima Radi Allahu Anha) falls around 12-14 Nov. Catch-up: every earlier day is already on YouTube, nothing re-uploaded. Comments: no new threads on riddle or sadqah.",
+  "Sadqah Short 12: 'Thoda magar roz', Sahih Muslim 783 (Hazrat Aisha Radi Allahu Anha: the deeds most loved by Allah are the constant ones, even if small). Kids: Sahih al-Bukhari 6094 (truthfulness leads to righteousness, righteousness to Paradise), 'Oops, I broke a cup'. Riddle #12: snail in a 10 m well, +3 m by day, -2 m by night; which day is it out? (answer tomorrow).",
+  "All 3 passed both checks. Voice re-rolls: riddle lines 2-4 ('weigh' heard as 'way/wave', rephrased), Sadqah line 1 ('Radi Allahu Anha' garbled, respelled), kids line 1 ('once said' heard as 'one set'). FLUX drew Christmas trees, wreaths, crosses and a church in several stills: re-rolled or painted out. Nothing was paid.",
+  "For Sahil to decide: the reviewer pointed out YouTube's 'altered or synthetic content' setting (containsSyntheticMedia) is false on all uploads, while YouTube lists a synthetically generated voice narrating a video as something to disclose. Left unchanged; tell Claude if you want it switched on."
+ ]
+}
