@@ -2,9 +2,9 @@
  "en": [
   "Yesterday: eight balls, one a bit heavier, and only two tries on the scale.",
   "First, put three balls on each side, and keep the last two balls off the scale.",
-  "If the scale stays level, the heavy ball is one of those two. Weigh them, one against one.",
-  "If one side goes down, take those three balls, and weigh one against one again.",
-  "Still level? Then it is the third ball. Found it, in just two tries!",
+  "If the scale stays level, the heavy ball is one of those two. Put them on the scale, one against one.",
+  "If one side goes down, take those three balls, and put one ball on each side.",
+  "Level again? Then it is the third ball! Found it, in just two tries!",
   "Now, a brand new mystery.",
   "Person one finds a snail, at the bottom of a well, ten metres deep.",
   "Every day, the snail climbs up three metres.",
@@ -12,5 +12,22 @@
   "On which day does the snail finally get out of the well?",
   "Comment your answer. The answer drops tomorrow, at sunrise."
  ],
- "style": {"en": {"0": "calm", "1": "calm", "2": "calm", "3": "calm", "4": "excited", "5": "excited", "6": "calm", "7": "calm", "8": "serious", "9": "serious", "10": "warm"}}
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "calm",
+   "3": "calm",
+   "4": "excited",
+   "5": "excited",
+   "6": "calm",
+   "7": "calm",
+   "8": "serious",
+   "9": "serious",
+   "10": "warm"
+  }
+ },
+ "voice_run_id": 42748777213,
+ "voice_fix_run_id": 42749604207,
+ "voice_fix_note": "lines 2, 3, 4 re-voiced (variants 1, 2, 5 of jobs/2026-11-10_riddle_fix.json): whisper heard 'weigh' as 'way/wave' and the first line 4 dropped 'Still'"
 }

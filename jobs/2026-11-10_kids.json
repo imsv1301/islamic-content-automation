@@ -9,5 +9,19 @@
   "So always tell the truth, even when it is hard.",
   "Will you always tell the truth? Say: Yes, I will!"
  ],
- "style": {"en": {"0": "excited", "1": "calm", "2": "serious", "3": "warm", "4": "warm", "5": "excited", "6": "warm", "7": "excited"}}
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "warm",
+   "4": "warm",
+   "5": "excited",
+   "6": "warm",
+   "7": "excited"
+  }
+ },
+ "voice_run_id": 42748783077,
+ "voice_fix_run_id": 42749900665,
+ "voice_fix_note": "line 1 re-voiced (variant 1 of jobs/2026-11-10_kids_fix.json): first take ended 'One set' instead of 'once said'"
 }

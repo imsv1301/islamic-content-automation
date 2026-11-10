@@ -1,5 +1,7 @@
 {
- "speed": {"ur": 0.8},
+ "speed": {
+  "ur": 0.8
+ },
  "ur": [
   "روز ایک گھنٹہ؟ یا روز صرف دو منٹ؟ اللہ کو کیا زیادہ پسند ہے؟",
   "حضرت عائشہ رضی اللہ عنہا بیان کرتی ہیں، کہ <SAW> نے فرمایا:",
@@ -18,6 +20,23 @@
   "Comment mein likhein, aap roz kaun sa ek amal karenge?",
   "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
  ],
- "style": {"ur": {"0": "excited", "1": "calm", "2": "serious", "3": "calm", "4": "warm", "5": "warm", "6": "warm"}},
- "line_speed": {"ur": {"2": 0.85}}
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "calm",
+   "4": "warm",
+   "5": "warm",
+   "6": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85
+  }
+ },
+ "voice_run_id": 42748779983,
+ "voice_fix_run_id": 42749517307,
+ "voice_fix_note": "line 1 re-voiced (variant 2 of jobs/2026-11-10_sadqah_fix.json, 'رضی اللہ عن ہا' spelling): first take garbled 'Anha'. Rubberband 0.88 on all lines except line 1 (salawat clip)."
 }
