@@ -1,0 +1,16 @@
+{
+ "en": [
+  "Yesterday: eight balls, one a bit heavier, and only two tries on the scale.",
+  "First, put three balls on each side, and keep the last two balls off the scale.",
+  "If the scale stays level, the heavy ball is one of those two. Weigh them, one against one.",
+  "If one side goes down, take those three balls, and weigh one against one again.",
+  "Still level? Then it is the third ball. Found it, in just two tries!",
+  "Now, a brand new mystery.",
+  "Person one finds a snail, at the bottom of a well, ten metres deep.",
+  "Every day, the snail climbs up three metres.",
+  "But every night, while it sleeps, it slides back down two metres.",
+  "On which day does the snail finally get out of the well?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {"en": {"0": "calm", "1": "calm", "2": "calm", "3": "calm", "4": "excited", "5": "excited", "6": "calm", "7": "calm", "8": "serious", "9": "serious", "10": "warm"}}
+}

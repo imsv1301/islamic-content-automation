@@ -1,0 +1,23 @@
+{
+ "speed": {"ur": 0.8},
+ "ur": [
+  "روز ایک گھنٹہ؟ یا روز صرف دو منٹ؟ اللہ کو کیا زیادہ پسند ہے؟",
+  "حضرت عائشہ رضی اللہ عنہا بیان کرتی ہیں، کہ <SAW> نے فرمایا:",
+  "اللہ کو سب سے پیارے عمل وہ ہیں، جو ہمیشہ کیے جائیں، چاہے تھوڑے ہوں۔",
+  "یعنی ایک دن بہت زیادہ، پھر چھوڑ دینا، نہیں۔ بلکہ تھوڑا، مگر روز۔",
+  "روز دو رکعت نفل، روز ایک صفحہ قرآن، روز ایک چھوٹا سا صدقہ۔",
+  "کمنٹ میں لکھیں، آپ روز کون سا ایک عمل کریں گے؟",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Roz ek ghanta? Ya roz sirf do minute? Allah ko kya zyada pasand hai?",
+  "Hazrat Aisha Radi Allahu Anha bayan karti hain, ke <SAW> ne farmaya:",
+  "Allah ko sab se pyare amal woh hain, jo hamesha kiye jayen, chahe thode hon.",
+  "Yaani ek din bohat zyada, phir chhod dena, nahin. Balke thoda, magar roz.",
+  "Roz do rakat nafl, roz ek safha Quran, roz ek chhota sa sadqah.",
+  "Comment mein likhein, aap roz kaun sa ek amal karenge?",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {"ur": {"0": "excited", "1": "calm", "2": "serious", "3": "calm", "4": "warm", "5": "warm", "6": "warm"}},
+ "line_speed": {"ur": {"2": 0.85}}
+}

@@ -1,0 +1,89 @@
+{
+ "images": [
+  {
+   "name": "r12_well",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, looking down into a deep round old stone well, a small cute snail with a spiral shell at the very bottom on wet stones, light from above, no people, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r12_climb",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, close up of a cute small snail with a spiral shell climbing up the inside stone wall of an old well, warm daylight beam from above, no people",
+   "steps": 8
+  },
+  {
+   "name": "r12_night",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, inside an old stone well at night, blue moonlight from the round opening above, a small sleeping snail sliding down the wet stone wall leaving a shiny trail, no people",
+   "steps": 8
+  },
+  {
+   "name": "r12_top",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a cute small snail with a spiral shell reaching the stone rim at the top of an old well at sunrise, golden sky, green grass around, no people, no church, no cross",
+   "steps": 8
+  },
+  {
+   "name": "r12_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single man in a simple tunic leaning over an old round stone well in a quiet village courtyard, seen from behind, back view, back of head only, face not visible, golden hour, no church, no cross, no tower",
+   "steps": 8
+  },
+  {
+   "name": "r12_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big glowing golden question mark floating above an old round stone well at dusk, magical sparkles, no people, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "r11_level",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old brass balance scale with two hanging pans on a wooden table, three identical wooden balls in each pan, the beam perfectly level, simple round knob on top, warm lamp light, no people, no cross",
+   "steps": 8
+  },
+  {
+   "name": "s_clock",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an old brass hourglass and a small wooden prayer bead string on a wooden table beside a window at dawn, calm warm light, no people, no clock, no cross",
+   "steps": 8
+  },
+  {
+   "name": "s_drops",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, water drops falling one by one onto a smooth stone, the stone has a deep round hollow worn by the drops, soft cave light, cinematic close up, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_quran",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an open holy book resting on a carved wooden rehal stand beside a glowing brass lantern on a prayer mat, peaceful night, no people, no text visible",
+   "steps": 8
+  },
+  {
+   "name": "s_mat",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single prayer mat laid on a wooden floor facing a window at sunrise, warm light rays, a small lantern, peaceful, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_coin",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single coin being dropped into a small wooden charity box on a table, warm light, close up, shallow depth of field, no faces, only a hand",
+   "steps": 8
+  },
+  {
+   "name": "k_cup",
+   "prompt": "bright cheerful 3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a broken white tea cup in pieces on a clean kitchen floor, morning sunlight, cosy home kitchen, no people, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_oops",
+   "prompt": "bright cheerful 3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small child in a yellow t-shirt standing in a kitchen looking down at a broken cup on the floor, seen from behind, back view, back of head only, face not visible, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_mama",
+   "prompt": "bright cheerful 3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small child hugging the waist of a mother wearing a long modest dress and headscarf in a cosy kitchen, both seen from behind, back view, faces not visible, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_stars",
+   "prompt": "bright cheerful 3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a magical golden path of glowing stars leading up into soft pink and gold clouds with a bright light at the end, sparkles, no people, no buildings",
+   "steps": 8
+  },
+  {
+   "name": "k_friends",
+   "prompt": "bright cheerful 3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, three small children holding hands walking in a sunny green park, seen from behind, back view, backs of heads only, faces not visible",
+   "steps": 8
+  }
+ ]
+}
