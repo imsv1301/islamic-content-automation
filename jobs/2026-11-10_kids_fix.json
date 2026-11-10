@@ -1,0 +1,5 @@
+{
+ "en": ["<SAW> once said:", "<SAW> once said:", "<SAW> taught us:"],
+ "style": {"en": {"0": "calm", "1": "calm", "2": "calm"}},
+ "maps_to": {"en": [1, 1, 1]}
+}
