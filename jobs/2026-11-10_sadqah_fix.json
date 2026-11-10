@@ -1,0 +1,15 @@
+{
+ "speed": {"ur": 0.8},
+ "ur": [
+  "حضرت عائشہ، رَضِیَ اللہُ عَنْہا، بیان کرتی ہیں، کہ <SAW> نے فرمایا:",
+  "حضرت عائشہ رضی اللہ تعالیٰ عنہا بیان کرتی ہیں، کہ <SAW> نے فرمایا:",
+  "حضرت عائشہ، رضی اللہ عن ہا، بیان کرتی ہیں، کہ <SAW> نے فرمایا:"
+ ],
+ "roman": [
+  "Hazrat Aisha Radi Allahu Anha bayan karti hain, ke <SAW> ne farmaya:",
+  "Hazrat Aisha Radi Allahu Ta'ala Anha bayan karti hain, ke <SAW> ne farmaya:",
+  "Hazrat Aisha Radi Allahu Anha bayan karti hain, ke <SAW> ne farmaya:"
+ ],
+ "style": {"ur": {"0": "calm", "1": "calm", "2": "calm"}},
+ "maps_to": {"ur": [1, 1, 1]}
+}
