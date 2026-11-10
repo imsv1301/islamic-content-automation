@@ -19,7 +19,7 @@ const Cards = (c: Ctx) => {
   const out: React.ReactNode[] = [];
   if (idx === 0) out.push(<div key="a" style={{ position: "absolute", top: 500, left: 0, right: 0, textAlign: "center" }}>
     <div style={{ fontSize: 180, lineHeight: 1, transform: `scale(${pop(t, S(0) + 0.1, 0.5)}) rotate(${Math.sin(t * 9) * 8 * Math.max(0, 1 - (t - S(0)))}deg)` }}>☕💥</div>
-    <div style={{ marginTop: 24, ...bubble("#fff", INK, SKY, 56), transform: `scale(${pop(t, S(0) + L(0) * 0.6, 0.45)})` }}>WHAT DO YOU DO? 🤔</div>
+    <div style={{ marginTop: 24, ...bubble("#fff", INK, SKY, 56), transform: `scale(${pop(t, S(0) + L(0) * 0.6, 0.45)})` }}>WHAT DO YOU DO? ❓</div>
   </div>);
   if (idx === 2) {
     const p = pop(t, S(2) - 0.1, 0.5);
@@ -35,7 +35,7 @@ const Cards = (c: Ctx) => {
     <div style={{ ...bubble("#fff", INK, PINK, 56), transform: `scale(${pop(t, S(3) + L(3) * 0.4, 0.45)}) rotate(-2deg)` }}>💬 "I BROKE THE CUP. I AM SORRY!"</div>
   </div>);
   if (idx === 4) out.push(<div key="love" style={{ position: "absolute", top: 520, left: 80, right: 80, textAlign: "center" }}>
-    <div style={{ ...bubble(SKY, INK, INK, 50), transform: `scale(${pop(t, S(4) + 0.2, 0.45)})` }}>😟 FEELS HARD...</div>
+    <div style={{ ...bubble(SKY, INK, INK, 50), transform: `scale(${pop(t, S(4) + 0.2, 0.45)})` }}>💭 FEELS HARD...</div>
     <div style={{ marginTop: 24 }}><div style={{ ...bubble(GOLD, INK, INK, 54), transform: `scale(${pop(t, S(4) + L(4) * 0.45, 0.45)})` }}>💛 ALLAH LOVES THE TRUTHFUL</div></div>
   </div>);
   if (idx === 5) {
@@ -54,7 +54,7 @@ const Cards = (c: Ctx) => {
     const a = S(7);
     out.push(<div key="end" style={{ position: "absolute", left: 100, right: 100, top: 500, textAlign: "center" }}>
       <div style={{ fontFamily: MONT, fontWeight: 800, fontSize: 64, lineHeight: 1.05, color: "#fff", WebkitTextStroke: `9px ${INK}`, paintOrder: "stroke fill", transform: `scale(${pop(t, a, 0.45)})` }}>WILL YOU?</div>
-      <div style={{ marginTop: 26, ...bubble(LEAF, INK, INK, 64), transform: `scale(${pop(t, a + L(7) * 0.6, 0.45)}) rotate(-2deg)` }}>🙋 YES, I WILL!</div>
+      <div style={{ marginTop: 26, ...bubble(LEAF, INK, INK, 64), transform: `scale(${pop(t, a + L(7) * 0.6, 0.45)}) rotate(-2deg)` }}>✋ YES, I WILL!</div>
     </div>);
   }
   return <>{out}</>;

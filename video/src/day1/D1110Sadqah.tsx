@@ -30,7 +30,7 @@ const Cards = (c: Ctx) => {
       <div style={{ fontFamily: MONT, fontWeight: 800, fontSize: 60, color: GOLD, textShadow: "0 3px 10px #000", transform: `scale(${pop(t, S(0) + L(0) * 0.3, 0.4)})` }}>VS</div>
       <div style={{ ...chip(GOLD, INK, 54), transform: `scale(${pop(t, S(0) + L(0) * 0.35, 0.4)})` }}>⏱️ 2 MINUTE</div>
     </div>
-    <div style={{ marginTop: 34, ...chip("rgba(255,245,230,0.95)", INK, 56), transform: `scale(${pop(t, S(0) + L(0) * 0.65, 0.45)})` }}>ALLAH KO KYA PASAND? 🤔</div>
+    <div style={{ marginTop: 34, ...chip("rgba(255,245,230,0.95)", INK, 56), transform: `scale(${pop(t, S(0) + L(0) * 0.65, 0.45)})` }}>ALLAH KO KYA PASAND? ❓</div>
   </div>);
   if (idx === 1) out.push(<div key="nar" style={{ position: "absolute", top: 560, left: 0, right: 0, textAlign: "center" }}>
     <div style={{ ...chip("rgba(255,245,230,0.95)", INK, 44), transform: `scale(${pop(t, S(1) + 0.2, 0.45)})` }}>HAZRAT AISHA <span style={{ color: "#b5651d" }}>RADI ALLAHU ANHA</span></div>
@@ -59,7 +59,7 @@ const Cards = (c: Ctx) => {
     </div>);
   }
   if (idx === 4) {
-    const items = ["🧎 2 RAKAT NAFL", "📖 1 SAFHA QURAN", "🪙 1 CHHOTA SADQAH"];
+    const items = ["🤲 2 RAKAT NAFL", "📖 1 SAFHA QURAN", "🪙 1 CHHOTA SADQAH"];
     out.push(<div key="amal" style={{ position: "absolute", top: 480, left: 0, right: 0, textAlign: "center" }}>
       {items.map((s, i) => <div key={i} style={{ marginTop: i ? 22 : 0 }}><div style={{ ...chip(i === 1 ? GOLD : "rgba(255,245,230,0.95)", INK, 54), transform: `translateX(${(1 - pop(t, S(4) + L(4) * (0.05 + i * 0.3), 0.45)) * (i % 2 ? 900 : -900)}px)` }}>ROZ {s}</div></div>)}
     </div>);
