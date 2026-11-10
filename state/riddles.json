@@ -74,12 +74,19 @@
    "title": "8 balls that look identical, one is slightly heavier; Person 1 has a balance scale and can use it only 2 times; find the heavy ball for sure",
    "answer": "Put 3 balls on each side. If the scale is level, the heavy ball is one of the 2 left over: weigh them against each other, the lower side is heavy. If one side goes down, take those 3: weigh 1 against 1. If one goes down, that's it; if level, it's the third ball.",
    "posted": "2026-11-09 (uploaded https://youtu.be/nZm0e_ThWoA)",
+   "solved_in": "2026-11-10 (uploaded https://youtu.be/HpoaU74DtPk)"
+  },
+  {
+   "n": 12,
+   "title": "Snail in a well: Person 1 finds a snail at the bottom of a 10-metre well; every day it climbs up 3 m, every night it slides back down 2 m; on which day does it get out?",
+   "answer": "Day 8. After each full day and night the snail is 1 m higher, so after 7 days and nights it is at 7 m. On day 8 it climbs 3 m, reaches 10 m and is out before night (not day 10).",
+   "posted": "2026-11-10 (uploaded https://youtu.be/HpoaU74DtPk)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 12,
+  "n": 13,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #11 solution first (3 vs 3; level -> weigh the last 2; not level -> from the heavy 3 weigh 1 vs 1; level -> the third), then Riddle #12. Stills in video/public/d1109/ (r11_balls, r11_scale, r11_person, r11_question). Avoid r11_tilt/flux finials: crosses."
+  "note": "Next riddle video = Riddle #12 solution first (day 8: +1 m net per full day, at 7 m after 7 nights, day 8 climbs 3 m to the top; a day-by-day gauge works well; snail stills in video/public/d1110/ r12_*), then Riddle #13. Avoid FLUX village/church backgrounds: r12_top/r12_person re-rolled in open desert/fields."
  }
 }
