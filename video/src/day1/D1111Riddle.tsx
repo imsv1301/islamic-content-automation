@@ -48,19 +48,19 @@ const THICK = [1, 0.6, 1.25, 0.8, 0.5, 1.15, 0.9, 0.55, 1.3, 0.75, 1.05, 0.65];
 const Rope: React.FC<{ t: number; bl?: number; label?: string; col?: string; w?: number }> = ({ t, bl = 0, label, col = "#d9a35f", w = 860 }) => {
   const seg = w / THICK.length;
   return (
-    <div style={{ position: "relative", width: w + 40, height: 130, margin: "0 auto" }}>
+    <div style={{ position: "relative", width: w + 40, height: 150, margin: "0 auto", background: "rgba(20,10,4,0.72)", borderRadius: 28 }}>
       {label ? <div style={{ position: "absolute", left: -10, top: -6, ...chip(GOLD, INK, 34) }}>{label}</div> : null}
-      <div style={{ position: "absolute", left: 20, top: 60, width: w, height: 60, display: "flex", alignItems: "center" }}>
+      <div style={{ position: "absolute", left: 20, top: 70, width: w, height: 70, display: "flex", alignItems: "center" }}>
         {THICK.map((k, i) => {
           const x0 = i / THICK.length, x1 = (i + 1) / THICK.length;
           const gone = bl >= x1 ? 1 : bl <= x0 ? 0 : (bl - x0) / (x1 - x0);
-          return <div key={i} style={{ width: seg, height: 22 + 30 * k, position: "relative" }}>
+          return <div key={i} style={{ width: seg, height: 30 + 34 * k, position: "relative" }}>
             <div style={{ position: "absolute", inset: 0, background: `repeating-linear-gradient(60deg, ${col} 0 10px, #8a5a1c 10px 16px)`, border: `4px solid ${INK}`, borderLeft: "none", borderRight: "none", clipPath: `inset(0 0 0 ${gone * 100}%)` }} />
-            {gone > 0 ? <div style={{ position: "absolute", left: 0, top: "40%", width: `${gone * 100}%`, height: 6, background: "#3a2a20", opacity: 0.8 }} /> : null}
+            {gone > 0 ? <div style={{ position: "absolute", left: 0, top: "42%", width: `${gone * 100}%`, height: 8, background: "#2a1a10", opacity: 0.8 }} /> : null}
           </div>;
         })}
       </div>
-      {bl > 0 && bl < 1 ? <div style={{ position: "absolute", left: 20 + bl * w - 34, top: 6 + Math.sin(t * 13) * 3, fontSize: 70, lineHeight: 1, filter: "drop-shadow(0 0 18px rgba(255,140,0,0.95))" }}>🔥</div> : null}
+      {bl > 0 && bl < 1 ? <div style={{ position: "absolute", left: 20 + bl * w - 34, top: 30 + Math.sin(t * 13) * 3, fontSize: 80, lineHeight: 1, filter: "drop-shadow(0 0 18px rgba(255,140,0,0.95))" }}>🔥</div> : null}
     </div>
   );
 };
@@ -110,7 +110,7 @@ const Cards = (c: Ctx) => {
     <div style={{ marginTop: 20, transform: `translateX(${(1 - pop(t, S(6) + 0.7, 0.5)) * 1200}px)` }}><Rope t={t} label="ROPE B" col="#e0b070" /></div>
     <div style={{ marginTop: 20, fontSize: 90, transform: `scale(${pop(t, S(6) + (E(6) - S(6)) * 0.7, 0.4)})` }}>🔥</div>
   </div>);
-  if (idx === 7) { const b = ph(7, 0.1, 0.95); const fast = (x: number) => x < 0.5 ? x * 1.6 : 0.8 + (x - 0.5) * 0.4;
+  if (idx === 7) { const b = Math.min(1, Math.max(0, (t - S(7) - (E(7) - S(7)) * 0.1) / ((E(7) - S(7)) * 0.85))); const fast = (x: number) => x < 0.5 ? x * 1.2 : 0.6 + (x - 0.5) * 0.7;
     out.push(<div key="uneven" style={{ position: "absolute", top: 430, left: 0, right: 0, textAlign: "center" }}>
       <div style={{ ...chip(GOLD, INK, 50), marginBottom: 30, transform: `scale(${pop(t, S(7) + 0.1, 0.4)})` }}>⏳ EACH ROPE = 1 HOUR</div>
       <Rope t={t} bl={fast(b)} label="ROPE A" />
@@ -153,7 +153,7 @@ const CFG: HouseCfg = {
   shakeAt: [4, 5, 9],
   shots: [
     { img: "r12_well.jpg", from: 0, to: 1, z0: 1.1, z1: 1.0, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
-    { img: "r12_gauge.jpg", from: 1, to: 2, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.6, fx1: 0.5, fy1: 0.4 },
+    { img: "r12_night.jpg", from: 1, to: 2, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.6, fx1: 0.5, fy1: 0.4 },
     { img: "r12_climb.jpg", from: 2, to: 3, z0: 1.12, z1: 1.0, fx0: 0.5, fy0: 0.6, fx1: 0.5, fy1: 0.4 },
     { img: "r12_top.jpg", from: 3, to: 5, z0: 1.0, z1: 1.15, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.45 },
     { img: "r13_question.jpg", from: 5, to: 6, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },

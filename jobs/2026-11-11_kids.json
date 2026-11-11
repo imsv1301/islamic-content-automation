@@ -4,9 +4,9 @@
   "A man once asked <SAW>: Please give me some advice!",
   "And the answer was: Do not get angry! The man asked again and again, and every time, the answer was: Do not get angry!",
   "So when you feel angry, stop... and take a deep breath.",
-  "Then use kind words: Can I have my toy back, please?",
+  "After that, use kind words: Can I have my toy back, please?",
   "Staying calm is what a strong Muslim does!",
-  "Can you stay calm today? Say: Yes, I can!"
+  "Now, can you stay calm today? Say: Yes, I can!"
  ],
  "style": {
   "en": {
@@ -18,5 +18,8 @@
    "5": "excited",
    "6": "excited"
   }
- }
+ },
+ "voice_run_id": 42952131348,
+ "voice_fix_run_id": 42953850390,
+ "voice_fix_note": "lines 4 and 6 re-voiced (variants 0 and 3 of jobs/2026-11-11_kids_fix.json): whisper heard 'Then use' as 'The news' and 'Can you' as 'Please'"
 }

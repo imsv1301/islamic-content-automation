@@ -4,17 +4,17 @@
  },
  "ur": [
   "روز صبح، آسمان سے دو فرشتے اترتے ہیں… اور جانتے ہیں وہ کیا دعا کرتے ہیں؟",
-  "حضرت ابو ہریرہ رضی اللہ عنہ بیان کرتے ہیں، کہ <SAW> نے فرمایا:",
-  "ہر صبح دو فرشتے اترتے ہیں۔ ایک کہتا ہے: اے اللہ! خرچ کرنے والے کو اس کا بدلہ عطا فرما۔",
+  "حضرت ابو ہریرہ، رضی اللہ عن ہُ، بیان کرتے ہیں، کہ <SAW> نے فرمایا:",
+  "ہر صبح، دو فرشتے اترتے ہیں۔ ایک فرشتہ کہتا ہے: اے اللہ! خرچ کرنے والے کو، اس کا بدلہ عطا فرما۔",
   "اور دوسرا کہتا ہے: اے اللہ! روک کر رکھنے والے کا مال برباد کر دے۔",
-  "تو آج آپ کس دعا میں شامل ہوں گے؟ چاہے دس روپے ہوں، آج کچھ دے دیں۔",
+  "تو آج آپ کس دُعا میں شامل ہوں گے؟ چاہے دس روپے ہوں، آج کچھ دے دیں۔",
   "کمنٹ میں لکھیں: آج میں نے صدقہ دیا!",
   "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
  ],
  "roman": [
   "Roz subah, aasman se do farishte utarte hain... aur jaante hain woh kya dua karte hain?",
   "Hazrat Abu Huraira Radi Allahu Anhu bayan karte hain, ke <SAW> ne farmaya:",
-  "Har subah do farishte utarte hain. Ek kehta hai: Aye Allah! Kharch karne wale ko us ka badla ata farma.",
+  "Har subah, do farishte utarte hain. Ek farishta kehta hai: Aye Allah! Kharch karne wale ko, us ka badla ata farma.",
   "Aur doosra kehta hai: Aye Allah! Rok kar rakhne wale ka maal barbaad kar de.",
   "To aaj aap kis dua mein shamil honge? Chahe das rupay hon, aaj kuch de dein.",
   "Comment mein likhein: aaj maine sadqah diya!",
@@ -36,5 +36,8 @@
    "2": 0.85,
    "3": 0.85
   }
- }
+ },
+ "voice_run_id": 42952128893,
+ "voice_fix_run_id": 42953853305,
+ "voice_fix_note": "lines 1, 2, 4 re-voiced (variants 0, 3, 4 of jobs/2026-11-11_sadqah_fix.json): 'Radi Allahu Anhu' unclear, 'Aye Allah' lost 'Aye', 'dua' heard as 'duaar'. Rubberband 0.88 on all lines except line 1 (salawat clip)."
 }

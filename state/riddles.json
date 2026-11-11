@@ -81,12 +81,19 @@
    "title": "Snail in a well: Person 1 finds a snail at the bottom of a 10-metre well; every day it climbs up 3 m, every night it slides back down 2 m; on which day does it get out?",
    "answer": "Day 8. After each full day and night the snail is 1 m higher, so after 7 days and nights it is at 7 m. On day 8 it climbs 3 m, reaches 10 m and is out before night (not day 10).",
    "posted": "2026-11-10 (uploaded https://youtu.be/HpoaU74DtPk)",
+   "solved_in": "2026-11-11 (uploaded https://youtu.be/xbQdf4lwChg)"
+  },
+  {
+   "n": 13,
+   "title": "Two ropes and a lighter: each rope burns in exactly 1 hour but unevenly (fast in some parts, slow in others); no clock, phone or ruler; Person 1 must measure exactly 45 minutes",
+   "answer": "Light rope A at BOTH ends and rope B at ONE end at the same time. Rope A burns out after 30 minutes (two flames meet whatever the unevenness). At that moment light the other end of rope B: its remaining 30 minutes of burning now takes 15 minutes. When B is gone, exactly 45 minutes have passed.",
+   "posted": "2026-11-11 (uploaded https://youtu.be/xbQdf4lwChg)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 13,
+  "n": 14,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #12 solution first (day 8: +1 m net per full day, at 7 m after 7 nights, day 8 climbs 3 m to the top; a day-by-day gauge works well; snail stills in video/public/d1110/ r12_*), then Riddle #13. Avoid FLUX village/church backgrounds: r12_top/r12_person re-rolled in open desert/fields."
+  "note": "Next riddle video = Riddle #13 solution first (A lit at both ends + B at one end; A gone at 30 min, light B's other end; B gone at 45; the CSS Rope component in video/src/day1/D1111Riddle.tsx can show both ends burning; rope stills in video/public/d1111/ r13_*), then Riddle #14. FLUX prompts: describe backgrounds positively (plain walls, open desert); 'no church/no cross' wording made crosses appear."
  }
 }
