@@ -1,0 +1,124 @@
+{
+ "images": [
+  {
+   "name": "r13_ropes_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, two coiled thick hemp ropes and a small brass lighter on a plain wooden table, plain dark brown background, studio product shot",
+   "steps": 8
+  },
+  {
+   "name": "r13_ropes_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, two coiled thick hemp ropes and a small brass lighter on a plain wooden table, plain dark brown background, studio product shot",
+   "steps": 8
+  },
+  {
+   "name": "r13_burn_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close up of the end of a thick hemp rope burning with a small bright orange flame and glowing embers on a plain dark stone floor, plain black background, macro shot",
+   "steps": 8
+  },
+  {
+   "name": "r13_burn_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close up of the end of a thick hemp rope burning with a small bright orange flame and glowing embers on a plain dark stone floor, plain black background, macro shot",
+   "steps": 8
+  },
+  {
+   "name": "r13_uneven_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close up of a long hemp rope on a plain wooden table, some parts thick and knotted, some parts thin and frayed, plain dark background, studio side light",
+   "steps": 8
+  },
+  {
+   "name": "r13_uneven_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close up of a long hemp rope on a plain wooden table, some parts thick and knotted, some parts thin and frayed, plain dark background, studio side light",
+   "steps": 8
+  },
+  {
+   "name": "r13_person_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a man in a plain brown tunic sitting at a wooden table with a coiled rope, a small oil lamp on the table, plain smooth plaster walls, seen from behind, back view, back of head only",
+   "steps": 8
+  },
+  {
+   "name": "r13_person_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a man in a plain brown tunic sitting at a wooden table with a coiled rope, a small oil lamp on the table, plain smooth plaster walls, seen from behind, back view, back of head only",
+   "steps": 8
+  },
+  {
+   "name": "r13_noclock_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a bare smooth plaster wall with one small oil lamp on a wooden shelf, warm glow, minimal, empty",
+   "steps": 8
+  },
+  {
+   "name": "r13_noclock_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a bare smooth plaster wall with one small oil lamp on a wooden shelf, warm glow, minimal, empty",
+   "steps": 8
+  },
+  {
+   "name": "s_angels_sky_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, two soft beams of pure white light shining down from golden dawn clouds onto empty rolling sand dunes, vast open desert landscape",
+   "steps": 8
+  },
+  {
+   "name": "s_angels_sky_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, two soft beams of pure white light shining down from golden dawn clouds onto empty rolling sand dunes, vast open desert landscape",
+   "steps": 8
+  },
+  {
+   "name": "s_box_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a small wooden charity box with a coin slot on a plain wooden shelf, a few coins beside it, smooth plain plaster wall behind, warm morning light, minimal",
+   "steps": 8
+  },
+  {
+   "name": "s_box_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a small wooden charity box with a coin slot on a plain wooden shelf, a few coins beside it, smooth plain plaster wall behind, warm morning light, minimal",
+   "steps": 8
+  },
+  {
+   "name": "s_fajr_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, vast open desert sand dunes at dawn, soft orange sky, rising sun on the horizon, a few birds flying, empty landscape",
+   "steps": 8
+  },
+  {
+   "name": "s_fajr_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, vast open desert sand dunes at dawn, soft orange sky, rising sun on the horizon, a few birds flying, empty landscape",
+   "steps": 8
+  },
+  {
+   "name": "s_spend_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close up of two hands, one hand gently placing gold coins into another open hand, plain warm blurred background, shallow depth of field, only hands visible",
+   "steps": 8
+  },
+  {
+   "name": "s_spend_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close up of two hands, one hand gently placing gold coins into another open hand, plain warm blurred background, shallow depth of field, only hands visible",
+   "steps": 8
+  },
+  {
+   "name": "k_toy_v1",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, two small boys in t-shirts on a plain rug pulling the same red toy car between them, simple modern minimal room with plain cream walls and a big window to a green garden, both seen from behind, back view, backs of heads only",
+   "steps": 8
+  },
+  {
+   "name": "k_toy_v2",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, two small boys in t-shirts on a plain rug pulling the same red toy car between them, simple modern minimal room with plain cream walls and a big window to a green garden, both seen from behind, back view, backs of heads only",
+   "steps": 8
+  },
+  {
+   "name": "k_share_v1",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, two small boys sitting side by side on a plain rug playing together with a red toy car, simple modern minimal room with plain cream walls and a big window to a green garden, both seen from directly behind, back view, backs of heads only",
+   "steps": 8
+  },
+  {
+   "name": "k_share_v2",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, two small boys sitting side by side on a plain rug playing together with a red toy car, simple modern minimal room with plain cream walls and a big window to a green garden, both seen from directly behind, back view, backs of heads only",
+   "steps": 8
+  },
+  {
+   "name": "k_strong_v1",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, a small boy in a blue t-shirt with a red cape standing on top of a grassy green hill with hands on hips like a superhero, open blue sky with fluffy clouds, seen from behind, back view, back of head only",
+   "steps": 8
+  },
+  {
+   "name": "k_strong_v2",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, a small boy in a blue t-shirt with a red cape standing on top of a grassy green hill with hands on hips like a superhero, open blue sky with fluffy clouds, seen from behind, back view, back of head only",
+   "steps": 8
+  }
+ ]
+}
