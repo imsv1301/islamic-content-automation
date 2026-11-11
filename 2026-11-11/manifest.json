@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-11",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle12Solution_Riddle13.mp4",
+   "meta": "riddle.json",
+   "title": "Day 8, Not Day 10 🐌 Riddle #12 Answer + Riddle #13: Two Ropes, Exactly 45 Minutes 🔥 #shorts",
+   "qa": {
+    "heard": " Yesterday, a snail in a 10 meter well, up 3 meters every day and down 2 meters every night.  So each full day and night, the snail only gains 1 meter.  After 7 days and 7 nights, it is at 7 meters.  On day 8, it climbs 3 more meters and reaches the top.  It is out on day 8, not day 10.  Now a brand new mystery.  Person 1 has 2 ropes and a lighter.  Each rope takes exactly 1 hour to burn.  But they burn unevenly, fast in some parts and slow in others.  There is no clock, no phone and no ruler.  How can person 1 measure exactly 45 minutes?  Comment your answer.  The answer drops tomorrow at sunrise.",
+    "script_match": 0.816,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: #12 answer (day 8) correct; #13 two ropes / 45 min well-posed, answer not shown in video or description; no salam, Person 1 only, back view; no faith symbols. After the review the rope-burn card was re-timed (linear burn) and re-rendered; re-checked by qa_check."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short13_DoFarishtonKiDua.mp4",
+   "meta": "sadqah.json",
+   "title": "Roz Subah Do Farishton Ki Dua! Aap Kis Mein Hain? | Sahih Bukhari 1442 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " روز سبہ آسمان سے دو فرشت اترتے ہیں اور جانتے ہیں وہ کیا دعا کرتے ہیں؟  حضرت ابو حررا رزی اللہانہو بیان کرتے ہیں یہ حمارِ نبی محمد مصطفہ صل اللہ تعالی علی ہی وعالی ہی وصل نے فرمایا  اور سبہ دو فرشت اترتے ہیں ایک فرشتہ کہتا ہے اے اللہ خرج کرنے والے کو اس کا بدلہ اتا فرما  اور دوسرا کہتا ہے اے اللہ روک کر رکھنے والے کا مال برباد کر دے  تو آج آپ کس دعا میں شامل ہوں گے چاہے دس روپے ہوں  آج کچھ دے دیں کمنٹ میں لکھیں آج میں نے صدقہ دیا یہ ویڈیو آگے بھیجیں یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.815,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:1442",
+     "https://sunnah.com/muslim:1010"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: bukhari:1442 opened on sunnah.com (Abu Huraira; Arabic khalaf/talaf matches card); muslim:1010 confirmed via sunnah.com search listing. Angels shown only as light; hands only; real dome (Pixabay 112361) credited; Roman Urdu subs. Flagged whisper hearing 'Har subah' as 'aur subah' in the mix: the line alone is heard as 'ہر صبح' (whisper noise)."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_DontGetAngry.mp4",
+   "meta": "kids.json",
+   "title": "Grrr! Someone Took My Toy! 🧸 Don't Get Angry | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " Grr, your brother took your toy and you feel so angry. What do you do?  A man once asked,  Please give me some advice.  And the answer was do not get angry. The man asked again and again and every time the answer was do not get angry.  So when you feel angry, stop and take a deep breath.  After that use kind words. Can I have my toy back please?  The man saying calm is what a strong Muslim does.  Now can you stay calm today? Say yes I can.",
+    "script_match": 0.967,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:6116"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: bukhari:6116 opened on sunnah.com (Abu Huraira; 'La taghdab' repeated); Made for Kids; children back views only; no face emoji. Asked to confirm the aerial dome (Pixabay 198164, muhammadarhamamin77800 drone footage, used before) is real: it is the same real drone clip used on 2 and 10 Nov. Line 6 'Staying calm' re-checked on its own: heard correctly."
+   }
+  }
+ ],
+ "notes": [
+  "Wednesday, about 29 Jumada al-Ula / 1 Jumada al-Akhirah 1448 (Qatar/Gulf start 11 Nov; UK/India sighting likely 12 Nov). No major occasion within 7 days; 3 Jumada al-Akhirah (wisal of Sayyida Fatima Radi Allahu Anha) is around 13-14 Nov. Catch-up: every earlier day is already on YouTube, nothing re-uploaded. Comments: no new threads on riddle or sadqah.",
+  "Sadqah Short 13: 'Roz subah do farishton ki dua', Sahih al-Bukhari 1442 (+ Muslim 1010), Abu Huraira Radi Allahu Anhu. Kids: Sahih al-Bukhari 6116 'Do not get angry'. Riddle #13: two ropes, each burns unevenly in 1 hour; measure exactly 45 minutes (answer tomorrow).",
+  "All 3 passed both checks. Voice re-rolls: kids lines 4 and 6, Sadqah lines 1, 2, 4. FLUX again drew crosses, Christmas trees, a church and clocks in 12 of 17 stills; re-rolled with positive-only prompts (no 'no X' wording), which fixed it. Nothing was paid.",
+  "Real Madinah footage is running thin: Pixabay only returns 3 usable clips (112360, 112361, 198164), all used in the last few days. Today: 112361 (sadqah) and 198164 at a new moment (kids)."
+ ]
+}
