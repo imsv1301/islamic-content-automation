@@ -1,0 +1,94 @@
+{
+ "images": [
+  {
+   "name": "r13_ropes",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, two thick old hemp ropes lying side by side on a rough wooden table next to a small brass lighter, warm lamp light, dark background, no people, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "r13_burn",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, one hemp rope lying on a stone floor burning with a small bright flame at one end, glowing embers, smoke curling, dark warm background, close up, no people, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "r13_uneven",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a long hemp rope on a stone floor, some parts thick and knotted, some parts thin and frayed, dramatic side light, close up, no people, no fire, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "r13_person",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a single man in a simple plain tunic sitting at a wooden table holding a coiled rope in a dim stone room lit by a small oil lamp, seen from behind, back view, back of head only, face not visible, no clock on the wall, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "r13_noclock",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, an empty bare stone wall with a pale round mark where a wall clock used to hang, a small oil lamp below on a shelf, moody warm light, no clock, no people, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "r13_question",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a big glowing golden question mark floating above two coiled ropes and a small flame in a dark room, magical sparkles, no people, no buildings, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "r12_gauge",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a tall old stone well cut in half like a cross section showing the inside wall from bottom to top, a small cute snail half way up, warm daylight, no people, no buildings, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "s_angels_sky",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, soft golden dawn sky with two beams of pure white light descending through the clouds onto a quiet sleeping town of flat-roofed desert houses, no figures, no wings, no people, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "s_spend",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a hand placing a few coins and a loaf of bread into the open hands of another person at a market stall at dawn, only hands visible, no faces, close up, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "s_lock",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a heavy old wooden chest with a big iron lock, full of gold coins gathering dust and cobwebs in a dark room, single beam of light, no people, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "s_box",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a small wooden charity box with a slot on a shelf by a doorway at sunrise, a few coins beside it, warm light, no people, no text, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "s_fajr",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, no text, a flat-roofed desert town at fajr dawn, minaret silhouettes, soft orange sky, birds, peaceful, no people, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_toy",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small boy in a blue t-shirt and an older boy pulling the same red toy car between them on a living room rug, both seen from behind, back view, backs of heads only, faces not visible, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_angry",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small boy in a blue t-shirt standing with clenched fists in a bright living room, little red steam puffs above his head like a cartoon, seen from behind, back view, back of head only, face not visible, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_breath",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small boy in a blue t-shirt sitting calmly on a cushion by a sunny window with soft blue air swirls around him, peaceful, seen from behind, back view, back of head only, face not visible, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_share",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, two boys sitting together on a living room rug happily playing with a red toy car, both seen from behind, back view, backs of heads only, faces not visible, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_strong",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a small boy in a blue t-shirt standing on a sunny green hill with his hands on his hips like a superhero, a soft red cape blowing, seen from behind, back view, back of head only, face not visible, no church, no cross, no christmas tree",
+   "steps": 8
+  },
+  {
+   "name": "k_question",
+   "prompt": "3D animated film still, warm golden sunlight, soft pastel and amber palette, toy-like stylised 3D render, high detail, no text, a big friendly glowing question mark floating over a colourful toy box in a bright playroom, sparkles, no people, no church, no cross, no christmas tree",
+   "steps": 8
+  }
+ ]
+}
