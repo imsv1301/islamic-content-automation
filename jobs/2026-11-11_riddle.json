@@ -1,0 +1,30 @@
+{
+ "en": [
+  "Yesterday: a snail in a ten metre well. Up three metres every day, and down two metres every night.",
+  "So each full day and night, the snail only gains one metre.",
+  "After seven days and seven nights, it is at seven metres.",
+  "On day eight, it climbs three more metres, and reaches the top!",
+  "It is out on day eight! Not day ten!",
+  "Now, a brand new mystery.",
+  "Person one has two ropes, and a lighter.",
+  "Each rope takes exactly one hour to burn. But they burn unevenly, fast in some parts, and slow in others.",
+  "There is no clock, no phone, and no ruler.",
+  "How can Person one measure exactly forty five minutes?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "calm",
+   "3": "excited",
+   "4": "excited",
+   "5": "excited",
+   "6": "calm",
+   "7": "calm",
+   "8": "serious",
+   "9": "serious",
+   "10": "warm"
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "en": [
+  "Grrr! Your brother took your toy, and you feel so angry! What do you do?",
+  "A man once asked <SAW>: Please give me some advice!",
+  "And the answer was: Do not get angry! The man asked again and again, and every time, the answer was: Do not get angry!",
+  "So when you feel angry, stop... and take a deep breath.",
+  "Then use kind words: Can I have my toy back, please?",
+  "Staying calm is what a strong Muslim does!",
+  "Can you stay calm today? Say: Yes, I can!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "calm",
+   "4": "warm",
+   "5": "excited",
+   "6": "excited"
+  }
+ }
+}
