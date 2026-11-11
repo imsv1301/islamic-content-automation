@@ -1,0 +1,24 @@
+{
+ "en": [
+  "After that, use kind words: Can I have my toy back, please?",
+  "Next, use kind words. Can I have my toy back, please?",
+  "So, can you stay calm today? Say: Yes, I can!",
+  "Now, can you stay calm today? Say: Yes, I can!"
+ ],
+ "style": {
+  "en": {
+   "0": "warm",
+   "1": "warm",
+   "2": "excited",
+   "3": "excited"
+  }
+ },
+ "maps_to": {
+  "en": [
+   4,
+   4,
+   6,
+   6
+  ]
+ }
+}

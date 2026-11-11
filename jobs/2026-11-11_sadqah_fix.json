@@ -1,0 +1,47 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "حضرت ابو ہریرہ، رضی اللہ عن ہُ، بیان کرتے ہیں، کہ <SAW> نے فرمایا:",
+  "حضرت ابو ہریرہ، رَضِیَ اللہُ عَنْہُ، بیان کرتے ہیں، کہ <SAW> نے فرمایا:",
+  "ہر صبح دو فرشتے اترتے ہیں۔ ایک کہتا ہے: اے… اللہ! خرچ کرنے والے کو اس کا بدلہ عطا فرما۔",
+  "ہر صبح، دو فرشتے اترتے ہیں۔ ایک فرشتہ کہتا ہے: اے اللہ! خرچ کرنے والے کو، اس کا بدلہ عطا فرما۔",
+  "تو آج آپ کس دُعا میں شامل ہوں گے؟ چاہے دس روپے ہوں، آج کچھ دے دیں۔",
+  "تو بتائیں، آج آپ کس دُعا میں شامل ہوں گے؟ چاہے دس روپے ہوں، آج کچھ دے دیں۔"
+ ],
+ "roman": [
+  "Hazrat Abu Huraira Radi Allahu Anhu bayan karte hain, ke <SAW> ne farmaya:",
+  "Hazrat Abu Huraira Radi Allahu Anhu bayan karte hain, ke <SAW> ne farmaya:",
+  "Har subah do farishte utarte hain. Ek kehta hai: Aye Allah! Kharch karne wale ko us ka badla ata farma.",
+  "Har subah, do farishte utarte hain. Ek farishta kehta hai: Aye Allah! Kharch karne wale ko, us ka badla ata farma.",
+  "To aaj aap kis dua mein shamil honge? Chahe das rupay hon, aaj kuch de dein.",
+  "To batayein, aaj aap kis dua mein shamil honge? Chahe das rupay hon, aaj kuch de dein."
+ ],
+ "style": {
+  "ur": {
+   "0": "calm",
+   "1": "calm",
+   "2": "serious",
+   "3": "serious",
+   "4": "warm",
+   "5": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85,
+   "3": 0.85
+  }
+ },
+ "maps_to": {
+  "ur": [
+   1,
+   1,
+   2,
+   2,
+   4,
+   4
+  ]
+ }
+}
