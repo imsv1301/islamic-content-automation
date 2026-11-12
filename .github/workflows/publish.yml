@@ -1,5 +1,5 @@
 name: publish
-# Uploads a day's videos (renders/<date>/manifest.json) straight to YouTube as public, then texts Sahil the links on Telegram.
+# Uploads a day's videos (renders/<date>/manifest.json) to Instagram (Reels) and straight to YouTube as public, then texts Sahil all links on Telegram.
 on:
   workflow_dispatch:
     inputs:
@@ -20,16 +20,39 @@ jobs:
           printf '%s' "$MASTER_KEY" > /tmp/k
           openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/youtube.json.enc -out /tmp/yt_state.json -pass file:/tmp/k
           rm /tmp/k
+      - name: Instagram (Reels, full quality)
+        continue-on-error: true
+        env:
+          MASTER_KEY: ${{ secrets.MASTER_KEY }}
+          IG_STATE: /tmp/ig_state.json
+          IG_TOKEN_KIDS: ${{ secrets.IG_TOKEN_KIDS }}
+          IG_TOKEN_HADITH: ${{ secrets.IG_TOKEN_HADITH }}
+          IG_TOKEN_NAAT: ${{ secrets.IG_TOKEN_NAAT }}
+          IG_TOKEN_RIDDLE: ${{ secrets.IG_TOKEN_RIDDLE }}
+          D: ${{ inputs.date }}
+        run: |
+          printf '%s' "$MASTER_KEY" > /tmp/k
+          if [ -f state/instagram.json.enc ]; then openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/instagram.json.enc -out /tmp/ig_state.json -pass file:/tmp/k
+          else echo '{"accounts": {}}' > /tmp/ig_state.json; fi
+          sha256sum /tmp/ig_state.json > /tmp/ig_state.sum
+          bash scripts/ig_serve.sh renders
+          python3 scripts/ig.py whoami || true
+          python3 scripts/ig.py publish renders "$D" "$(cat /tmp/ig_base)" | tee /tmp/ig_lines.txt
+          if ! sha256sum -c /tmp/ig_state.sum >/dev/null 2>&1; then
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in /tmp/ig_state.json -out state/instagram.json.enc -pass file:/tmp/k
+          fi
+          rm -f /tmp/k /tmp/ig_state.json
       - name: Upload and notify
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
           YT_STATE: /tmp/yt_state.json
           YT_PRIVACY: public
+          IG_LINES: /tmp/ig_lines.txt
           D: ${{ inputs.date }}
         run: python3 scripts/tg.py publish renders "$D"; rm -f /tmp/yt_state.json
       - name: Save upload log
         run: |
           git config user.name "sadqah-bot"; git config user.email "sadqahmedia.channels@gmail.com"
-          git add state/uploads.jsonl
+          git add state/uploads.jsonl; [ -f state/ig_uploads.jsonl ] && git add state/ig_uploads.jsonl; [ -f state/instagram.json.enc ] && git add state/instagram.json.enc
           git diff --cached --quiet || (git commit -m "publish: upload log" && for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done)

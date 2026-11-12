@@ -1,0 +1,108 @@
+name: naat
+# Mehfil-e-Sama (@mehfil.e_sama): one naat + one qawwali a day, as short credited clips.
+# The audio library is encrypted on the `media` branch; it is decrypted only inside this job and never committed,
+# uploaded as an artifact, or served anywhere except the few minutes Instagram needs to fetch the finished Reel.
+#  prep:    whisper segments + silence gaps for the given track ids -> artifact (1 day) so the daily run can pick complete verses
+#  publish: jobs/<date>_mehfil.json -> cut clips, mux onto the silent house-style renders (renders branch), post Reels,
+#           send Sahil a light 720p preview + link on Telegram
+on:
+  workflow_dispatch:
+    inputs:
+      action: { description: "prep | publish", required: true, default: prep }
+      ids: { description: "prep: comma-separated track ids (see CATALOG.csv on the media branch)", default: "" }
+      date: { description: "publish: day, reads jobs/<date>_mehfil.json", default: "" }
+concurrency: { group: instagram, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Which tracks
+        id: t
+        run: |
+          if [ "${{ inputs.action }}" = publish ]; then
+            ids=$(python3 -c "import json;print(','.join(i['id'] for i in json.load(open('jobs/${{ inputs.date }}_mehfil.json'))['items']))")
+          else ids="${{ inputs.ids }}"; fi
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+          echo "$ids" | tr ',' '\n' | sed 's#.*#audio/&.opus.enc#' > /tmp/sparse
+          echo CATALOG.csv >> /tmp/sparse
+      - uses: actions/checkout@v4
+        with: { ref: media, path: media, sparse-checkout-cone-mode: false, sparse-checkout: CATALOG.csv }
+      - name: Fetch only today's tracks
+        run: |
+          cd media && git sparse-checkout set --no-cone $(cat /tmp/sparse | tr '\n' ' ') && ls -la audio
+      - name: Decrypt tracks
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
+        run: |
+          printf '%s' "$MASTER_KEY" > /tmp/k; mkdir -p /tmp/aud
+          for f in media/audio/*.opus.enc; do openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in "$f" -out "/tmp/aud/$(basename "$f" .enc)" -pass file:/tmp/k; done
+          rm -f /tmp/k; rm -rf media/audio; ls -la /tmp/aud
+      - name: Prep (whisper)
+        if: inputs.action == 'prep'
+        run: |
+          sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y ffmpeg >/dev/null
+          pip install -q faster-whisper numpy
+          python3 scripts/mehfil.py prep /tmp/aud "${{ steps.t.outputs.ids }}" segments.json
+      - uses: actions/upload-artifact@v4
+        if: inputs.action == 'prep'
+        with: { name: mehfil-segments, path: segments.json, retention-days: 1 }
+      - uses: actions/checkout@v4
+        if: inputs.action == 'publish'
+        with: { ref: renders, path: renders }
+      - name: Build and post
+        if: inputs.action == 'publish'
+        env:
+          MASTER_KEY: ${{ secrets.MASTER_KEY }}
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IG_STATE: /tmp/ig_state.json
+          IG_TOKEN_NAAT: ${{ secrets.IG_TOKEN_NAAT }}
+          D: ${{ inputs.date }}
+          NO_FALLBACK: "1"
+        run: |
+          sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y ffmpeg >/dev/null
+          python3 scripts/mehfil.py build /tmp/aud renders "jobs/${D}_mehfil.json" "/tmp/out/$D"
+          printf '%s' "$MASTER_KEY" > /tmp/k
+          if [ -f state/instagram.json.enc ]; then openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/instagram.json.enc -out /tmp/ig_state.json -pass file:/tmp/k
+          else echo '{"accounts": {}}' > /tmp/ig_state.json; fi
+          sha256sum /tmp/ig_state.json > /tmp/ig_state.sum
+          bash scripts/ig_serve.sh /tmp/out "$D/list.json"
+          python3 - <<'PY' | tee /tmp/mehfil_lines.txt
+          import json, os, sys, datetime, urllib.parse
+          sys.argv = ["ig.py"]; sys.path.insert(0, "scripts")
+          import ig
+          D = os.environ["D"]; base = open("/tmp/ig_base").read().strip()
+          done = set()
+          if os.path.exists("state/ig_uploads.jsonl"):
+              done = {json.loads(l)["key"] for l in open("state/ig_uploads.jsonl") if l.strip()}
+          for it in json.load(open(f"/tmp/out/{D}/list.json")):
+              key = f"{D}|mehfil|{it['type']}|{it['id']}"
+              if key in done:
+                  print(f"• Mehfil-e-Sama {it['type']}: already posted"); continue
+              try:
+                  link = ig.reel("naat", f"{base}/{D}/{urllib.parse.quote(it['file'])}", it["caption"])
+                  ig.log_state("ig_uploads.jsonl", {"key": key, "acct": "naat", "url": link, "at": datetime.datetime.utcnow().isoformat(timespec="seconds")})
+                  print(f"• 🌹 Mehfil-e-Sama {it['type']}: {link}")
+              except Exception as e:
+                  print("FAILED", e, file=sys.stderr); print(f"• ⚠️ Mehfil-e-Sama {it['type']}: Instagram post failed, Claude will retry")
+          ig.save()
+          PY
+          if ! sha256sum -c /tmp/ig_state.sum >/dev/null 2>&1; then
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in /tmp/ig_state.json -out state/instagram.json.enc -pass file:/tmp/k
+          fi
+          rm -f /tmp/k /tmp/ig_state.json
+          # light preview for Sahil (Telegram only, private chat), then the links
+          for f in /tmp/out/$D/*.mp4; do
+            python3 -c "import sys;sys.argv=['tg.py'];sys.path.insert(0,'scripts');import tg;print(tg.send_video('$f','Mehfil-e-Sama · $(basename $f .mp4)',{'inline_keyboard':[]}).get('ok'))" || true
+          done
+          python3 scripts/tg.py text "$(printf '🌹 Mehfil-e-Sama (%s):\n%s' "$D" "$(cat /tmp/mehfil_lines.txt)")"
+          rm -rf /tmp/aud /tmp/out
+      - name: Save state and logs
+        if: always() && inputs.action == 'publish'
+        run: |
+          git config user.name "sadqah-bot"; git config user.email "sadqahmedia.channels@gmail.com"
+          [ -f state/instagram.json.enc ] && git add state/instagram.json.enc
+          [ -f state/ig_uploads.jsonl ] && git add state/ig_uploads.jsonl
+          git diff --cached --quiet || (git commit -m "naat: state/log" && for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done)

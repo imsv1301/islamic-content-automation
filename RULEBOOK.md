@@ -2,7 +2,7 @@
 
 ## Channels
 - YouTube (3): Islam for Little Ones @islamforlittleonestv (English, Made for Kids), One More Sadqah @one_more_sadqah (Urdu adult), Solve by Sunrise @solvebysunrise (English riddles).
-- Instagram (4): @islamforlittleones (parent-facing), @raahesunnat.daily (hadith, English), @mehfil.e_sama (naat + qawwali), @solvebysunrise (question). DIY dropped for now.
+- Instagram (4): @islamforlittleones (parent-facing), @raahesunnat.daily (hadith: reposts the Urdu One More Sadqah Short, Sahil 12 Nov), @mehfil.e_sama (naat + qawwali), @solvebysunrise (question). DIY dropped for now.
 - Approval: Telegram message ~05:30–06:00 UK; post only after ✅. Never post without approval.
 - Narration: Sahil's cloned voice (OmniVoice zero-shot, approved 30 Oct 2026) on ALL channels, including Islam for Little Ones (from 31 Oct 2026: no Kokoro/AI voice any more). Urdu for One More Sadqah, English for kids + riddles. Always the tightened version: silence trimmed per line by pipeline/build_short.py, short gaps. Voice reference kept encrypted, never in the repo in plain form.
 
@@ -33,7 +33,10 @@
 - Daily run: see DAILY_RUNBOOK.md. Telegram preview by ~05:30–06:00 UK; uploads only after Sahil taps ✅ (approvals.yml). Free-text Telegram messages are never stored (public repo).
 - HOUSE STYLE FOR ALL VIDEOS, ALL CHANNELS (approved by Sahil 31 Oct 2026; replaces the older per-channel looks): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Faceless only: back views, silhouettes, blank egg-shaped heads. Template: video/src/day1/MysteryShort.tsx.
 - Quality: YouTube and Instagram always get the full-quality master (1080x1920, 30fps, H.264 CRF 15, 320k AAC). Only Telegram previews are a small 720p copy.
-- Comments, DMs and messages are managed around the clock: an hourly comment check (scheduled task "Sadqah Media comments") plus the daily run. Instagram DMs and comments get added once the Instagram accounts and Meta API exist.
+- Comments, DMs and messages are managed around the clock: an hourly check (scheduled task "Sadqah Media comments") covers YouTube comments plus Instagram comments and DMs on all 4 accounts, and the daily run does the same.
+- Instagram (since 12 Nov 2026): every daily video also goes to Instagram as a Reel at full quality, through the official Instagram API (Meta app "Sadqah Media Publisher", free). kids -> @islamforlittleones, sadqah (Urdu hadith Short, same video) -> @raahesunnat.daily, riddle -> @solvebysunrise. publish.yml does YouTube + Instagram together and sends one Telegram message.
+- Mehfil-e-Sama (@mehfil.e_sama): **one naat + one qawwali every day** (Sahil, 12 Nov). Short credited clips only (15-90 s, complete verses, never cut mid-verse), from the encrypted library on the `media` branch (naat.yml). Caption always credits the reciter/qawwal by name and the original upload. If Instagram gives any copyright notice, mute, or removal: stop Mehfil-e-Sama posting and tell Sahil on Telegram at once.
+- Instagram DMs: only reply to people who wrote to us first (24 h window). Never follow, like, or message anyone first. Same tone and limits as comments; fatwa or sensitive questions are flagged to Sahil, not answered.
 
 - QUALITY GATE (Sahil, 6 Nov 2026): every video is checked twice before upload (automatic qa_check.py + an independent second review) for 1) authenticity, 2) pronunciation, 3) voice, and 4) every other rule here. publish.yml refuses anything that hasn't passed both.
 

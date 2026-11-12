@@ -24,6 +24,11 @@ git fetch origin renders
 - **Never hide or delete a comment.**
 - Abusive comments, fatwa / religious-ruling questions, or anything sensitive: don't reply. Send Sahil a note through `telegram.yml` (`mode=text`) with the video and a short paraphrase. Don't quote abuse.
 
+- **Instagram (all 4 accounts):** dispatch `instagram.yml` with `action=comments` and `action=dms` for `kids`, `hadith`, `naat`, `riddle`; read the artifacts `ig-comments-<acct>` / `ig-dms-<acct>`.
+  - Reply to every comment without a reply from us (`action=reply`, `acct`, `target=<comment id>`, `text`), same rules as YouTube.
+  - DMs: reply only in conversations where the other person wrote last (`action=dm`, `target=<their id>`, `text`); never message anyone first. Fatwa / sensitive / abusive: flag to Sahil, don't answer.
+  - Log handled ids in `state/comments_handled.jsonl` with `"platform": "ig"` (ids only, never text or usernames).
+
 ## 2. Pick today's content (about 15 min)
 - Web-search today's Hijri date and any upcoming occasions within 7 days: Rajab (Khwaja Garib Nawaz 6 Rajab, Mawla Ali 13 Rajab, Miraj 27 Rajab), Shab-e-Barat, Ramadan, Milad, Gyarwi. Lean today's topics toward them.
 - Run the **virality / hook skills** (`going-viral`, `virality`, `on-screen-text-writer`) before finalising each script. Check trends.
@@ -130,15 +135,27 @@ If either check fails, fix and re-check. If it can't be fixed in time, publish o
 - On the `renders` branch, make `renders/<date>/` with the 3 full-quality MP4s, a metadata JSON per video (`snippet` + `status` with `privacyStatus: "public"`; kids: `selfDeclaredMadeForKids: true`; titles of 100 characters or less), and `manifest.json`:
   `{"date": "<date>", "items": [{"label": "riddle", "video": "...mp4", "meta": "...json", "title": "<YouTube title>"}, ...], "notes": ["optional info line for Sahil"]}`
 - **Check each video before publishing:** 1080x1920, it has audio, the duration is right, you've watched the contact sheet, the hadith reference is correct, the kids flag is set, and there are no faces.
-- Push the renders branch, then dispatch **`publish.yml`** with `date=<date>`. It uploads all 3 straight to YouTube as **public** (with a duplicate-title guard), logs them in `state/uploads.jsonl`, and texts Sahil the links on Telegram. **There is no approval step any more** (Sahil's decision, 6 Nov).
+- Push the renders branch, then dispatch **`publish.yml`** with `date=<date>`. It posts all 3 to Instagram as Reels at full quality (kids -> @islamforlittleones, sadqah -> @raahesunnat.daily, riddle -> @solvebysunrise; via a temporary Cloudflare tunnel, duplicate guard, log in `state/ig_uploads.jsonl`), then uploads all 3 straight to YouTube as **public** (with a duplicate-title guard), logs them in `state/uploads.jsonl`, and texts Sahil the links on Telegram. **There is no approval step any more** (Sahil's decision, 6 Nov).
 - Before rendering, check YouTube (`yt.py stats` via `youtube.yml`) and `state/uploads.jsonl` for any earlier day that never went up, and publish those first, oldest first.
 - If something failed, publish what's ready and put a `notes` line in the manifest saying what's missing.
+
+## 5b. Mehfil-e-Sama: one naat + one qawwali every day (@mehfil.e_sama)
+The audio is third-party, so it lives only encrypted on the `media` branch (`audio/<id>.opus.enc`, index `CATALOG.csv`) and is decrypted only inside `naat.yml`. Never commit, upload or share decrypted audio.
+1. **Pick** one `naat/manqabat` and one `qawwali` from `CATALOG.csv` (`git show origin/media:CATALOG.csv`): occasion first (Rajab Urs/Miraj, Rabi-ul-Awwal Milad, Gyarwi, Jumu'ah durood), otherwise "any day". Don't repeat a track used in the last 30 days (`state/ig_uploads.jsonl`, keys `<date>|mehfil|<type>|<id>`).
+2. **Prep:** dispatch `naat.yml` `action=prep ids=<naatId>,<qawwaliId>`; download artifact `mehfil-segments` (whisper segments + silence gaps, kept 1 day). Choose a 45-90 s window of **complete verses** for each (start just after a silence gap, end on a verse end). Prefer the opening matla or the best-known verse.
+3. **Visuals:** render a **silent** 1080x1920 house-style video per clip (exact clip length, CRF 15) with REAL footage (Pixabay/Wikimedia, credited), the kalam title, and "Recited by <name>" + "Original: <channel>" credit on screen for the whole clip. Lyrics on screen only for pre-1929 poetry (two lines: Nastaliq + Roman). No faces, no Awliya or Prophets depicted. Put them on the `renders` branch at `renders/<date>/mehfil_naat.mp4`, `mehfil_qawwali.mp4` (silent, so nothing third-party is public).
+4. **Job file** on main, `jobs/<date>_mehfil.json`:
+   `{"items": [{"type": "naat", "id": "<id>", "start": 12.3, "end": 78.9, "video": "<date>/mehfil_naat.mp4", "caption": "<title> 🌹\n\nRecited by <name>\nOriginal: <channel> (<youtube url>)\nAll rights belong to the reciter. Shared with love for the Mehfil.\n\n#naat #naatsharif ..."}, {"type": "qawwali", ...}]}`
+   Captions: write "Sallallahu Alaihi Wa Alihi Wasallam" in full after the Prophet's name, credit the artist first, at most 30 hashtags.
+5. **Publish:** dispatch `naat.yml` `action=publish date=<date>`. It cuts the clips (fades, -14 LUFS), muxes them onto the silent renders at 320k AAC, posts both Reels, sends Sahil a 720p preview + links on Telegram, and logs `state/ig_uploads.jsonl`.
+6. **Copyright watch:** if a post shows a copyright notice, is muted, or is removed, stop Mehfil-e-Sama posting and tell Sahil on Telegram the same day.
 
 ## 6. Wrap up
 - Append a short entry under "Daily log" in `HANDOFF.md`: what was made, which hadith, the riddle number and answer, and any issues. Push to main.
 - Do not commit third-party audio (naat/qawwali) or anything private to this public repo.
 
 ## Hourly comment check (scheduled task "Sadqah Media comments")
+0. Also Instagram, every hour: `instagram.yml` `action=comments` and `action=dms` for kids, hadith, naat, riddle; reply / flag as in Section 1 (Instagram bullet). Ids only in `state/comments_handled.jsonl` with `"platform": "ig"`.
 1. Dispatch `youtube.yml` `action=comments` for `riddle` and `sadqah`, then read the artifacts.
 2. A thread is **new** if it has no reply from our own channel and its id is not in `state/comments_handled.jsonl`.
 3. Reply following the Section 1 rules. Riddle guesses: never reveal the answer before the solution video.

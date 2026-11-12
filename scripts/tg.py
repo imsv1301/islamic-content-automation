@@ -128,6 +128,11 @@ def publish_day(rdir, date):
             lines.append(f"• {CH.get(it['label'], it['label'])}: {it.get('title', '')}\n  {link}")
         else:
             lines.append(f"• ⚠️ {CH.get(it['label'], it['label'])}: upload failed, Claude will retry next run")
+    ig = os.environ.get("IG_LINES")
+    if ig and os.path.exists(ig):
+        extra = [l for l in open(ig, encoding="utf-8").read().splitlines() if l.startswith("•")]
+        if extra:
+            lines += ["", "Instagram:"] + extra
     lines += [f"ℹ️ {n}" for n in m.get("notes", [])]
     msg = "\n".join(lines)
     for k in range(0, len(msg), 3900):

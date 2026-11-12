@@ -1,0 +1,71 @@
+name: instagram
+# Instagram for the four accounts (official Instagram API with Instagram Login). Tokens live only in
+# state/instagram.json.enc (AES-256-CBC, pbkdf2, MASTER_KEY); first-time tokens come from the IG_TOKEN_* secrets.
+# Videos are served to Instagram for a few minutes through a temporary Cloudflare quick tunnel (free, no account).
+on:
+  workflow_dispatch:
+    inputs:
+      action: { description: "whoami | publish | comments | reply | dms | dm", required: true, default: whoami }
+      acct: { description: "kids | hadith | naat | riddle (comments/reply/dms/dm)", default: kids }
+      date: { description: "publish: folder on the renders branch, e.g. 2026-11-12", default: "" }
+      target: { description: "reply: comment id / dm: recipient id", default: "" }
+      text: { description: "reply/dm text", default: "" }
+  schedule:
+    - cron: "17 2 * * 1"   # weekly token check + refresh (Monday 02:17 UTC)
+concurrency: { group: instagram, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - if: inputs.action == 'publish'
+        uses: actions/checkout@v4
+        with: { ref: renders, path: renders }
+      - name: Decrypt state
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
+        run: |
+          printf '%s' "$MASTER_KEY" > /tmp/k
+          if [ -f state/instagram.json.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in state/instagram.json.enc -out /tmp/ig_state.json -pass file:/tmp/k
+          else echo '{"accounts": {}}' > /tmp/ig_state.json; fi
+          sha256sum /tmp/ig_state.json > /tmp/ig_state.sum
+      - if: inputs.action == 'publish'
+        name: Serve today's videos for Instagram to fetch
+        run: bash scripts/ig_serve.sh renders
+      - name: Run
+        env:
+          IG_STATE: /tmp/ig_state.json
+          IG_TOKEN_KIDS: ${{ secrets.IG_TOKEN_KIDS }}
+          IG_TOKEN_HADITH: ${{ secrets.IG_TOKEN_HADITH }}
+          IG_TOKEN_NAAT: ${{ secrets.IG_TOKEN_NAAT }}
+          IG_TOKEN_RIDDLE: ${{ secrets.IG_TOKEN_RIDDLE }}
+          A: ${{ inputs.action || 'whoami' }}
+          C: ${{ inputs.acct }}
+          D: ${{ inputs.date }}
+          T: ${{ inputs.target }}
+          X: ${{ inputs.text }}
+        run: |
+          case "$A" in
+            whoami) python3 scripts/ig.py whoami | tee out.txt ;;
+            publish) python3 scripts/ig.py whoami > /dev/null; python3 scripts/ig.py publish renders "$D" "$(cat /tmp/ig_base)" | tee out.txt ;;
+            comments|dms) python3 scripts/ig.py "$A" "$C" | tee out.txt ;;
+            reply|dm) python3 scripts/ig.py "$A" "$C" "$T" "$X" | tee out.txt ;;
+            *) echo "unknown action $A"; exit 1 ;;
+          esac
+      - name: Save state and logs
+        if: always()
+        env: { MASTER_KEY: "${{ secrets.MASTER_KEY }}" }
+        run: |
+          git config user.name "sadqah-bot"; git config user.email "sadqahmedia.channels@gmail.com"
+          if ! sha256sum -c /tmp/ig_state.sum >/dev/null 2>&1; then
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in /tmp/ig_state.json -out state/instagram.json.enc -pass file:/tmp/k
+            git add state/instagram.json.enc
+          fi
+          rm -f /tmp/k /tmp/ig_state.json
+          [ -f state/ig_uploads.jsonl ] && git add state/ig_uploads.jsonl
+          git diff --cached --quiet || (git commit -m "instagram: state/log" && for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done)
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: "ig-${{ inputs.action || 'whoami' }}-${{ inputs.acct }}", path: out.txt, if-no-files-found: ignore }
