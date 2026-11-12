@@ -46,7 +46,7 @@ const Cards = (c: Ctx) => {
     out.push(<HadithCard key="h1" t={t} a={S(2)} ar="فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ" ro={'"...woh achhi baat kahe, ya khamosh rahe."'} col={GREEN} tag="💬 ZABAAN" />);
     out.push(<div key="ch" style={{ position: "absolute", top: 1010, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 24 }}>
       <div style={{ ...chip(GREEN, "#fff", 44), transform: `scale(${pop(t, S(2) + L(2) * 0.4, 0.4)})` }}>✅ ACHHI BAAT</div>
-      <div style={{ ...chip(BLUE, "#fff", 44), transform: `scale(${pop(t, S(2) + L(2) * 0.7, 0.4) * (1 + 0.06 * sw)})` }}>🤐 YA KHAMOSHI</div>
+      <div style={{ ...chip(BLUE, "#fff", 44), transform: `scale(${pop(t, S(2) + L(2) * 0.7, 0.4) * (1 + 0.06 * sw)})` }}>🔇 YA KHAMOSHI</div>
     </div>);
   }
   if (idx === 3) out.push(<div key="h2" style={{ position: "absolute", top: 470, left: 60, right: 60, textAlign: "center" }}>
@@ -94,12 +94,12 @@ const CFG: HouseCfg = {
   captionSize: 68,
   shakeAt: [2],
   shots: [
-    { img: "s_lamp.jpg", from: 0, to: 1, z0: 1.12, z1: 1.0, fx0: 0.5, fy0: 0.45, fx1: 0.5, fy1: 0.55 },
+    { img: "s_lamp.jpg", from: 0, to: 1, z0: 1.12, z1: 1.0, fx0: 0.5, fy0: 0.45, fx1: 0.5, fy1: 0.55, vertical: true },
     { img: "dome_s.jpg", from: 1, to: 2, z0: 1.0, z1: 1.1, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5, vertical: true },
-    { img: "s_quiet.jpg", from: 2, to: 3, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
-    { img: "s_neighbors.jpg", from: 3, to: 4, z0: 1.12, z1: 1.0, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
-    { img: "s_pause.jpg", from: 4, to: 5, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
-    { img: "s_guest.jpg", from: 5, to: 999, z0: 1.12, z1: 1.0, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
+    { img: "s_pause.jpg", from: 2, to: 3, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.45, vertical: true },
+    { img: "s_guest.jpg", from: 3, to: 4, z0: 1.12, z1: 1.0, fx0: 0.5, fy0: 0.6, fx1: 0.5, fy1: 0.5, vertical: true },
+    { img: "s_moment.jpg", from: 4, to: 5, z0: 1.0, z1: 1.12, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.55, vertical: true },
+    { img: "s_lamp.jpg", from: 5, to: 999, z0: 1.2, z1: 1.05, fx0: 0.55, fy0: 0.6, fx1: 0.5, fy1: 0.5, vertical: true },
   ],
   hud: Hud,
   cards: Cards,

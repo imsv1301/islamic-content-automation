@@ -7,7 +7,7 @@
   "حضرت ابو ہریرہ، رضی اللہ عن ہُ، بیان کرتے ہیں، کہ <SAW> نے فرمایا:",
   "جو اللہ پر، اور آخرت کے دن پر ایمان رکھتا ہے، وہ اچھی بات کہے… یا خاموش رہے۔",
   "اور وہ اپنے پڑوسی کو تکلیف نہ دے، اور اپنے مہمان کی عزت کرے۔",
-  "تو آج بولنے سے پہلے، ایک لمحہ رکیں… کیا یہ بات اچھی ہے؟ اگر نہیں، تو خاموشی بہتر ہے۔",
+  "تو آج بولنے سے پہلے، تھوڑا سا رُک جائیں… کیا یہ بات اچھی ہے؟ اگر نہیں، تو خاموشی بہتر ہے۔",
   "کمنٹ میں لکھیں: آج میں صرف اچھی بات کہوں گا!",
   "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
  ],
@@ -16,7 +16,7 @@
   "Hazrat Abu Huraira Radi Allahu Anhu bayan karte hain, ke <SAW> ne farmaya:",
   "Jo Allah par, aur aakhirat ke din par imaan rakhta hai, woh achhi baat kahe... ya khamosh rahe.",
   "Aur woh apne padosi ko takleef na de, aur apne mehmaan ki izzat kare.",
-  "To aaj bolne se pehle, ek lamha rukein... kya yeh baat achhi hai? Agar nahin, to khamoshi behtar hai.",
+  "To aaj bolne se pehle, thoda sa ruk jaayein... kya yeh baat achhi hai? Agar nahin, to khamoshi behtar hai.",
   "Comment mein likhein: aaj main sirf achhi baat kahunga!",
   "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
  ],
@@ -36,5 +36,8 @@
    "2": 0.85,
    "3": 0.85
   }
- }
+ },
+ "voice_fix_note": "line 4 re-voiced (variant 1 of jobs/2026-11-12_sadqah_fix.json): 'ek lamha rukein' heard as 'rakhein'. Rubberband 0.88 on all lines except line 1 (salawat clip).",
+ "voice_fix_run_id": 43148624775,
+ "voice_run_id": 43147616115
 }

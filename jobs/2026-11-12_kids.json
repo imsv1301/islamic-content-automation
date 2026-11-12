@@ -1,7 +1,7 @@
 {
  "en": [
-  "Shoes on! But wait... which foot goes in first? Do you know?",
-  "<SAW> taught us a lovely little sunnah.",
+  "Time to put your shoes on! But wait... which foot goes in first? Do you know?",
+  "<SAW> taught us a lovely sunnah for our shoes.",
   "When you put your shoes on, start with the right foot!",
   "And when you take your shoes off, start with the left foot.",
   "So the right foot goes in first, and comes out last!",
@@ -18,5 +18,8 @@
    "5": "warm",
    "6": "excited"
   }
- }
+ },
+ "voice_fix_note": "lines 0 and 1 re-voiced (variants 0 and 3 of jobs/2026-11-12_kids_fix.json): 'Shoes on' heard as 'Choose on', 'sunnah' as 'sooner'",
+ "voice_fix_run_id": 43148627526,
+ "voice_run_id": 43147618595
 }

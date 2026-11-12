@@ -1,8 +1,8 @@
 {
  "en": [
   "Yesterday: two ropes, one lighter, and exactly forty five minutes.",
-  "Light rope A at both ends, and rope B at just one end, at the same time.",
-  "The two flames on rope A meet after exactly thirty minutes, however unevenly it burns.",
+  "Light both ends of rope A. And light just one end of rope B, at the same time.",
+  "On rope A, the two flames meet after exactly thirty minutes, however unevenly it burns.",
   "At that moment, light the other end of rope B.",
   "Its last thirty minutes of rope now burns in only fifteen. Thirty plus fifteen, is forty five!",
   "Now, a brand new mystery.",
@@ -24,5 +24,8 @@
    "8": "serious",
    "9": "warm"
   }
- }
+ },
+ "voice_fix_note": "lines 1 and 2 re-voiced (variants 1 and 2 of jobs/2026-11-12_riddle_fix.json): 'Light rope A' heard as 'Light drop A', 'rope A meet' as 'rope emit'",
+ "voice_fix_run_id": 43148621575,
+ "voice_run_id": 43147612918
 }
