@@ -1,0 +1,22 @@
+{
+ "en": [
+  "Shoes on! But wait... which foot goes in first? Do you know?",
+  "<SAW> taught us a lovely little sunnah.",
+  "When you put your shoes on, start with the right foot!",
+  "And when you take your shoes off, start with the left foot.",
+  "So the right foot goes in first, and comes out last!",
+  "Let's practise! Right shoe on, then the left. Left shoe off, then the right.",
+  "Can you do it today? Say: Right foot first!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "excited",
+   "3": "calm",
+   "4": "excited",
+   "5": "warm",
+   "6": "excited"
+  }
+ }
+}

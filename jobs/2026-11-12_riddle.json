@@ -1,0 +1,28 @@
+{
+ "en": [
+  "Yesterday: two ropes, one lighter, and exactly forty five minutes.",
+  "Light rope A at both ends, and rope B at just one end, at the same time.",
+  "The two flames on rope A meet after exactly thirty minutes, however unevenly it burns.",
+  "At that moment, light the other end of rope B.",
+  "Its last thirty minutes of rope now burns in only fifteen. Thirty plus fifteen, is forty five!",
+  "Now, a brand new mystery.",
+  "When Person one was six years old, Person two was half as old.",
+  "Today, Person one is seventy years old.",
+  "So, how old is Person two now?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "calm",
+   "3": "calm",
+   "4": "excited",
+   "5": "excited",
+   "6": "calm",
+   "7": "calm",
+   "8": "serious",
+   "9": "warm"
+  }
+ }
+}
