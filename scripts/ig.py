@@ -104,6 +104,7 @@ def recent_captions(acct, n=25):
 
 
 def reel(acct, video_url, caption, cover_url=None):
+    tok(acct)
     uid = ST["accounts"][acct].get("user_id") or call("GET", "me", acct, fields="user_id")["user_id"]
     ST["accounts"][acct]["user_id"] = uid
     first = caption.split("\n", 1)[0].strip()
@@ -164,6 +165,7 @@ def publish(rdir, date, base):
 
 
 def comments(acct):
+    tok(acct)
     uid = ST["accounts"][acct].get("user_id") or call("GET", "me", acct, fields="user_id")["user_id"]
     for m in call("GET", f"{uid}/media", acct, fields="id,caption,comments_count,permalink,timestamp", limit=25).get("data", []):
         if not m.get("comments_count"):
@@ -180,6 +182,7 @@ def reply(acct, cid, text):
 
 
 def dms(acct):
+    tok(acct)
     me = ST["accounts"][acct].get("user_id")
     r = call("GET", "me/conversations", acct, platform="instagram", fields="id,updated_time,participants,messages.limit(5){id,from,message,created_time}")
     for cv in r.get("data", []):
