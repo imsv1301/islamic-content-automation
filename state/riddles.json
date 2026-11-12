@@ -88,12 +88,19 @@
    "title": "Two ropes and a lighter: each rope burns in exactly 1 hour but unevenly (fast in some parts, slow in others); no clock, phone or ruler; Person 1 must measure exactly 45 minutes",
    "answer": "Light rope A at BOTH ends and rope B at ONE end at the same time. Rope A burns out after 30 minutes (two flames meet whatever the unevenness). At that moment light the other end of rope B: its remaining 30 minutes of burning now takes 15 minutes. When B is gone, exactly 45 minutes have passed.",
    "posted": "2026-11-11 (uploaded https://youtu.be/xbQdf4lwChg)",
+   "solved_in": "2026-11-12 (pending upload)"
+  },
+  {
+   "n": 14,
+   "title": "Ages: when Person 1 was 6 years old, Person 2 was half as old; today Person 1 is 70; how old is Person 2 now? (vote options 35 / 67 / 73)",
+   "answer": "67. When Person 1 was 6, Person 2 was 3, so Person 2 is always 3 years younger. 70 - 3 = 67 (not 35: 'half' was only true at that moment).",
+   "posted": "2026-11-12 (pending upload)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 14,
+  "n": 15,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #13 solution first (A lit at both ends + B at one end; A gone at 30 min, light B's other end; B gone at 45; the CSS Rope component in video/src/day1/D1111Riddle.tsx can show both ends burning; rope stills in video/public/d1111/ r13_*), then Riddle #14. FLUX prompts: describe backgrounds positively (plain walls, open desert); 'no church/no cross' wording made crosses appear."
+  "note": "Next riddle video = Riddle #14 solution first (67: the age gap stays 3 years; 'half' was only true when Person 1 was 6; Age card component in video/src/day1/D1112Riddle.tsx; stills video/public/d1112/r14_*), then Riddle #15. Cloudflare free tier was already used up at 03:24 UTC on 12 Nov; SDXL (sdxl.yml) images are 768x1344, so use vertical: true in shots."
  }
 }
