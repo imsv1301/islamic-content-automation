@@ -2,7 +2,7 @@
 
 ## Channels
 - YouTube (3): Islam for Little Ones @islamforlittleonestv (English, Made for Kids), One More Sadqah @one_more_sadqah (Urdu adult), Solve by Sunrise @solvebysunrise (English riddles).
-- Instagram (4): @islamforlittleones (parent-facing), @raahesunnat.daily (hadith, English), @mehfil.e.sama (naat + qawwali), @solvebysunrise (question). DIY dropped for now.
+- Instagram (4): @islamforlittleones (parent-facing), @raahesunnat.daily (hadith, English), @mehfil.e_sama (naat + qawwali), @solvebysunrise (question). DIY dropped for now.
 - Approval: Telegram message ~05:30–06:00 UK; post only after ✅. Never post without approval.
 - Narration: Sahil's cloned voice (OmniVoice zero-shot, approved 30 Oct 2026) on ALL channels, including Islam for Little Ones (from 31 Oct 2026: no Kokoro/AI voice any more). Urdu for One More Sadqah, English for kids + riddles. Always the tightened version: silence trimmed per line by pipeline/build_short.py, short gaps. Voice reference kept encrypted, never in the repo in plain form.
 

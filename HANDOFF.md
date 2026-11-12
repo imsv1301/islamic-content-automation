@@ -16,9 +16,9 @@ A fully free, automated set of Islamic content channels. Claude writes the scrip
 | YouTube | Islam for Little Ones (English, **Made for Kids**, **Shorts only for now**) | @islamforlittleonestv | UCbprx0JxeA47wgBhlC8olXQ · label `kids` |
 | YouTube | One More Sadqah (Urdu, adult) | @one_more_sadqah | UC1DtyCj9u-sgvhI41MyN2fg · label `sadqah` |
 | YouTube | Solve by Sunrise (English riddles) | @solvebysunrise | UCG0dOcXGh_273Yvw4BF-YgQ · label `riddle` |
-| Instagram | Islam for Little Ones | @islamforlittleones | **not created yet** |
-| Instagram | Raah-e-Sunnat, Daily Hadith (English) | @raahesunnat.daily | not created yet |
-| Instagram | Mehfil-e-Sama, Naat & Qawwali | @mehfil.e.sama | not created yet |
+| Instagram | Islam for Little Ones | @islamforlittleones | created 12 Nov 2026 · Creator, Education, bio + logo set |
+| Instagram | Raah-e-Sunnat, Daily Hadith (English) | @raahesunnat.daily | created 12 Nov 2026 · Creator, Education, bio + logo set |
+| Instagram | Mehfil-e-Sama, Naat & Qawwali | @mehfil.e_sama (mehfil.e.sama was taken) | created 12 Nov 2026 · Creator, Musician/band, bio + logo set |
 | Instagram | Solve by Sunrise | @solvebysunrise | not created yet |
 
 - All channels are owned by the Gmail **sadqahmedia.channels@gmail.com** (account name "Sadqah Media").
