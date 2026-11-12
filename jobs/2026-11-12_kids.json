@@ -4,7 +4,7 @@
   "<SAW> taught us a lovely sunnah for our shoes.",
   "When you put your shoes on, start with the right foot!",
   "And when you take your shoes off, start with the left foot.",
-  "So the right foot goes in first, and comes out last!",
+  "The right foot goes in first, and comes out last!",
   "Let's practise! Right shoe on, then the left. Left shoe off, then the right.",
   "Can you do it today? Say: Right foot first!"
  ],
@@ -19,7 +19,7 @@
    "6": "excited"
   }
  },
- "voice_fix_note": "lines 0 and 1 re-voiced (variants 0 and 3 of jobs/2026-11-12_kids_fix.json): 'Shoes on' heard as 'Choose on', 'sunnah' as 'sooner'",
+ "voice_fix_note": "lines 0 and 1 re-voiced (variants 0 and 3 of jobs/2026-11-12_kids_fix.json): 'Shoes on' heard as 'Choose on', 'sunnah' as 'sooner'. Line 4: 'So,' trimmed off the start of the clip (whisper heard 'So' as 'No' in the mix; second reviewer flagged it); remaining audio heard as 'The right foot goes in first and comes out last.'",
  "voice_fix_run_id": 43148627526,
  "voice_run_id": 43147618595
 }

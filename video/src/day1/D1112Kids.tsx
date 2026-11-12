@@ -2,7 +2,7 @@ import React from "react";
 import { HouseShort, HouseCfg, HudBlock, Ctx, pop, MONT, GOLD, INK, houseDur, Timing } from "./HouseShort";
 import data from "./d1112kids-timing.json";
 
-/* Islam for Little Ones, Thu 12 Nov 2026: "Right foot first!", Sahih al-Bukhari 5856 (Abu Huraira Radi Allahu Anhu):
+/* Islam for Little Ones, Thu 12 Nov 2026: "Right foot first!", Sahih al-Bukhari 5855 (Abu Huraira Radi Allahu Anhu):
    when putting on shoes, start with the right; when taking them off, start with the left; so the right is the first in
    and the last out. Made for Kids. Children faceless (back views / feet only); the Prophet Sallallahu Alaihi Wa Alihi
    Wasallam is never shown; Masjid-e-Nabawi shot is a REAL Pixabay frame. No face/person emoji on cards. */
@@ -38,7 +38,7 @@ const Cards = (c: Ctx) => {
   </div>);
   if (idx === 1) out.push(<div key="sun" style={{ position: "absolute", top: 560, left: 80, right: 80, textAlign: "center" }}>
     <div style={{ ...bubble("rgba(255,252,240,0.96)", INK, GOLD, 52), transform: `scale(${pop(t, at(1, 0.55), 0.45)})` }}>✨ A LITTLE SUNNAH ✨</div>
-    <div style={{ marginTop: 18, fontFamily: MONT, fontWeight: 800, fontSize: 28, letterSpacing: "0.08em", color: "#fff", textShadow: "0 3px 10px rgba(0,0,0,0.8)", opacity: pop(t, at(1, 0.7), 0.4) }}>📖 SAHIH AL-BUKHARI 5856</div>
+    <div style={{ marginTop: 18, fontFamily: MONT, fontWeight: 800, fontSize: 28, letterSpacing: "0.08em", color: "#fff", textShadow: "0 3px 10px rgba(0,0,0,0.8)", opacity: pop(t, at(1, 0.7), 0.4) }}>📖 SAHIH AL-BUKHARI 5855</div>
   </div>);
   if (idx === 2) out.push(<div key="on" style={{ position: "absolute", top: 460, left: 0, right: 0, textAlign: "center" }}>
     <div style={{ ...bubble(LEAF, INK, INK, 56), transform: `scale(${pop(t, S(2) + 0.1, 0.45)})` }}>⬆️ PUTTING ON</div>
