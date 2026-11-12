@@ -36,7 +36,7 @@ def tok(acct):
     if not a.get("token"):
         t = os.environ.get("IG_TOKEN_" + acct.upper(), "").strip()
         if not t:
-            raise SystemExit(f"no Instagram token for {acct}")
+            raise RuntimeError(f"no Instagram token for {acct}")
         a["token"] = t; a["refreshed"] = datetime.date.today().isoformat()
         global CHANGED; CHANGED = True
     return a["token"]
@@ -61,7 +61,7 @@ def whoami():
     for acct in ("kids", "hadith", "naat", "riddle"):
         try:
             tok(acct)
-        except SystemExit as e:
+        except RuntimeError as e:
             print(acct, "-", e); continue
         a = ST["accounts"][acct]
         try:
