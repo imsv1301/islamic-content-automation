@@ -19,7 +19,7 @@ A fully free, automated set of Islamic content channels. Claude writes the scrip
 | Instagram | Islam for Little Ones | @islamforlittleones | created 12 Nov 2026 · Creator, Education, bio + logo set |
 | Instagram | Raah-e-Sunnat, Daily Hadith (English) | @raahesunnat.daily | created 12 Nov 2026 · Creator, Education, bio + logo set |
 | Instagram | Mehfil-e-Sama, Naat & Qawwali | @mehfil.e_sama (mehfil.e.sama was taken) | created 12 Nov 2026 · Creator, Musician/band, bio + logo set |
-| Instagram | Solve by Sunrise | @solvebysunrise | not created yet |
+| Instagram | Solve by Sunrise | @solvebysunrise | created 12 Nov 2026 · Creator, Education, bio + logo set |
 
 - All channels are owned by the Gmail **sadqahmedia.channels@gmail.com** (account name "Sadqah Media").
 - Sahil creates the Instagram accounts himself in the phone app, spaced over a few days.
@@ -234,6 +234,14 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
    - "Sadqah Media daily run": also produce the Instagram versions and captions (Raah-e-Sunnat, Mehfil-e-Sama naat/qawwali using the audio library on Sahil's PC, Islam for Little Ones, Solve by Sunrise).
    - "Sadqah Media comments": also handle Instagram comments and DMs on the same rules.
 4. Never auto-follow, auto-like or DM strangers. Only reply to people who wrote to us.
+
+### 11b. Instagram status (12 Nov 2026)
+- All 4 accounts exist and are Creator accounts with bio + logo (Mehfil-e-Sama is **@mehfil.e_sama**, the dotted name was taken).
+- Meta developer account registered on Sahil's Facebook; app **"Sadqah Media Publisher"** (app id 1626001968728312), use case "Manage messaging & content on Instagram". Meta requires a **business portfolio** ("Sadqah Media", sadqahmedia.channels@gmail.com) for "API setup with Unified login"; creating it was rate-limited ("try again in an hour", new account) at 15:12 UK. No business verification needed (own accounts only).
+- Remaining: portfolio -> add the 4 Instagram accounts in API setup -> generate a token per account -> Sahil pastes them into GitHub secrets **IG_TOKEN_KIDS, IG_TOKEN_HADITH, IG_TOKEN_NAAT, IG_TOKEN_RIDDLE** -> `instagram.yml action=whoami` (stores them encrypted in state/instagram.json.enc, refreshes weekly) -> `publish.yml date=<day>` posts the day's Reels.
+- Built: `scripts/ig.py`, `scripts/ig_serve.sh` (Cloudflare quick tunnel serves the full-quality master for Instagram's video_url; raw.githubusercontent fallback), `instagram.yml` (whoami/publish/comments/reply/dms/dm + weekly token refresh), `publish.yml` now does Instagram + YouTube + one Telegram message, `naat.yml` + `scripts/mehfil.py` (Mehfil-e-Sama).
+- Mehfil-e-Sama library: all 66 tracks re-encoded to Opus 80k and stored **encrypted** (MASTER_KEY) on the orphan branch **`media`** (`audio/<id>.opus.enc`, `CATALOG.csv`), so the PC can stay off. Decrypted only inside naat.yml.
+- Sahil's decisions 12 Nov: Raah-e-Sunnat reposts the Urdu One More Sadqah Short daily; Mehfil-e-Sama = one naat + one qawwali daily as short credited clips (he accepted the copyright risk; stop at the first notice).
 
 ## 12. YouTube audit result (2 Nov 2026)
 - Google closed the compliance review: **API uploads are not automatically private.** Our videos were private only because our own metadata said `privacyStatus: private`. That was my mistake, based on an outdated assumption.
