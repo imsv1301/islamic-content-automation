@@ -241,6 +241,7 @@ gh api -X POST repos/.../actions/workflows/youtube.yml/dispatches -f ref=main -f
 - Remaining: portfolio -> add the 4 Instagram accounts in API setup -> generate a token per account -> Sahil pastes them into GitHub secrets **IG_TOKEN_KIDS, IG_TOKEN_HADITH, IG_TOKEN_NAAT, IG_TOKEN_RIDDLE** -> `instagram.yml action=whoami` (stores them encrypted in state/instagram.json.enc, refreshes weekly) -> `publish.yml date=<day>` posts the day's Reels.
 - Built: `scripts/ig.py`, `scripts/ig_serve.sh` (Cloudflare quick tunnel serves the full-quality master for Instagram's video_url; raw.githubusercontent fallback), `instagram.yml` (whoami/publish/comments/reply/dms/dm + weekly token refresh), `publish.yml` now does Instagram + YouTube + one Telegram message, `naat.yml` + `scripts/mehfil.py` (Mehfil-e-Sama).
 - Mehfil-e-Sama library: all 66 tracks re-encoded to Opus 80k and stored **encrypted** (MASTER_KEY) on the orphan branch **`media`** (`audio/<id>.opus.enc`, `CATALOG.csv`), so the PC can stay off. Decrypted only inside naat.yml.
+- Sahil 12 Nov: keep the 6 Nov kids video MoJlLQSUtIg as it is (no replacement); the new Urdu voice (his own recording, with tone refs) is approved.
 - Sahil's decisions 12 Nov: Raah-e-Sunnat reposts the Urdu One More Sadqah Short daily; Mehfil-e-Sama = one naat + one qawwali daily as short credited clips (he accepted the copyright risk; stop at the first notice).
 
 ## 12. YouTube audit result (2 Nov 2026)
