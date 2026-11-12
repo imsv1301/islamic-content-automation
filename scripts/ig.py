@@ -148,6 +148,8 @@ def publish(rdir, date, base):
         key = f"{date}|{i}|{acct}"
         if key in logged:
             lines.append(f"• {NAMES[acct]}: already on Instagram"); continue
+        if not (ST["accounts"].get(acct, {}).get("token") or os.environ.get("IG_TOKEN_" + acct.upper(), "").strip()):
+            lines.append(f"• {NAMES[acct]}: Instagram not connected yet (Meta setup pending); will be posted on catch-up"); continue
         qa = it.get("qa") or {}
         if not ((qa.get("auto") or {}).get("passed") and qa.get("authentic") and qa.get("second_check")):
             lines.append(f"• ⛔ {NAMES[acct]}: not posted (quality gate not passed)"); continue

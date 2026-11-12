@@ -140,6 +140,7 @@ If either check fails, fix and re-check. If it can't be fixed in time, publish o
 - If something failed, publish what's ready and put a `notes` line in the manifest saying what's missing.
 
 ## 5b. Mehfil-e-Sama: one naat + one qawwali every day (@mehfil.e_sama)
+**Until Instagram is connected** (`instagram.yml action=whoami` shows a missing token): do steps 1-4 only, don't dispatch `naat.yml publish`; the first run after connection catches up every prepared day, oldest first.
 The audio is third-party, so it lives only encrypted on the `media` branch (`audio/<id>.opus.enc`, index `CATALOG.csv`) and is decrypted only inside `naat.yml`. Never commit, upload or share decrypted audio.
 1. **Pick** one `naat/manqabat` and one `qawwali` from `CATALOG.csv` (`git show origin/media:CATALOG.csv`): occasion first (Rajab Urs/Miraj, Rabi-ul-Awwal Milad, Gyarwi, Jumu'ah durood), otherwise "any day". Don't repeat a track used in the last 30 days (`state/ig_uploads.jsonl`, keys `<date>|mehfil|<type>|<id>`).
 2. **Prep:** dispatch `naat.yml` `action=prep ids=<naatId>,<qawwaliId>`; download artifact `mehfil-segments` (whisper segments + silence gaps, kept 1 day). Choose a 45-90 s window of **complete verses** for each (start just after a silence gap, end on a verse end). Prefer the opening matla or the best-known verse.
