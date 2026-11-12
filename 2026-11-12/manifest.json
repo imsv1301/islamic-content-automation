@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-12",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle13Solution_Riddle14.mp4",
+   "meta": "riddle.json",
+   "title": "30 + 15 = 45 🔥 Riddle #13 Answer + Riddle #14: How Old Is Person 2? 🎂 #shorts",
+   "qa": {
+    "heard": " Yesterday two ropes, one lighter and exactly 45 minutes light both ends of rope A and light just one end of rope B at the same time  On rope A the two flames meet after exactly 30 minutes  However, unevenly it burns at that moment light the other end of rope B  It's last 30 minutes of rope now burns in only 15 30 plus 15 is 45 now a brand new mystery  When person one was six years old person two was half as old today person one is 70 years old  So how old is person two now comment your answer the answer drops tomorrow at sunrise",
+    "script_match": 0.905,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: #13 answer correct (A both ends + B one end; A gone at 30; light B's other end; +15 = 45); #14 well-posed (6/3, now 70), answer 67 not revealed, 35/67/73 vote cards styled the same; no salam, Person 1/2 only, back views only. After review the description now lists the three options."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short14_AchhiBaatYaKhamoshi.mp4",
+   "meta": "sadqah.json",
+   "title": "Achhi Baat Kaho Ya Khamosh Raho! Imaan Ki Pehchaan | Sahih Bukhari 6475 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " ایک چھوٹی سی چیز جو آپ کے ایمان کی پہجان ہے جانتے ہیں وہ کیا ہے؟  ازرد ابو حررا رزی اللہن ہوں بیان کرتے ہیں کہ  ہمارے نبی محمد مصطفہ سل اللہ تعالی علیہ وعالیہ وسلم نے فرمایا  جو اللہ پر اور آخرت کے دن پر ایمان رکھتا ہے وہ اچھی بات کہے یا خاموش رہے  اور وہ اپنے پڑوشی کو تقلیف نہ دے اور اپنے میمان کی عزت کرے  تو آج بولنے سے پہلے تھوڑا سا رکھ جائیں  کیا یہ بات اچھی ہے؟ اگر نہیں تو خاموشی بہتر ہے  کمنٹ میں لکھیں آج میں صرف اچھی بات کہوں گا  یہ ویڈیو آگے بھیجے یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.84,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:6475"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: sunnah.com/bukhari:6475 opened directly (Abu Hurairah, Kitab ar-Riqaq; speak good or keep silent, don't hurt the neighbour, honour the guest; Arabic clause matches card). Roman Urdu subs, real Pixabay 198164 dome credited, no people. 'ruk jaayein' sometimes decodes as 'rakh jaayein' (beam-1 decode of the line alone hears 'ruk'); caption is correct; non-blocking."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_RightFootFirst.mp4",
+   "meta": "kids.json",
+   "title": "Which Foot Goes First? 👟 The Shoe Sunnah | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " Time to put your shoes on. But wait, which foot goes in first? Do you know?  Our Prophet Muhammad Mustafa,  sallallahu alayhi wa ala alihi wa sallam  taught us a lovely sooner for our shoes.  When you put your shoes on, start with the right foot.  And when you take your shoes off, start with the left foot.  The right foot goes in first and comes out last.  Let's practice. Right shoe on then the left. Left shoe off then the right.  Can you do it today? Say right foot first.",
+    "script_match": 0.913,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:5855"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review FAILED the first render: the reference was wrong (sunnah.com/bukhari:5856 is 'do not walk in one shoe'); the right-on-first / left-off-first hadith is bukhari:5855 (Abu Huraira), opened directly by the reviewer. Fixed: card, description link and tag now say 5855; also the line 'So, the right foot...' was heard as 'No, the right foot...' so 'So,' was trimmed from the clip. Re-rendered; qa_check re-run (heard 'The right foot goes in first and comes out last'); 5855 card confirmed on a frame at 12.3 s. Faceless (back views, feet), real Pixabay 112361 dome credited, no person emoji, Made for Kids."
+   }
+  }
+ ],
+ "notes": [
+  "Thursday, 1 Jumada al-Akhirah 1448 (UK moonsighting.org.uk had Tue 10 Nov = 28 Jumada-I; Gulf started 11 Nov). 3 Jumada al-Akhirah (wisal of Sayyida Fatima Radi Allahu Anha) is about 14 Nov. Catch-up: every earlier day is already on YouTube, nothing re-uploaded. Comments: no new threads on riddle or sadqah.",
+  "Sadqah Short 14: 'Achhi baat kaho ya khamosh raho', Sahih al-Bukhari 6475 (Abu Huraira Radi Allahu Anhu). Kids: 'Right foot first', Sahih al-Bukhari 5855 (shoes: right on first, left off first). Riddle #14: when Person 1 was 6, Person 2 was half as old; Person 1 is 70 now; how old is Person 2? (answer tomorrow).",
+  "All 3 passed both checks. The second reviewer caught a wrong hadith number on the kids video (5856 -> 5855); fixed and re-rendered before upload. Cloudflare's free image quota was already used up at 03:24 UTC, so today's stills came from the free SDXL fallback (some people shots were dropped for showing faces in profile). Nothing was paid.",
+  "Real Madinah footage is still limited to 3 Pixabay clips (today 198164 for sadqah, 112361 for kids)."
+ ]
+}
