@@ -1,0 +1,110 @@
+{
+ "negative": "face, eyes, nose, mouth, facial features, portrait, looking at camera, text, watermark, logo, signature, church, steeple, cross, christmas tree, wreath, ugly, deformed, blurry, scary",
+ "images": [
+  {
+   "name": "r14_young_v1",
+   "prompt": "a six year old girl in a yellow dress and a tiny toddler sitting side by side on a stone garden step, both seen from behind, back view, backs of heads, potted plants, plain plaster wall, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 201
+  },
+  {
+   "name": "r14_young_v2",
+   "prompt": "a six year old girl in a yellow dress and a tiny toddler sitting side by side on a stone garden step, both seen from behind, back view, backs of heads, potted plants, plain plaster wall, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 202
+  },
+  {
+   "name": "r14_elder_v1",
+   "prompt": "an elderly woman with white hair and a shawl sitting on a wooden bench at sunset holding a walking stick, seen from behind, back view, back of head, open golden field, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 203
+  },
+  {
+   "name": "r14_elder_v2",
+   "prompt": "an elderly woman with white hair and a shawl sitting on a wooden bench at sunset holding a walking stick, seen from behind, back view, back of head, open golden field, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 204
+  },
+  {
+   "name": "r14_candles_v1",
+   "prompt": "a round honey cake on a wooden table covered with many small lit candles, warm glow, plain dark brown background, no people, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 205
+  },
+  {
+   "name": "r14_years_v1",
+   "prompt": "a large brass hourglass with golden sand pouring, loose paper calendar pages floating around it, plain dark background, magical dust, no people, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 206
+  },
+  {
+   "name": "r14_chairs_v1",
+   "prompt": "a tiny wooden child's chair beside a big old wooden rocking chair on an empty porch at sunset, no people, plain plaster wall, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 207
+  },
+  {
+   "name": "s_quiet_v1",
+   "prompt": "a man in a plain cream kurta sitting peacefully on a flat rooftop at sunset with a cup of tea, seen from behind, back view, back of head, open sky over flat-roofed desert houses, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 208
+  },
+  {
+   "name": "s_quiet_v2",
+   "prompt": "a man in a plain cream kurta sitting peacefully on a flat rooftop at sunset with a cup of tea, seen from behind, back view, back of head, open sky over flat-roofed desert houses, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 209
+  },
+  {
+   "name": "s_neighbors_v1",
+   "prompt": "two simple flat-roofed desert houses side by side with wooden doors and a low shared wall, potted plants, a plate of dates resting on top of the wall, warm evening light, no people, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 210
+  },
+  {
+   "name": "s_guest_v1",
+   "prompt": "a low wooden table set for a guest with a brass tea pot, small glass tumblers of tea and a bowl of dates, floor cushions, warm lamp light, plain plaster walls, no people, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 211
+  },
+  {
+   "name": "s_pause_v1",
+   "prompt": "a single clay oil lamp glowing on a wooden windowsill at dusk, gentle wisp of smoke, calm quiet mood, plain plaster wall, open sky outside, no people, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 212
+  },
+  {
+   "name": "s_lamp_v1",
+   "prompt": "a flat-roofed desert town at golden dusk with warm lights in windows and minaret silhouettes, soft orange sky, birds, peaceful, no people, 3D animated film still, warm orange and amber cinematic light, terracotta palette, soft volumetric light, stylised 3D render, highly detailed",
+   "seed": 213
+  },
+  {
+   "name": "k_shoes_v1",
+   "prompt": "a pair of small bright blue children's sneakers neatly placed on a doormat by a front door, sunny hallway, plain cream walls, no people, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 214
+  },
+  {
+   "name": "k_right_v1",
+   "prompt": "close up of a child's feet in white socks, the right foot stepping into a bright blue sneaker, sunny wooden hallway floor, only feet and ankles visible, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 215
+  },
+  {
+   "name": "k_right_v2",
+   "prompt": "close up of a child's feet in white socks, the right foot stepping into a bright blue sneaker, sunny wooden hallway floor, only feet and ankles visible, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 216
+  },
+  {
+   "name": "k_off_v1",
+   "prompt": "a small boy in a green t-shirt sitting on a bottom stair taking off his blue sneakers, seen from behind, back view, back of head, sunny hallway, plain cream walls, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 217
+  },
+  {
+   "name": "k_off_v2",
+   "prompt": "a small boy in a green t-shirt sitting on a bottom stair taking off his blue sneakers, seen from behind, back view, back of head, sunny hallway, plain cream walls, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 218
+  },
+  {
+   "name": "k_rack_v1",
+   "prompt": "a neat small wooden shoe rack with rows of colourful children's shoes in a bright hallway, plain cream walls, sunshine, no people, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 219
+  },
+  {
+   "name": "k_door_v1",
+   "prompt": "a small boy in a green t-shirt and blue sneakers standing at an open front door looking out at a sunny garden path, seen from behind, back view, back of head, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 220
+  },
+  {
+   "name": "k_door_v2",
+   "prompt": "a small boy in a green t-shirt and blue sneakers standing at an open front door looking out at a sunny garden path, seen from behind, back view, back of head, 3D animated film still, warm golden sunlight, soft pastel and amber palette, stylised 3D toy-like render, highly detailed",
+   "seed": 221
+  }
+ ]
+}
