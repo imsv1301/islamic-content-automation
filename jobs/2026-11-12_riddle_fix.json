@@ -1,0 +1,24 @@
+{
+ "en": [
+  "Light both ends of rope A, and just one end of rope B, at the same time.",
+  "Light both ends of rope A. And light just one end of rope B, at the same time.",
+  "On rope A, the two flames meet after exactly thirty minutes, however unevenly it burns.",
+  "The two flames on the first rope meet after exactly thirty minutes, however unevenly it burns."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "calm",
+   "3": "calm"
+  }
+ },
+ "maps_to": {
+  "en": [
+   1,
+   1,
+   2,
+   2
+  ]
+ }
+}

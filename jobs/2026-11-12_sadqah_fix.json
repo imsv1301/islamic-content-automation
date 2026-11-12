@@ -1,0 +1,25 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "تو آج بولنے سے پہلے، ایک لمحے کے لیے رُکیں… کیا یہ بات اچھی ہے؟ اگر نہیں، تو خاموشی بہتر ہے۔",
+  "تو آج بولنے سے پہلے، تھوڑا سا رُک جائیں… کیا یہ بات اچھی ہے؟ اگر نہیں، تو خاموشی بہتر ہے۔"
+ ],
+ "roman": [
+  "To aaj bolne se pehle, ek lamhe ke liye rukein... kya yeh baat achhi hai? Agar nahin, to khamoshi behtar hai.",
+  "To aaj bolne se pehle, thoda sa ruk jaayein... kya yeh baat achhi hai? Agar nahin, to khamoshi behtar hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "warm",
+   "1": "warm"
+  }
+ },
+ "maps_to": {
+  "ur": [
+   4,
+   4
+  ]
+ }
+}

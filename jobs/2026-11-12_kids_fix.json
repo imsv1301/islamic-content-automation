@@ -1,0 +1,27 @@
+{
+ "en": [
+  "Time to put your shoes on! But wait... which foot goes in first? Do you know?",
+  "Shoes on, everyone! But wait... which foot goes in first? Do you know?",
+  "<SAW> taught us a lovely little sunnah, a good habit.",
+  "<SAW> taught us a lovely sunnah for our shoes.",
+  "<SAW> showed us a lovely way to wear our shoes."
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "excited",
+   "2": "calm",
+   "3": "calm",
+   "4": "calm"
+  }
+ },
+ "maps_to": {
+  "en": [
+   0,
+   0,
+   1,
+   1,
+   1
+  ]
+ }
+}
