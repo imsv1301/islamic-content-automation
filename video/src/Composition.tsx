@@ -1,3 +1,6 @@
+import { QawwaliAnim, ANIM_DUR } from "./anim/qawwali/anim/QawwaliAnim";
+import { MeraPiya, MERA_DUR } from "./anim/qawwali/anim/MeraPiya";
+import { KidsAnim1113, KIDS1113_DUR } from "./anim/kids/KidsAnim1113";
 import { Composition } from "remotion";
 import { HadithSeaFoam } from "./HadithSeaFoam";
 import { DUR, FPS } from "./lib";
@@ -58,6 +61,10 @@ import { NaatReal, NAAT_REAL_DUR } from "./naat/NaatReal";
 export const MyComposition = () => {
   return (
     <>
+    {/* Animated templates (Sahil approved 13 Nov 2026). Third-party audio is never in this repo: qawwali renders are silent (withAudio false) and naat.yml muxes the clip. */}
+    <Composition id="QawwaliAnim" component={QawwaliAnim} defaultProps={{ withAudio: false }} durationInFrames={Math.round(ANIM_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="MeraPiya" component={MeraPiya} defaultProps={{ withAudio: false }} durationInFrames={Math.round(MERA_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="KidsAnim1113" component={KidsAnim1113} defaultProps={{ withAudio: false }} durationInFrames={Math.round(KIDS1113_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="NaatOverlay" component={NaatReal} defaultProps={{ overlay: true }} durationInFrames={Math.round(NAAT_REAL_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="NaatReal" component={NaatReal} durationInFrames={Math.round(NAAT_REAL_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="SolutionShort" component={SolutionShort} durationInFrames={Math.round(SOLUTION_DUR * 30)} fps={30} width={1080} height={1920} />

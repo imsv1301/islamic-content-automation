@@ -75,29 +75,26 @@ git fetch origin renders
 - Urdu: slow it down with `ffmpeg -af rubberband=tempo=0.88:pitchq=quality:formant=preserved`.
 - Then `python3 pipeline/build_short.py <lines.json> <lang> <vo_dir> <name> [--roman] --gap 0.4`. This produces `video/src/day1/<name>-timing.json` and `video/public/day1/<name>-mix.m4a`.
 
-## 4. Visuals: "best animation, every time"
-**House style for every channel (approved by Sahil, 31 Oct):**
-- Warm amber/orange cinematic 3D-toon stills from Cloudflare Workers AI, with slow camera pushes and pans and cut flashes.
-- A HUD (DAY · time · place · tag) and big uppercase captions with one gold keyword.
-- Claim or info cards, a vote or CTA ending, rain/particle overlays and grain.
-- Base every video on `video/src/day1/MysteryShort.tsx`. Adapt the HUD per channel:
-  - kids: "DAY n · Lesson", gentle and bright, no scary scenes
-  - Sadqah: hadith card with Arabic + Roman Urdu
-  - riddle: as in the sample
-- Moving to code-drawn animation with faces (Sahil, 13 Nov 2026); see RULEBOOK house style.
-- Templates in `video/src/day1/`:
-  - `MysteryShort.tsx` (riddle, warm 3D-toon story style)
-  - `SolutionShort.tsx` (riddle solution + next riddle)
-  - `StrengthShort.tsx` (One More Sadqah, cinematic canvas + Arabic card + Roman subs)
-  - `KidsShort.tsx` (kids, bright 2D kit)
-- Copy one to a new file per video, re-time it to the new timing JSON, and change the scenes so they show the script **literally**. Register it in `video/src/Composition.tsx`.
-- Images: `images.yml` with a job JSON.
-  - FLUX-1-schnell is free (about 80 a day). Keep faces out of it: back views and silhouettes.
-  - `@cf/leonardo/lucid-origin` (1088x1920) is best for frontal faceless "egg head" shots, but costs about 5,400 neurons each, and the free tier is 10,000 a day. Use at most 1 a day.
-  - Never pay: Cloudflare stays on the free plan.
-- **Master render quality (YouTube/Instagram):** `npx remotion render <Comp> out.mp4 --concurrency=2 --codec=h264 --crf=15 --x264-preset=medium --audio-bitrate=320k --pixel-format=yuv420p`. Never upload the Telegram preview copy.
-- Images: generate at the highest size the model allows. Prefer Lucid (1088x1920, about 1 a day free) for the hero shot. FLUX shots are 1024² and get cropped and upscaled; keep the camera zoom at 1.2 or less on them so they stay sharp.
-- Always render stills first (`npx remotion still <Comp> x.png --frame=N`), make a contact sheet, look at it, fix it, then do the full render.
+## 4. Visuals: REAL ANIMATION for every channel (Sahil, 13 Nov 2026, replaces the still-image house style)
+Sahil approved the animated kids sample and the two animated qawwali samples on 13 Nov and wants every video animated from 14 Nov. Still images with camera moves are **no longer** the main visual. Cloudflare/SDXL image generation is not needed for these.
+
+**The kit (all in `video/src/anim/`):**
+- `qawwali/anim/Seeker.tsx`: the character rig. Props: `blink, closed, wide, gazeX/gazeY, brow, smile, mouthOpen, tilt, nod, lArm/rArm [shoulder, elbow]` (degrees; + = toward the body's centre, about -170 = arm straight up), `back` + `walk` (walking away), `float` (underwater), `tear`, `glow`, `capLift/shawlLift` (+Fade), `rHold="mirror"`. `look` sets the cast member: `{kid, beard, cap, hijab, top, topD, pants, long, shawl, hair, skin}`. Ready looks: `KID`, `MUM`, `DAD` in `anim/kids/KidsAnim1113.tsx`. Use `blinkAt(t, seed)` so everyone blinks naturally.
+- `qawwali/anim/QawwaliAnim.tsx` exports helpers: `Stars, Glow, flick, PETAL, burst` (petal bursts), `LightBg, Room, S_Mehfil` (qawwals clapping on `beats`), `prng, k, ease`.
+- `qawwali/QawwaliStory.tsx` exports the lyric layers: `Words` (big words on syllables, pulse on beats, `hold` stretches long notes), `LineCaption` (Urdu + English line), `EndCard` (`credit`), `pulseAt(t, beats)`.
+- Everything is drawn in one `<svg>` per frame. A real photo or footage is an HTML `<Img>`/`<OffthreadVideo>` layer under the svg, never inside it.
+
+**Per channel (copy the template, retime to the day's timing JSON, then write NEW scenes that act out today's script literally):**
+- **Islam for Little Ones:** template `anim/kids/KidsAnim1113.tsx` (approved). Bright 2D, the KID/MUM/DAD cast with faces. Props animate on the word that names them (toys fly into the box on "tidy", etc.). Karaoke captions from the timing tokens, colour cards, a wave goodbye. Draw any new prop as simple SVG.
+- **One More Sadqah:** the same kit in a warm cinematic palette (night, amber, gold; not kid-bright). Adult ordinary people act out the lesson (DAD/MUM looks, vary the colours). Whenever the Prophet ﷺ is mentioned, use the REAL Green Dome photo or footage layer (never drawn). Keep the Arabic + Roman Urdu hadith card and the Roman Urdu karaoke captions.
+- **Solve by Sunrise:** the same kit in a mystery palette (night, amber, rain). Ordinary characters with faces labelled "Person 1/2/3". Keep the HUD, the numbered clues, the question card and the vote ending.
+- **Rules for all:**
+  - Every shot must move: characters blink, breathe and gesture on their words; the camera pushes; props animate.
+  - Never draw the Prophet ﷺ, prophets, Sahaba, Ahl-e-Bait, the Mothers of the Believers, Awliya or angels. Show places, objects, light or empty rooms instead.
+  - No deity, idol, another faith's symbols, wine or anything haram.
+  - No halo-like light right behind a character's head.
+  - No spinning text and no tool branding.
+- Always render a stills contact sheet first (one frame per scene), look at it, fix overlaps (faces under captions, arms across other faces), then render the master.
 
 ## 4b. QUALITY GATE: check twice before anything is uploaded (Sahil, 6 Nov 2026)
 Nothing is published unless **both** checks pass for that video. `publish.yml` refuses items without a full `qa` block and tells Sahil on Telegram.
@@ -144,7 +141,12 @@ If either check fails, fix and re-check. If it can't be fixed in time, publish o
 The audio is third-party, so it lives only encrypted on the `media` branch (`audio/<id>.opus.enc`, index `CATALOG.csv`) and is decrypted only inside `naat.yml`. Never commit, upload or share decrypted audio.
 1. **Pick** one `naat/manqabat` and one `qawwali` from `CATALOG.csv` (`git show origin/media:CATALOG.csv`): occasion first (Rajab Urs/Miraj, Rabi-ul-Awwal Milad, Gyarwi, Jumu'ah durood), otherwise "any day". Don't repeat a track used in the last 30 days (`state/ig_uploads.jsonl`, keys `<date>|mehfil|<type>|<id>`).
 2. **Prep:** dispatch `naat.yml` `action=prep ids=<naatId>,<qawwaliId>`; download artifact `mehfil-segments` (whisper segments + silence gaps, kept 1 day). Choose a 45-90 s window of **complete verses** for each (start just after a silence gap, end on a verse end). Prefer the opening matla or the best-known verse.
-3. **Visuals (Sahil, 13 Nov 2026):** qawwali = code-animated story (`QawwaliAnim` style: seeker acts out each line, beat-synced big words; needs whisper word timings + librosa beats of the clip). Naat = real Green Dome / Madina footage matched to the lyrics, no characters, with the same beat-synced big words. Render a **silent** 1080x1920 video per clip (exact clip length, CRF 15) with REAL footage for naat (Pixabay/Wikimedia, credited), the kalam title, and "Recited by <name>" + "Original: <channel>" credit on screen for the whole clip. Lyrics on screen only for pre-1929 poetry (two lines: Nastaliq + Roman). No faces, no Awliya or Prophets depicted. Put them on the `renders` branch at `renders/<date>/mehfil_naat.mp4`, `mehfil_qawwali.mp4` (silent, so nothing third-party is public).
+3. **Visuals (Sahil, 13 Nov 2026):**
+   - After choosing the windows, dispatch `naat.yml` `action=clipinfo clips=<naatId>:<start>:<end>,<qawwaliId>:<start>:<end>`. Download the artifact `mehfil-clipinfo`: word timings (ur + hi transcripts with probabilities) and beats per clip, all relative to the clip start.
+   - **Qawwali:** a fully animated story reel. Copy `anim/qawwali/anim/QawwaliAnim.tsx` (Chhap Tilak) or `MeraPiya.tsx` (Bulleh Shah) and give it new scenes acting out the clip's lines with the seeker. Big `Words` only on words you are sure of (probability ≥ 0.5, matching the known kalam). If the verses are unclear, use the clearly heard refrain only.
+   - **Naat:** REAL Green Dome / Madina footage (Pixabay/Wikimedia, credited) chosen to follow each line, no characters, with the same beat-synced `Words` and `LineCaption` on top.
+   - **Lyrics on screen only for pre-1929 poetry** (Khusrau, Bulleh Shah, Ala Hazrat ...). For modern kalam, show the title and credits only, with the animation still acting out the meaning.
+   - Register the composition with `defaultProps={{ withAudio: false }}` (no third-party audio in the repo) and render it **silent** at the exact clip length.
 4. **Job file** on main, `jobs/<date>_mehfil.json`:
    `{"items": [{"type": "naat", "id": "<id>", "start": 12.3, "end": 78.9, "video": "<date>/mehfil_naat.mp4", "caption": "<title> 🌹\n\nRecited by <name>\nOriginal: <channel> (<youtube url>)\nAll rights belong to the reciter. Shared with love for the Mehfil.\n\n#naat #naatsharif ..."}, {"type": "qawwali", ...}]}`
    Captions: write "Sallallahu Alaihi Wa Alihi Wasallam" in full after the Prophet's name, credit the artist first, at most 30 hashtags.

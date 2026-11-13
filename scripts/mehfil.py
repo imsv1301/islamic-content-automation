@@ -35,6 +35,29 @@ def prep(md, ids, out):
     json.dump(res, open(out, "w"), ensure_ascii=False, indent=0)
 
 
+def clipinfo(md, clips, out):
+    """For the animated reels: word timings (whisper) + beats (librosa) of each chosen clip window, times relative to the clip.
+    clips = "id:start:end,id:start:end". Only timings leave the job, never audio."""
+    from faster_whisper import WhisperModel
+    import numpy as np, librosa
+    model = WhisperModel("small", device="cpu", compute_type="int8")
+    res = {}
+    for c in clips.split(","):
+        i, a, b = c.split(":"); a, b = float(a), float(b)
+        pcm = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(a), "-t", str(b - a), "-i", f"{md}/{i}.opus", "-ar", "16000", "-ac", "1", "-f", "f32le", "-"], capture_output=True).stdout
+        y = np.frombuffer(pcm, np.float32)
+        words = []
+        for lang in ("ur", "hi"):
+            segs, _ = model.transcribe(y, language=lang, vad_filter=False, condition_on_previous_text=False, word_timestamps=True)
+            ws = [{"w": w.word.strip(), "s": round(w.start, 2), "e": round(w.end, 2), "p": round(w.probability, 2)} for sg in segs for w in sg.words]
+            words.append({"lang": lang, "words": ws})
+        tempo, bt = librosa.beat.beat_track(y=y.astype(np.float32), sr=16000)
+        beats = [round(float(x), 3) for x in librosa.frames_to_time(bt, sr=16000)]
+        res[c] = {"id": i, "start": a, "end": b, "tempo": float(np.atleast_1d(tempo)[0]), "beats": beats, "transcripts": words}
+        print(c, len(beats), "beats", [len(w["words"]) for w in words], "words")
+    json.dump(res, open(out, "w"), ensure_ascii=False, indent=0)
+
+
 def build(md, rd, job_f, od):
     os.makedirs(od, exist_ok=True)
     job = json.load(open(job_f)); out = []
@@ -58,4 +81,4 @@ def build(md, rd, job_f, od):
 
 
 if __name__ == "__main__":
-    {"prep": lambda: prep(*sys.argv[2:5]), "build": lambda: build(*sys.argv[2:6])}[sys.argv[1]]()
+    {"prep": lambda: prep(*sys.argv[2:5]), "clipinfo": lambda: clipinfo(*sys.argv[2:5]), "build": lambda: build(*sys.argv[2:6])}[sys.argv[1]]()

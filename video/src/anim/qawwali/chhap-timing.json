@@ -1,0 +1,47 @@
+{
+ "placeholder": false,
+ "source": "f3dnF-GmscM 94.0-168.5s (OSA official, Ustad Nusrat Fateh Ali Khan)",
+ "total": 74.5,
+ "lines": [
+  {
+   "id": "q0",
+   "start": 3.0,
+   "end": 10.5,
+   "ur": "خسرو دریا پریم کا، الٹی وا کی دھار",
+   "roman": "Khusrau dariya prem ka, ulti wa ki dhaar",
+   "en": "Khusrau, the river of love flows the other way"
+  },
+  {
+   "id": "q1",
+   "start": 10.7,
+   "end": 17.3,
+   "ur": "جو اترا سو ڈوب گیا، جو ڈوبا سو پار",
+   "roman": "Jo utra so doob gaya, jo dooba so paar",
+   "en": "Whoever sets out on it drowns, and whoever drowns reaches the shore"
+  },
+  {
+   "id": "q2",
+   "start": 17.6,
+   "end": 40.0,
+   "ur": "اپنی چھب بنائی کے جو میں پی کے پاس گئی",
+   "roman": "Apni chhab banaike jo main pi ke paas gayi",
+   "en": "I adorned myself and went to my Beloved"
+  },
+  {
+   "id": "q3",
+   "start": 40.2,
+   "end": 46.4,
+   "ur": "چھب دیکھی جب پیا کی، میں اپنی بھول گئی",
+   "roman": "Chhab dekhi jab piya ki, main apni bhool gayi",
+   "en": "When I saw my Beloved's beauty, I forgot my own"
+  },
+  {
+   "id": "q4",
+   "start": 46.6,
+   "end": 72.2,
+   "ur": "چھاپ تلک سب چھین لی رے، موسے نیناں ملائکے",
+   "roman": "Chhap tilak sab chheen li re, mose naina milaike",
+   "en": "One glance into your eyes, and every mark of who I was was gone"
+  }
+ ]
+}

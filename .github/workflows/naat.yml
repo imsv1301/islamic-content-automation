@@ -8,8 +8,9 @@ name: naat
 on:
   workflow_dispatch:
     inputs:
-      action: { description: "prep | publish", required: true, default: prep }
+      action: { description: "prep | clipinfo | publish", required: true, default: prep }
       ids: { description: "prep: comma-separated track ids (see CATALOG.csv on the media branch)", default: "" }
+      clips: { description: "clipinfo: id:start:end,id:start:end (word timings + beats for the animated reels)", default: "" }
       date: { description: "publish: day, reads jobs/<date>_mehfil.json", default: "" }
 concurrency: { group: instagram, cancel-in-progress: false }
 permissions: { contents: write }
@@ -24,6 +25,8 @@ jobs:
         run: |
           if [ "${{ inputs.action }}" = publish ]; then
             ids=$(python3 -c "import json;print(','.join(i['id'] for i in json.load(open('jobs/${{ inputs.date }}_mehfil.json'))['items']))")
+          elif [ "${{ inputs.action }}" = clipinfo ]; then
+            ids=$(echo "${{ inputs.clips }}" | tr ',' '\n' | cut -d: -f1 | paste -sd, -)
           else ids="${{ inputs.ids }}"; fi
           echo "ids=$ids" >> "$GITHUB_OUTPUT"
           echo "$ids" | tr ',' '\n' | sed 's#.*#audio/&.opus.enc#' > /tmp/sparse
@@ -48,6 +51,16 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: inputs.action == 'prep'
         with: { name: mehfil-segments, path: segments.json, retention-days: 1 }
+      - name: Clip info (word timings + beats, no audio)
+        if: inputs.action == 'clipinfo'
+        run: |
+          sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y ffmpeg >/dev/null
+          pip install -q faster-whisper numpy librosa
+          python3 scripts/mehfil.py clipinfo /tmp/aud "${{ inputs.clips }}" clipinfo.json
+          rm -rf /tmp/aud
+      - uses: actions/upload-artifact@v4
+        if: inputs.action == 'clipinfo'
+        with: { name: mehfil-clipinfo, path: clipinfo.json, retention-days: 1 }
       - uses: actions/checkout@v4
         if: inputs.action == 'publish'
         with: { ref: renders, path: renders }
