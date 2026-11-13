@@ -76,7 +76,7 @@ const CFG: HouseCfg = {
     { img: "k_carry.jpg", from: 2, to: 3, z0: 1.0, z1: 1.1, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
     { img: "k_mat.jpg", from: 3, to: 4, z0: 1.1, z1: 1.0, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
     { img: "k_tidy.jpg", from: 4, to: 5, z0: 1.0, z1: 1.1, fx0: 0.45, fy0: 0.5, fx1: 0.55, fy1: 0.5 },
-    { img: "k_family.jpg", from: 5, to: 6, z0: 1.1, z1: 1.0, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
+    { img: "k_family.jpg", from: 5, to: 6, z0: 1.1, z1: 1.0, fx0: 0.62, fy0: 0.5, fx1: 0.6, fy1: 0.5 },
     { img: "k_fold.jpg", from: 6, to: 999, z0: 1.0, z1: 1.1, fx0: 0.5, fy0: 0.5, fx1: 0.5, fy1: 0.5 },
   ],
   hud: Hud,
