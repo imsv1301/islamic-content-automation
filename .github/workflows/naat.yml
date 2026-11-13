@@ -59,6 +59,7 @@ jobs:
           CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
           IG_STATE: /tmp/ig_state.json
           IG_TOKEN_NAAT: ${{ secrets.IG_TOKEN_NAAT }}
+          IG_USER_NAAT: ${{ secrets.IG_USER_NAAT }}
           D: ${{ inputs.date }}
           NO_FALLBACK: "1"
         run: |

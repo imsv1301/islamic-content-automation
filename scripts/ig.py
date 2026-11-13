@@ -3,7 +3,8 @@
 State (decrypted state/instagram.json.enc, path $IG_STATE):
   {"accounts": {acct: {"token": "...", "user_id": "...", "username": "...", "refreshed": "ISO date"}}}
 Accounts: kids (@islamforlittleones), hadith (@raahesunnat.daily), naat (@mehfil.e_sama), riddle (@solvebysunrise).
-If an account has no token in the state yet, it is taken from env IG_TOKEN_<ACCT> (GitHub secret) once.
+If an account has no token in the state yet, it is taken from env IG_TOKEN_<ACCT> (GitHub secret) once,
+and its Instagram user id from env IG_USER_<ACCT> (or found through the token).
 
   ig.py whoami                                   # check every token, fill user_id/username, refresh tokens older than 7 days
   ig.py publish <renders_dir> <date> <video_url_base>   # post the day's manifest items as Reels (label -> account)
@@ -18,7 +19,10 @@ Rules baked in: never follow, like, or message anyone who has not written to us 
 import datetime, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 V = os.environ.get("IG_API_VERSION", "v23.0")
-API = f"https://graph.instagram.com/{V}/"
+# New Meta apps use "Instagram API with Unified login": system-user access tokens (never expire) on graph.facebook.com,
+# addressed by each account's Instagram user id. IG_HOST can switch back to graph.instagram.com for Instagram-Login tokens.
+HOST = os.environ.get("IG_HOST", "graph.facebook.com")
+API = f"https://{HOST}/{V}/"
 STATE_F = os.environ.get("IG_STATE", "/tmp/ig_state.json")
 ST = json.load(open(STATE_F)) if os.path.exists(STATE_F) else {"accounts": {}}
 LABEL_TO_ACCT = {"kids": "kids", "sadqah": "hadith", "hadith": "hadith", "riddle": "riddle", "naat": "naat", "qawwali": "naat"}
@@ -38,6 +42,9 @@ def tok(acct):
         if not t:
             raise RuntimeError(f"no Instagram token for {acct}")
         a["token"] = t; a["refreshed"] = datetime.date.today().isoformat()
+        uid = os.environ.get("IG_USER_" + acct.upper(), "").strip()
+        if uid:
+            a["user_id"] = uid
         global CHANGED; CHANGED = True
     return a["token"]
 
@@ -56,6 +63,32 @@ def call(method, path, acct, **params):
         raise RuntimeError(f"{method} {path} -> HTTP {e.code}: {body}")
 
 
+def uid_of(acct):
+    """Instagram user id for this account (needed on graph.facebook.com)."""
+    tok(acct)
+    a = ST["accounts"][acct]
+    if a.get("user_id"):
+        return a["user_id"]
+    global CHANGED
+    if HOST == "graph.instagram.com":
+        a["user_id"] = call("GET", "me", acct, fields="user_id")["user_id"]
+    else:  # system user token: look through the Instagram accounts it was given
+        found = None
+        for path, key in (("me/accounts", "instagram_business_account"),):
+            try:
+                for pg in call("GET", path, acct, fields="instagram_business_account{id,username}").get("data", []):
+                    ig = pg.get(key) or {}
+                    if ig.get("id"):
+                        found = ig["id"]; break
+            except RuntimeError:
+                pass
+        if not found:
+            raise RuntimeError(f"no Instagram user id for {acct}: set the IG_USER_{acct.upper()} secret")
+        a["user_id"] = found
+    CHANGED = True
+    return a["user_id"]
+
+
 def whoami():
     global CHANGED
     for acct in ("kids", "hadith", "naat", "riddle"):
@@ -65,13 +98,18 @@ def whoami():
             print(acct, "-", e); continue
         a = ST["accounts"][acct]
         try:
-            me = call("GET", "me", acct, fields="user_id,username,account_type,media_count")
+            if HOST == "graph.instagram.com":
+                me = call("GET", "me", acct, fields="user_id,username,account_type,media_count")
+            else:
+                u = uid_of(acct)
+                me = call("GET", u, acct, fields="id,username,media_count")
+                me["user_id"] = me.get("id")
         except RuntimeError as e:
             print(acct, "TOKEN PROBLEM", e); continue
         if a.get("user_id") != me.get("user_id") or a.get("username") != me.get("username"):
             a["user_id"], a["username"] = me.get("user_id"), me.get("username"); CHANGED = True
         age = (datetime.date.today() - datetime.date.fromisoformat(a.get("refreshed", "2000-01-01"))).days
-        if age >= 7:  # long-lived tokens last 60 days; refresh weekly so they never expire
+        if HOST == "graph.instagram.com" and age >= 7:  # system-user tokens never expire  # long-lived tokens last 60 days; refresh weekly so they never expire
             try:
                 r = call("GET", "https://graph.instagram.com/refresh_access_token", acct, grant_type="ig_refresh_token")
                 a["token"] = r["access_token"]; a["refreshed"] = datetime.date.today().isoformat(); CHANGED = True
@@ -98,15 +136,13 @@ def caption_from_meta(meta):
 
 
 def recent_captions(acct, n=25):
-    uid = ST["accounts"][acct]["user_id"]
+    uid = uid_of(acct)
     r = call("GET", f"{uid}/media", acct, fields="id,caption,permalink,timestamp", limit=n)
     return r.get("data", [])
 
 
 def reel(acct, video_url, caption, cover_url=None):
-    tok(acct)
-    uid = ST["accounts"][acct].get("user_id") or call("GET", "me", acct, fields="user_id")["user_id"]
-    ST["accounts"][acct]["user_id"] = uid
+    uid = uid_of(acct)
     first = caption.split("\n", 1)[0].strip()
     for m in recent_captions(acct):  # duplicate guard: same first caption line already posted
         if (m.get("caption") or "").split("\n", 1)[0].strip() == first:
@@ -167,8 +203,7 @@ def publish(rdir, date, base):
 
 
 def comments(acct):
-    tok(acct)
-    uid = ST["accounts"][acct].get("user_id") or call("GET", "me", acct, fields="user_id")["user_id"]
+    uid = uid_of(acct)
     for m in call("GET", f"{uid}/media", acct, fields="id,caption,comments_count,permalink,timestamp", limit=25).get("data", []):
         if not m.get("comments_count"):
             continue
@@ -184,9 +219,9 @@ def reply(acct, cid, text):
 
 
 def dms(acct):
-    tok(acct)
-    me = ST["accounts"][acct].get("user_id")
-    r = call("GET", "me/conversations", acct, platform="instagram", fields="id,updated_time,participants,messages.limit(5){id,from,message,created_time}")
+    me = uid_of(acct)
+    base = "me" if HOST == "graph.instagram.com" else me
+    r = call("GET", f"{base}/conversations", acct, platform="instagram", fields="id,updated_time,participants,messages.limit(5){id,from,message,created_time}")
     for cv in r.get("data", []):
         msgs = (cv.get("messages") or {}).get("data", [])
         last = msgs[0] if msgs else {}
@@ -196,7 +231,8 @@ def dms(acct):
 
 
 def dm(acct, rid, text):
-    print(call("POST", "me/messages", acct, recipient=json.dumps({"id": rid}), message=json.dumps({"text": text})))
+    base = "me" if HOST == "graph.instagram.com" else uid_of(acct)
+    print(call("POST", f"{base}/messages", acct, recipient=json.dumps({"id": rid}), message=json.dumps({"text": text})))
 
 
 if __name__ == "__main__":

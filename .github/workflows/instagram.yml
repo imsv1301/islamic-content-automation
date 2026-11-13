@@ -38,9 +38,13 @@ jobs:
         env:
           IG_STATE: /tmp/ig_state.json
           IG_TOKEN_KIDS: ${{ secrets.IG_TOKEN_KIDS }}
+          IG_USER_KIDS: ${{ secrets.IG_USER_KIDS }}
           IG_TOKEN_HADITH: ${{ secrets.IG_TOKEN_HADITH }}
+          IG_USER_HADITH: ${{ secrets.IG_USER_HADITH }}
           IG_TOKEN_NAAT: ${{ secrets.IG_TOKEN_NAAT }}
+          IG_USER_NAAT: ${{ secrets.IG_USER_NAAT }}
           IG_TOKEN_RIDDLE: ${{ secrets.IG_TOKEN_RIDDLE }}
+          IG_USER_RIDDLE: ${{ secrets.IG_USER_RIDDLE }}
           A: ${{ inputs.action || 'whoami' }}
           C: ${{ inputs.acct }}
           D: ${{ inputs.date }}
