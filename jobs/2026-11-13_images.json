@@ -1,0 +1,154 @@
+{
+ "images": [
+  {
+   "name": "s_mill_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, an old round stone hand mill (quern) with a wooden handle on a clean mud-plaster floor, a small heap of grain and flour beside it, an oil lamp glowing, plain smooth mud walls, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_mill_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, an old round stone hand mill (quern) with a wooden handle on a clean mud-plaster floor, a small heap of grain and flour beside it, an oil lamp glowing, plain smooth mud walls, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_night_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a quiet desert town of simple flat-roofed mud-brick houses at night under a big crescent moon and stars, soft lantern glow in one small doorway, empty sandy lane, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_night_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a quiet desert town of simple flat-roofed mud-brick houses at night under a big crescent moon and stars, soft lantern glow in one small doorway, empty sandy lane, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_beads_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close-up of two hands holding a string of wooden prayer beads (tasbih) in warm lamplight, sleeves of a plain cream kurta, soft dark background, hands only",
+   "steps": 8
+  },
+  {
+   "name": "s_beads_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close-up of two hands holding a string of wooden prayer beads (tasbih) in warm lamplight, sleeves of a plain cream kurta, soft dark background, hands only",
+   "steps": 8
+  },
+  {
+   "name": "s_bed_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a simple calm bedroom at night, moonlight through a small arched window, a neatly made low bed with a cream pillow, wooden prayer beads resting on the pillow, plain smooth plaster walls, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_bed_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a simple calm bedroom at night, moonlight through a small arched window, a neatly made low bed with a cream pillow, wooden prayer beads resting on the pillow, plain smooth plaster walls, no people",
+   "steps": 8
+  },
+  {
+   "name": "s_lamp2_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a single brass oil lamp glowing on a wooden window sill at night, crescent moon outside, gentle warm glow, plain smooth plaster wall",
+   "steps": 8
+  },
+  {
+   "name": "s_lamp2_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a single brass oil lamp glowing on a wooden window sill at night, crescent moon outside, gentle warm glow, plain smooth plaster wall",
+   "steps": 8
+  },
+  {
+   "name": "k_messy_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a messy family dining table with scattered toy blocks, crayons, an empty bowl and cups, sunny simple modern minimal kitchen with plain cream walls, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_messy_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a messy family dining table with scattered toy blocks, crayons, an empty bowl and cups, sunny simple modern minimal kitchen with plain cream walls, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_carry_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a small child seen from behind, back of head only, carrying two plastic plates to a wooden dining table, sunny simple modern minimal kitchen with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "k_carry_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a small child seen from behind, back of head only, carrying two plastic plates to a wooden dining table, sunny simple modern minimal kitchen with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "k_mat_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a green prayer mat neatly laid on a soft carpet in a bright sunny room with plain cream walls and a big window, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_mat_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a green prayer mat neatly laid on a soft carpet in a bright sunny room with plain cream walls and a big window, no people",
+   "steps": 8
+  },
+  {
+   "name": "k_tidy_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a small child seen from behind, back of head only, putting colourful toy blocks into a wooden toy box, bright playroom with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "k_tidy_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a small child seen from behind, back of head only, putting colourful toy blocks into a wooden toy box, bright playroom with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "k_fold_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a neat stack of small folded colourful children's t-shirts on a bed, small child hands placing the top one, bright sunny bedroom with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "k_fold_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a neat stack of small folded colourful children's t-shirts on a bed, small child hands placing the top one, bright sunny bedroom with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "k_family_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a family of four seen from behind, backs of heads only, sitting together at a neatly set dining table, sunny simple modern minimal kitchen with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "k_family_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a family of four seen from behind, backs of heads only, sitting together at a neatly set dining table, sunny simple modern minimal kitchen with plain cream walls",
+   "steps": 8
+  },
+  {
+   "name": "r15_shop_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a cosy small stationery shop counter with a blue pen and a red notebook side by side, a few plain round coins, shelves of notebooks behind, warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r15_shop_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a cosy small stationery shop counter with a blue pen and a red notebook side by side, a few plain round coins, shelves of notebooks behind, warm light, no people",
+   "steps": 8
+  },
+  {
+   "name": "r15_items_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close-up of a single blue ballpoint pen lying next to a red spiral notebook on a wooden counter, warm light, shallow depth of field",
+   "steps": 8
+  },
+  {
+   "name": "r15_items_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close-up of a single blue ballpoint pen lying next to a red spiral notebook on a wooden counter, warm light, shallow depth of field",
+   "steps": 8
+  },
+  {
+   "name": "r15_coins_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close-up of a few plain round golden and silver coins stacked on a wooden counter, warm light, shallow depth of field",
+   "steps": 8
+  },
+  {
+   "name": "r15_coins_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, close-up of a few plain round golden and silver coins stacked on a wooden counter, warm light, shallow depth of field",
+   "steps": 8
+  },
+  {
+   "name": "r15_person_v1",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a person seen from behind, back of head only, standing in front of a small stationery shop counter, plain smooth plaster walls, warm evening light",
+   "steps": 8
+  },
+  {
+   "name": "r15_person_v2",
+   "prompt": "3D animated film still, warm orange and amber cinematic light, terracotta and rust colour palette, soft volumetric light, toy-like stylised 3D render, high detail, a person seen from behind, back of head only, standing in front of a small stationery shop counter, plain smooth plaster walls, warm evening light",
+   "steps": 8
+  }
+ ]
+}
