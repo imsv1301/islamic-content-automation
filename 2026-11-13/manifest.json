@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-13",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle14Solution_Riddle15.mp4",
+   "meta": "riddle.json",
+   "title": "Not 35! 🎂 Riddle #14 Answer + Riddle #15: How Much Is the Pen? 🖊️ #shorts",
+   "qa": {
+    "heard": " Yesterday, when person 1 was 6, person 2 was half as old, now person 1 is 70, half of 6 is 3, but back then person 2 was 3 years old.  That means person 2 is always 3 years younger, the gap never changes, 70 minus 3 is 67 not 35. Now, a brand new mystery.  Person 1 buys a pen and a notebook, together they cost 1 pound 10. The notebook costs exactly 1 pound more than the pen.  So, how much does the pen cost? How many answer? The answer drops tomorrow at sunrise.",
+    "script_match": 0.763,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: #14 answer 67 correct (6/3, gap always 3; not 35); #15 well-posed (p + p + £1 = £1.10 -> 5p), answer not revealed (vote 10p/5p/1p, 'answer at sunrise'); no salam, Person 1/2 only, back views. Fixed after review: removed the 'bat and ball problem' tag (it would let viewers look the answer up). Non-blocking: in the full mix whisper hears 'Comment your answer' as 'How many answer' (the line alone is heard correctly; screen says COMMENT 1·2·3)."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short15_TasbeehEFatima.mp4",
+   "meta": "sadqah.json",
+   "title": "Khaadim Se Behtar! Tasbeeh-e-Fatima Sone Se Pehle | Sahih Bukhari 3113 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " تقاوت دور کرنے کا ایک نسخہ جو ایک خادم سے بھی بہتر ہے جانتے ہیں وہ کیا ہے  حضرت علی علیہ السلام بیان کرتے ہیں  سیدہ فاتمہ علیہ السلام جو کی پیستے پیستے تک جاتی تھی  وہ ایک خادم مغنے گئی تو رات کو  ہمارے نبی محمد مصطفہ صل اللہ تعالی علیہ وعایلی ہی وسلم  ان کے گھر تشریف لائے اور فرمایا  کیا میں تمہیں وہ چیز نہ بتاؤں جو خادم سے بہتر ہے  جب تم سوانے لگو تو چون تیس بار اللہ اکبر  پھر تیان تیس بار اللہ حمد اللہ اور تیان تیس بار سبحان اللہ پڑو  یہ تمہارے لیے خادم سے بہتر ہے  آج رات سوانے سے پہلے یہ تصبی ہے فاتمہ ضرور پڑھا کریں  کمیٹ میں لکھیں  میں پڑھوں گا  یہ ویڈیو آگے بھیجے یہ بھی ایک اور ست کا ہے",
+    "script_match": 0.746,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:3113"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review opened sunnah.com/bukhari:3113 directly: Hazrat Ali narrates; hand-mill; asked for a servant; he came after they had gone to bed; Allahu Akbar 34, Alhamdulillah 33, SubhanAllah 33 (order and counts match voice, counters and description). FAILED the first render: the card/description quoted «فهو خير لكما من خادم», which is the wording of Bukhari 3705; 3113 ends «فهو خير لكما مما سألتماه». Fixed: Arabic on card and description now 3113's exact wording (Roman meaning kept: better than the servant you asked for), card 'thake hue haath' changed to 'chakki ki mashaqqat' (3113 does not mention hands). Re-rendered, qa_check re-run PASS, card frame checked. Honorifics Hazrat Ali Alaihis Salam / Sayyida Fatima Alaihas Salam; nobody depicted (objects, places, an ordinary person's hands); real Pixabay 112361 dome credited; Roman Urdu subs. Non-blocking: whisper hears 'sone' as 'sowane' and 'sadqah' as 'sat ka' (known quirks)."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_HelpAtHome.mp4",
+   "meta": "kids.json",
+   "title": "Who Can Help at Home? 🏠 You Can! A Beautiful Sunnah | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " The table is messy and everyone is busy. Who can help? You can!  Lady Aisha, radi allahu anha, was asked, what did our Prophet Muhammad Mustafa,  sallallahu ta'ala alaihi wa a'ala alihi wa sallam, do in his home.  She said, he helped his family at home.  And when it was time to pray, he went to pray.  So let's help at home too. Tidy your toys, set the table and fold your clothes.  Helping your family is a beautiful sunnah and it makes everyone smile.  What will you help with today? Tell your grown up.",
+    "script_match": 0.923,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:676"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review opened sunnah.com/bukhari:676 directly: al-Aswad asked Aisha Radi Allahu Anha; he kept busy serving his family and went out when prayer time came; faithful kids' simplification, 676 on card and description. Faceless (back views; k_family cropped so the adult in profile stays out of frame, confirmed on the contact sheet); real Pixabay 198164 dome credited; Made for Kids; no face/person emoji; clone voice (line 1 re-voiced)."
+   }
+  }
+ ],
+ "notes": [
+  "Friday 13 Nov, 2 Jumada al-Akhirah 1448 (UK/India; Gulf: 3). Catch-up: every earlier day is already on YouTube, nothing re-uploaded. Comments: no new threads on riddle or sadqah. Instagram still not connected (no IG_TOKEN_* secrets), so today's Reels and Mehfil-e-Sama are prepared but not posted; they will be caught up once the Meta setup is done.",
+  "Sadqah Short 15: Tasbeeh-e-Fatima (34 Allahu Akbar, 33 Alhamdulillah, 33 SubhanAllah at bedtime), Sahih al-Bukhari 3113 (Hazrat Ali Alaihis Salam). Kids: help at home, Sahih al-Bukhari 676. Riddle #15: pen + notebook = £1.10, notebook £1 more; how much is the pen? (answer tomorrow).",
+  "Correction: the earlier logs said the wisal of Sayyida Fatima Alaihas Salam is 3 Jumada al-Akhirah. That is the Shia date; Ahl-e-Sunnat (Dawat-e-Islami etc.) observe 3 Ramadan. So no wisal date is claimed in today's video.",
+  "Both checks passed. The second reviewer caught that the Arabic on the Sadqah card was the wording of Bukhari 3705, not 3113; fixed and re-rendered before upload. Images: Cloudflare FLUX worked (faces re-rolled out of the messy-table shot). Nothing was paid."
+ ]
+}
