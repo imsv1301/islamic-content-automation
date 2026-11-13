@@ -1,0 +1,140 @@
+{
+ "images": [
+  {
+   "name": "q0_river",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a moonlit river curving upward into the night sky like a silver ribbon, flowing uphill against nature, sand dunes, small lanterns along the bank, full moon, no people",
+   "steps": 8,
+   "seed": 1301,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q0_seeker",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap standing on a riverbank at night, face clearly visible in three-quarter view, gazing in wonder at a river that flows upward into the moonlit sky, wind in his shawl",
+   "steps": 8,
+   "seed": 1302,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q0_seeker_b",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap standing on a riverbank at night, face clearly visible in three-quarter view, gazing in wonder at a river that flows upward into the moonlit sky, wind in his shawl",
+   "steps": 8,
+   "seed": 7302,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q1_enter",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap wading waist-deep into a calm moonlit river, eyes closed, peaceful expression, face visible, ripples of silver light around him",
+   "steps": 8,
+   "seed": 1303,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q1_sink",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, underwater scene, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap sinking gently with eyes closed and a serene face, shafts of moonlight from the surface above, tiny bubbles, flowing shawl, dreamy",
+   "steps": 8,
+   "seed": 1304,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q1_paar",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap rising from the river onto the far shore at golden sunrise, smiling face, arms slightly open, drops of water shining, golden light and mist",
+   "steps": 8,
+   "seed": 1305,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q1_paar_b",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap rising from the river onto the far shore at golden sunrise, smiling face, arms slightly open, drops of water shining, golden light and mist",
+   "steps": 8,
+   "seed": 7305,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q2_mirror",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, close-up of a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap looking into a small round silver hand mirror by the light of an oil lamp, carefully adjusting his white cap, face visible, intimate warm interior",
+   "steps": 8,
+   "seed": 1306,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q2_mirror_b",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, close-up of a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap looking into a small round silver hand mirror by the light of an oil lamp, carefully adjusting his white cap, face visible, intimate warm interior",
+   "steps": 8,
+   "seed": 7306,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q2_lane",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap seen from behind walking down a narrow lantern-lit lane of old Delhi at night towards a distant arched doorway glowing with warm golden light, rose petals on the ground",
+   "steps": 8,
+   "seed": 1307,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q3_door",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a grand carved wooden arched doorway in an old courtyard flung open with brilliant warm golden light pouring out, light rays and dust motes, nobody inside, only light",
+   "steps": 8,
+   "seed": 1308,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q3_light",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap standing before blinding golden light, his face lit gold, eyes wide with awe and tears, holding a small mirror that reflects only light",
+   "steps": 8,
+   "seed": 1309,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q3_light_b",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap standing before blinding golden light, his face lit gold, eyes wide with awe and tears, holding a small mirror that reflects only light",
+   "steps": 8,
+   "seed": 7309,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q4_eyes",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, extreme close-up of the eyes of a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap, a single glistening tear, golden light reflected in his eyes, long lashes, emotional",
+   "steps": 8,
+   "seed": 1310,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q4_eyes_b",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, extreme close-up of the eyes of a young South Asian man of about twenty with a short neat dark beard, kind eyes, white kurta, cream wool shawl and a small white cap, a single glistening tear, golden light reflected in his eyes, long lashes, emotional",
+   "steps": 8,
+   "seed": 7310,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q4_petals",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a cream shawl and a small white cap lifting away on the wind and dissolving into swirling red rose petals inside golden light, no people",
+   "steps": 8,
+   "seed": 1311,
+   "width": 768,
+   "height": 1344
+  },
+  {
+   "name": "q4_mehfil",
+   "prompt": "illustrated storybook painting inspired by Mughal miniature art, soft gouache and watercolour textures, deep indigo night and warm gold lamplight palette, cinematic vertical composition, highly detailed, no text, no letters, a qawwali gathering in a lamp-lit marble courtyard at night, a row of qawwal singers seen as dark silhouettes sitting on a carpet with a harmonium and tabla, hands raised clapping, arches and lanterns, faces in shadow",
+   "steps": 8,
+   "seed": 1312,
+   "width": 768,
+   "height": 1344
+  }
+ ]
+}
