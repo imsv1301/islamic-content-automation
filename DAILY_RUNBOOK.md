@@ -46,8 +46,8 @@ git fetch origin renders
 - **Islam for Little Ones:**
   - An English Short under 60s, **Made for Kids**.
   - Topics: manners, sunnahs, duas, values, wudu/salah steps.
-  - A modern generic faceless kid. **Never depict** the Prophet, any prophet, Sahaba, Ahl-e-Bait, the Mothers of the Believers or Awliya.
-- Characters are always faceless (plain circle or egg head, back views, silhouettes).
+  - A modern generic kid (faces allowed since 13 Nov 2026). **Never depict** the Prophet, any prophet, Sahaba, Ahl-e-Bait, the Mothers of the Believers or Awliya.
+- Characters may have drawn faces (Sahil, 13 Nov 2026), in the code-animated style. Never the protected figures.
 
 ## 3. Voice (about 10 min, in parallel)
 - **Emotion (Sahil, 6 Nov):** give the voice feeling where the line needs it.
@@ -84,7 +84,7 @@ git fetch origin renders
   - kids: "DAY n · Lesson", gentle and bright, no scary scenes
   - Sadqah: hadith card with Arabic + Roman Urdu
   - riddle: as in the sample
-- Faceless characters only.
+- Moving to code-drawn animation with faces (Sahil, 13 Nov 2026); see RULEBOOK house style.
 - Templates in `video/src/day1/`:
   - `MysteryShort.tsx` (riddle, warm 3D-toon story style)
   - `SolutionShort.tsx` (riddle solution + next riddle)
@@ -118,7 +118,7 @@ Nothing is published unless **both** checks pass for that video. `publish.yml` r
 2. **Pronunciation:** read `qa.heard` against the script. Arabic, Urdu and Islamic terms are said correctly, the salutation is the recorded clip, and there are no garbled words. Riddle logic is correct and the answer is right.
 3. **Voice:** Sahil's clone on every channel (kids included), the calm pace (Urdu slowed), no AI voice, no music clash.
 4. **Every other rule:**
-   - no faces, and never the Prophet, prophets, Sahaba, Ahl-e-Bait, the Mothers of the Believers or Awliya
+   - never the Prophet, prophets, Sahaba, Ahl-e-Bait, the Mothers of the Believers or Awliya
    - house style
    - Roman Urdu subtitles (Sadqah)
    - Person 1/2/3 and no salam (riddle)
@@ -144,7 +144,7 @@ If either check fails, fix and re-check. If it can't be fixed in time, publish o
 The audio is third-party, so it lives only encrypted on the `media` branch (`audio/<id>.opus.enc`, index `CATALOG.csv`) and is decrypted only inside `naat.yml`. Never commit, upload or share decrypted audio.
 1. **Pick** one `naat/manqabat` and one `qawwali` from `CATALOG.csv` (`git show origin/media:CATALOG.csv`): occasion first (Rajab Urs/Miraj, Rabi-ul-Awwal Milad, Gyarwi, Jumu'ah durood), otherwise "any day". Don't repeat a track used in the last 30 days (`state/ig_uploads.jsonl`, keys `<date>|mehfil|<type>|<id>`).
 2. **Prep:** dispatch `naat.yml` `action=prep ids=<naatId>,<qawwaliId>`; download artifact `mehfil-segments` (whisper segments + silence gaps, kept 1 day). Choose a 45-90 s window of **complete verses** for each (start just after a silence gap, end on a verse end). Prefer the opening matla or the best-known verse.
-3. **Visuals:** render a **silent** 1080x1920 house-style video per clip (exact clip length, CRF 15) with REAL footage (Pixabay/Wikimedia, credited), the kalam title, and "Recited by <name>" + "Original: <channel>" credit on screen for the whole clip. Lyrics on screen only for pre-1929 poetry (two lines: Nastaliq + Roman). No faces, no Awliya or Prophets depicted. Put them on the `renders` branch at `renders/<date>/mehfil_naat.mp4`, `mehfil_qawwali.mp4` (silent, so nothing third-party is public).
+3. **Visuals (Sahil, 13 Nov 2026):** qawwali = code-animated story (`QawwaliAnim` style: seeker acts out each line, beat-synced big words; needs whisper word timings + librosa beats of the clip). Naat = real Green Dome / Madina footage matched to the lyrics, no characters, with the same beat-synced big words. Render a **silent** 1080x1920 video per clip (exact clip length, CRF 15) with REAL footage for naat (Pixabay/Wikimedia, credited), the kalam title, and "Recited by <name>" + "Original: <channel>" credit on screen for the whole clip. Lyrics on screen only for pre-1929 poetry (two lines: Nastaliq + Roman). No faces, no Awliya or Prophets depicted. Put them on the `renders` branch at `renders/<date>/mehfil_naat.mp4`, `mehfil_qawwali.mp4` (silent, so nothing third-party is public).
 4. **Job file** on main, `jobs/<date>_mehfil.json`:
    `{"items": [{"type": "naat", "id": "<id>", "start": 12.3, "end": 78.9, "video": "<date>/mehfil_naat.mp4", "caption": "<title> 🌹\n\nRecited by <name>\nOriginal: <channel> (<youtube url>)\nAll rights belong to the reciter. Shared with love for the Mehfil.\n\n#naat #naatsharif ..."}, {"type": "qawwali", ...}]}`
    Captions: write "Sallallahu Alaihi Wa Alihi Wasallam" in full after the Prophet's name, credit the artist first, at most 30 hashtags.

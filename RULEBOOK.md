@@ -13,14 +13,14 @@
 - Honorifics: Sahaba Radi Allahu Anhu/Anha; prophets & Panjatan Pak Alaihis Salam; Awliya Rahmatullahi Alaih.
 - When a video mentions the Prophet (Sallallahu Alaihi Wa Alihi Wasallam): NEVER an AI-generated image of Masjid-e-Nabawi / the Green Dome. Use REAL Green Dome footage or photos only (Pixabay/Wikimedia via footage.yml, credited in the description). (Sahil, 1 Nov 2026)
 - Never depict: the Prophet ﷺ, any prophet, Sahaba, Mothers of the Believers, Ahl-e-Bait/Panjatan Pak, Awliya, angels. Use light, calligraphy, places, objects.
-- Common people: faceless, plain circle heads. No music in hadith/kids content. Nothing haram.
+- Ordinary people: drawn characters WITH faces are allowed (Sahil, 13 Nov 2026), in the code-animated style (rig: hadith-v4-remotion src/qawwali/anim/Seeker.tsx). Still never the protected figures above; nothing haram is ever animated (no deity, idol, another faith's marks, wine); no halo-like light behind a character's head. No music in hadith/kids content.
 - Lyrics on screen only for pre-1929 poetry (Ala Hazrat etc.). Naat clips never cut a verse.
 
 ## Formats (locked)
 - Hadith reel: test-4 "sea foam" narrated style (hook example → hadith word-by-word → metaphor → how → ledger → why → save).
 - Kids episode: Ep1 "Al-Ameen" 2D style, 7–8 min, quiz + salawat outro; rotation: Seerah, values, practice (wudu/salah/ghusl, boys/girls separate where Hanafi differs), belief, Jumu'ah, Quran stories, quiz.
-- Naat: REAL footage only (Pixabay/Wikimedia, credited; Pexels keys paused); two-line lyric (Nastaliq + Roman); credits; date-relevant choice.
-- Qawwali: visuals show the literal meaning of each line (rose-petal reference style).
+- Naat (Sahil, 13 Nov 2026): Green Dome / Madina views (REAL footage, Pixabay/Wikimedia, credited) chosen to follow the lyrics line by line, no characters, no character animation; big beat-synced lyric words (same as qawwali) + two-line lyric (Nastaliq + Roman), only for pre-1929 poetry; credits; date-relevant choice.
+- Qawwali (Sahil approved, 13 Nov 2026): fully code-animated story reel (hadith-v4-remotion src/qawwali/anim/QawwaliAnim.tsx): an ordinary young seeker with a face acts out each line in drawn, moving scenes; big lyric words land on the singer's syllables and pulse on the beat; Urdu + English line underneath; credit end card. The Beloved is only ever light. No rotating/spinning text, no tool branding. Lyrics only for pre-1929 poetry (e.g. Khusrau, Bulleh Shah).
 - Footage: never repeat the same clip inside one video; a clip may be reused only after ~10 videos (track in state/clip_log.json). Vary shot styles and transitions. Motion must be smooth: keep source fps, subpixel Ken Burns, no integer-crop jitter.
 - Narrated videos: subtitles always Roman Urdu (Urdu words in English letters), even when the voice is Urdu. Urdu voice at a calm pace. Animation must match the locked hadith video's quality level (not necessarily its look).
 - Question (Solve by Sunrise): English, Mind Hex structure (mystery hook, labelled numbers, question card, answer in next reel). NO salam / Assalamu alaikum in question videos. Characters have no names: "Person 1", "Person 2", ...
@@ -31,7 +31,7 @@
 - Everything free. Renders on GitHub Actions (public repo). PC only for monthly naat audio batch.
 
 - Daily run: see DAILY_RUNBOOK.md. Telegram preview by ~05:30–06:00 UK; uploads only after Sahil taps ✅ (approvals.yml). Free-text Telegram messages are never stored (public repo).
-- HOUSE STYLE FOR ALL VIDEOS, ALL CHANNELS (approved by Sahil 31 Oct 2026; replaces the older per-channel looks): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Faceless only: back views, silhouettes, blank egg-shaped heads. Template: video/src/day1/MysteryShort.tsx.
+- HOUSE STYLE FOR ALL VIDEOS, ALL CHANNELS (approved by Sahil 31 Oct 2026; replaces the older per-channel looks): warm amber 3D-toon stills (Cloudflare Workers AI) + camera moves, HUD (DAY · time · place · RIDDLE #), claim cards, big captions, "Comment 1·2·3" vote ending. Template: video/src/day1/MysteryShort.tsx. **Change (Sahil, 13 Nov 2026): YouTube videos move from still images to real code-drawn animation (characters with faces that move, blink, talk and walk; animated sets), same quality as the approved qawwali sample. Faces allowed. Until each channel's animated kit is approved, the old still-image style continues.**
 - Quality: YouTube and Instagram always get the full-quality master (1080x1920, 30fps, H.264 CRF 15, 320k AAC). Only Telegram previews are a small 720p copy.
 - Comments, DMs and messages are managed around the clock: an hourly check (scheduled task "Sadqah Media comments") covers YouTube comments plus Instagram comments and DMs on all 4 accounts, and the daily run does the same.
 - Instagram (since 12 Nov 2026): every daily video also goes to Instagram as a Reel at full quality, through the official Instagram API (Meta app "Sadqah Media Publisher", free). kids -> @islamforlittleones, sadqah (Urdu hadith Short, same video) -> @raahesunnat.daily, riddle -> @solvebysunrise. publish.yml does YouTube + Instagram together and sends one Telegram message.
