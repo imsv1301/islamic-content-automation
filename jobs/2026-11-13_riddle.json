@@ -1,0 +1,26 @@
+{
+ "en": [
+  "Yesterday: when Person one was six, Person two was half as old. Now Person one is seventy.",
+  "Half of six is three. So back then, Person two was three years old.",
+  "That means Person two is always three years younger. The gap never changes!",
+  "Seventy minus three, is sixty seven. Not thirty five!",
+  "Now, a brand new mystery.",
+  "Person one buys a pen and a notebook. Together, they cost one pound ten.",
+  "The notebook costs exactly one pound more than the pen.",
+  "So, how much does the pen cost?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "excited",
+   "3": "excited",
+   "4": "excited",
+   "5": "calm",
+   "6": "calm",
+   "7": "serious",
+   "8": "warm"
+  }
+ }
+}

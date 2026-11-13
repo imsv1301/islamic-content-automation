@@ -1,0 +1,44 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "تھکن دور کرنے کا ایک نسخہ… جو ایک خادم سے بھی بہتر ہے! جانتے ہیں وہ کیا ہے؟",
+  "حضرت علی، علیہِ السّلام، بیان کرتے ہیں: سیدہ فاطمہ، علیہَا السّلام، چکی پیستے پیستے تھک جاتی تھیں۔",
+  "وہ ایک خادم مانگنے گئیں، تو رات کو <SAW> ان کے گھر تشریف لائے، اور فرمایا:",
+  "کیا میں تمہیں وہ چیز نہ بتاؤں، جو خادم سے بہتر ہے؟ جب تم سونے لگو…",
+  "تو چونتیس بار اللہ اکبر، تینتیس بار الحمدللہ، اور تینتیس بار سبحان اللہ پڑھو۔",
+  "یہ تمہارے لیے خادم سے بہتر ہے۔",
+  "آج رات سونے سے پہلے، یہ تسبیحِ فاطمہ ضرور پڑھیں۔ کمنٹ میں لکھیں: میں پڑھوں گا!",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Thakan door karne ka ek nuskha... jo ek khaadim se bhi behtar hai! Jaante hain woh kya hai?",
+  "Hazrat Ali Alaihis Salam bayan karte hain: Sayyida Fatima Alaihas Salam chakki peeste peeste thak jaati thein.",
+  "Woh ek khaadim maangne gayin, to raat ko <SAW> un ke ghar tashreef laaye, aur farmaya:",
+  "Kya main tumhein woh cheez na bataoon, jo khaadim se behtar hai? Jab tum sone lago...",
+  "To 34 baar Allahu Akbar, 33 baar Alhamdulillah, aur 33 baar SubhanAllah padho.",
+  "Yeh tumhare liye khaadim se behtar hai.",
+  "Aaj raat sone se pehle, yeh Tasbeeh-e-Fatima zaroor padhein. Comment mein likhein: main padhunga!",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "calm",
+   "3": "warm",
+   "4": "serious",
+   "5": "serious",
+   "6": "warm",
+   "7": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "3": 0.85,
+   "4": 0.85,
+   "5": 0.85
+  }
+ }
+}
