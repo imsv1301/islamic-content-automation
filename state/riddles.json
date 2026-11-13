@@ -95,12 +95,19 @@
    "title": "Ages: when Person 1 was 6 years old, Person 2 was half as old; today Person 1 is 70; how old is Person 2 now? (vote options 35 / 67 / 73)",
    "answer": "67. When Person 1 was 6, Person 2 was 3, so Person 2 is always 3 years younger. 70 - 3 = 67 (not 35: 'half' was only true at that moment).",
    "posted": "2026-11-12 (uploaded https://youtu.be/fd88ozregQk)",
+   "solved_in": "2026-11-13 (uploaded https://youtu.be/S8VH-yGTWFY)"
+  },
+  {
+   "n": 15,
+   "title": "Pen and notebook: Person 1 buys a pen and a notebook for £1.10 together; the notebook costs exactly £1 more than the pen; how much is the pen? (vote options 10p / 5p / 1p)",
+   "answer": "5p. If the pen is p, the notebook is p + £1, so 2p + £1 = £1.10, 2p = 10p, p = 5p (notebook £1.05). Not 10p: then the notebook would be £1.10 and the total £1.20.",
+   "posted": "2026-11-13 (uploaded https://youtu.be/S8VH-yGTWFY)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 15,
+  "n": 16,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #14 solution first (67: the age gap stays 3 years; 'half' was only true when Person 1 was 6; Age card component in video/src/day1/D1112Riddle.tsx; stills video/public/d1112/r14_*), then Riddle #15. Cloudflare free tier was already used up at 03:24 UTC on 12 Nov; SDXL (sdxl.yml) images are 768x1344, so use vertical: true in shots."
+  "note": "Next riddle video = Riddle #15 solution first (5p: pen 5p + notebook £1.05 = £1.10; the tempting 10p gives £1.20; Tag price-card component in video/src/day1/D1113Riddle.tsx; stills video/public/d1113/r15_*), then Riddle #16. Cloudflare FLUX worked on 13 Nov at ~03:20 UTC."
  }
 }
