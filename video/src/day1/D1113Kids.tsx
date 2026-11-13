@@ -27,7 +27,7 @@ const Cards = (c: Ctx) => {
   </div>);
   if (idx === 1) out.push(<div key="q" style={{ position: "absolute", top: 520, left: 70, right: 70, textAlign: "center" }}>
     <div style={{ ...bubble("rgba(255,252,240,0.96)", INK, GOLD, 44), transform: `scale(${pop(t, S(1) + 0.2, 0.45)})` }}>LADY AISHA <span style={{ color: "#b5651d" }}>RADI ALLAHU ANHA</span></div>
-    <div style={{ marginTop: 24, ...bubble(SKY, INK, INK, 50), transform: `scale(${pop(t, at(1, 0.6), 0.45)})` }}>🏠 WHAT DID HE DO AT HOME?</div>
+    <div style={{ marginTop: 24, ...bubble(SKY, INK, INK, 50), transform: `scale(${pop(t, at(1, 0.6), 0.45)})` }}>🏠 WHAT DID HE DO IN HIS HOME?</div>
   </div>);
   if (idx === 2) out.push(<div key="ans" style={{ position: "absolute", top: 520, left: 70, right: 70, textAlign: "center" }}>
     <div style={{ background: "rgba(255,252,240,0.96)", borderRadius: 30, padding: "26px 28px", border: `6px solid ${GOLD}`, boxShadow: "0 12px 0 rgba(0,0,0,0.18)", transform: `scale(${pop(t, S(2) + 0.1, 0.45)})` }}>

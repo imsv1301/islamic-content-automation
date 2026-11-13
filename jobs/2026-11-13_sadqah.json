@@ -3,23 +3,23 @@
   "ur": 0.8
  },
  "ur": [
-  "تھکن دور کرنے کا ایک نسخہ… جو ایک خادم سے بھی بہتر ہے! جانتے ہیں وہ کیا ہے؟",
+  "تھکاوٹ دور کرنے کا ایک نسخہ… جو ایک خادم سے بھی بہتر ہے! جانتے ہیں وہ کیا ہے؟",
   "حضرت علی، علیہِ السّلام، بیان کرتے ہیں: سیدہ فاطمہ، علیہَا السّلام، چکی پیستے پیستے تھک جاتی تھیں۔",
   "وہ ایک خادم مانگنے گئیں، تو رات کو <SAW> ان کے گھر تشریف لائے، اور فرمایا:",
   "کیا میں تمہیں وہ چیز نہ بتاؤں، جو خادم سے بہتر ہے؟ جب تم سونے لگو…",
-  "تو چونتیس بار اللہ اکبر، تینتیس بار الحمدللہ، اور تینتیس بار سبحان اللہ پڑھو۔",
+  "تو چونتیس بار اللہ اکبر، پھر تینتیس بار الحمدللہ، اور تینتیس بار سبحان اللہ پڑھو۔",
   "یہ تمہارے لیے خادم سے بہتر ہے۔",
-  "آج رات سونے سے پہلے، یہ تسبیحِ فاطمہ ضرور پڑھیں۔ کمنٹ میں لکھیں: میں پڑھوں گا!",
+  "آج رات سونے سے پہلے، یہ تسبیحِ فاطمہ ضرور پڑھا کریں۔ کمنٹ میں لکھیں: میں پڑھوں گا!",
   "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
  ],
  "roman": [
-  "Thakan door karne ka ek nuskha... jo ek khaadim se bhi behtar hai! Jaante hain woh kya hai?",
+  "Thakawat door karne ka ek nuskha... jo ek khaadim se bhi behtar hai! Jaante hain woh kya hai?",
   "Hazrat Ali Alaihis Salam bayan karte hain: Sayyida Fatima Alaihas Salam chakki peeste peeste thak jaati thein.",
   "Woh ek khaadim maangne gayin, to raat ko <SAW> un ke ghar tashreef laaye, aur farmaya:",
   "Kya main tumhein woh cheez na bataoon, jo khaadim se behtar hai? Jab tum sone lago...",
-  "To 34 baar Allahu Akbar, 33 baar Alhamdulillah, aur 33 baar SubhanAllah padho.",
+  "To 34 baar Allahu Akbar, phir 33 baar Alhamdulillah, aur 33 baar SubhanAllah padho.",
   "Yeh tumhare liye khaadim se behtar hai.",
-  "Aaj raat sone se pehle, yeh Tasbeeh-e-Fatima zaroor padhein. Comment mein likhein: main padhunga!",
+  "Aaj raat sone se pehle, yeh Tasbeeh-e-Fatima zaroor padha karein. Comment mein likhein: main padhunga!",
   "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
  ],
  "style": {
@@ -41,5 +41,10 @@
    "5": 0.85
   }
  },
- "voice_run_id": 43357761568
+ "voice_run_id": 43357761568,
+ "voice_fix_run_id": [
+  43359159477,
+  43360115776
+ ],
+ "voice_fix_note": "Re-voiced: line 0 (variant 0 of _fix, 'thakan' heard as 'tak an' so 'thakawat'), line 2 (variant 2 of _fix, 'maangne' garbled), line 4 (variant 5 of _fix, adds 'phir', clearer counts), line 6 (variant 2 of _fix2, Tasbeeh-e-Fatima garbled in 4 earlier takes). Rubberband 0.88 on all lines except line 2 (salawat clip) and line 4 (dhikr counts; already line_speed 0.85)."
 }

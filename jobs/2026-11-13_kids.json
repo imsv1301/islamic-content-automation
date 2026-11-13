@@ -1,7 +1,7 @@
 {
  "en": [
   "The table is messy, and everyone is busy... who can help? You can!",
-  "Someone once asked Lady Aisha, Radi Allahu Anha: what did <SAW> do at home?",
+  "Lady Aisha, Radi Allahu Anha, was asked: What did <SAW> do in his home?",
   "She said: he helped his family at home!",
   "And when it was time to pray, he went to pray.",
   "So let's help at home too! Tidy your toys, set the table, and fold your clothes.",
@@ -19,5 +19,7 @@
    "6": "excited"
   }
  },
- "voice_run_id": 43357758914
+ "voice_run_id": 43357758914,
+ "voice_fix_run_id": 43358799931,
+ "voice_fix_note": "line 1 re-voiced (variant 2 of jobs/2026-11-13_kids_fix.json): first take garbled 'Radi Allahu Anha' and 'do at home'."
 }

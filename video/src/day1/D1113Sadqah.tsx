@@ -7,7 +7,7 @@ import data from "./d1113sadqah-timing.json";
    were hurt by the hand-mill; she went to ask for a servant; the Prophet Sallallahu Alaihi Wa Alihi Wasallam came to
    them at night and said: "Shall I not tell you of something better than what you asked for? When you go to bed,
    say Allahu Akbar 34 times, Alhamdulillah 33 times and SubhanAllah 33 times; that is better for you than a servant."
-   (فَهُوَ خَيْرٌ لَكُمَا مِنْ خَادِمٍ). Nobody is depicted: objects, places and hands of an ordinary person only.
+   (فَهُوَ خَيْرٌ لَكُمَا مِمَّا سَأَلْتُمَاهُ). Nobody is depicted: objects, places and hands of an ordinary person only.
    Masjid-e-Nabawi shot is a REAL Pixabay frame, never AI. No wisal date is claimed (Sunni observance differs). */
 const TM = data as unknown as Timing;
 export const D1113_SADQAH_DUR = houseDur(TM);
@@ -38,14 +38,14 @@ const Cards = (c: Ctx) => {
   const at = (i: number, a: number) => S(i) + L(i) * a;
   const out: React.ReactNode[] = [];
   if (idx === 0) out.push(<div key="q" style={{ position: "absolute", top: 500, left: 40, right: 40, textAlign: "center" }}>
-    <div style={{ ...chip("rgba(20,10,4,0.85)", "#fff", 54), border: `5px solid ${GOLD}`, transform: `scale(${pop(t, S(0) + 0.1, 0.4)})` }}>💭 THAKAN KA NUSKHA</div>
+    <div style={{ ...chip("rgba(20,10,4,0.85)", "#fff", 54), border: `5px solid ${GOLD}`, transform: `scale(${pop(t, S(0) + 0.1, 0.4)})` }}>💭 THAKAWAT KA NUSKHA</div>
     <div style={{ marginTop: 30, ...chip(GOLD, INK, 50), transform: `scale(${pop(t, at(0, 0.45), 0.45)})` }}>KHAADIM SE BHI BEHTAR!</div>
     <div style={{ marginTop: 30, fontSize: 120, transform: `scale(${pop(t, at(0, 0.75), 0.45)})` }}>❓</div>
   </div>);
   if (idx === 1) out.push(<div key="nar" style={{ position: "absolute", top: 520, left: 40, right: 40, textAlign: "center" }}>
     <div style={{ ...chip("rgba(255,245,230,0.95)", INK, 42), transform: `scale(${pop(t, S(1) + 0.2, 0.45)})` }}>HAZRAT ALI <span style={{ color: "#b5651d" }}>ALAIHIS SALAM</span></div>
     <div style={{ marginTop: 24, ...chip("rgba(255,245,230,0.95)", INK, 42), transform: `scale(${pop(t, at(1, 0.4), 0.45)})` }}>SAYYIDA FATIMA <span style={{ color: "#b5651d" }}>ALAIHAS SALAM</span></div>
-    <div style={{ marginTop: 24, ...chip(BLUE, "#fff", 44), transform: `scale(${pop(t, at(1, 0.75), 0.45)})` }}>🪨 CHAKKI · THAKE HUE HAATH</div>
+    <div style={{ marginTop: 24, ...chip(BLUE, "#fff", 44), transform: `scale(${pop(t, at(1, 0.75), 0.45)})` }}>🪨 CHAKKI KI MASHAQQAT</div>
   </div>);
   if (idx === 2) out.push(<div key="night" style={{ position: "absolute", top: 560, left: 0, right: 0, textAlign: "center" }}>
     <div style={{ ...chip("rgba(20,10,4,0.85)", "#fff", 46), border: `5px solid ${GOLD}`, transform: `scale(${pop(t, at(2, 0.1), 0.45)})` }}>🌙 RAAT KO TASHREEF LAAYE</div>
@@ -70,7 +70,7 @@ const Cards = (c: Ctx) => {
     out.push(<div key="h" style={{ position: "absolute", top: 440, left: 40, right: 40, transform: `translateY(${(1 - pop(t, S(5) - 0.1, 0.5)) * 60}px)`, opacity: pop(t, S(5) - 0.1, 0.5) }}>
       <div style={{ textAlign: "center", marginBottom: 16 }}><div style={{ ...chip(GREEN, "#fff", 40) }}>📿 TASBEEH-E-FATIMA</div></div>
       <div style={{ background: "rgba(18,9,3,0.86)", borderRadius: 26, padding: "28px 24px 20px", border: `3px solid ${GOLD}`, boxShadow: "0 18px 40px rgba(0,0,0,0.45)" }}>
-        <div style={{ fontFamily: "Amiri, serif", fontWeight: 700, fontSize: 66, lineHeight: 1.6, color: GOLD, direction: "rtl", textAlign: "center", opacity: k }}>فَهُوَ خَيْرٌ لَكُمَا مِنْ خَادِمٍ</div>
+        <div style={{ fontFamily: "Amiri, serif", fontWeight: 700, fontSize: 66, lineHeight: 1.6, color: GOLD, direction: "rtl", textAlign: "center", opacity: k }}>فَهُوَ خَيْرٌ لَكُمَا مِمَّا سَأَلْتُمَاهُ</div>
         <div style={{ fontFamily: MONT, fontWeight: 700, fontSize: 36, color: "#fff", textAlign: "center", marginTop: 8, lineHeight: 1.35 }}>"Yeh tumhare liye khaadim se behtar hai."</div>
         <div style={{ marginTop: 12, textAlign: "center", fontFamily: MONT, fontWeight: 700, fontSize: 22, letterSpacing: "0.06em", color: GOLD }}>SAHIH AL-BUKHARI 3113 · HAZRAT ALI ALAIHIS SALAM</div>
       </div>

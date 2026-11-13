@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-13",
+ "items": [
+  {
+   "type": "naat",
+   "id": "QU5wEI9t0i8",
+   "start": 230.4,
+   "end": 282.5,
+   "video": "2026-11-13/mehfil_naat.mp4",
+   "caption": "Mustafa Jaan-e-Rehmat Pe Lakhon Salam (Sallallahu Alaihi Wa Alihi Wasallam) 🌹 Jumu'ah Mubarak\n\nKalam: Ala Hazrat Imam Ahmad Raza Khan (Rahmatullahi Alaih), Hadaiq-e-Bakhshish\nRecited by: Owais Raza Qadri\nOriginal: Tayyiba Production on YouTube (youtube.com/watch?v=QU5wEI9t0i8)\nAll rights belong to the reciter and the original publisher. Shared with love and full credit, for the Mehfil. Listen to the complete salam on the original channel. 🤍\n\nVisuals: Pixabay (Natsu_444, muhammadarhamamin77800, monirulislam_bd)\n\n#naat #durood #salam #mustafajaanerehmat #owaisrazaqadri #alahazrat #kalameraza #hadaiqebakhshish #jumuah #islamicreels #mehfilesama"
+  },
+  {
+   "type": "qawwali",
+   "id": "7GlT7-xzK-U",
+   "start": 105.0,
+   "end": 162.0,
+   "video": "2026-11-13/mehfil_qawwali.mp4",
+   "caption": "Tajdar-e-Haram Ho Nigah-e-Karam 🌹\n\nPerformed by: Sabri Brothers (Haji Ghulam Farid Sabri & Maqbool Ahmed Sabri)\nKalam: Purnam Allahabadi\nOriginal: Sabri Brothers - Topic on YouTube (youtube.com/watch?v=7GlT7-xzK-U)\nAll rights belong to the artists and the original publisher. Shared with love and full credit, for the Mehfil. Listen to the complete qawwali on the original channel. 🤍\n\nVisuals: Pixabay (Natsu_444, Mohamed_hassan, monirulislam_bd, criss1234)\n\n#qawwali #sabribrothers #tajdareharam #sufi #sufiqawwali #kalam #naat #madina #mehfilesama"
+  }
+ ],
+ "notes": [
+  "Windows chosen from whisper segments of naat.yml prep (run 43357901045): naat 230.4-282.5 starts right after a 'Mustafa jaan-e-rehmat pe lakhon salam' refrain and ends on the next refrain; qawwali 105.0-162.0 = the matla 'Tajdar-e-Haram, ho nigah-e-karam, hum gareebon ke din bhi sanwar jayenge' sung twice. Not checked by ear: listen to the clip in the Telegram preview on the first publish.",
+  "Instagram not connected on 13 Nov (instagram.yml whoami: no tokens), so naat.yml publish was NOT dispatched; catch up oldest first once connected."
+ ]
+}
