@@ -1,0 +1,26 @@
+{
+ "en": [
+  "Yesterday: a pen and a notebook cost one pound ten. The notebook costs one pound more than the pen.",
+  "Most people say ten pence. But then the notebook is one pound ten, and the total is one pound twenty!",
+  "So the pen costs five pence. The notebook, one pound and five pence. Together: one pound ten!",
+  "Now, a brand new mystery.",
+  "Person one opens a hand. Two coins. Together, they make thirty pence.",
+  "Person two looks closely and says: one of them is not a ten pence coin.",
+  "Person three shouts: that is impossible! ... Or is it?",
+  "So, which two coins does Person one have?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "excited",
+   "2": "excited",
+   "3": "excited",
+   "4": "calm",
+   "5": "serious",
+   "6": "excited",
+   "7": "serious",
+   "8": "warm"
+  }
+ }
+}

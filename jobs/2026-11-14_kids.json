@@ -1,0 +1,22 @@
+{
+ "en": [
+  "Oh no! Muddy hands, after playing outside! What do we do?",
+  "<SAW> once said: Cleanliness is half of faith!",
+  "Wow! So let's get clean! Wash your hands with soap. Bubbles everywhere!",
+  "Brush your teeth, up and down, until they sparkle!",
+  "Comb your hair, and put on clean clothes.",
+  "Allah loves those who keep clean, and everyone loves a fresh, clean hug!",
+  "What will you keep clean today? Tell your grown-up!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "excited",
+   "3": "excited",
+   "4": "calm",
+   "5": "warm",
+   "6": "excited"
+  }
+ }
+}

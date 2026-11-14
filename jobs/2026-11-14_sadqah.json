@@ -1,0 +1,39 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "تم میں سب سے بہتر کون ہے؟ جواب سن کر آپ حیران رہ جائیں گے!",
+  "حضرت عثمان، رضی اللہ عن ہُ، روایت کرتے ہیں کہ <SAW> نے فرمایا:",
+  "تم میں سب سے بہتر وہ ہے، جو قرآن سیکھے، اور دوسروں کو سکھائے۔",
+  "دولت نہیں، عہدہ نہیں… بلکہ قرآن!",
+  "آج ایک آیت خود سیکھیں، اور ایک آیت اپنے بچوں کو سکھائیں۔",
+  "کمنٹ میں لکھیں: ان شاء اللہ!",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Tum mein sab se behtar kaun hai? Jawab sun kar aap hairan reh jaayenge!",
+  "Hazrat Usman, Radi Allahu Anhu, riwayat karte hain ke <SAW> ne farmaya:",
+  "Tum mein sab se behtar woh hai, jo Quran seekhe, aur doosron ko sikhaaye.",
+  "Daulat nahin, ohda nahin... balke Quran!",
+  "Aaj ek aayat khud seekhein, aur ek aayat apne bachon ko sikhaayein.",
+  "Comment mein likhein: In sha Allah!",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "excited",
+   "4": "warm",
+   "5": "warm",
+   "6": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85
+  }
+ }
+}
