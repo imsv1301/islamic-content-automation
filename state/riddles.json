@@ -102,12 +102,19 @@
    "title": "Pen and notebook: Person 1 buys a pen and a notebook for £1.10 together; the notebook costs exactly £1 more than the pen; how much is the pen? (vote options 10p / 5p / 1p)",
    "answer": "5p. If the pen is p, the notebook is p + £1, so 2p + £1 = £1.10, 2p = 10p, p = 5p (notebook £1.05). Not 10p: then the notebook would be £1.10 and the total £1.20.",
    "posted": "2026-11-13 (uploaded https://youtu.be/S8VH-yGTWFY)",
+   "solved_in": "2026-11-14 (uploaded https://youtu.be/XPw9sXVKzR4)"
+  },
+  {
+   "n": 16,
+   "title": "Two coins: Person 1 shows two coins worth 30p together; Person 2 says one of them is not a 10p coin; Person 3 says that's impossible; which two coins? (vote options 15p+15p / 20p+10p / 25p+5p)",
+   "answer": "A 20p and a 10p. 'One of them is not a 10p' is true: the 20p is not a 10p (the other one is). There are no 15p or 25p coins.",
+   "posted": "2026-11-14 (uploaded https://youtu.be/XPw9sXVKzR4)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 16,
+  "n": 17,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #15 solution first (5p: pen 5p + notebook £1.05 = £1.10; the tempting 10p gives £1.20; Tag price-card component in video/src/day1/D1113Riddle.tsx; stills video/public/d1113/r15_*), then Riddle #16. Cloudflare FLUX worked on 13 Nov at ~03:20 UTC."
+  "note": "Next riddle video = Riddle #16 solution first (20p + 10p: the 20p is the one that is not a 10p), then Riddle #17. From 14 Nov riddles are fully animated: template video/src/anim/day/RiddleAnim1114.tsx (Person 1/2/3 rig looks P1/P2/P3, Coin, Hand, HUD, QCard, Vote)."
  }
 }
