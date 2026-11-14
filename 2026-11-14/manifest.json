@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-14",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle15Solution_Riddle16.mp4",
+   "meta": "riddle.json",
+   "title": "Not 10p! 🖊️ Riddle #15 Answer + Riddle #16: Two Coins, 30p 🪙 #shorts",
+   "qa": {
+    "heard": " Yesterday, a pen and a notebook cost £1.10, the notebook costs £1 more than the pen.  Most people say £10, but then the notebook is £1.10, and the total is £1.20.  The pen costs £5, the notebook £1.05, together £1.10, now a brand new mystery.  Person 1 shows two coins, together they are worth £30.  Person 2 looks closely and says one of them is not a £10 coin.  Person 3 shouts, that is impossible, or is it?  So which two coins does Person 1 have?  Comment your answer, the answer drops tomorrow at sunrise.",
+    "script_match": 0.761,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review: #15 answer 5p correct (£1.05 + 5p = £1.10, gap £1); #16 well-posed, one sensible answer (20p + 10p: the 20p is the coin that is not a 10p; no 15p/25p coins in the UK), answer not revealed; no salam, Person 1/2/3 only, solution first then new riddle, HUD and vote ending; street-lamp glow not behind any head. 'pence' confirmed in the final mix by a separate whisper pass (full transcript formats amounts as £)."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short16_SabSeBehtar.mp4",
+   "meta": "sadqah.json",
+   "title": "Sab Se Behtar Kaun? Daulat Nahin, Ohda Nahin… | Sahih Bukhari 5027 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " تم میں سب سے بہتر کون ہے؟ جواب سن کر آپ حران رہ جائیں گے  حضرت اسمانِ ونی رزی اللہ آن ہو  ریوایت ہے کہ ہمارے نبی محمد مصطفہ سل اللہ تعالی علیہ وعا علیہ وسلم نے فرمایا  تم میں سب سے بہتر وہ ہے جو قرآن سیکھے اور دوسروں کو سکھائے  دولت نہیں حدا نہیں  بلکہ قرآن today ایک آئیت خوب بھی سیکھیں اور ایک آئیت اپنے بچوں کو سکھائیں  کمت میں لکیں انشاء اللہ یہ ویڈیو آگے بھیجیں یہ بھی ایک اور سد کا ہے",
+    "script_match": 0.69,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:5027"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review opened sunnah.com/bukhari:5027 directly: narrated by 'Uthman, 'The best among you are those who learn the Quran and teach it', Arabic «خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ» matches card and description. Radi Allahu Anhu correct; full salutation in captions/description; real Pixabay 198164 dome credited; Roman Urdu subs; nobody protected depicted (three ordinary men, a teacher and a child; Quran drawn as a book only). 'Usman-e-Ghani' confirmed in the final mix ('گنی'). Non-blocking: whisper quirks (sad ka, حدا)."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_GetClean.mp4",
+   "meta": "kids.json",
+   "title": "Muddy Hands? Let's Get Clean! 🧼 Cleanliness Is Half of Faith | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW>",
+    "heard": " Oh no! Muddy hands after playing outside. What do we do?  Listen, our Prophet Muhammad Mustafa,  sallallahu ta'ala alaihi wa a'ala alihi wa sallam  One said, cleanliness is half of faith.  Wow! So let's get clean. Wash your hands with soap.  Bubbles everywhere. Brush your teeth up and down until they sparkle.  Comb your hair and put on clean clothes.  Allah loves those who keep clean and everyone loves a fresh clean hug.  What will you keep clean today?  Tell your grown-up.",
+    "script_match": 0.899,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/muslim:223"
+    ],
+    "second_check": true,
+    "second_check_notes": "Fresh-subagent review opened sunnah.com/muslim:223 directly (Abu Malik al-Ash'ari, «الطُّهُورُ شَطْرُ الإِيمَانِ», cleanliness is half of faith). It FAILED the first render: in the final mix whisper heard 'half of faith' as 'half of face'. Fixed: line 1 re-voiced (variant with 'Listen!'), re-timed, re-rendered; final-mix whisper now hears 'half of faith'; qa_check re-run PASS. Only an ordinary family drawn; real Pixabay 112361 dome credited; Made for Kids; no face emoji."
+   }
+  }
+ ],
+ "notes": [
+  "Saturday 14 Nov, 3 Jumada al-Akhirah 1448 (UK/India; Gulf 4), no major occasion within 7 days. Catch-up: every earlier day is on YouTube and Instagram, nothing re-uploaded. Comments/DMs: no new YouTube threads, no Instagram comments or DMs on any of the 4 accounts.",
+  "FIRST FULLY ANIMATED DAY (Sahil, 13 Nov): all 3 videos are code-drawn animation (Seeker rig, KID/MUM/DAD-style cast with faces, props on their words, karaoke captions). Code: video/src/anim/day/{KidsAnim1114,SadqahAnim1114,RiddleAnim1114}.tsx.",
+  "Sadqah Short 16: 'Sab se behtar kaun?' Sahih al-Bukhari 5027 (Hazrat Usman-e-Ghani Radi Allahu Anhu): the best of you learns the Quran and teaches it. Kids: 'Muddy hands? Let's get clean!' Sahih Muslim 223 (cleanliness is half of faith). Riddle #16: two coins make 30p, one is not a 10p; which coins? (answer tomorrow).",
+  "Both checks passed. The second reviewer caught 'half of faith' heard as 'half of face' in the kids mix; that line was re-voiced and the video re-rendered before upload. Reviewer also raised again: containsSyntheticMedia is false on all uploads although the narration is your cloned voice; left for you to decide. Nothing was paid."
+ ]
+}
