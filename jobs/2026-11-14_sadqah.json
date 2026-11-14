@@ -3,20 +3,20 @@
   "ur": 0.8
  },
  "ur": [
-  "تم میں سب سے بہتر کون ہے؟ جواب سن کر آپ حیران رہ جائیں گے!",
-  "حضرت عثمان، رضی اللہ عن ہُ، روایت کرتے ہیں کہ <SAW> نے فرمایا:",
+  "تم میں سب سے بہتر کون ہے؟ جواب سُن کر آپ حیران رہ جائیں گے!",
+  "حضرت عثمانِ غنی، رضی اللہ عن ہُ، سے رِوایَت ہے، کہ <SAW> نے فرمایا:",
   "تم میں سب سے بہتر وہ ہے، جو قرآن سیکھے، اور دوسروں کو سکھائے۔",
   "دولت نہیں، عہدہ نہیں… بلکہ قرآن!",
-  "آج ایک آیت خود سیکھیں، اور ایک آیت اپنے بچوں کو سکھائیں۔",
+  "آج ایک آیت خُود بھی سیکھیں، اور ایک آیت اپنے بچوں کو سکھائیں۔",
   "کمنٹ میں لکھیں: ان شاء اللہ!",
   "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
  ],
  "roman": [
   "Tum mein sab se behtar kaun hai? Jawab sun kar aap hairan reh jaayenge!",
-  "Hazrat Usman, Radi Allahu Anhu, riwayat karte hain ke <SAW> ne farmaya:",
+  "Hazrat Usman-e-Ghani, Radi Allahu Anhu, se riwayat hai, ke <SAW> ne farmaya:",
   "Tum mein sab se behtar woh hai, jo Quran seekhe, aur doosron ko sikhaaye.",
   "Daulat nahin, ohda nahin... balke Quran!",
-  "Aaj ek aayat khud seekhein, aur ek aayat apne bachon ko sikhaayein.",
+  "Aaj ek aayat khud bhi seekhein, aur ek aayat apne bachon ko sikhaayein.",
   "Comment mein likhein: In sha Allah!",
   "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
  ],
@@ -35,5 +35,8 @@
   "ur": {
    "2": 0.85
   }
- }
+ },
+ "voice_run_id": 43550626509,
+ "voice_fix_run_id": 43551387635,
+ "voice_fix_note": "Re-voiced from jobs/2026-11-14_sadqah_fix.json: line 0 (variant 0, 'jawab' heard as 'jo aap'), line 1 (variant 3, 'riwayat karte hain' garbled -> 'se riwayat hai'), line 4 (variant 5, 'khud' garbled -> 'khud bhi'). Rubberband 0.88 on all lines except line 1 (salawat clip)."
 }

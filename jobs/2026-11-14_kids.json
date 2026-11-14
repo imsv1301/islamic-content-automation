@@ -1,7 +1,7 @@
 {
  "en": [
   "Oh no! Muddy hands, after playing outside! What do we do?",
-  "<SAW> once said: Cleanliness is half of faith!",
+  "Listen! <SAW> once said: Cleanliness is half of faith!",
   "Wow! So let's get clean! Wash your hands with soap. Bubbles everywhere!",
   "Brush your teeth, up and down, until they sparkle!",
   "Comb your hair, and put on clean clothes.",
@@ -18,5 +18,8 @@
    "5": "warm",
    "6": "excited"
   }
- }
+ },
+ "voice_run_id": 43550624378,
+ "voice_fix_run_id": 43551385708,
+ "voice_fix_note": "Line 1 re-voiced (variant 2 of jobs/2026-11-14_kids_fix.json, adds 'Listen!'): in the first take's final mix whisper heard 'half of faith' as 'half of face'; this variant is heard as 'faith'. All variants decode 'once said' as 'one said' (known quirk)."
 }

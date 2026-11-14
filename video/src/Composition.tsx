@@ -1,6 +1,10 @@
 import { QawwaliAnim, ANIM_DUR } from "./anim/qawwali/anim/QawwaliAnim";
 import { MeraPiya, MERA_DUR } from "./anim/qawwali/anim/MeraPiya";
 import { KidsAnim1113, KIDS1113_DUR } from "./anim/kids/KidsAnim1113";
+import { RiddleAnim1114, RIDDLE1114_DUR } from "./anim/day/RiddleAnim1114";
+import { SadqahAnim1114, SADQAH1114_DUR } from "./anim/day/SadqahAnim1114";
+import { Naat1114, NAAT1114_DUR } from "./anim/day/Naat1114";
+import { KidsAnim1114, KIDS1114_DUR } from "./anim/day/KidsAnim1114";
 import { Composition } from "remotion";
 import { HadithSeaFoam } from "./HadithSeaFoam";
 import { DUR, FPS } from "./lib";
@@ -64,6 +68,10 @@ export const MyComposition = () => {
     {/* Animated templates (Sahil approved 13 Nov 2026). Third-party audio is never in this repo: qawwali renders are silent (withAudio false) and naat.yml muxes the clip. */}
     <Composition id="QawwaliAnim" component={QawwaliAnim} defaultProps={{ withAudio: false }} durationInFrames={Math.round(ANIM_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="MeraPiya" component={MeraPiya} defaultProps={{ withAudio: false }} durationInFrames={Math.round(MERA_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="RiddleAnim1114" component={RiddleAnim1114} defaultProps={{ withAudio: true }} durationInFrames={Math.round(RIDDLE1114_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="SadqahAnim1114" component={SadqahAnim1114} defaultProps={{ withAudio: true }} durationInFrames={Math.round(SADQAH1114_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="Naat1114" component={Naat1114} defaultProps={{ withAudio: false }} durationInFrames={Math.round(NAAT1114_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="KidsAnim1114" component={KidsAnim1114} defaultProps={{ withAudio: true }} durationInFrames={Math.round(KIDS1114_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="KidsAnim1113" component={KidsAnim1113} defaultProps={{ withAudio: false }} durationInFrames={Math.round(KIDS1113_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="NaatOverlay" component={NaatReal} defaultProps={{ overlay: true }} durationInFrames={Math.round(NAAT_REAL_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="NaatReal" component={NaatReal} durationInFrames={Math.round(NAAT_REAL_DUR * 30)} fps={30} width={1080} height={1920} />

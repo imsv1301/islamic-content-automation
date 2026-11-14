@@ -4,7 +4,7 @@
   "Most people say ten pence. But then the notebook is one pound ten, and the total is one pound twenty!",
   "So the pen costs five pence. The notebook, one pound and five pence. Together: one pound ten!",
   "Now, a brand new mystery.",
-  "Person one opens a hand. Two coins. Together, they make thirty pence.",
+  "Person one shows two coins. Together, they are worth thirty pence.",
   "Person two looks closely and says: one of them is not a ten pence coin.",
   "Person three shouts: that is impossible! ... Or is it?",
   "So, which two coins does Person one have?",
@@ -22,5 +22,8 @@
    "7": "serious",
    "8": "warm"
   }
- }
+ },
+ "voice_run_id": 43550622485,
+ "voice_fix_run_id": 43551473182,
+ "voice_fix_note": "line 4 re-voiced (variant 1 of jobs/2026-11-14_riddle_fix.json): first take 'thirty pence' heard as '30 pens'."
 }
