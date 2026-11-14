@@ -1,0 +1,14 @@
+{
+ "en": [
+  "<SAW> once said: Cleanliness is half of faith!",
+  "<SAW> said: Cleanliness, is half of faith!",
+  "Listen! <SAW> once said: Cleanliness is half of faith!"
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "calm"
+  }
+ }
+}
