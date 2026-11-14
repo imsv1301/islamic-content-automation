@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-14",
+ "items": [
+  {
+   "type": "naat",
+   "id": "8-0C3YfcrrM",
+   "start": 0.0,
+   "end": 59.4,
+   "video": "2026-11-14/mehfil_naat.mp4",
+   "caption": "Woh Soo-e-Lalazar Phirte Hain 🌹\n\nRecited by: Owais Raza Qadri\nKalam: Ala Hazrat Imam Ahmad Raza Khan (Rahmatullahi Alaih), Hadaiq-e-Bakhshish\nOriginal: Ashraf Echo Sound on YouTube (youtube.com/watch?v=8-0C3YfcrrM)\nAll rights belong to the reciter and the original publisher. Shared with love and full credit, for the Mehfil. Listen to the complete naat on the original channel. 🤍\n\nWoh soo-e-lalazar phirte hain, tere din ae bahaar phirte hain: our Aaqa, Hamare Nabi Muhammad-e-Mustafa (Sallallahu Alaihi Wa Alihi Wasallam), walks toward the garden, and spring itself is blessed.\n\nVisuals: Pixabay (DesignwithRiyas, muhammadarhamamin77800, Natsu_444)\n\n#naat #naatsharif #owaisrazaqadri #alahazrat #kalameraza #hadaiqebakhshish #madina #greendome #islamicreels #mehfilesama"
+  },
+  {
+   "type": "qawwali",
+   "id": "e3g8hlyfg5E",
+   "start": 84.5,
+   "end": 150.5,
+   "video": "2026-11-14/mehfil_qawwali.mp4",
+   "caption": "Mera Piya Ghar Aaya 🌹\n\nPerformed by: Ustad Nusrat Fateh Ali Khan\nKalam: Hazrat Baba Bulleh Shah (Rahmatullahi Alaih)\nOriginal: Oriental Star Agencies on YouTube (youtube.com/watch?v=e3g8hlyfg5E)\nAll rights belong to the artist and the original publisher. Shared with love and full credit, for the Mehfil. Listen to the complete qawwali on the original channel. 🤍\n\nGhariyali deyo nikaal ni, mera piya ghar aaya: send the timekeeper away, my Beloved has come home.\n\n#qawwali #nfak #nusratfatehalikhan #bullehshah #merapiyagharaaya #sufi #sufiqawwali #kalam #mehfilesama"
+  }
+ ],
+ "notes": [
+  "Naat window chosen from naat.yml prep (run 43551411217) + clipinfo (run 43551964734): 0.0-59.4 s = the matla 'Woh soo-e-lalazar phirte hain' (sung 3x) + instrumental + 'Tere din ae bahaar phirte hain' (2x), ending at a verse end. Visuals: real Pixabay footage (112360, 112361, 198163, 198164, lanterns 207118/258844/258846), no characters; big words only on syllables with whisper prob >= 0.5 (the first 'tere din' pass shows the line caption only).",
+  "Qawwali: the approved 13 Nov animated sample 'Mera Piya Ghar Aaya' (MeraPiya.tsx, NFAK / Bulleh Shah, OSA e3g8hlyfg5E 84.5-150.5 s, the refrain), rendered silent; first time it is posted."
+ ]
+}
