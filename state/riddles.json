@@ -109,13 +109,13 @@
    "title": "Two coins: Person 1 shows two coins worth 30p together; Person 2 says one of them is not a 10p coin; Person 3 says that's impossible; which two coins? (vote options 15p+15p / 20p+10p / 25p+5p)",
    "answer": "A 20p and a 10p. 'One of them is not a 10p' is true: the 20p is not a 10p (the other one is). There are no 15p or 25p coins.",
    "posted": "2026-11-14 (uploaded https://youtu.be/XPw9sXVKzR4)",
-   "solved_in": "2026-11-15 (pending upload)"
+   "solved_in": "2026-11-15 (uploaded https://youtu.be/u_YV4AWpZRE)"
   },
   {
    "n": 17,
    "title": "Socks in the dark: power cut, Person 1 needs one matching pair from a drawer of 10 black and 10 white socks, all mixed; how many socks must Person 1 take out to be SURE of a pair? (vote options 2 / 3 / 11)",
    "answer": "3. With only two colours, any 3 socks must contain two of the same colour (pigeonhole). 2 is not enough (could be one black, one white); 11 would only be needed for a pair of a chosen colour (and that needs 12). Any matching pair needs just 3.",
-   "posted": "2026-11-15 (pending upload)",
+   "posted": "2026-11-15 (uploaded https://youtu.be/u_YV4AWpZRE)",
    "solved_in": null
   }
  ],
