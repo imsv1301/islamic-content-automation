@@ -1,0 +1,22 @@
+{
+ "en": [
+  "Oh no! It's raining, and Grandpa has no umbrella! What should we do?",
+  "Listen! <SAW> once said: Allah will not be merciful to those who are not merciful to people.",
+  "So let's be kind! Share your umbrella, and keep Grandpa dry!",
+  "Help carry the heavy bags. One, two, up we go!",
+  "Little brother is crying? Give him a big hug, and share your toy!",
+  "When we are kind to people, Allah is kind to us!",
+  "Who will you be kind to today? Tell your grown-up!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "excited",
+   "3": "excited",
+   "4": "warm",
+   "5": "warm",
+   "6": "excited"
+  }
+ }
+}

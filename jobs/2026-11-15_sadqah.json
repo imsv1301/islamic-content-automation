@@ -1,0 +1,43 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "کیا اللہ آپ کی شکل اور دولت دیکھتا ہے؟ جواب سُن کر دِل ہِل جائے گا!",
+  "حضرت ابو ہُریرہ، رضی اللہ عن ہُ، سے رِوایَت ہے، کہ <SAW> نے فرمایا:",
+  "بے شک اللہ، تمہاری صورتوں اور تمہارے مالوں کو نہیں دیکھتا،",
+  "بلکہ تمہارے دِلوں، اور تمہارے عملوں کو دیکھتا ہے۔",
+  "مہنگے کپڑے نہیں، بڑی گاڑی نہیں… صاف دِل، اور نیک عمل!",
+  "آج ایک نیکی، چُپکے سے کریں، جو صرف اللہ دیکھے۔",
+  "کمنٹ میں لکھیں: یا اللہ، ہمارے دِل صاف کر دے!",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Kya Allah aap ki shakal aur daulat dekhta hai? Jawab sun kar dil hil jaayega!",
+  "Hazrat Abu Huraira, Radi Allahu Anhu, se riwayat hai, ke <SAW> ne farmaya:",
+  "Beshak Allah, tumhari sooraton aur tumhare maalon ko nahin dekhta,",
+  "balke tumhare dilon, aur tumhare amalon ko dekhta hai.",
+  "Mehnge kapde nahin, badi gaadi nahin... saaf dil, aur nek amal!",
+  "Aaj ek neki, chupke se karein, jo sirf Allah dekhe.",
+  "Comment mein likhein: Ya Allah, hamare dil saaf kar de!",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "serious",
+   "4": "excited",
+   "5": "warm",
+   "6": "warm",
+   "7": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85,
+   "3": 0.85
+  }
+ }
+}
