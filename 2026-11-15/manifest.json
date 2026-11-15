@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-15",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle16Solution_Riddle17.mp4",
+   "meta": "riddle.json",
+   "title": "Only ONE Isn't 10p! 🪙 Riddle #16 Answer + Riddle #17: Socks in the Dark 🧦 #shorts",
+   "qa": {
+    "heard": " Yesterday, person 1 had 2 coins worth 30 pence in total and one of them is not a 10 pence coin.  The trick? It only said one of them is not 10 pence. That one is the 20 pence.  And the other coin is the 10 pence. 20 plus 10 makes 30 pence.  Now, a brand new mystery.  Power cut. Person 1 has to get ready in total darkness.  In the drawer, 10 black socks and 10 white socks all mixed up.  Person 1 cannot see a thing and needs just one matching pair.  So, how many socks must Person 1 take out to be sure of a pair?  Comment your answer. The answer drops tomorrow at sunrise.",
+    "script_match": 0.873,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "PASS. No hadith. #16 solution correct and clear (only ONE is not 10p -> 20p, other is 10p, 20p+10p=30p), solution first, then #17. #17 well-posed, single answer 3 (two colours, pigeonhole), not revealed in the video or description. Description now lists 1) 2 socks 2) 3 socks 3) 11 socks. No salam, only Person 1/2/3, ends on the vote. qa.heard matches the script. Caption spacing fixed (new contact sheet). Title 81 chars, MFK false, nothing haram, no halo, no face emoji. Re-check after re-render (04:03 UTC): I pulled my own frames from the new MP4s and did not rely only on the coordinator's frames."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short17_DilAurAmal.mp4",
+   "meta": "sadqah.json",
+   "title": "Kya Allah Shakal Aur Daulat Dekhta Hai? | Sahih Muslim 2564 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " کیا اللہ آپ کی شکل اور دولت کو دیکھتا ہے؟ جو آپ سن کر دل ہیل جائے گا؟  حضرت ابو حوریرا رزی اللہانو دے روایت ہے کہ  ہمارے نبی محمد مصطفہ صل اللہ وتعال علیہ وعایلی ہی وسلم نے فرمایا  بیشک اللہ تمہاری صورتوں اور تمہارے مالوں کو نہیں دیکھتا  بلکہ وہ تمہارے دلوں کو اور تمہارے عمال کو دیکھتا ہے  مہنگے کپڑے نہیں بڑی گاری نہیں صاف دل اور اچھے عمال  آج ایک اچھا کوم خاموشی سے کریں جو صرف اللہ دیکھے  کمنٹ میں لکھیں یا اللہ ہمارے دل صاف کردے  یہ بیڈیو آگے بھیجے یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.692,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/muslim:2564c"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS. Opened https://sunnah.com/muslim:2564c directly: Abu Huraira, Arabic on HadithCard and in description matches 2564c exactly (not 2564b). Urdu/Roman meaning faithful; Radi Allahu Anhu and full salutation correct. Whisper 'جو آپ' for 'جواب' is the known artefact, caption shows 'Jawab', not blocking. Dome fix verified on the new render (frames 5.5-6.25 s and 16.4-17.15 s): dip to black and hard cut on both sides of the real Green Dome photo; no character is ever shown over the Dome. Roman Urdu captions, Allah not symbolised, no halo, title 67 chars, MFK false. Re-check after re-render (04:03 UTC): I pulled my own frames from the new MP4s and did not rely only on the coordinator's frames."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_BeKind.mp4",
+   "meta": "kids.json",
+   "title": "Grandpa Has No Umbrella! ☂️ Be Kind to People | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " Oh no! It's raining and grandpa has no umbrella. What should we do?  Listen, our Prophet Muhammad Mustafa,  sallallahu alaihi wa alaihi wa sallam, once said,  Allah will not be merciful to those who are not merciful to people.  Let's be kind, share your umbrella and keep grandpa dry.  Help carry the heavy bags. One, two, up we go.  Little brother is crying, give him a big hug and share your toy.  When we are kind to people, Allah is kind to us.  Who will you be kind to today? Tell your grown up.",
+    "script_match": 0.94,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:7376"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS. Opened https://sunnah.com/bukhari:7376 directly (I found it via a web search listing): Jarir bin Abdullah, 'لاَ يَرْحَمُ اللَّهُ مَنْ لاَ يَرْحَمُ النَّاسَ' = 'Allah will not be merciful to those who are not merciful to mankind'. This matches the narrated and quoted line. Citation now 7376 on the on-screen card (seen in the frame at 15.8 s), in the description Source line and link, and in the tag. (I also opened bukhari:6013 directly earlier; it is the shorter wording, so it was rightly replaced.) 'When we are kind to people, Allah is kind to us' is a fair gloss, not presented as a quote. Halo fixed: the goodbye scene is now a plain linear sky gradient with no light behind the head (my own frame at 31 s). Dome fix verified (frames 3.9-4.5 s and 15.8-16.3 s): dip to black and hard cuts, no character over the Dome. Full salutation, real credited Dome photo, ordinary family only, nothing haram, no face emoji, title 70 chars, selfDeclaredMadeForKids true. Re-check after re-render (04:03 UTC): I pulled my own frames from the new MP4s and did not rely only on the coordinator's frames."
+   }
+  }
+ ],
+ "notes": [
+  "Sunday 15 Nov, 4 Jumada al-Akhirah 1448 (UK/India; Gulf 5), no major occasion within 7 days. Catch-up: every earlier day is on YouTube and Instagram (incl. 14 Nov), nothing re-uploaded. Comments/DMs: no new YouTube threads; Instagram comments and DMs empty on all 4 accounts.",
+  "All 3 are code-drawn animation. Sadqah Short 17: 'Kya Allah shakal aur daulat dekhta hai?' Sahih Muslim 2564c (Abu Huraira RA): Allah looks at your hearts and deeds. Kids: 'Grandpa has no umbrella! Be kind to people' Sahih al-Bukhari 7376 (Jarir bin Abdullah RA). Riddle #17: socks in the dark (answer tomorrow).",
+  "Second reviewer caught 3 things before upload, all fixed and re-rendered: the kids hadith number (the quoted wording is Bukhari 7376, not 6013), characters cross-fading over the real Green Dome (now hard cuts with a dip to black), and a bright light behind the boy's head in the kids goodbye (now a plain sky). Voice re-rolls fixed 'amalon' heard as 'hamlon' (attacks) and 'chupke' heard as 'chhipkali'.",
+  "Still open for you: containsSyntheticMedia is false on all uploads although the narration is your cloned voice. Nothing was paid."
+ ]
+}
