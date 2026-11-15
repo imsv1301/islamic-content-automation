@@ -1,0 +1,16 @@
+{
+ "en": [
+  "Yesterday: two coins. Together, they are worth thirty pence. And one of them is not a ten pence coin.",
+  "Yesterday: Person one had two coins, worth thirty pence in total. And one of them is not a ten pence coin.",
+  "The other coin? It is the ten pence. Twenty plus ten: thirty pence!",
+  "And the other coin is the ten pence. Twenty plus ten makes thirty pence!"
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "excited",
+   "3": "excited"
+  }
+ }
+}
