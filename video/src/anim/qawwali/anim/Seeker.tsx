@@ -29,7 +29,7 @@ export type Pose = {
   look?: Look;
 };
 /* cast variations: kid, mum (hijab, long dress), dad, etc. Defaults = the seeker */
-export type Look = { kid?: boolean; beard?: boolean; cap?: string | null; hijab?: string | null; top?: string; topD?: string; pants?: string; shawl?: boolean; long?: boolean; hair?: string; skin?: [string, string, string] };
+export type Look = { kid?: boolean; beard?: boolean; cap?: string | null; hijab?: string | null; top?: string; topD?: string; pants?: string; shawl?: boolean; long?: boolean; hair?: string; beardC?: string; skin?: [string, string, string] };
 
 const SK = "#c48d66", SKD = "#a06d4b", SKL = "#dfb38d", HAIR = "#1f1510", KURTA = "#f5f0e6", KURTAD = "#d8cebd", SHAWL = "#e9d8b3", SHAWLD = "#c9b48a", GOLDT = "#b8893a";
 const sid = (s: string) => s.replace(/[^a-zA-Z0-9_-]/g, "");
@@ -173,9 +173,9 @@ export const Seeker: React.FC<Pose & { uid: string }> = (p) => {
         {!hij && <path d="M -76 -30 Q -82 -112 0 -120 Q 82 -112 76 -30 Q 70 -70 40 -80 Q 0 -66 -40 -80 Q -70 -70 -76 -30 Z" fill={HAIRC} />}
         {hij && <path d="M -78 20 Q -84 -104 0 -112 Q 84 -104 78 20" stroke={hij} strokeWidth={22} fill="none" />}
         {/* sideburns + beard */}
-        {beard && !hij && <><path d="M -77 -40 L -66 -40 L -64 14 L -74 14 Z" fill={HAIR} /><path d="M 77 -40 L 66 -40 L 64 14 L 74 14 Z" fill={HAIR} />
-        <path d="M -75 8 Q -72 76 -38 102 Q 0 126 38 102 Q 72 76 75 8 L 64 12 Q 56 50 26 60 Q 0 66 -26 60 Q -56 50 -64 12 Z" fill={HAIR} />
-        <path d="M -24 42 Q -10 34 0 38 Q 10 34 24 42 Q 12 47 0 44 Q -12 47 -24 42 Z" fill={HAIR} /></>}
+        {beard && !hij && <><path d="M -77 -40 L -66 -40 L -64 14 L -74 14 Z" fill={L.beardC ?? HAIR} /><path d="M 77 -40 L 66 -40 L 64 14 L 74 14 Z" fill={L.beardC ?? HAIR} />
+        <path d="M -75 8 Q -72 76 -38 102 Q 0 126 38 102 Q 72 76 75 8 L 64 12 Q 56 50 26 60 Q 0 66 -26 60 Q -56 50 -64 12 Z" fill={L.beardC ?? HAIR} />
+        <path d="M -24 42 Q -10 34 0 38 Q 10 34 24 42 Q 12 47 0 44 Q -12 47 -24 42 Z" fill={L.beardC ?? HAIR} /></>}
         {/* mouth */}
         {mo > 0.05
           ? <path d={`M -12 50 Q 0 ${47} 12 50 Q 0 ${52 + 14 * mo} -12 50 Z`} fill="#3a1a12" />

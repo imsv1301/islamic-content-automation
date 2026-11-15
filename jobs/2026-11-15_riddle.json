@@ -1,8 +1,8 @@
 {
  "en": [
-  "Yesterday: two coins, worth thirty pence together. And one of them is not a ten pence coin.",
+  "Yesterday: Person one had two coins, worth thirty pence in total. And one of them is not a ten pence coin.",
   "The trick? It only said ONE of them is not ten pence. That one is the twenty pence!",
-  "And the other coin? It is the ten pence. Twenty plus ten: thirty pence!",
+  "And the other coin is the ten pence. Twenty plus ten makes thirty pence!",
   "Now, a brand new mystery.",
   "Power cut! Person one has to get ready in total darkness.",
   "In the drawer: ten black socks, and ten white socks, all mixed up.",
@@ -22,5 +22,8 @@
    "7": "serious",
    "8": "warm"
   }
- }
+ },
+ "voice_run_id": 43671925755,
+ "voice_fix_run_id": 43672527390,
+ "voice_fix_note": "Lines 0 and 2 re-voiced (variants 1 and 3 of jobs/2026-11-15_riddle_fix.json): 'worth thirty pence' was heard as '30 pens', 'And the other' as 'In the other'."
 }

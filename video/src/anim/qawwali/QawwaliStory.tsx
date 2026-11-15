@@ -156,7 +156,7 @@ export const EndCard: React.FC<{ t: number; start?: number; credit?: Credit }> =
       <div style={{ transform: `translateY(${(1 - k) * 30}px)`, marginTop: -260 }}>
         <div style={{ fontFamily: PLAY, fontWeight: 700, fontSize: credit.title.join(" ").length > 12 ? 104 : 118, lineHeight: 1.05, color: CREAM, textShadow: "0 10px 40px rgba(0,0,0,0.75)" }}>{credit.title[0]}{credit.title.join(" ").length > 12 ? <br /> : " "}<span style={{ fontStyle: "italic", background: "linear-gradient(180deg,#fff3c4,#f6d27a 45%,#c9902a)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>{credit.title[1]}</span></div>
         <div style={{ marginTop: 22, fontFamily: MONT, fontWeight: 600, fontSize: 28, letterSpacing: "0.14em", color: CREAM, lineHeight: 1.7, textShadow: "0 3px 14px rgba(0,0,0,0.9)" }}>
-          {credit.kalam} <span style={{ fontSize: 22 }}>(RAH)</span><br />
+          {credit.kalam} {credit.kalam.startsWith("KALAM") && <span style={{ fontSize: 22 }}>(RAH)</span>}<br />
           <span style={{ color: GOLD, fontWeight: 700, fontSize: 31 }}>{credit.artist}</span><br />
           <span style={{ fontSize: 22, opacity: 0.85 }}>{credit.rights}</span>
         </div>

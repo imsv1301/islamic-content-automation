@@ -36,7 +36,7 @@ export const Captions: React.FC<{ t: number; TL: Timing; top?: number; font: str
       <div style={{ display: "inline-block", background: bg, borderRadius: 34, padding: "14px 28px", boxShadow: "0 10px 30px rgba(0,0,0,0.25)" }}>
         {win.map((w, i) => {
           const on = t >= w[1] && t < w[2] + 0.05, dn = t >= w[2];
-          return <span key={i} style={{ fontFamily: font, fontWeight: 800, fontSize: size, lineHeight: 1.25, margin: "0 9px", color: on ? hi : dn ? done : base, display: "inline-block", transform: `scale(${on ? 1.1 : 1})` }}>{w[0]}</span>;
+          return <span key={i} style={{ fontFamily: font, fontWeight: 800, fontSize: size, lineHeight: 1.25, margin: "0 14px", color: on ? hi : dn ? done : base, display: "inline-block", transform: `scale(${on ? 1.05 : 1})` }}>{w[0]}</span>;
         })}
       </div>
     </div>
