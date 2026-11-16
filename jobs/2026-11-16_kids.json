@@ -2,7 +2,7 @@
  "en": [
   "Whoa, slow down! The kitty is scared of rough hands!",
   "Listen to what <SAW> said: Allah is gentle, and He loves gentleness!",
-  "So let's use gentle hands. Soft and slow... the kitty is happy now!",
+  "So let's use gentle hands. Soft and slow... look, the kitten is happy now!",
   "Little sister's tower? Don't knock it down. Help her build it higher!",
   "Close the door softly, and pass the plate gently. No banging!",
   "When we are gentle, Allah gives us so much good!",
@@ -18,5 +18,8 @@
    "5": "warm",
    "6": "excited"
   }
- }
+ },
+ "voice_run_id": 43797682749,
+ "voice_fix_run_id": 43799171238,
+ "voice_fix_note": "Line 2 re-voiced (variant 1 of jobs/2026-11-16_kids_fix2.json): 'kitty' was heard as 'kit' twice (kids_fix too), now 'kitten'."
 }

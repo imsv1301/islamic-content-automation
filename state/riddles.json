@@ -116,12 +116,19 @@
    "title": "Socks in the dark: power cut, Person 1 needs one matching pair from a drawer of 10 black and 10 white socks, all mixed; how many socks must Person 1 take out to be SURE of a pair? (vote options 2 / 3 / 11)",
    "answer": "3. With only two colours, any 3 socks must contain two of the same colour (pigeonhole). 2 is not enough (could be one black, one white); 11 would only be needed for a pair of a chosen colour (and that needs 12). Any matching pair needs just 3.",
    "posted": "2026-11-15 (uploaded https://youtu.be/u_YV4AWpZRE)",
+   "solved_in": "2026-11-16 (uploaded https://youtu.be/fjlN9_BxXR0)"
+  },
+  {
+   "n": 18,
+   "title": "Three tablets: Person 1 is ill and the doctor gives three tablets, take one every half hour starting right now; Person 2 says that takes 90 minutes, Person 3 says no way; how many minutes until all three are taken? (vote options 90 / 60 / 30)",
+   "answer": "60 minutes. The first tablet is taken right now (minute 0), the second at 30 minutes, the third at 60 minutes. Three tablets need only two half-hour gaps, not three.",
+   "posted": "2026-11-16 (uploaded https://youtu.be/fjlN9_BxXR0)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 18,
+  "n": 19,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #17 solution first (3 socks: two colours, so any 3 socks include a matching pair; 2 can be one of each), then Riddle #18. Template: video/src/anim/day/RiddleAnim1115.tsx (bedroom, drawer, Sock, Coin flip, HUD, QCard, Vote)."
+  "note": "Next riddle video = Riddle #18 solution first (60 minutes: tablets at 0, 30 and 60 min; only two gaps), then Riddle #19. Template: video/src/anim/day/RiddleAnim1116.tsx (clock with sweep, Tablet, sock drawer, Person 2/3 speech bubbles, HUD, QCard, Vote)."
  }
 }
