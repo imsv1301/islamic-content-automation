@@ -1,0 +1,26 @@
+{
+ "en": [
+  "Yesterday: ten black socks and ten white socks, in total darkness. How many to be sure of a pair?",
+  "Take two, and you could get one black and one white. No pair yet!",
+  "But the third sock has to match one of them, because there are only two colours. The answer is three!",
+  "Now, a brand new mystery.",
+  "Person one is ill, and the doctor gives three tablets.",
+  "Take one tablet every half hour, starting right now.",
+  "Person two says: that takes ninety minutes. Person three says: no way!",
+  "So, how many minutes until all three tablets are taken?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "excited",
+   "2": "excited",
+   "3": "excited",
+   "4": "serious",
+   "5": "calm",
+   "6": "serious",
+   "7": "serious",
+   "8": "warm"
+  }
+ }
+}

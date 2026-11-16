@@ -1,0 +1,22 @@
+{
+ "en": [
+  "Whoa, slow down! The kitty is scared of rough hands!",
+  "Listen to what <SAW> said: Allah is gentle, and He loves gentleness!",
+  "So let's use gentle hands. Soft and slow... the kitty is happy now!",
+  "Little sister's tower? Don't knock it down. Help her build it higher!",
+  "Close the door softly, and pass the plate gently. No banging!",
+  "When we are gentle, Allah gives us so much good!",
+  "Where will you use gentle hands today? Tell your grown-up!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "warm",
+   "3": "excited",
+   "4": "calm",
+   "5": "warm",
+   "6": "excited"
+  }
+ }
+}

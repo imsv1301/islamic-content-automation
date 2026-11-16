@@ -1,0 +1,43 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "دو آدمی، ایک جیسا صدقہ… مگر اللہ کے ہاں فرق زمین آسمان کا! کیوں؟",
+  "حضرت عُمَر بن خطّاب، رضی اللہ عن ہُ، سے رِوایَت ہے، کہ <SAW> نے فرمایا:",
+  "اَعمال کا دار و مَدار، نیّتوں پر ہے،",
+  "اور ہر شخص کو وہی ملے گا، جس کی اُس نے نیّت کی۔",
+  "ایک نے دِکھاوے کے لیے دیا، دوسرے نے صِرف اللہ کے لیے۔",
+  "گھر والوں پر خرچ، کام، کھانا… اچھی نیّت ہو، تو سب میں ثواب ہے۔",
+  "کمنٹ میں لکھیں: یا اللہ، ہماری نیّتیں خالص کر دے!",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Do aadmi, ek jaisa sadqah... magar Allah ke haan farq zameen aasmaan ka! Kyun?",
+  "Hazrat Umar bin Khattab, Radi Allahu Anhu, se riwayat hai, ke <SAW> ne farmaya:",
+  "Aamaal ka daromadar, niyyaton par hai,",
+  "aur har shakhs ko wohi milega, jis ki us ne niyyat ki.",
+  "Ek ne dikhawe ke liye diya, doosre ne sirf Allah ke liye.",
+  "Ghar walon par kharch, kaam, khana... achhi niyyat ho, to sab mein sawab hai.",
+  "Comment mein likhein: Ya Allah, hamari niyyatein khaalis kar de!",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "serious",
+   "4": "calm",
+   "5": "warm",
+   "6": "warm",
+   "7": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85,
+   "3": 0.85
+  }
+ }
+}
