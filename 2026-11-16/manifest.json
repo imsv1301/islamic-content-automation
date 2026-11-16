@@ -1,0 +1,71 @@
+{
+ "date": "2026-11-16",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle17Solution_Riddle18.mp4",
+   "meta": "riddle.json",
+   "title": "3 Socks Is Enough! 🧦 Riddle #17 Answer + Riddle #18: Three Tablets ⏰ #shorts",
+   "qa": {
+    "heard": " Yesterday 10 black socks and 10 white socks in total darkness how many to be  sure of a pair? Take two and you could get one black and one white no pair yet  but the third sock has to match one of them because there are only two colors  the answer is three now a brand new mystery person one is ill and the  doctor gives three tablets take one tablet every half hour starting right  now person two says that takes 90 minutes person three says no way so  how many minutes until all three tablets are taken comment your answer the answer  drops tomorrow at sunrise",
+    "script_match": 0.963,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "PASS. #17 solution (3 socks) first, then #18 (3 tablets, one every half hour from now). Logic correct, answer (60) not revealed; vote 90/60/30. No salam, Person 1/2/3 only. Transcript 0.963. Title 76 chars, MFK false."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short18_Niyyat.mp4",
+   "meta": "sadqah.json",
+   "title": "Ek Jaisa Sadqah, Farq Zameen Aasmaan Ka! | Sahih Bukhari 1 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " دو آدمی، ایک جیسا ستکا، مگر اللہ کے ہاں فرق زمین آسمان کا، کیوں؟  حضرت عمر بن ختاب رزی اللہ عنہو، دے روایت ہے کہ حمارِ نبی محمد مصطفا صل اللہ تعال عالی ہی وعالی ہی وصلدھو، نے فرمایا  بیشک، عمال کا دار و مدار نیتوں پر ہے، اور ہر شخص کو وہی ملے گا، جس کی اس نے نیت کی  ایک نے دکھاوے کے لیے دیا، دوسرے نے در فلہ کے لیے، گھر والوں پر خرج کام کھانا اچھی نیت ہو، تو سب میں سواب ہے  کمٹ میں لکھیں، یا اللہ ہماری نیتیں خالص کردے، یہ ویڈیو آگے بھیجیں، یہ بھی ایک ورصد کا ہے",
+    "script_match": 0.654,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:1"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS after fixes (re-checked 03:59 from the new MP4). First render FAILED: gold glow + sparkles behind/over the white-clad man's head read as a halo; scale pan sat on the other man's head. Both fixed. Bukhari 1 (Umar bin al-Khattab RA) wording confirmed via hadithunlocked mirror (sunnah.com page timed out); card + description match. Green Dome real footage, hard cuts through black. Roman Urdu captions, salutation in full."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_GentleHands.mp4",
+   "meta": "kids.json",
+   "title": "Gentle Hands! 🐱 Allah Loves Gentleness | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " Whoa slow down the kitty is scared of rough hands  Listen to what our prophet muhammad and Mustafa  sallallahu ta'ala alaihi wa a'ala alihi wa sallam  Said Allah is gentle and he loves gentleness. So let's use gentle hands soft and slow  Look the kitten is happy now little sister's tower. Don't knock it down. Help her build it higher  Close the door softly and pass the plate gently no banging when we are gentle Allah gives us so much good  Where will you use gentle hands today tell your grown-up",
+    "script_match": 0.916,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/muslim:2593"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS after fixes (re-checked 03:59). First render FAILED: boy's arm across his sister's face (tower), arm folded into his cheek (door), plate in front of his mouth, and cross-fades ghosting characters. Re-posed, plate lowered, non-Dome cuts now dip through warm white. Muslim 2593 opened on sunnah.com: Aisha RA, 'Allah is Rafiq and loves rifq' = gentle/gentleness. Made for Kids true."
+   }
+  }
+ ],
+ "notes": [
+  "Monday 16 Nov, 5 Jumada al-Akhirah 1448 (UK/India; Gulf 6), no major occasion within 7 days. Catch-up: every earlier day is on YouTube and Instagram, nothing re-uploaded. Comments: no new YouTube threads; Instagram comments/DMs were checked by the 03:00 hourly run, nothing new.",
+  "All 3 code-drawn animation. Sadqah Short 18: 'Ek jaisa sadqah, farq zameen aasmaan ka' Sahih al-Bukhari 1 (Umar bin al-Khattab RA): actions are by intentions. Kids: 'Gentle hands!' Sahih Muslim 2593 (Aisha RA): Allah is gentle and loves gentleness (kitten, sister's tower, soft door, plate). Riddle #18: three tablets, one every half hour (answer tomorrow).",
+  "Second reviewer failed the first Sadqah and Kids renders (a halo-like glow behind a man's head; arms/plate across faces; cross-fade ghosting). All fixed and re-checked before upload. Voice re-rolls: Sadqah 'aamaal' heard as 'hammal' (now 'Beshak, aamaal...'); kids 'kitty' heard as 'kit' (now 'kitten').",
+  "Still open for you: containsSyntheticMedia is false on all uploads although the narration is your cloned voice. Nothing was paid."
+ ]
+}
