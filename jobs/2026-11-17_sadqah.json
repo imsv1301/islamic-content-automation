@@ -1,0 +1,42 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "سچا مسلمان کون؟ نماز، روزہ… اور ایک بڑی نشانی!",
+  "حضرت عبداللہ بن عَمرو، رضی اللہ عن ہُما، سے رِوایَت ہے، کہ <SAW> نے فرمایا:",
+  "مسلمان وہ ہے، جس کی زبان اور ہاتھ سے، دوسرے مسلمان محفوظ رہیں۔",
+  "زبان سے: نہ گالی، نہ طعنہ، نہ غیبت۔",
+  "ہاتھ سے: نہ دھکا، نہ ظلم، نہ کسی کا حق مارنا۔",
+  "فون پر لکھتے وقت بھی یاد رکھیں: کسی کا دل نہ دُکھے۔",
+  "کمنٹ میں لکھیں: یا اللہ، ہمیں سچا مسلمان بنا دے!",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Sachcha Musalmaan kaun? Namaz, roza... aur ek badi nishani!",
+  "Hazrat Abdullah bin Amr, Radi Allahu Anhuma, se riwayat hai, ke <SAW> ne farmaya:",
+  "Musalmaan woh hai, jis ki zabaan aur haath se, doosre Musalmaan mehfooz rahein.",
+  "Zabaan se: na gaali, na taana, na gheebat.",
+  "Haath se: na dhakka, na zulm, na kisi ka haq maarna.",
+  "Phone par likhte waqt bhi yaad rakhein: kisi ka dil na dukhe.",
+  "Comment mein likhein: Ya Allah, hamein sachcha Musalmaan bana de!",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "serious",
+   "4": "serious",
+   "5": "warm",
+   "6": "warm",
+   "7": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "en": [
+  "Oh no! My friend is sick in bed today... What can I do?",
+  "Listen! <SAW> taught us: visiting a sick friend is like picking fruit in the gardens of Paradise, until you come back!",
+  "So let's go! We make a get-well card, and take some fruit.",
+  "Knock, knock! Assalamu alaikum! We came to see you!",
+  "We sit with him, smile, and make a prayer: may Allah make you better!",
+  "Look, he is smiling! Our visit made him feel better already!",
+  "Who can you visit or call this week? Tell your grown-up!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "warm",
+   "3": "excited",
+   "4": "warm",
+   "5": "warm",
+   "6": "excited"
+  }
+ }
+}
