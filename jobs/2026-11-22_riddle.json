@@ -1,0 +1,26 @@
+{
+ "en": [
+  "Yesterday: three tablets, one every half hour, starting right now. How many minutes?",
+  "The first tablet is taken right now, at zero minutes.",
+  "The second at thirty minutes, and the third at sixty. Only two gaps! The answer is sixty minutes!",
+  "Now, a brand new mystery.",
+  "Person one has seventeen sheep on a farm.",
+  "One stormy night, all but nine of them run away.",
+  "Person two says: eight are left. Person three says: no way!",
+  "So, how many sheep does Person one have now?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "excited",
+   "3": "excited",
+   "4": "calm",
+   "5": "serious",
+   "6": "serious",
+   "7": "serious",
+   "8": "warm"
+  }
+ }
+}
