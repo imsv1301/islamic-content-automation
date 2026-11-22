@@ -123,12 +123,19 @@
    "title": "Three tablets: Person 1 is ill and the doctor gives three tablets, take one every half hour starting right now; Person 2 says that takes 90 minutes, Person 3 says no way; how many minutes until all three are taken? (vote options 90 / 60 / 30)",
    "answer": "60 minutes. The first tablet is taken right now (minute 0), the second at 30 minutes, the third at 60 minutes. Three tablets need only two half-hour gaps, not three.",
    "posted": "2026-11-16 (uploaded https://youtu.be/fjlN9_BxXR0)",
+   "solved_in": "2026-11-22 (uploaded https://youtu.be/F7sIScNijv8)"
+  },
+  {
+   "n": 19,
+   "title": "Stormy farm: Person 1 has 17 sheep; one stormy night all but 9 run away; Person 2 says 8 are left, Person 3 says no way; how many sheep does Person 1 have now? (vote options 8 / 9 / 17)",
+   "answer": "9. 'All but 9 run away' means every sheep except 9 ran off, so 9 are left. 8 is the 17 - 9 trap.",
+   "posted": "2026-11-22 (uploaded https://youtu.be/F7sIScNijv8)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 19,
+  "n": 20,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #18 solution first (60 minutes: tablets at 0, 30 and 60 min; only two gaps), then Riddle #19. Template: video/src/anim/day/RiddleAnim1116.tsx (clock with sweep, Tablet, sock drawer, Person 2/3 speech bubbles, HUD, QCard, Vote)."
+  "note": "Next riddle video = Riddle #19 solution first (9 sheep: 'all but 9' = 9 stay), then Riddle #20. Template: video/src/anim/day/RiddleAnim1122.tsx (farm, Sheep, storm, timeline, HUD, QCard, Vote)."
  }
 }
