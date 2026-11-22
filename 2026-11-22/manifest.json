@@ -1,0 +1,70 @@
+{
+ "date": "2026-11-22",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle18Solution_Riddle19.mp4",
+   "meta": "riddle.json",
+   "title": "60 Minutes, Not 90! ⏰ Riddle #18 Answer + Riddle #19: 17 Sheep 🐑 #shorts",
+   "qa": {
+    "heard": " Last riddle three tablets one every half hour starting right now. How many minutes?  The first tablet is taken right now at zero minutes  The second at 30 minutes and the third at 60 only two gaps the answer 60 minutes now a brand new mystery  Person one has 17 sheep on a farm one stormy night all but nine of them run away  Person two says eight are left. Person three says no way. So how many sheep does person one have now comment?  Your answer the answer drops tomorrow at sunrise",
+    "script_match": 0.952,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "PASS. #18 solution (60 min: 0/30/60, only two gaps) first, then #19 (17 sheep, all but 9 run away; answer 9 not revealed; vote 8/9/17). No salam, Person 1/2/3 only. Transcript 0.95. Title 72 chars, MFK false."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short19_SachchaMusalmaan.mp4",
+   "meta": "sadqah.json",
+   "title": "Sachcha Musalmaan Kaun? Zabaan Aur Haath | Sahih Bukhari 10 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " اچھا مسلمان کون؟  نماز روزہ اور ایک بڑی نشانی  عزرت عبدالله بن امرو رضی اللہن حما سے روایت ہے  یہ حمارِ نبی محمد مصطفہ صل اللہ تعالی علیہ وعالیہی وصلدم نے فرمایا  مسلمان وہ ہے جس کی زبان اور ہاتھ سے دوسرے مسلمان محفوظ رہیں  زبان سے نہ گالی نہ تانا نہ غیبت  ہاتھ سے نہ دھکا نہ ظلم نہ کسی کا حق مارنا  پون پر لکھتے وقت پیاد رکھیں کسی کا دل نہ دکھیں  کمٹ میں لکھیں یا اللہ ہمیں سچھا مسلمان بنا دیں  یہ ویڈیو آگے بھیجیں یہ بھی ایک اور سد کا ہے",
+    "script_match": 0.723,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:10"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS. Bukhari 10 (Abdullah bin Amr RA, 'Anhuma' correct) opened on sunnah.com; card, narration, description match. Real Green Dome (Pixabay 198164) with dip-to-black cuts. Roman Urdu captions, salutation in full. Nits: brief cross-fade of characters at ~22s; clip 198164 last used 14 Nov."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_VisitTheSick.mp4",
+   "meta": "kids.json",
+   "title": "Visit a Sick Friend! 🍎 Fruits of Jannah | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " Oh no! My friend is sick in bed today. What can I do?  Listen, our Prophet Muhammad Mustafa,  sallallahu ta'ala alaihi wa a'ala alihi wa sallam  Tortoise, visiting a sick friend is like picking fruit in the gardens of paradise  until you come back.  So let's go. We make a get-well card and take some fruit.  Knock, knock. As-salamu alaikum. We came to see you.  We sit with him, smile and make a prayer. May Allah make you better.  Look, he's smiling. Our visit made him feel better already.  Who can you visit or call this week? Tell your grown-up.",
+    "script_match": 0.89,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/muslim:2568c"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS. Muslim 2568c (Thawban RA) opened on sunnah.com; fair child-level wording. Real Green Dome (Pixabay 112361), dip-to-black cuts. Ordinary family only, no arms over faces, no halo. MFK true. Title 64 chars."
+   }
+  }
+ ],
+ "notes": [
+  "Sunday 22 Nov, 11 Jumada al-Akhirah 1448 (UK/India; Gulf 12): Gyarwi Sharif. Heads-up: the daily runs of 17-21 Nov did not produce anything (the 17 Nov run stopped after writing voice jobs), so no videos went up on those 5 days; there were no renders to catch up. Today's videos reuse the unfinished 17 Nov scripts, re-verified today. Riddle numbering continues (#18 answer + #19).",
+  "All 3 code-drawn animation. Sadqah Short 19: 'Sachcha Musalmaan kaun?' Sahih al-Bukhari 10 (tongue and hand). Kids: 'Visit a sick friend!' Sahih Muslim 2568c. Riddle #19: 17 sheep, all but 9 run away.",
+  "Comments: no new YouTube threads; Instagram comments/DMs were read by the 4-hourly run at ~02:00 UTC. Both QA checks passed. Nothing was paid. Still open for you: containsSyntheticMedia is false although the narration is your cloned voice."
+ ]
+}
