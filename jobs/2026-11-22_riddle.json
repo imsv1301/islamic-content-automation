@@ -1,6 +1,6 @@
 {
  "en": [
-  "Yesterday: three tablets, one every half hour, starting right now. How many minutes?",
+  "Last riddle: three tablets, one every half hour, starting right now. How many minutes?",
   "The first tablet is taken right now, at zero minutes.",
   "The second at thirty minutes, and the third at sixty. Only two gaps! The answer is sixty minutes!",
   "Now, a brand new mystery.",
@@ -22,5 +22,9 @@
    "7": "serious",
    "8": "warm"
   }
+ },
+ "voice_run_id": 44979640220,
+ "voice_run_id_fix": {
+  "0": 44979775870
  }
 }
