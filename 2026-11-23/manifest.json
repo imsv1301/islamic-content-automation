@@ -1,0 +1,70 @@
+{
+ "date": "2026-11-23",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle19Solution_Riddle20.mp4",
+   "meta": "riddle.json",
+   "title": "9 Sheep, Not 8! 🐑 Riddle #19 Answer + Riddle #20: How Many Months Have 28 Days? 📅 #shorts",
+   "qa": {
+    "heard": " Yesterday's riddle 17 sheep and all but nine run away. How many are left? All but nine means every sheep run away except nine  So nine sheep stay on the farm. The answer is nine. Now a brand new mystery  Person one holds up a calendar and ask the question  Some months have 31 days some have 30. How many months have 28 days?  Person two says only one person three says no way  So how many months have 28 days comment your answer the answer drops tomorrow at sunrise",
+    "script_match": 0.897,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "PASS. #19 solution (9 sheep: all but 9 = 9 stay) first, then #20 (how many months have 28 days; answer not revealed; vote 1/2/12 months as equal options). No salam, Person 1/2/3 only. Transcript 0.90. Title 89 chars, MFK false."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short20_HaathKiKamaai.mp4",
+   "meta": "sadqah.json",
+   "title": "Sab Se Behtareen Khana Kaun Sa? Halaal Kamaai | Sahih Bukhari 2072 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " سب سے بہترین کھانا کونسا ہے؟  مہنگہ ہوتل؟  نہیں  عزرت مقدام رزی اللہ نہوں دے روایت ہے کہ  حمارِ نبی محمدِ مصطفہ صل اللہ تعال علیہ وعالی ہی وصلدوں نے فرمایا  کسی نے کبھی اپنے ہاتھ کی کمائی سے بہتر کھانا نہیں کایا  اور اللہ کے نبی عزرت داود علیہ سلام اپنے ہاتھ کی کمائی سے کھاتے تھے  مزدور ہو دکاندار ہو یا ڈائیور ڈلال مہنت میں کوئی شرم نہیں  اسی نے کی ہر ایک بون جب حلال ہو تو عزت ہے  آج کامتر جاتے ہوئی نیت کریں  حلال روزی گھر والوں کے لیے  کمٹ میں لکھیں یا اللہ ہمیں حلال رزق اتا فرما  یہ ویڈیو آگے بھیجے یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.709,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:2072"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS. Bukhari 2072 (Al-Miqdam RA) opened on sunnah.com; Arabic matched on muflihun.com. Hazrat Dawood (AS) shown only through tools; real Green Dome (Pixabay 198164) with dip-to-black cuts. Roman Urdu captions, salutation in full. Whisper noise on 'paseene/boond' only (meaning intact)."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_PlantATree.mp4",
+   "meta": "kids.json",
+   "title": "Plant a Tree! 🌳 Every Bite Is a Good Deed | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " Look, I have a tiny seed. What will it become?  Listen, our Prophet Muhammad Mustafa,  sallallahu ta'ala alaihi wa ala alaihi wa sallam  taught us, when a Muslim plants a tree and a bird, a person or an animal eats from it,  it counts as a charity for him.  Let's plant!  Dig a little hole, drop in the seed and cover it up.  Splash! Splash!  We give it water every day.  Wow! It grew into a big tree full of apples.  A little bird eats one.  Tweet, tweet. A hungry goat eats one too.  Each little bite counts as a good deed for the one who planted the tree.  What can you plant this week? Ask your grown-up.",
+    "script_match": 0.939,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:2320"
+    ],
+    "second_check": true,
+    "second_check_notes": "PASS. Bukhari 2320 (Anas bin Malik RA) opened on sunnah.com; real Green Dome (Pixabay 112361), dip cuts, ordinary family only, Made for Kids on. Transcript 0.94."
+   }
+  }
+ ],
+ "notes": [
+  "Monday 23 Nov, 12 Jumada al-Akhirah 1448 (UK/India). No major occasion within 7 days. Catch-up: every earlier day is already up on YouTube and Instagram; nothing re-uploaded.",
+  "All 3 code-drawn animation. Sadqah Short 20: 'Sab se behtareen khana?' Sahih al-Bukhari 2072 (eating from your own hands' earnings; Hazrat Dawood AS shown only as an empty workshop). Kids: 'Plant a tree!' Sahih al-Bukhari 2320. Riddle #19 answer (9) + Riddle #20: how many months have 28 days?",
+  "Comments: no new YouTube threads; Instagram comments/DMs empty on the accounts checked. Both QA checks passed. Nothing was paid. Mehfil today: naat 'Kya Bataun Ke Kya Madina Hai' (Zohaib Ashrafi) + qawwali 'Yaad-e-Nabi Ka Gulshan Mehka' (NFAK), posted separately by naat.yml."
+ ]
+}
