@@ -8,7 +8,7 @@
   "کسی نے کبھی، اپنے ہاتھ کی کمائی سے بہتر کھانا نہیں کھایا۔",
   "اور اللہ کے نبی، حضرت داؤد علیہ السلام، اپنے ہاتھ کی کمائی سے کھاتے تھے۔",
   "مزدور ہو، دکاندار ہو، یا ڈرائیور: حلال محنت میں کوئی شرم نہیں۔",
-  "پسینے کی ہر بوند، جب حلال ہو، تو عزت ہے۔",
+  "پسینے کی ہر ایک بُوند، جب حلال ہو، تو عزت ہے۔",
   "آج کام پر جاتے ہوئے نیت کریں: حلال روزی، گھر والوں کے لیے۔",
   "کمنٹ میں لکھیں: یا اللہ، ہمیں حلال رزق عطا فرما!",
   "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
@@ -19,7 +19,7 @@
   "Kisi ne kabhi, apne haath ki kamaai se behtar khana nahin khaya.",
   "Aur Allah ke Nabi, Hazrat Dawood Alaihis Salam, apne haath ki kamaai se khaate thay.",
   "Mazdoor ho, dukaandaar ho, ya driver: halaal mehnat mein koi sharam nahin.",
-  "Paseene ki har boond, jab halaal ho, to izzat hai.",
+  "Paseene ki har ek boond, jab halaal ho, to izzat hai.",
   "Aaj kaam par jaate hue niyyat karein: halaal rozi, ghar waalon ke liye.",
   "Comment mein likhein: Ya Allah, hamein halaal rizq ata farma!",
   "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
@@ -41,5 +41,9 @@
   "ur": {
    "2": 0.85
   }
+ },
+ "voice_run_id": 45104948250,
+ "voice_run_id_fix": {
+  "5": 45105716112
  }
 }

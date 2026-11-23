@@ -5,7 +5,7 @@
   "So let's plant! Dig a little hole, drop in the seed, and cover it up.",
   "Splash, splash! We give it water every day.",
   "Wow! It grew into a big tree, full of apples!",
-  "A little bird eats one. Tweet tweet! A hungry goat eats one too. Every bite is a good deed for the one who planted it!",
+  "A little bird eats one. Tweet tweet! A hungry goat eats one too. Each little bite counts as a good deed, for the one who planted the tree!",
   "What can you plant this week? Ask your grown-up!"
  ],
  "style": {
@@ -18,5 +18,9 @@
    "5": "warm",
    "6": "excited"
   }
+ },
+ "voice_run_id": 45104951037,
+ "voice_run_id_fix": {
+  "5": 45106560468
  }
 }
