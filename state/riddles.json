@@ -130,12 +130,19 @@
    "title": "Stormy farm: Person 1 has 17 sheep; one stormy night all but 9 run away; Person 2 says 8 are left, Person 3 says no way; how many sheep does Person 1 have now? (vote options 8 / 9 / 17)",
    "answer": "9. 'All but 9 run away' means every sheep except 9 ran off, so 9 are left. 8 is the 17 - 9 trap.",
    "posted": "2026-11-22 (uploaded https://youtu.be/F7sIScNijv8)",
+   "solved_in": "2026-11-23 (uploaded https://youtu.be/HiMNilyMAws)"
+  },
+  {
+   "n": 20,
+   "title": "Months: Person 1 holds up a calendar; some months have 31 days, some have 30; how many months have 28 days? Person 2 says only one, Person 3 says no way (vote options 1 month / 2 months / 12 months)",
+   "answer": "12. Every month has at least 28 days (February has 28 or 29, the rest have 30 or 31), so all twelve months have 28 days. 'Only one' (February) is the trap: it is the only month with JUST 28.",
+   "posted": "2026-11-23 (uploaded https://youtu.be/HiMNilyMAws)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 20,
+  "n": 21,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #19 solution first (9 sheep: 'all but 9' = 9 stay), then Riddle #20. Template: video/src/anim/day/RiddleAnim1122.tsx (farm, Sheep, storm, timeline, HUD, QCard, Vote)."
+  "note": "Next riddle video = Riddle #20 solution first (12: every month has at least 28 days; February is the only one with just 28), then Riddle #21. Template: video/src/anim/day/RiddleAnim1123.tsx (farm/Sheep, Calendar, 12-month board, HUD, QCard, Vote)."
  }
 }
