@@ -1,0 +1,26 @@
+{
+ "en": [
+  "Yesterday's riddle: seventeen sheep, and all but nine run away. How many are left?",
+  "All but nine means: every sheep ran away, except nine.",
+  "So nine sheep stay on the farm. The answer is nine!",
+  "Now, a brand new mystery.",
+  "Person one holds up a calendar, and asks a question.",
+  "Some months have thirty-one days. Some have thirty. How many months have twenty-eight days?",
+  "Person two says: only one! Person three says: no way!",
+  "So, how many months have twenty-eight days?",
+  "Comment your answer. The answer drops tomorrow, at sunrise."
+ ],
+ "style": {
+  "en": {
+   "0": "calm",
+   "1": "calm",
+   "2": "excited",
+   "3": "excited",
+   "4": "calm",
+   "5": "serious",
+   "6": "serious",
+   "7": "serious",
+   "8": "warm"
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "speed": {
+  "ur": 0.8
+ },
+ "ur": [
+  "سب سے بہترین کھانا کون سا ہے؟ مہنگا ہوٹل؟ نہیں!",
+  "حضرت مِقدام، رضی اللہ عن ہُ، سے رِوایَت ہے، کہ <SAW> نے فرمایا:",
+  "کسی نے کبھی، اپنے ہاتھ کی کمائی سے بہتر کھانا نہیں کھایا۔",
+  "اور اللہ کے نبی، حضرت داؤد علیہ السلام، اپنے ہاتھ کی کمائی سے کھاتے تھے۔",
+  "مزدور ہو، دکاندار ہو، یا ڈرائیور: حلال محنت میں کوئی شرم نہیں۔",
+  "پسینے کی ہر بوند، جب حلال ہو، تو عزت ہے۔",
+  "آج کام پر جاتے ہوئے نیت کریں: حلال روزی، گھر والوں کے لیے۔",
+  "کمنٹ میں لکھیں: یا اللہ، ہمیں حلال رزق عطا فرما!",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Sab se behtareen khana kaun sa hai? Mehanga hotel? Nahin!",
+  "Hazrat Miqdam, Radi Allahu Anhu, se riwayat hai, ke <SAW> ne farmaya:",
+  "Kisi ne kabhi, apne haath ki kamaai se behtar khana nahin khaya.",
+  "Aur Allah ke Nabi, Hazrat Dawood Alaihis Salam, apne haath ki kamaai se khaate thay.",
+  "Mazdoor ho, dukaandaar ho, ya driver: halaal mehnat mein koi sharam nahin.",
+  "Paseene ki har boond, jab halaal ho, to izzat hai.",
+  "Aaj kaam par jaate hue niyyat karein: halaal rozi, ghar waalon ke liye.",
+  "Comment mein likhein: Ya Allah, hamein halaal rizq ata farma!",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {
+  "ur": {
+   "0": "excited",
+   "1": "calm",
+   "2": "serious",
+   "3": "serious",
+   "4": "warm",
+   "5": "warm",
+   "6": "warm",
+   "7": "warm",
+   "8": "warm"
+  }
+ },
+ "line_speed": {
+  "ur": {
+   "2": 0.85
+  }
+ }
+}

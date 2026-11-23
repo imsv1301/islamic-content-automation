@@ -1,0 +1,22 @@
+{
+ "en": [
+  "Look! I have a tiny seed. What will it become?",
+  "Listen! <SAW> taught us: when a Muslim plants a tree, and a bird, a person or an animal eats from it, it counts as a charity for him!",
+  "So let's plant! Dig a little hole, drop in the seed, and cover it up.",
+  "Splash, splash! We give it water every day.",
+  "Wow! It grew into a big tree, full of apples!",
+  "A little bird eats one. Tweet tweet! A hungry goat eats one too. Every bite is a good deed for the one who planted it!",
+  "What can you plant this week? Ask your grown-up!"
+ ],
+ "style": {
+  "en": {
+   "0": "excited",
+   "1": "calm",
+   "2": "excited",
+   "3": "excited",
+   "4": "excited",
+   "5": "warm",
+   "6": "excited"
+  }
+ }
+}
