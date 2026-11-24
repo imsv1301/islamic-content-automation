@@ -1,0 +1,27 @@
+{
+ "speed": {"ur": 0.8},
+ "ur": [
+  "زبان ایک ہے، مگر کتنی بار ہم نے اس سے کسی کا دل دُکھایا؟",
+  "حضرت ابو ہُریرہ، رضی اللہ عن ہُ، سے رِوایَت ہے، کہ <SAW> نے فرمایا:",
+  "جو اللہ اور آخرت کے دن پر ایمان رکھتا ہے، وہ اپنے پڑوسی کو تکلیف نہ دے۔",
+  "جو اللہ اور آخرت کے دن پر ایمان رکھتا ہے، وہ اپنے مہمان کی عزت کرے۔",
+  "اور جو اللہ اور آخرت کے دن پر ایمان رکھتا ہے، وہ اچھی بات کہے، یا خاموش رہے۔",
+  "غصے میں تیز جواب؟ رُکیں۔ پہلے سوچیں: کیا یہ بات اچھی ہے؟",
+  "اگر نہیں، تو خاموش رہنا ہی بہتر ہے۔",
+  "کمنٹ میں لکھیں: یا اللہ، ہماری زبان کو خیر کا ذریعہ بنا!",
+  "یہ ویڈیو آگے بھیجیں، یہ بھی ایک اور صدقہ ہے۔"
+ ],
+ "roman": [
+  "Zabaan ek hai, magar kitni baar hum ne is se kisi ka dil dukhaya?",
+  "Hazrat Abu Huraira, Radi Allahu Anhu, se riwayat hai, ke <SAW> ne farmaya:",
+  "Jo Allah aur aakhirat ke din par imaan rakhta hai, woh apne padosi ko takleef na de.",
+  "Jo Allah aur aakhirat ke din par imaan rakhta hai, woh apne mehmaan ki izzat kare.",
+  "Aur jo Allah aur aakhirat ke din par imaan rakhta hai, woh achhi baat kahe, ya khamosh rahe.",
+  "Ghusse mein tez jawaab? Rukein. Pehle sochein: kya yeh baat achhi hai?",
+  "Agar nahin, to khamosh rehna hi behtar hai.",
+  "Comment mein likhein: Ya Allah, hamari zabaan ko khair ka zariya bana!",
+  "Yeh video aage bhejein, yeh bhi ek aur sadqah hai."
+ ],
+ "style": {"ur": {"0": "serious", "1": "calm", "2": "serious", "3": "serious", "4": "serious", "5": "calm", "6": "warm", "7": "warm", "8": "warm"}},
+ "line_speed": {"ur": {"4": 0.85}}
+}
