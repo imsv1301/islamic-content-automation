@@ -1,0 +1,70 @@
+{
+ "date": "2026-11-24",
+ "items": [
+  {
+   "label": "riddle",
+   "video": "SolveBySunrise_Riddle20Solution_Riddle21.mp4",
+   "meta": "riddle.json",
+   "title": "All 12 Months! 📅 Riddle #20 Answer + Riddle #21: Which Way Does the Rooster's Egg Roll? 🐓 #shorts",
+   "qa": {
+    "heard": " Yesterday's riddle. Some months have 31 days, some have 30. How many months have 28 days?  The February is not the only one. Every single month has at least 28 days.  So all 12 months have 28 days. The answer is 12. Now, a brand new mystery.  Person 1 watches a rooster climb up to the very top of a barn roof.  The rooster lays an egg right on the peak. Will the egg roll down the left side or the right  side? Person 2 says, left person 3 says, right. So, which way does the egg roll?  Comment your answer. The answer drops tomorrow at sunrise.",
+    "script_match": 0.886,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [],
+    "second_check": true,
+    "second_check_notes": "Independent check 2026-11-24. Logic: #20 answer 12 is correct (every month has >=28 days); #21 rooster-egg trick is posed with options Left/Right/Neither and the answer (roosters don't lay eggs) is NOT revealed anywhere in narration, captions, title, description or tags ('rooster egg riddle' tag is neutral). Whisper transcript matches the script; no garbled words. No salam; characters only Person 1/2/3. Voice: voice_run_id 45318917387; 13 true silences between lines, so no music bed. Frames (1 fps, full 37 s) checked: no protected figures, no halo glow (street-lamp glow is not behind any head), no crosses/idols (barn door X brace is ordinary carpentry), no spinning text, no branding. Title 97 chars, public, not made for kids. Nits (non-blocking): description says 'February is the only one with JUST 28', which ignores leap years (29). | After review: fixed the reviewer's non-blocking nits (riddle leap-year wording; Sadqah TAANA/GAALI bursts moved above heads; kids lunchbox redrawn on top in teal) and re-checked those frames; qa_check re-run PASS."
+   }
+  },
+  {
+   "label": "sadqah",
+   "video": "OneMoreSadqah_Short21_AchhiBaatYaKhamoshi.mp4",
+   "meta": "sadqah.json",
+   "title": "Achhi Baat Kaho Ya Khamosh Raho | Padosi, Mehmaan, Zabaan | Sahih Bukhari 6018 #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " زبان ایک ہے مگر کتنی بار ہم نے اس سے کسی کا دل دکھایا۔  عزت ابو حررا رزی اللہ آن ہو سے روایت ہے کہ  حمارِ نبی محمد مصطفہ صل اللہ تعال عالیہ و عالیہ و صل اللہ  نے فرمایا جو اللہ اور آخرت کے دن پر ایمان رکتا ہے  وہ اپنے پڑوسی کو تقلیف نہ دے جو اللہ اور آخرت کے دن پر ایمان رکتا ہے  وہ اپنے محمان کی عزت کرے اور جو اللہ اور آخرت کے دن پر ایمان رکتا ہے  وہ اچھی بات کہیں یا خاموش رہے  گسے میں تیز جواب رکیں پہلے سوچیں  یہ بات اچھی ہے اگر نہیں تو خاموش رہنا ہی بہتر ہے  کمٹ میں لکھیں یا اللہ ہماری زبان کو خیر کا ذریعہ بنا  یہ ویڈیو آگے بھیجے یہ بھی ایک اور صدقہ ہے",
+    "script_match": 0.785,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:6018"
+    ],
+    "second_check": true,
+    "second_check_notes": "Verified by WebFetch of sunnah.com/bukhari:6018: narrator Abu Huraira; text 'should not harm his neighbour / honour his guest / say good or keep quiet'; Arabic matches the description and the on-screen card (card shows the third clause only: وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ, checked on a full-res crop at 29 s). Sahih al-Bukhari, Book 78 Hadith 49. Urdu translation is faithful. Honorifics: Radi Allahu Anhu; salutation is Sahil's Urdu clip (whisper hears 'Hamare Nabi Muhammad Mustafa Sallallahu Ta'ala Alaihi...'). Nothing controversial; mainstream Ahl-e-Sunnat. Whisper differences are only spelling or ASR noise (rakta/rakhta, kahein/kahe); whisper dropped 'kya' in line 6 (~36 s), but the caption has it, so this is an ASR miss, not a confirmed speech error. Voice: voice_run_id plus fixes present; Urdu at speed 0.8 (52 s), calm; 19 silences, so no music. Real Green Dome footage at 5-15 s (Pixabay 112360, credited); no drawn dome. Captions are Roman Urdu throughout. No protected figures, no head halos (background glows are ambient, not behind a head), no spinning text, nothing haram. Title 86 chars, public, not made for kids. Nit (non-blocking): ~2.0-2.8 s the red 'TAANA' word-burst briefly covers the left half of the blue-kurta man's face; nudging it up or right would be cleaner. | After review: fixed the reviewer's non-blocking nits (riddle leap-year wording; Sadqah TAANA/GAALI bursts moved above heads; kids lunchbox redrawn on top in teal) and re-checked those frames; qa_check re-run PASS."
+   }
+  },
+  {
+   "label": "kids",
+   "video": "IslamForLittleOnes_Short_ShareYourLunch.mp4",
+   "meta": "kids.json",
+   "title": "Share Your Lunch! 🥪 Food for Two Is Enough for Three | Islam for Kids #shorts",
+   "qa": {
+    "salutation": "Sahil's recorded clip spliced via <SAW> (fixed audio; whisper cannot confirm 'Wa Aalihi')",
+    "heard": " Oh, my friend forgot his lunch today, but my lunch is only for me. Or is it?  Listen, our Prophet Muhammad Mustafa  sallallahu ta'ala alaihi wa a'ala alihi wa sallam  taught us food for two is enough for three and food for three is enough for four  I break my sandwich in half one half for me and one half for you  Then another friend sits down with us. We share the apple slices, too  Look everybody has enough and everybody is smiling and we share there is blessing in our food  It feels like more, not less. Who will you share with tomorrow? Tell your grown-up",
+    "script_match": 0.913,
+    "auto": {
+     "passed": true,
+     "issues": []
+    },
+    "authentic": true,
+    "hadith_urls": [
+     "https://sunnah.com/bukhari:5392"
+    ],
+    "second_check": true,
+    "second_check_notes": "Verified by WebFetch of sunnah.com/bukhari:5392: narrator Abu Huraira; 'The food for two persons is sufficient for three, and the food of three persons is sufficient for four' (Book 70 Hadith 20). Narration and on-screen 'Food for 2 = enough for 3!' match. 'When we share, there is blessing in our food' is the narrator's explanatory lesson, not put in the Prophet's mouth, and it is the standard understanding of this hadith (barakah through sharing), so it is a fair framing and not fabricated. Salutation is Sahil's clip (whisper: 'our Prophet Muhammad Mustafa sallallahu ta'ala alaihi wa ... alihi wa sallam'). Real aerial Green Dome footage at 5-17 s (Pixabay 198164, credited). Voice: voice_run_id 45318924763; 17 silences, so no music. Only ordinary children and a mum are drawn; no halos, no spinning text, nothing haram. selfDeclaredMadeForKids true, public, title 77 chars. Nits (non-blocking): ~2.8-4.8 s the opening lunchbox lid is drawn as a thin pale-orange rod with a red dot between the boys, which reads like a stray stick or broken arm, and the lunch inside is not visible; ~21 s the girl walks in half off-frame (fine as an entrance). | After review: fixed the reviewer's non-blocking nits (riddle leap-year wording; Sadqah TAANA/GAALI bursts moved above heads; kids lunchbox redrawn on top in teal) and re-checked those frames; qa_check re-run PASS."
+   }
+  }
+ ],
+ "notes": [
+  "Hijri: 13 Jumada al-Akhirah 1448 (UK/India), no major occasion within 7 days.",
+  "Hadith verified on sunnah.com by the second reviewer: Bukhari 6018 (Sadqah), Bukhari 5392 (kids).",
+  "Raah-e-Sunnat (@raahesunnat.daily) Instagram is still failing (Meta error: account object missing/permissions, same as 23 Nov). Please check the account and regenerate IG_TOKEN_HADITH in the Meta app; the 23 Nov and today's hadith Reels will post on the next publish.yml run."
+ ]
+}
