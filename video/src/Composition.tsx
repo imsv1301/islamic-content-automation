@@ -1,3 +1,8 @@
+import { Qawwali1124, ALLAHHOO_DUR } from "./anim/day/Qawwali1124";
+import { Naat1124, NAAT1124_DUR } from "./anim/day/Naat1124";
+import { SadqahAnim1124, SADQAH1124_DUR } from "./anim/day/SadqahAnim1124";
+import { KidsAnim1124, KIDS1124_DUR } from "./anim/day/KidsAnim1124";
+import { RiddleAnim1124, RIDDLE1124_DUR } from "./anim/day/RiddleAnim1124";
 import { Qawwali1123, YAAD_DUR } from "./anim/day/Qawwali1123";
 import { Naat1123, NAAT1123_DUR } from "./anim/day/Naat1123";
 import { KidsAnim1123, KIDS1123_DUR } from "./anim/day/KidsAnim1123";
@@ -101,10 +106,15 @@ export const MyComposition = () => {
     <Composition id="SadqahAnim1116" component={SadqahAnim1116} defaultProps={{ withAudio: true }} durationInFrames={Math.round(SADQAH1116_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Naat1116" component={Naat1116} defaultProps={{ withAudio: false, noBg: false }} durationInFrames={Math.round(NAAT1116_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Qawwali1116" component={Qawwali1116} defaultProps={{ withAudio: false }} durationInFrames={Math.round(JHOLI_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="KidsAnim1124" component={KidsAnim1124} defaultProps={{ withAudio: true }} durationInFrames={Math.round(KIDS1124_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="KidsAnim1123" component={KidsAnim1123} defaultProps={{ withAudio: true }} durationInFrames={Math.round(KIDS1123_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="RiddleAnim1124" component={RiddleAnim1124} defaultProps={{ withAudio: true }} durationInFrames={Math.round(RIDDLE1124_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="RiddleAnim1123" component={RiddleAnim1123} defaultProps={{ withAudio: true }} durationInFrames={Math.round(RIDDLE1123_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="SadqahAnim1124" component={SadqahAnim1124} defaultProps={{ withAudio: true }} durationInFrames={Math.round(SADQAH1124_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="SadqahAnim1123" component={SadqahAnim1123} defaultProps={{ withAudio: true }} durationInFrames={Math.round(SADQAH1123_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="Qawwali1124" component={Qawwali1124} defaultProps={{ withAudio: false }} durationInFrames={Math.round(ALLAHHOO_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Qawwali1123" component={Qawwali1123} defaultProps={{ withAudio: false }} durationInFrames={Math.round(YAAD_DUR * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="Naat1124" component={Naat1124} defaultProps={{ withAudio: false, noBg: true }} durationInFrames={Math.round(NAAT1124_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="Naat1123" component={Naat1123} defaultProps={{ withAudio: false, noBg: true }} durationInFrames={Math.round(NAAT1123_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="KidsAnim1122" component={KidsAnim1122} defaultProps={{ withAudio: true }} durationInFrames={Math.round(KIDS1122_DUR * 30)} fps={30} width={1080} height={1920} />
     <Composition id="RiddleAnim1122" component={RiddleAnim1122} defaultProps={{ withAudio: true }} durationInFrames={Math.round(RIDDLE1122_DUR * 30)} fps={30} width={1080} height={1920} />

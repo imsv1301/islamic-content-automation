@@ -137,12 +137,19 @@
    "title": "Months: Person 1 holds up a calendar; some months have 31 days, some have 30; how many months have 28 days? Person 2 says only one, Person 3 says no way (vote options 1 month / 2 months / 12 months)",
    "answer": "12. Every month has at least 28 days (February has 28 or 29, the rest have 30 or 31), so all twelve months have 28 days. 'Only one' (February) is the trap: it is the only month with JUST 28.",
    "posted": "2026-11-23 (uploaded https://youtu.be/HiMNilyMAws)",
+   "solved_in": "2026-11-24 (uploaded https://youtu.be/WjhM_g0i_WE)"
+  },
+  {
+   "n": 21,
+   "title": "Rooster on the barn: Person 1 watches a rooster climb to the very top of a barn roof; it lays an egg right on the peak; will the egg roll down the left side or the right side? Person 2 says left, Person 3 says right (vote options Left side / Right side / Neither)",
+   "answer": "Neither. Roosters don't lay eggs (only hens do), so there is no egg to roll. Left vs right is the trap.",
+   "posted": "2026-11-24 (uploaded https://youtu.be/WjhM_g0i_WE)",
    "solved_in": null
   }
  ],
  "next": {
-  "n": 21,
+  "n": 22,
   "title": "TBD by the next daily run",
-  "note": "Next riddle video = Riddle #20 solution first (12: every month has at least 28 days; February is the only one with just 28), then Riddle #21. Template: video/src/anim/day/RiddleAnim1123.tsx (farm/Sheep, Calendar, 12-month board, HUD, QCard, Vote)."
+  "note": "Next riddle video = Riddle #21 solution first (Neither: roosters don't lay eggs, only hens do), then Riddle #22. Template: video/src/anim/day/RiddleAnim1124.tsx (Board, Rooster, Barn, Egg, HUD, QCard, Vote)."
  }
 }
